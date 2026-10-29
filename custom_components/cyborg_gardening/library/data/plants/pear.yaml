@@ -1,0 +1,296 @@
+id: pear
+name: Pear
+botanical: Pyrus communis and Pyrus pyrifolia
+group: fruit_tree
+icon: mdi:fruit-pear
+frost: hardy
+heat: sensitive
+water: moderate
+perennial: true
+stages: [young, established, flowering, fruiting, dormant]
+default_stage: established
+settings: [ground]
+summary: A deciduous tree for sun and moist, well drained soil. It needs pollen from a different pear variety that flowers at the same time.
+needs:
+  sun: full
+  soil: Moist, well drained soil in a sunny spot sheltered from strong winds. Pears tolerate some waterlogging but dislike drought.
+  sources:
+    - https://www.abc.net.au/gardening/plant-finder/pyrus/9441798
+    - https://www.abc.net.au/gardening/fruit-guide/102652284
+    - https://www.diggers.com.au/collections/pear-trees
+    - https://www.diggers.com.au/products/pear-packhams-triumph
+    - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0009/321201/ipm-for-australian-apples-and-pears-complete.pdf
+varieties:
+  - id: european
+    name: European pear (Williams, Packham's Triumph, Beurre Bosc)
+    notes: >-
+      Pyrus communis. Most European pears are not self-fertile, so plant a different variety that flowers at the same time.
+      Diggers lists Conference, Doyenne du Comice and Williams as pollinators for Packham's Triumph, and Red Beurre d'Anjou,
+      Williams and Red Williams for Beurre Bosc. European pears taste best picked slightly unripe and ripened at room temperature.
+    sources:
+      - https://beeaware.org.au/pollination/pollinator-reliant-crops/apples-pears/
+      - https://www.diggers.com.au/products/pear-packhams-triumph
+      - https://www.diggers.com.au/products/pear-beurre-bosc
+      - https://www.diggers.com.au/collections/pear-trees
+      - https://www.abc.net.au/gardening/plant-finder/pyrus/9441798
+  - id: nashi
+    name: Nashi (Asian pear)
+    notes: >-
+      Pyrus pyrifolia. Most nashi varieties are self-infertile and need a compatible pollen donor planted nearby.
+      European pear pollen also pollinates nashi when both flower at the same time; Diggers suggests Williams or Beurre Bosc.
+      The fruit has an apple-like texture with a pear taste and is best eaten fresh, ripened on the tree.
+    sources:
+      - https://beeaware.org.au/pollination/pollinator-reliant-crops/apples-pears/
+      - https://www.diggers.com.au/products/pear-nashi
+      - https://www.abc.net.au/gardening/plant-finder/pyrus/9441798
+  - id: unsure
+    name: Not sure which pear
+    notes: >-
+      Watch how the fruit ripens. Nashi are crisp with an apple-like texture and are best ripened on the tree.
+      European pears give their best flavour when picked slightly unripe and ripened indoors at room temperature.
+      Either way, two trees only help each other when they are different varieties that flower at the same time.
+      Nashi and European pears can pollinate each other if their flowering overlaps.
+    sources:
+      - https://www.diggers.com.au/products/pear-nashi
+      - https://www.diggers.com.au/collections/pear-trees
+      - https://www.diggers.com.au/products/pear-beurre-bosc
+      - https://beeaware.org.au/pollination/pollinator-reliant-crops/apples-pears/
+tasks:
+  - id: winter_prune
+    kind: prune
+    title: Winter prune
+    detail: >-
+      Prune while the tree is bare. First remove dead, diseased and damaged wood, then shape for an open, reachable tree.
+      Keep the short fruiting spurs; they stay on the tree for life. Clean tools between trees.
+    seasons: [winter]
+    once: true
+    sources:
+      - https://www.abc.net.au/gardening/how-to/pruning-pomes/105436842
+      - https://www.diggers.com.au/blogs/learn/garden-guide-july-cool-region
+  - id: feed
+    kind: fertilise
+    title: Fruit tree fertiliser
+    detail: >-
+      Feed once a year as growth starts in late winter or early spring, not while the tree is fully dormant. Sprinkle in a band
+      around the drip line, cover with mulch and water in. Young trees need small amounts; too much nitrogen gives soft growth
+      that attracts aphids.
+    products: [osmocote_citrus_fruit]
+    rate: Osmocote Citrus and Fruit, 6 tablespoons (90 g) per tree in years 1 and 2, then 10 tablespoons (150 g) per tree from year 3.
+    seasons: [late_winter, early_spring]
+    stages: [young, established, flowering]
+    once: true
+    sources:
+      - https://www.sgaonline.org.au/growing-fruit-trees/
+      - https://www.lovethegarden.com/au-en/product/scotts-osmocote-controlled-release-fertiliser-citrus-fruit
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0009/321201/ipm-for-australian-apples-and-pears-complete.pdf
+  - id: mulch_barrier
+    kind: mulch
+    title: Mulch barrier under the tree
+    detail: >-
+      Late in winter lay thick cardboard over the root zone and cover it with fresh straw mulch.
+      It helps stop codling moth and pear and cherry slug emerging from the soil in spring. Keep mulch off the trunk.
+    products: [pea_straw]
+    seasons: [mid_winter, late_winter]
+    once: true
+    sources:
+      - https://www.abc.net.au/gardening/how-to/moth-management/103447452
+      - https://www.abc.net.au/gardening/how-to/controlling-codling-moth/11230948
+      - https://www.diggers.com.au/blogs/learn/garden-guide-july-cool-region
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0009/321201/ipm-for-australian-apples-and-pears-complete.pdf
+  - id: scab_spray
+    kind: spray
+    title: Copper spray for black spot
+    detail: >-
+      Spray copper at green tip, when about a third of the buds show green. In wet springs Agriculture Victoria repeats
+      protectant sprays through to petal fall, about 5 to 7 days and then 10 to 14 days apart, so follow the label for repeats.
+    products: [yates_liquid_copper]
+    rate: Yates Liquid Copper, 5 mL per 1 L of water at green tip, before the tips are 1 cm long.
+    seasons: [late_winter, early_spring]
+    stages: [established, dormant, flowering]
+    once: true
+    caution: Read and follow the label.
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/plant-diseases/fruit-and-nut-diseases/pome-fruits/pear-scab
+      - https://www.yates.com.au/yates-200ml-liquid-copper/
+  - id: codling_trap
+    kind: check
+    title: Hang codling moth pheromone trap
+    detail: Adult codling moths emerge in spring as the tree flowers. A pheromone trap in the canopy shows when they are flying.
+    seasons: [early_spring]
+    once: true
+    sources:
+      - https://www.abc.net.au/gardening/how-to/moth-management/103447452
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/codling-moth
+  - id: codling_bands
+    kind: check
+    title: Check codling moth bands and fallen fruit
+    detail: >-
+      Keep a band of corrugated cardboard or hessian around the trunk so larvae stop there to pupate. Check it every week or two
+      from blossom through winter, and bin it with any larvae. Pick up fallen and grub damaged fruit and bin it, never compost it.
+    every_days: 10
+    sources:
+      - https://www.abc.net.au/gardening/how-to/moth-management/103447452
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/codling-moth
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/controlling-queensland-fruit-fly-in-home-gardens
+  - id: thin_fruit
+    kind: other
+    title: Thin the fruit
+    detail: >-
+      Between flowering and marble sized fruit, twist off the smallest fruit. Large pears such as Beurre Bosc set 5 to 7 fruit
+      per spur; leave 2. Thinning gives bigger fruit, a crop every year and fewer broken branches.
+    seasons: [mid_spring, late_spring]
+    stages: [established, fruiting]
+    once: true
+    sources:
+      - https://www.abc.net.au/gardening/how-to/thinning-fruit-trees/101692498
+  - id: slug_check
+    kind: check
+    title: Check for pear and cherry slug
+    detail: >-
+      Look on the upper leaf surface for small slimy olive green larvae and skeletonised patches. The first generation peaks
+      around November and December and a larger second one follows in late summer. Act early, before much damage is done.
+    seasons: [late_spring, late_summer]
+    once: true
+    sources:
+      - https://www.yates.com.au/garden-hub/pear-and-cherry-slug/
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0009/321201/ipm-for-australian-apples-and-pears-complete.pdf
+  - id: net_fruit
+    kind: other
+    title: Net or bag the fruit
+    detail: >-
+      Once flowers are pollinated and fruit is still small, cover the tree with insect netting or bag the fruit against
+      fruit fly and birds. In Victoria household fruit netting must have a mesh of 5 mm by 5 mm or less at full stretch.
+      Fix it tightly to the trunk and keep it off the fruit.
+    seasons: [late_spring]
+    stages: [established, fruiting]
+    once: true
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/controlling-queensland-fruit-fly-in-home-gardens
+      - https://agriculture.vic.gov.au/livestock-and-animals/animal-welfare-victoria/pocta-act-1986/protecting-fruit-trees-and-wildlife
+  - id: fruit_fly_trap
+    kind: check
+    title: Check fruit fly trap
+    detail: >-
+      Hang the trap about 1.5 m high in a shady part of the canopy. Change homemade bait weekly and refresh bought lures as the
+      label says. Traps alone will not control fruit fly; combine them with netting and clean up of fallen fruit.
+    products: [fruit_fly_trap]
+    every_days: 7
+    seasons: [spring, summer, autumn]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/controlling-queensland-fruit-fly-in-home-gardens
+pests:
+  - id: codling_moth
+    name: Codling moth
+    kind: pest
+    seasons: [spring, summer, autumn]
+    signs: Holes in the fruit plugged with brown droppings (frass), often with the grub tunnelling to the core.
+    prevent: >-
+      Scrape loose bark where larvae shelter, band the trunk with corrugated cardboard, hang pheromone traps in spring,
+      mulch over cardboard in late winter, bag fruit, and pick up and bin infested fruit.
+    treat: >-
+      Spray early, before larvae enter the fruit, and repeat every 7 to 14 days while eggs are hatching. Bt (Dipel) is the
+      gentler choice; Yates Success Ultra is registered for codling moth on pome fruit at 7.5 mL per litre.
+    products: [dipel, yates_success_ultra]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/codling-moth
+      - https://www.abc.net.au/gardening/how-to/moth-management/103447452
+      - https://www.yates.com.au/garden-hub/codling-moth/
+      - https://www.yates.com.au/yates-200ml-success-ultra/
+  - id: pear_and_cherry_slug
+    name: Pear and cherry slug
+    kind: pest
+    seasons: [late_spring, early_summer, late_summer, early_autumn]
+    signs: Slimy olive green larvae up to about 1 cm long on the upper leaf surface, leaving bleached, skeletonised patches. Trees can look scorched.
+    prevent: >-
+      Lay a thick mulch barrier in winter to stop adults emerging from the soil, keep weeds and debris clear under the tree,
+      and encourage predators such as lacewings and hoverflies. Check new leaves from early spring.
+    treat: >-
+      Pick, squash or hose off small numbers, or dust the larvae with wood ash. Spray pyrethrum or neem for bigger outbreaks.
+      Yates Success Ultra is registered for pear and cherry slug on pome fruit at 5 mL per litre.
+    products: [pyrethrum_spray, eco_neem, yates_success_ultra]
+    sources:
+      - https://www.yates.com.au/garden-hub/pear-and-cherry-slug/
+      - https://www.organicgardener.com.au/pear-and-cherry-slug/
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0009/321201/ipm-for-australian-apples-and-pears-complete.pdf
+      - https://www.yates.com.au/yates-200ml-success-ultra/
+  - id: pear_scab
+    name: Pear scab (black spot)
+    kind: disease
+    seasons: [early_spring, mid_spring, late_spring]
+    signs: Olive green to black spots on fruit, distorted young fruit, spots under the leaves and small oval blisters on twigs.
+    prevent: >-
+      Rake up and mulch fallen leaves in autumn and winter, as the fungus overwinters in them. Beurre Bosc and Winter Nelis get
+      more twig infections than Williams and Packham's Triumph.
+    treat: Protectant copper sprays from green tip to petal fall in wet springs, as the label directs.
+    products: [yates_liquid_copper]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/plant-diseases/fruit-and-nut-diseases/pome-fruits/pear-scab
+      - https://www.yates.com.au/yates-200ml-liquid-copper/
+  - id: fire_blight
+    name: Fire blight (not in Australia)
+    kind: disease
+    signs: >-
+      Blossoms, shoots and leaves wilt brown and look scorched, shoots bend into a shepherd's crook, ooze appears in warm humid
+      weather, and sunken cankers form on branches.
+    prevent: Fire blight is exotic and not present in Australia. Buy trees from reputable nurseries.
+    treat: There is no single effective treatment. Report suspected cases to the Exotic Plant Pest Hotline on 1800 084 881.
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/plant-diseases/fruit-and-nut-diseases/pome-fruits/fire-blight
+  - id: birds
+    name: Birds and other wildlife
+    kind: pest
+    seasons: [summer, early_autumn]
+    signs: Pecked or eaten fruit as it ripens.
+    prevent: >-
+      Net the tree or bag selected branches. Victorian law requires household fruit netting with a mesh of 5 mm by 5 mm or less
+      at full stretch, ideally white, fixed tightly to the trunk and never left lying loose.
+    treat: Check netted trees daily. Call a wildlife rescue group if an animal is caught.
+    sources:
+      - https://agriculture.vic.gov.au/livestock-and-animals/animal-welfare-victoria/pocta-act-1986/protecting-fruit-trees-and-wildlife
+  - id: queensland_fruit_fly
+    name: Queensland fruit fly
+    kind: pest
+    seasons: [spring, summer, autumn]
+    signs: Tiny sting marks on the skin and creamy maggots inside fruit that may look fine from outside.
+    prevent: >-
+      Net after pollination or bag the fruit, pick fruit as it ripens, and keep the ground clear of fallen fruit.
+      Hang traps to monitor activity.
+    treat: >-
+      Spot spray bait onto the trunk and foliage, not the fruit. Kill maggots in unwanted fruit by freezing it sealed in a bag
+      for two days, or bagging it in the sun for 14 days, then put it in the rubbish bin.
+    products: [eco_naturalure, fruit_fly_trap]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/controlling-queensland-fruit-fly-in-home-gardens
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/queensland-fruit-fly-host-fruits
+advice:
+  - text: >-
+      Two pear trees only pollinate each other if they are different varieties that flower at the same time. Two trees of the
+      same variety will not help each other, so ask a nursery for a compatible partner.
+    sources:
+      - https://www.diggers.com.au/collections/pear-trees
+      - https://www.abc.net.au/gardening/plant-finder/pyrus/9441798
+      - https://beeaware.org.au/pollination/pollinator-reliant-crops/apples-pears/
+  - text: Pears flower about a month before apples. Protect the blossom from frost to improve fruiting.
+    seasons: [late_winter, early_spring]
+    sources:
+      - https://www.diggers.com.au/products/pear-packhams-triumph
+  - text: Honey bees are the main pollinators of pears, but they do not find the flowers very attractive.
+    stages: [flowering]
+    sources:
+      - https://beeaware.org.au/pollination/pollinator-reliant-crops/apples-pears/
+  - text: Pick European pears slightly unripe and ripen them at room temperature. Nashi are best ripened on the tree.
+    seasons: [summer, autumn]
+    stages: [fruiting]
+    sources:
+      - https://www.diggers.com.au/collections/pear-trees
+      - https://www.diggers.com.au/products/pear-beurre-bosc
+      - https://www.diggers.com.au/products/pear-nashi
+  - text: Pears dislike drought. Water deeply through hot, dry spells, as an over opened canopy can suffer sunburn on bark and fruit.
+    seasons: [summer]
+    sources:
+      - https://www.diggers.com.au/collections/pear-trees
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0009/321201/ipm-for-australian-apples-and-pears-complete.pdf
+  - text: Remove any fruit that sets in the first season after planting so the young tree builds its framework first.
+    stages: [young]
+    sources:
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0009/321201/ipm-for-australian-apples-and-pears-complete.pdf

@@ -1,0 +1,23 @@
+plant: chilli
+sow_indoors: [9, 10, 11]
+plant_out: [10, 11]
+harvest: [1, 2, 3, 4]
+notes:
+  - text: Sow in punnets on a heat mat from September. SGA's monthly guide lists chillies for planting in October and November; its Melbourne notes favour November, once frost has passed and the soil is warm.
+    months: [9, 10, 11]
+    sources:
+      - https://www.diggers.com.au/products/chilli-early-jalapeno
+      - https://www.sgaonline.org.au/october-in-your-patch/
+      - https://www.sgaonline.org.au/wp-content/uploads/2022/09/Notes-Preparing-for-Summer-Harvest.pdf
+  - text: Most fruit comes from December to April. Chillies are ready about 10 to 12 weeks after planting.
+    months: [12, 1, 2, 3, 4]
+    sources:
+      - https://www.abc.net.au/gardening/factsheets/chillies/9426898
+      - https://www.yates.com.au/how-to-grow/chillies/
+sources:
+  - https://www.diggers.com.au/products/chilli-early-jalapeno
+  - https://www.sgaonline.org.au/october-in-your-patch/
+  - https://www.sgaonline.org.au/november-in-your-patch/
+  - https://www.sgaonline.org.au/wp-content/uploads/2022/09/Notes-Preparing-for-Summer-Harvest.pdf
+  - https://www.abc.net.au/gardening/factsheets/chillies/9426898
+  - https://www.yates.com.au/how-to-grow/chillies/

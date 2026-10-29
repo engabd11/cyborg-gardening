@@ -1,0 +1,22 @@
+plant: capsicum
+sow_indoors: [9, 10, 11]
+plant_out: [10, 11]
+harvest: [2, 3, 4]
+notes:
+  - text: Sow in punnets from September. SGA's monthly guide lists capsicum for October and November planting; its Melbourne notes favour November seedlings, after frost and once the soil is warm.
+    months: [9, 10, 11]
+    sources:
+      - https://www.diggers.com.au/products/capsicum-king-of-the-north
+      - https://www.sgaonline.org.au/october-in-your-patch/
+      - https://www.sgaonline.org.au/wp-content/uploads/2022/09/Notes-Preparing-for-Summer-Harvest.pdf
+  - text: Fruit is ready 10 to 12 weeks after planting and plants are still producing in February.
+    months: [2, 3, 4]
+    sources:
+      - https://www.yates.com.au/how-to-grow/capsicum/
+      - https://www.sgaonline.org.au/february-in-your-patch/
+sources:
+  - https://www.diggers.com.au/products/capsicum-king-of-the-north
+  - https://www.sgaonline.org.au/october-in-your-patch/
+  - https://www.sgaonline.org.au/november-in-your-patch/
+  - https://www.sgaonline.org.au/wp-content/uploads/2022/09/Notes-Preparing-for-Summer-Harvest.pdf
+  - https://www.yates.com.au/how-to-grow/capsicum/

@@ -1,0 +1,130 @@
+id: carrot
+name: Carrot
+group: vegetable
+icon: mdi:carrot
+frost: half_hardy
+heat: sensitive
+water: moderate
+perennial: false
+stages: [seed, germinating, seedling, vegetative]
+default_stage: vegetative
+settings: [ground, raised_bed, pot]
+summary: Carrots are sown direct into deep, loose, stone free soil. Keep the seedbed damp until they come up, thin them twice, and go easy on fertiliser so the roots grow straight.
+needs:
+  sun: full
+  soil: Deep, loose and friable, free of stones. Mix sand and compost into heavy soil or use a raised bed.
+  ph: [6.0, 7.0]
+  sources:
+    - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+    - https://www.sgaonline.org.au/carrots/
+    - https://www.sgaonline.org.au/wp-content/uploads/2022/08/Getting-Started-Organic-Veg-Gardening-into-Summer.pdf
+varieties:
+  - id: paris_market
+    name: Paris Market
+    notes: A short, round carrot for containers and heavy soils.
+    sources: [https://www.sgaonline.org.au/wp-content/uploads/2020/05/What-to-plant-now-notes.pdf]
+  - id: mini_round
+    name: Mini Round
+    notes: Suits heavy soils.
+    sources: [https://www.abc.net.au/gardening/plant-finder/carrot/9633296]
+tasks:
+  - id: sow_cover
+    kind: other
+    title: Sow and cover the row
+    detail: Sow direct into a shallow trench about 2 cm deep. Mixing seed with sand spreads it thinly. Cover lightly with seed raising mix, water gently, then lay an old plank or a light sprinkle of straw over the row to hold moisture. Lift the plank as soon as seedlings appear.
+    once: true
+    stages: [seed]
+    sources:
+      - https://www.sgaonline.org.au/carrots/
+      - https://www.abc.net.au/gardening/how-to/tinos-carrot-tips/9439652
+      - https://www.abc.net.au/gardening/plant-finder/carrot/9633296
+      - https://www.abc.net.au/gardening/how-to/sowing-seeds-direct/13260310
+  - id: thin_first
+    kind: other
+    title: First thinning
+    detail: When seedlings are about 5 cm tall, pull out the weaker ones to leave about 3 cm between carrots.
+    once: true
+    stages: [seedling]
+    sources:
+      - https://www.sgaonline.org.au/carrots/
+      - https://www.abc.net.au/gardening/how-to/tinos-carrot-tips/9439652
+  - id: thin_second
+    kind: other
+    title: Second thinning
+    detail: When the tops are 12 to 15 cm tall, thin again to about 5 cm apart. The baby carrots you pull are good to eat.
+    once: true
+    stages: [vegetative]
+    sources: [https://www.sgaonline.org.au/carrots/]
+  - id: snail_watch
+    kind: check
+    title: Protect seedlings from snails
+    detail: Snails and slugs feed in cool, moist weather and can eat seedlings to the ground. Hunt them on damp nights or scatter iron-based bait thinly in the evening.
+    products: [snail_bait_iron]
+    once: true
+    stages: [seedling]
+    seasons: [autumn, winter, spring]
+    caution: Read and follow the label.
+    sources:
+      - https://www.sgaonline.org.au/ggp-pest-of-the-season-snails-slugs/
+      - https://www.sgaonline.org.au/wp-content/uploads/2024/04/pests.pdf
+  - id: harvest
+    kind: harvest
+    title: Harvest carrots
+    detail: Start pulling carrots from about 8 weeks after sowing. Lift the whole crop by about 16 to 18 weeks, before the sugars turn to starch.
+    once: true
+    stages: [vegetative]
+    sources: [https://www.sgaonline.org.au/carrots/]
+pests:
+  - id: forked_roots
+    name: Forked or misshapen roots
+    kind: disorder
+    signs: Roots that fork, curl or twist, often with lush leafy tops.
+    prevent: Dig the bed deeply and remove stones before sowing. Do not use blood and bone, pelletised manure or other high nitrogen fertiliser, which push leaf growth and misshape the roots.
+    treat: Fix the soil before the next sowing. Grow short or round varieties in heavy soil.
+    sources:
+      - https://www.abc.net.au/gardening/how-to/tinos-carrot-tips/9439652
+      - https://www.sgaonline.org.au/carrots/
+      - https://www.abc.net.au/gardening/plant-finder/carrot/9633296
+  - id: split_roots
+    name: Cracked or split roots
+    kind: disorder
+    signs: Roots split lengthwise.
+    prevent: Water evenly so the soil stays slightly damp. Letting it dry out and then flooding it causes cracking.
+    treat: Harvest split carrots and use them soon.
+    sources: [https://www.sgaonline.org.au/carrots/]
+  - id: snails_slugs
+    name: Snails and slugs
+    kind: pest
+    seasons: [autumn, winter, spring]
+    signs: Seedlings eaten to the ground overnight and shiny silver trails.
+    prevent: Remove daytime hiding spots near the bed.
+    treat: Hand pick on wet nights, set beer or board traps, or scatter iron-based pellets thinly in the evening.
+    products: [snail_bait_iron]
+    sources:
+      - https://www.sgaonline.org.au/ggp-pest-of-the-season-snails-slugs/
+      - https://www.sgaonline.org.au/wp-content/uploads/2024/04/pests.pdf
+advice:
+  - text: Always grow carrots from seed sown where they will grow. They dislike root disturbance and rarely survive transplanting.
+    sources:
+      - https://www.abc.net.au/gardening/how-to/tinos-carrot-tips/9439652
+      - https://www.sgaonline.org.au/carrots/
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/201105-Getting-Started-With-Veggie-Gardening-Notes.pdf
+  - text: Keep the seedbed damp until the seedlings come up, which takes about 2 to 3 weeks. The seed sits near the surface and dries out fast in hot weather.
+    stages: [seed, germinating]
+    sources:
+      - https://www.sgaonline.org.au/carrots/
+      - https://www.abc.net.au/gardening/how-to/tinos-carrot-tips/9439652
+  - text: Carrots are light feeders. Too much fertiliser gives big leafy tops at the expense of the roots, so skip manure and high nitrogen feeds.
+    sources:
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+      - https://www.sgaonline.org.au/carrots/
+  - text: Grow short or round varieties in pots.
+    settings: [pot]
+    sources:
+      - https://www.sgaonline.org.au/carrots/
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/05/What-to-plant-now-notes.pdf
+  - text: In crop rotation, carrots are light feeders that follow a heavy feeder. Do not grow carrots or their relatives in the same spot two seasons running.
+    sources:
+      - https://www.sgaonline.org.au/crop-rotation/
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/201105-Getting-Started-With-Veggie-Gardening-Notes.pdf
+      - https://www.sgaonline.org.au/wp-content/uploads/2022/08/Getting-Started-Organic-Veg-Gardening-into-Summer.pdf

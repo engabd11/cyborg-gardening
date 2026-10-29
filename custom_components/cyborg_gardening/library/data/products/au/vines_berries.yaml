@@ -1,0 +1,43 @@
+# Products used by the vines and berries plants (grape, passionfruit, feijoa,
+# avocado, strawberry, blueberry, raspberry). Shared ids live in common.yaml.
+- id: yates_liquid_copper
+  name: Yates Liquid Copper Fungicide
+  brand: Yates
+  type: fungicide
+  use: Copper spray that prevents downy and powdery mildew on grapes and leaf spot and grey mould on strawberries.
+  rate: "Grape vines: 5 mL per litre of water when shoots are 10 cm long, then every 10 to 14 days while weather favours infection. Strawberries: 5 mL per litre of water once plants are established, every 7 to 10 days. Do not pick grapes for 4 weeks after spraying, other crops for 1 day."
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/yates-200ml-liquid-copper-fungicide_p3010236
+  label: https://www.yates.com.au/yates-200ml-liquid-copper/
+  caution: Read and follow the label.
+  sources:
+    - https://www.yates.com.au/yates-200ml-liquid-copper/
+    - https://www.bunnings.com.au/yates-200ml-liquid-copper-fungicide_p3010236
+
+- id: yates_dynamic_lifter_fruit_citrus
+  name: Yates Dynamic Lifter Plant Food Pellets Fruit and Citrus
+  brand: Yates
+  type: organic_fertiliser
+  use: Organic based pellets boosted with potassium for flowering and fruiting plants, including berries and passionfruit.
+  rate: "Fruiting plants and berries in garden beds: 100 g per square metre every 6 weeks in the growing and fruiting seasons. Fruit trees: 140 g per square metre around the drip line every 8 weeks. Pots: 10 g for a 15 cm pot or 25 g for a 30 cm pot every 8 weeks."
+  npk: "8.0:1.6:8.2"
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/yates-7kg-dynamic-lifter-plant-food-pellets-fruit-citrus_p0624181
+  label: https://www.yates.com.au/yates-7kg-dynamic-lifter-plant-food-pellets-fruit-citrus/
+  sources:
+    - https://www.yates.com.au/yates-7kg-dynamic-lifter-plant-food-pellets-fruit-citrus/
+    - https://www.bunnings.com.au/yates-7kg-dynamic-lifter-plant-food-pellets-fruit-citrus_p0624181
+
+- id: yates_anti_rot_phosacid
+  name: Yates Anti Rot Phosacid Systemic Fungicide
+  brand: Yates
+  type: fungicide
+  use: Phosphorous acid spray that controls phytophthora root rot in avocados and collar rot in citrus and ornamentals.
+  rate: "Avocado: 2.5 to 3 mL per litre of water as a foliar spray to run off, 7.5 to 10 L per adult tree, every 5 to 6 weeks as a preventative or every 3 weeks as a curative spray."
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/yates-500ml-anti-rot-fungicide_p2961096
+  label: https://www.yates.com.au/yates-500ml-anti-rot-phosacid-systemic-fungicide/
+  caution: Read and follow the label.
+  sources:
+    - https://www.yates.com.au/yates-500ml-anti-rot-phosacid-systemic-fungicide/
+    - https://www.bunnings.com.au/yates-500ml-anti-rot-fungicide_p2961096

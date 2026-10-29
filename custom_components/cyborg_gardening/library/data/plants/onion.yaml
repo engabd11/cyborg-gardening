@@ -1,0 +1,228 @@
+id: onion
+name: Onion
+botanical: Allium cepa
+group: vegetable
+icon: mdi:sprout
+frost: hardy
+heat: tolerant
+water: moderate
+perennial: false
+stages: [seed, germinating, seedling, vegetative, bulbing]
+default_stage: vegetative
+settings: [ground, pot, raised_bed]
+summary: Match the variety to its sowing time, as day length triggers bulbing. Grow in sunny, weed free, well drained soil with steady moisture and little nitrogen, then cure the bulbs under cover.
+needs:
+  sun: full
+  soil: Light, well drained soil rich in old organic matter but not freshly manured. Onions dislike acid soil; aim for about pH 6.5.
+  sources:
+    - https://www.diggers.com.au/blogs/learn/how-to-grow-onion
+    - https://www.sgaonline.org.au/onions/
+    - https://www.abc.net.au/gardening/how-to/april-alliums/9437452
+varieties:
+  - id: early_barletta
+    name: Early Barletta
+    notes: Short day type that bulbs first. Flattened white bulbs that do not store well; lift at about 70 days for pickling or leave as a salad onion.
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-onion
+      - https://www.sgaonline.org.au/onions/
+  - id: creamgold
+    name: Creamgold
+    notes: Spicy golden brown storage onion for cool regions, also sold as Pukekohe Longkeeper. Diggers calls it intermediate day; NSW DPI calls it long day.
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-onion
+      - https://www.diggers.com.au/products/onion-cream-gold
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0017/126305/Onion-growing-Agfact-H8.1.22.pdf
+  - id: red_torpedo
+    name: Red Torpedo
+    notes: Intermediate day type. Elongated bulbs with deep crimson skin and a spicy flavour.
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-onion
+  - id: long_red_florence
+    name: Long Red Florence
+    notes: Long day Italian heirloom best suited to temperate and cooler climates. Mild, sweet, elongated red bulbs.
+    sources:
+      - https://www.diggers.com.au/products/onion-long-red-florence
+  - id: australian_brown
+    name: Australian Brown
+    notes: Selected near Colac, Victoria in the 1940s. One of the best for storing; dry for several weeks after harvest.
+    sources:
+      - https://www.diggers.com.au/products/onion-australian-brown
+tasks:
+  - id: plant_out
+    kind: other
+    title: Thin or plant out seedlings
+    detail: Plant seedlings out when about 10 cm high, 10 to 15 cm apart in rows 20 to 30 cm apart. Lay them on the soil and just cover the roots; they stand up in a few days. Thin direct sown rows to 10 cm and use the thinnings as spring onions.
+    once: true
+    seasons: [mid_autumn, late_autumn, winter, early_spring]
+    stages: [seedling]
+    sources:
+      - https://www.sgaonline.org.au/onions/
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/05/What-to-plant-now-notes.pdf
+      - https://www.yates.com.au/how-to-grow/onions/
+  - id: water
+    kind: water
+    title: Water onions
+    detail: Keep the soil evenly moist, about 2 to 3 cm of water a week counting rain. Onions have small roots, and any dry spell holds back the bulbs. Seed needs steady moisture to come up.
+    every_days: 7
+    seasons: [autumn, winter, spring, early_summer]
+    sources:
+      - https://localfoodconnect.org.au/wp-content/uploads/galleries/guide/veggie%20planting%20guide.xlsx
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-onion
+  - id: weed
+    kind: check
+    title: Weed the onion bed
+    detail: Onions compete poorly with weeds, and autumn sown crops grow slowly over winter, so keep the bed clear. Hoe shallowly between rows.
+    once: true
+    seasons: [late_autumn, mid_winter, early_spring]
+    stages: [seedling, vegetative, bulbing]
+    sources:
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0017/126305/Onion-growing-Agfact-H8.1.22.pdf
+      - https://www.diggers.com.au/products/onion-cream-gold
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/05/What-to-plant-now-notes.pdf
+  - id: mulch
+    kind: mulch
+    title: Light mulch for onions
+    detail: As growth speeds up in spring, spread a light mulch such as hay around the plants to hold back weeds.
+    once: true
+    seasons: [early_spring, mid_spring]
+    stages: [vegetative]
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-onion
+  - id: pot_feed
+    kind: fertilise
+    title: Liquid feed potted onions
+    detail: Onions in pots need regular liquid feeding. Do not overfeed; too much nitrogen gives leaves instead of bulbs.
+    products: [powerfeed_all_purpose]
+    rate: 50 mL in a 9 L watering can (label rate for vegies and herbs).
+    every_days: 14
+    seasons: [autumn, winter, spring]
+    stages: [seedling, vegetative, bulbing]
+    settings: [pot]
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-onion
+      - https://www.yates.com.au/how-to-grow/onions/
+      - https://www.seasol.com.au/products/powerfeed/
+  - id: thrips_check
+    kind: check
+    title: Check onions for thrips
+    detail: Plants are most at risk as bulbs start to form. Look for silvery streaks on the leaves and count the insects; only spray if numbers are high.
+    once: true
+    seasons: [spring]
+    stages: [bulbing]
+    sources:
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0017/126305/Onion-growing-Agfact-H8.1.22.pdf
+  - id: harvest
+    kind: harvest
+    title: Harvest onions
+    detail: Lift onions when the tops yellow, fall over and wither. Dig them gently to avoid bruising. Smaller bulbs can be pulled earlier for the kitchen.
+    once: true
+    seasons: [late_spring, summer]
+    stages: [bulbing]
+    sources:
+      - https://www.sgaonline.org.au/onions/
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-onion
+      - https://www.yates.com.au/how-to-grow/onions/
+      - https://localfoodconnect.org.au/wp-content/uploads/galleries/guide/veggie%20planting%20guide.xlsx
+  - id: cure
+    kind: other
+    title: Cure onions under cover
+    detail: Cure onions under cover for 2 to 3 weeks. Do not dry early varieties in very hot conditions; they sunburn and then rot. Once skins and roots are dry, twist off the tops, rub off the roots and store in mesh bags in a cool, dry, airy place.
+    once: true
+    seasons: [late_spring, summer]
+    stages: [bulbing]
+    sources:
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/05/What-to-plant-now-notes.pdf
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-onion
+      - https://www.sgaonline.org.au/onions/
+pests:
+  - id: onion_thrips
+    name: Onion thrips
+    kind: pest
+    seasons: [spring, early_summer]
+    signs: Silvery streaks on the leaves from tiny slender insects about 1.5 mm long. Large numbers kill seedlings; older plants mature early with smaller bulbs.
+    prevent: Check plants from early September, especially as bulbs start to form. Rain and overhead watering keep numbers down.
+    treat: Spray only when numbers are high, using a pyrethrin vegie and herb spray every 5 to 7 days and covering all sides of the leaves. Read and follow the label.
+    products: [pyrethrum_spray]
+    sources:
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0017/126305/Onion-growing-Agfact-H8.1.22.pdf
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0005/97709/growing-garlic-in-NSW.pdf
+      - https://www.yates.com.au/how-to-grow/garlic/
+      - https://www.sgaonline.org.au/onions/
+  - id: downy_mildew
+    name: Downy mildew
+    kind: disease
+    seasons: [winter, spring]
+    signs: Pale spots on the leaves, which yellow and die, then a grey or white downy coating on the leaves.
+    prevent: It spreads in damp, foggy or dewy weather around 10 to 15 degrees. Give plants room for air to move, and clear old onion debris and self sown onions.
+    treat: Hard to control once present. A copper spray may help. Read and follow the label.
+    products: [copper_fungicide]
+    sources:
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0017/126305/Onion-growing-Agfact-H8.1.22.pdf
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0005/97709/growing-garlic-in-NSW.pdf
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-onion
+      - https://www.sgaonline.org.au/onions/
+  - id: white_rot
+    name: Onion white rot
+    kind: disease
+    seasons: [winter, spring]
+    signs: Plants yellow, the outer leaves die, and a white fluffy growth shows at the base, with rotting roots and bulbs. Plants may suddenly wilt and die.
+    prevent: Plant only clean seedlings and sets into well drained soil, and rotate beds. Cool, wet conditions favour it, and it survives in soil for years.
+    treat: It is almost impossible to eliminate. If it is confirmed, do not grow onions, garlic or any other allium in that soil for at least 10 years.
+    sources:
+      - https://www.sgaonline.org.au/onions/
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0005/97709/growing-garlic-in-NSW.pdf
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-onion
+  - id: storage_rots
+    name: Storage rots
+    kind: disease
+    seasons: [summer, autumn]
+    signs: Stored bulbs with a smelly watery rot, black or blue green mould under the outer scales, or grey mould and rot in the neck.
+    prevent: Cure bulbs fully, handle them gently, and keep them dry with good airflow below 20 degrees and low humidity.
+    treat: No sprays are registered for stored onions. Remove rotting bulbs promptly.
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/plant-diseases/vegetable-diseases/onion-storage-diseases
+advice:
+  - text: Melbourne gardeners can grow short, intermediate and long day onions. Short day types bulb first and keep least; long day types bulb last, in summer, and keep up to 12 months.
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-onion
+  - text: Sow short day types from late autumn, then intermediate, then long day types through to early spring. Sowing several types in turn spreads the harvest.
+    seasons: [autumn, winter, early_spring]
+    stages: [seed]
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-onion
+      - https://www.sgaonline.org.au/onions/
+  - text: An onion sown at the wrong time for its type can bolt to seed before a full bulb forms. Check the packet for your climate and sowing month.
+    stages: [seed]
+    sources:
+      - https://www.sgaonline.org.au/onions/
+      - https://www.yates.com.au/how-to-grow/onions/
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-onion
+  - text: A bed well prepared with compost and manure needs no further fertiliser. Too much nitrogen gives leafy plants with soft bulbs that keep poorly.
+    settings: [ground, raised_bed]
+    sources:
+      - https://www.sgaonline.org.au/onions/
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/05/What-to-plant-now-notes.pdf
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-onion
+  - text: Before planting, dig in a fistful of dolomite lime per square metre to sweeten the soil.
+    seasons: [autumn]
+    stages: [seed]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/april-alliums/9437452
+  - text: Long wet spells in the 4 to 6 weeks before harvest encourage storage rots, so avoid overwatering as bulbs ripen.
+    seasons: [late_spring, summer]
+    stages: [bulbing]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/plant-diseases/vegetable-diseases/onion-storage-diseases
+  - text: Leave at least 4 years between onion crops in the same bed to avoid soil diseases.
+    sources:
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0017/126305/Onion-growing-Agfact-H8.1.22.pdf
+  - text: Cured onions keep 8 to 10 months if kept dry, with good airflow, below 20 degrees. White onions keep less well than brown.
+    seasons: [summer, autumn]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/plant-diseases/vegetable-diseases/onion-storage-diseases
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-onion
+  - text: In a pot, use one at least 50 cm wide and 30 cm deep in full sun, and grow plenty of plants to make it worthwhile.
+    settings: [pot]
+    sources:
+      - https://www.yates.com.au/how-to-grow/onions/
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-onion

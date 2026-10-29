@@ -1,0 +1,23 @@
+plant: onion
+sow: [4, 5, 6, 7, 8, 9]
+plant_out: [4, 5, 6, 7]
+harvest: [11, 12, 1, 2]
+notes:
+  - text: Sow short day types first and long day types last, through to early spring.
+    months: [4, 5, 6, 7, 8, 9]
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-onion
+  - text: Early varieties can be lifted in November. Onions traditionally sown on the shortest day are lifted around the longest day.
+    months: [11, 12]
+    sources:
+      - https://www.diggers.com.au/blogs/learn/growing-your-own-winter-vegetables
+  - text: Long day types bulb last and are lifted later in summer.
+    months: [1, 2]
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-onion
+sources:
+  - https://www.sgaonline.org.au/onions/
+  - https://www.sgaonline.org.au/wp-content/uploads/2020/05/What-to-plant-now-notes.pdf
+  - https://localfoodconnect.org.au/community-gardening/planting-guide/
+  - https://www.diggers.com.au/products/onion-cream-gold
+  - https://www.diggers.com.au/blogs/learn/growing-your-own-winter-vegetables

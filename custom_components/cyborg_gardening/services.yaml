@@ -1,0 +1,63 @@
+mark_done:
+  fields:
+    plant:
+      required: true
+      selector:
+        device:
+          integration: cyborg_gardening
+    task:
+      example: feed
+      selector:
+        text:
+    date:
+      selector:
+        date:
+snooze:
+  fields:
+    plant:
+      required: true
+      selector:
+        device:
+          integration: cyborg_gardening
+    task:
+      required: true
+      example: feed
+      selector:
+        text:
+    days:
+      required: true
+      default: 3
+      selector:
+        number:
+          min: 1
+          max: 90
+          unit_of_measurement: days
+run_valve:
+  fields:
+    entity_id:
+      required: true
+      selector:
+        entity:
+          domain:
+            - valve
+            - switch
+            - input_boolean
+    minutes:
+      required: true
+      default: 5
+      selector:
+        number:
+          min: 0.5
+          max: 120
+          step: 0.5
+          unit_of_measurement: min
+stop_valve:
+  fields:
+    entity_id:
+      required: true
+      selector:
+        entity:
+          domain:
+            - valve
+            - switch
+            - input_boolean

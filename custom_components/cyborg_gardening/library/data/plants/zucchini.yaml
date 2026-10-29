@@ -1,0 +1,123 @@
+id: zucchini
+name: Zucchini
+group: vegetable
+icon: mdi:sprout
+frost: tender
+heat: tolerant
+water: moderate
+perennial: false
+stages: [seed, germinating, seedling, vegetative, flowering, fruiting]
+default_stage: vegetative
+settings: [ground, raised_bed]
+summary: A prolific summer crop that hates cold soil. Plant out once the soil is warm, water at the roots, keep the leaves dry against powdery mildew, and pick fruit small.
+needs:
+  sun: full
+  soil: Good, well drained soil. A raised bed or low mound helps drainage.
+  sources: [https://www.sgaonline.org.au/zucchini/]
+tasks:
+  - id: bed_prep
+    kind: fertilise
+    title: Compost the bed
+    detail: Dig in compost or aged manure before planting. SGA does this about a week ahead.
+    products: [compost]
+    once: true
+    stages: [seed]
+    sources: [https://www.sgaonline.org.au/zucchini/]
+  - id: water
+    kind: water
+    title: Water at the roots
+    detail: Water 2 to 3 times a week, or give a thorough deep soak once a week. Keep water off the leaves, especially late in the season. Wilting on very hot days is normal if the roots are kept moist.
+    every_days: 3
+    seasons: [mid_spring, late_spring, summer, early_autumn]
+    stages: [seedling, vegetative, flowering, fruiting]
+    sources:
+      - https://www.sgaonline.org.au/zucchini/
+      - https://www.abc.net.au/gardening/how-to/plow-into-summer/103216158
+  - id: mulch
+    kind: mulch
+    title: Mulch with straw
+    detail: Mulch with pea or lucerne straw to hold moisture. Leave a gap of at least 4 cm around the stems.
+    products: [pea_straw]
+    once: true
+    stages: [seedling]
+    sources:
+      - https://www.sgaonline.org.au/zucchini/
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+  - id: flower_feed
+    kind: fertilise
+    title: Feed at flowering
+    detail: Side dress with compost or aged manure when flowering starts.
+    products: [compost]
+    once: true
+    stages: [flowering]
+    sources: [https://www.sgaonline.org.au/zucchini/]
+  - id: hand_pollinate
+    kind: other
+    title: Hand pollinate if no fruit sets
+    detail: If flowers open and fade with no fruit growing, bees are scarce. In the morning, use a fine paintbrush to move pollen from a male flower (long stalk, long stamen) to the rounded stigma of a female flower. Nasturtiums nearby draw bees.
+    once: true
+    stages: [flowering]
+    sources: [https://www.sgaonline.org.au/zucchini/]
+  - id: harvest
+    kind: harvest
+    title: Start picking
+    detail: Fruit usually appears 5 to 8 weeks after planting. Pick it small, about 12 to 20 cm long, and harvest regularly to keep plants cropping.
+    once: true
+    stages: [fruiting]
+    sources: [https://www.sgaonline.org.au/zucchini/]
+pests:
+  - id: powdery_mildew
+    name: Powdery mildew
+    kind: disease
+    seasons: [summer, early_autumn]
+    signs: White powdery patches on both sides of the leaves that spread and merge, starting on older, lower leaves.
+    prevent: Water the soil in the morning, keep the leaves dry, and give plants room for air flow.
+    treat: Remove badly infected leaves. Spray milk diluted 1 part to 10 parts water, or a low impact fungicide such as eco-fungicide. Late season mildew often means the plant is near its end.
+    products: [eco_fungicide]
+    sources:
+      - https://www.abc.net.au/gardening/powdery-mildew/13544994
+      - https://www.sgaonline.org.au/zucchini/
+      - https://www.sgaonline.org.au/wp-content/uploads/2022/08/Getting-Started-Organic-Veg-Gardening-into-Summer.pdf
+  - id: poor_fruit_set
+    name: Poor fruit set
+    kind: disorder
+    seasons: [late_spring, summer]
+    signs: Flowers open and fade with no fruit growing afterwards.
+    prevent: Grow nasturtiums and other flowers nearby to attract bees.
+    treat: Hand pollinate in the morning with a fine paintbrush, from male stamen to female stigma.
+    sources: [https://www.sgaonline.org.au/zucchini/]
+  - id: blossom_end_rot
+    name: Blossom end rot
+    kind: disorder
+    seasons: [summer]
+    signs: The flower end of the fruit rots.
+    prevent: Caused by calcium deficiency, not an infection. Keep watering even.
+    treat: Remove affected fruit.
+    sources:
+      - https://www.sgaonline.org.au/zucchini/
+      - https://www.sgaonline.org.au/wp-content/uploads/2022/08/Getting-Started-Organic-Veg-Gardening-into-Summer.pdf
+  - id: whitefly
+    name: Whitefly
+    kind: pest
+    seasons: [summer]
+    signs: Tiny white flies that swarm when disturbed, with silvered, curling leaves.
+    prevent: Grow alyssum, marigolds, cosmos, parsley and dill to attract predatory wasps.
+    treat: Hang yellow sticky traps, or spray a botanical oil such as Eco Oil.
+    products: [eco_oil]
+    sources: [https://www.sgaonline.org.au/wp-content/uploads/2024/04/pests.pdf]
+advice:
+  - text: In cool areas hold off planting zucchini until the soil is above 16 degrees. In Melbourne, sow seed indoors in small pots to get a start.
+    seasons: [early_spring, mid_spring]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/plow-into-summer/103216158
+      - https://www.sgaonline.org.au/zucchini/
+  - text: Choose a sunny, sheltered spot with at least 6 hours of sun and space plants 50 to 60 cm apart.
+    sources: [https://www.sgaonline.org.au/zucchini/]
+  - text: Avoid wetting cucurbit leaves, as wet leaves make them prone to fungal disease.
+    sources:
+      - https://www.abc.net.au/gardening/how-to/plow-into-summer/103216158
+      - https://www.sgaonline.org.au/zucchini/
+  - text: Zucchini is a heavy feeder in the cucurbit family. Do not grow cucurbits in the same spot two seasons running.
+    sources:
+      - https://www.sgaonline.org.au/crop-rotation/
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/201105-Getting-Started-With-Veggie-Gardening-Notes.pdf

@@ -1,0 +1,183 @@
+id: avocado
+name: Avocado
+botanical: Persea americana
+group: fruit_tree
+icon: mdi:fruit-pear
+frost: tender
+heat: sensitive
+water: moderate
+perennial: true
+stages: [young, established]
+default_stage: established
+settings: [ground, pot]
+summary: An evergreen fruit tree that must have perfect drainage, since waterlogged roots rot and die. Shelter young trees from frost and hot sun, and keep the shallow roots mulched and watered in summer.
+needs:
+  sun: full
+  soil: Deep, free draining soil rich in organic matter, slightly acid to neutral. Improve clay with gypsum and compost well before planting and plant on a mound or slope.
+  ph: [5.5, 7.0]
+  sources:
+    - https://www.abc.net.au/gardening/avocados/13460790
+    - https://www.sgaonline.org.au/avocados/
+    - https://www.diggers.com.au/blogs/learn/how-to-grow-avocado
+    - https://www.yates.com.au/how-to-grow/avocado/
+varieties:
+  - id: bacon
+    name: Bacon
+    notes: The best cold tolerant avocado; grows to about 4 m and can fruit in 4 years. Fruit hangs from June to late July and falls when ripe. B type flower.
+    sources:
+      - https://www.sgaonline.org.au/avocados/
+      - https://www.abc.net.au/gardening/avocados/13460790
+      - https://www.abc.net.au/gardening/how-to/fruitful-beginnings-avocados/9434400
+  - id: hass
+    name: Hass
+    notes: The most popular avocado; fairly cold and frost tolerant once established. Fruit September to January and can be stored on the tree. A large tree to about 9 m. A type flower.
+    sources:
+      - https://www.sgaonline.org.au/avocados/
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-avocado
+  - id: fuerte
+    name: Fuerte
+    notes: Another cold tolerant variety, but a large spreading tree that tends to crop every second year. B type flower.
+    sources: [https://www.sgaonline.org.au/avocados/, https://www.diggers.com.au/blogs/learn/how-to-grow-avocado]
+  - id: wurtz
+    name: Wurtz
+    notes: Dwarf tree to 2.5 to 3 m and the one most suited to pots. Best in warmer climates. A type flower.
+    sources: [https://www.sgaonline.org.au/avocados/, https://www.diggers.com.au/blogs/learn/how-to-grow-avocado]
+tasks:
+  - id: water_young
+    kind: water
+    title: Water young tree
+    detail: Keep the water up to young trees; a good bucket every couple of days stops them drying out. Never leave the roots saturated.
+    every_days: {spring: 2, summer: 2, autumn: 2}
+    stages: [young]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/fruitful-beginnings-avocados/9434400
+      - https://www.dpird.nsw.gov.au/__data/assets/pdf_file/0006/120012/avocado-diseases.pdf
+  - id: water_established
+    kind: water
+    title: Deep water
+    detail: Give a deep watering once a week in the hottest months rather than shallow watering every other day, with extra in heatwaves. Overwatering invites root rot.
+    every_days: {summer: 7}
+    stages: [established]
+    sources:
+      - https://www.yates.com.au/how-to-grow/avocado/
+      - https://www.abc.net.au/gardening/how-to/avocados/9427838
+      - https://agriculture.vic.gov.au/biosecurity/plant-diseases/fruit-and-nut-diseases/pome-fruits/phytophthora-root-and-trunk-rot-of-fruit-trees
+  - id: feed_ground
+    kind: fertilise
+    title: Organic fertiliser
+    detail: Spread around the drip zone, rake in and water well. Increase the amount as the tree grows. Do not apply above 30 degrees or to dry soil.
+    products: [dynamic_lifter]
+    rate: 500 g for each year of the tree's age, up to 5 kg, once in spring and again in autumn (label rate for fruit trees).
+    once: true
+    seasons: [early_spring, early_autumn]
+    settings: [ground]
+    sources:
+      - https://www.yates.com.au/how-to-grow/avocado/
+      - https://www.yates.com.au/yates-dynamic-lifter-soil-improver-plant-fertiliser/
+  - id: feed_pot
+    kind: fertilise
+    title: Organic fertiliser
+    detail: Scatter on the potting mix and water in well.
+    products: [dynamic_lifter]
+    rate: 15 g for a 15 cm pot or 45 g for a 30 cm pot, every 8 weeks in the growing season.
+    every_days: {spring: 56, summer: 56, autumn: 56}
+    settings: [pot]
+    sources:
+      - https://www.yates.com.au/how-to-grow/avocado/
+      - https://www.yates.com.au/yates-dynamic-lifter-soil-improver-plant-fertiliser/
+  - id: gypsum
+    kind: other
+    title: Gypsum dusting
+    detail: A light dusting of gypsum in spring helps a heavy soil drain.
+    products: [gypsum]
+    rate: 100 g per square metre.
+    once: true
+    seasons: [spring]
+    settings: [ground]
+    sources: [https://www.abc.net.au/gardening/how-to/avocados/9427838]
+  - id: mulch
+    kind: mulch
+    title: Top up mulch
+    detail: Keep a loose mulch 10 to 15 cm deep reaching past the drip line, but never against the trunk, where it causes collar rot. Hot sun on bare soil damages the shallow roots. Avoid fine material such as sawdust that packs down and stays soggy.
+    products: [sugar_cane_mulch, pea_straw]
+    once: true
+    seasons: [late_spring]
+    settings: [ground]
+    sources:
+      - https://www.dpird.nsw.gov.au/__data/assets/pdf_file/0003/119739/avocado-growing.pdf
+      - https://www.yates.com.au/how-to-grow/avocado/
+  - id: harvest
+    kind: harvest
+    title: Pick mature fruit
+    detail: Fruit ripens only after picking. Snip fruit when the button at the stem lightens, or pick a couple and ripen indoors; if they soften in 7 to 14 days the rest are ready. Bacon fruit falls when ripe.
+    once: true
+    seasons: [winter, spring, early_summer, mid_summer]
+    stages: [established]
+    sources:
+      - https://www.yates.com.au/how-to-grow/avocado/
+      - https://www.abc.net.au/gardening/how-to/avocados/9427838
+      - https://www.sgaonline.org.au/avocados/
+  - id: prune
+    kind: prune
+    title: Light prune after fruit set
+    detail: Pinch out new growth early to keep the tree to 2 to 3 m picking height and keep the centre open. Paint any newly exposed limbs with white water based paint, as avocado bark sunburns easily.
+    once: true
+    seasons: [early_summer]
+    stages: [established]
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-avocado
+      - https://www.dpird.nsw.gov.au/__data/assets/pdf_file/0003/119739/avocado-growing.pdf
+pests:
+  - id: phytophthora_root_rot
+    name: Phytophthora root rot
+    kind: disease
+    seasons: [spring, summer, autumn]
+    signs: Black, brittle feeder roots; small fruit; leaves curl, droop and yellow with brown edges; dieback at branch tips; dark water soaked cankers with white sap at the trunk base. Soil under the tree stays wet long after rain.
+    prevent: Excellent drainage above all; plant on a mound, add organic matter and mulch, avoid overwatering, keep mulch and sprinkler splash off the trunk, and buy healthy grafted trees with white roots. Waterlogging for 48 hours can kill a tree.
+    treat: A phosphorous acid spray as the label directs. Fungicide alone rarely restores a tree; fix drainage and watering first.
+    products: [yates_anti_rot_phosacid]
+    sources:
+      - https://www.dpird.nsw.gov.au/__data/assets/pdf_file/0006/120012/avocado-diseases.pdf
+      - https://www.abc.net.au/gardening/how-to/avocados/9427838
+      - https://www.yates.com.au/yates-500ml-anti-rot-phosacid-systemic-fungicide/
+  - id: sunburn
+    name: Trunk and branch sunburn
+    kind: disorder
+    seasons: [summer]
+    signs: Damaged, dead bark on young trunks or newly exposed limbs on the sunny side.
+    prevent: Screen young trees from hot afternoon sun, or paint the trunk with white water based house paint. A trunk sleeve also protects from sunburn and frost.
+    treat: Paint exposed bark white after pruning.
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-avocado
+      - https://www.dpird.nsw.gov.au/__data/assets/pdf_file/0003/119739/avocado-growing.pdf
+advice:
+  - text: Young avocados are extremely frost sensitive. Plant in a warm, sheltered spot out of cold winds and cover young trees on frosty nights. Established trees cope with brief frosts to about minus 4 degrees.
+    seasons: [late_autumn, winter, early_spring]
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-avocado
+      - https://www.yates.com.au/how-to-grow/avocado/
+  - text: For Melbourne pick a cold tolerant variety such as Bacon, Hass or Fuerte. In cooler areas like Melbourne flowering is unpredictable, so planting an A type (Hass) with a B type (Bacon) helps pollination and spreads the harvest.
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-avocado
+      - https://www.abc.net.au/gardening/avocados/13460790
+  - text: Buy a grafted tree. Seedlings can grow huge and take many years to fruit, if they fruit at all.
+    stages: [young]
+    sources: [https://www.abc.net.au/gardening/avocados/13460790]
+  - text: Plant in early spring. Prepare the spot in the cooler months; avocados dislike root disturbance, so do not tease the roots and do not put fertiliser in the planting hole.
+    seasons: [winter, early_spring]
+    stages: [young]
+    sources:
+      - https://www.abc.net.au/gardening/avocados/13460790
+      - https://www.abc.net.au/gardening/how-to/fruitful-beginnings-avocados/9434400
+      - https://www.dpird.nsw.gov.au/__data/assets/pdf_file/0006/120012/avocado-diseases.pdf
+  - text: In a pot, choose a dwarf variety such as Wurtz and pot up each year to at least 500 mm across, using a premium potting mix.
+    settings: [pot]
+    sources:
+      - https://www.yates.com.au/how-to-grow/avocado/
+      - https://www.abc.net.au/gardening/how-to/avocados/9427838
+  - text: Avocado is a Queensland fruit fly host, and thin skinned Bacon fruit is the most prone. Pick up fallen fruit.
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/queensland-fruit-fly-host-fruits
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-avocado
+  - text: Birds are not a problem for avocados, so there is no need to net the tree.
+    sources: [https://www.diggers.com.au/blogs/learn/how-to-grow-avocado]

@@ -1,0 +1,19 @@
+plant: garlic
+sow: [3, 4, 5, 6]
+harvest: [11, 12, 1]
+notes:
+  - text: April is the prime month to plant cloves.
+    months: [3, 4]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/april-alliums/9437452
+  - text: Victorian garlic is usually harvested from early December into January.
+    months: [11, 12, 1]
+    sources:
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0005/97709/growing-garlic-in-NSW.pdf
+      - https://www.sgaonline.org.au/harvesting-and-storing-garlic/
+sources:
+  - https://www.sgaonline.org.au/wp-content/uploads/2020/05/What-to-plant-now-notes.pdf
+  - https://localfoodconnect.org.au/community-gardening/planting-guide/
+  - https://www.abc.net.au/news/2021-12-01/growing-your-own-garlic-when-to-harvest-and-how-to-make-it-last/100658064
+  - https://www.sgaonline.org.au/harvesting-and-storing-garlic/
+  - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0005/97709/growing-garlic-in-NSW.pdf

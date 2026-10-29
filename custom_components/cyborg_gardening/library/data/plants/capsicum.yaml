@@ -1,0 +1,280 @@
+id: capsicum
+name: Capsicum
+botanical: Capsicum annuum
+group: vegetable
+icon: mdi:chili-mild
+frost: tender
+heat: sensitive
+water: moderate
+perennial: false
+stages: [seed, germinating, seedling, vegetative, flowering, fruiting]
+default_stage: seedling
+settings: [ground, pot, raised_bed]
+summary: A sweet pepper that needs a long, warm season. Start from seedlings after frost, give full sun, wind shelter and even moisture, shade it on scorching days and guard against fruit fly.
+needs:
+  sun: full
+  soil: Rich, free draining soil improved with compost and organic matter, in a spot sheltered from strong wind.
+  sources:
+    - https://www.yates.com.au/how-to-grow/capsicum/
+    - https://www.abc.net.au/gardening/plant-finder/capsicum/9442178
+    - https://www.sgaonline.org.au/capsicum-and-chilies/
+tasks:
+  - id: water
+    kind: water
+    title: Deep water
+    detail: Water early in the morning when the soil starts to dry, with regular deep soakings; sandy soil needs more than clay. Capsicums are grown much like tomatoes, about weekly in mild weather and up to daily in very hot weather. Pots dry out faster.
+    every_days:
+      ground: {spring: 7, summer: 4, autumn: 7}
+      raised_bed: {spring: 7, summer: 4, autumn: 7}
+      pot: {spring: 4, summer: 1, autumn: 4}
+    sources:
+      - https://www.yates.com.au/how-to-grow/capsicum/
+      - https://www.sgaonline.org.au/capsicum-and-chilies/
+      - https://www.yates.com.au/garden-hub/growing-capsicums-and-chillies/
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-tomatoes
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/Preparing-for-the-Summer-Harvest-Handout.pdf
+  - id: prepare_bed
+    kind: fertilise
+    title: Prepare the bed
+    detail: About a month before planting, dig in compost and organic pellets. Lime and dolomite adds calcium, which helps prevent blossom end rot.
+    products: [yates_dynamic_lifter_tomatoes_vegies_herbs, compost, garden_lime]
+    rate: Dynamic Lifter Tomatoes, Vegies and Herbs at 140 g per square metre mixed into the soil.
+    once: true
+    seasons: [mid_spring]
+    stages: [seed, germinating, seedling]
+    settings: [ground, raised_bed]
+    sources:
+      - https://www.yates.com.au/how-to-grow/capsicum/
+      - https://www.yates.com.au/yates-3kg-dynamic-lifter-plant-food-pellets-tomatoes-vegies-herbs/
+      - https://www.sgaonline.org.au/capsicum-and-chilies/
+  - id: transplant_tonic
+    kind: tonic
+    title: Seaweed tonic at planting
+    detail: Water new seedlings in well with a seaweed solution to reduce transplant shock.
+    products: [seasol]
+    once: true
+    seasons: [mid_spring, late_spring]
+    stages: [seedling]
+    sources:
+      - https://www.yates.com.au/how-to-grow/capsicum/
+  - id: feed_young
+    kind: fertilise
+    title: Gentle liquid feed
+    detail: Feed young plants well but gently, weekly, at the tomato food's seedling rate, which is half its fruiting rate.
+    products: [yates_thrive_tomato_liquid]
+    rate: 1 cap in 9 L of water.
+    every_days: 7
+    seasons: [spring, summer]
+    stages: [seedling, vegetative]
+    caution: Do not spray it on the leaves when the day will pass 30 degrees.
+    sources:
+      - https://www.yates.com.au/how-to-grow/capsicum/
+      - https://www.yates.com.au/product/garden-fertilisers/speciality-fertilisers/yates-thrive-tomato-liquid-plant-food/
+      - https://www.abc.net.au/gardening/plant-finder/capsicum/9442178
+  - id: feed_pot
+    kind: fertilise
+    title: High potash feed for potted capsicum
+    detail: From flowering, switch to a soluble flower and fruit food rich in potassium, weekly.
+    products: [yates_thrive_flower_fruit]
+    rate: One 8 g measuring spoon in 4.5 L of water.
+    every_days: 7
+    seasons: [late_spring, summer, early_autumn, mid_autumn]
+    stages: [flowering, fruiting]
+    settings: [pot]
+    sources:
+      - https://www.yates.com.au/how-to-grow/capsicum/
+      - https://www.yates.com.au/yates-500g-thrive-flower-fruit-soluble-plant-food/
+  - id: feed_ground
+    kind: fertilise
+    title: Organic pellets
+    detail: Side dress with organic pellets every 6 weeks and water in well. Avoid high nitrogen fertilisers, which give leaves and no fruit.
+    products: [yates_dynamic_lifter_tomatoes_vegies_herbs]
+    rate: 140 g per square metre.
+    every_days: 42
+    seasons: [late_spring, summer, early_autumn]
+    stages: [flowering, fruiting]
+    settings: [ground, raised_bed]
+    sources:
+      - https://www.yates.com.au/how-to-grow/capsicum/
+      - https://www.yates.com.au/yates-3kg-dynamic-lifter-plant-food-pellets-tomatoes-vegies-herbs/
+      - https://www.sgaonline.org.au/capsicum-and-chilies/
+  - id: stake
+    kind: other
+    title: Stake heavy croppers
+    detail: Hammer in a stake outside the root zone and tie the main stem loosely, so branches laden with fruit do not snap.
+    once: true
+    seasons: [late_spring, early_summer]
+    stages: [vegetative, flowering]
+    sources:
+      - https://www.yates.com.au/how-to-grow/capsicum/
+      - https://www.yates.com.au/garden-hub/growing-capsicums-and-chillies/
+  - id: mulch
+    kind: mulch
+    title: Mulch
+    detail: Mulch around the base with sugar cane or lucerne straw about 7 cm deep to hold moisture and keep weeds down.
+    products: [sugar_cane_mulch, pea_straw]
+    rate: 7 cm deep.
+    once: true
+    seasons: [late_spring, early_summer]
+    stages: [seedling, vegetative, flowering]
+    sources:
+      - https://www.yates.com.au/how-to-grow/capsicum/
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/Preparing-for-the-Summer-Harvest-Handout.pdf
+  - id: fruit_fly
+    kind: check
+    title: Fruit fly round
+    detail: Check traps, refresh bait as its label directs and clear fallen fruit. Net plants with fine insect mesh once fruit has set.
+    products: [fruit_fly_trap, eco_naturalure]
+    every_days: 7
+    seasons: [late_spring, summer, autumn]
+    stages: [fruiting]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/controlling-queensland-fruit-fly-in-home-gardens
+      - https://www.sgaonline.org.au/january-in-your-patch/
+      - https://www.yates.com.au/how-to-grow/capsicum/
+  - id: harvest
+    kind: harvest
+    title: Pick capsicums
+    detail: Pick once the fruit is full size with firm walls. Green fruit is edible; red, orange or yellow fruit is riper and sweeter. Cut the stalk with secateurs, and do not leave fruit too long, as overripe fruit turns rank and draws pests.
+    every_days: 7
+    seasons: [summer, autumn]
+    stages: [fruiting]
+    sources:
+      - https://www.yates.com.au/how-to-grow/capsicum/
+      - https://www.sgaonline.org.au/capsicum-and-chilies/
+  - id: overwinter
+    kind: other
+    title: Overwinter potted plants
+    detail: Move pots under the eaves on a sunny wall, out of frost and rain. Water rarely, just enough to keep the mix barely moist. Restart watering and feeding when new shoots appear in spring.
+    once: true
+    seasons: [late_autumn]
+    stages: [fruiting]
+    settings: [pot]
+    sources:
+      - https://www.sgaonline.org.au/overwintering-capsicum/
+      - https://www.sgaonline.org.au/wp-content/uploads/2022/09/Notes-Preparing-for-Summer-Harvest.pdf
+pests:
+  - id: queensland_fruit_fly
+    name: Queensland fruit fly
+    kind: pest
+    seasons: [late_spring, summer, autumn]
+    signs: Ripening fruit drops early, with pin prick holes and maggots inside.
+    prevent: Net plants with fine insect mesh after pollination, keeping the net off the fruit. Pick fruit as it ripens and clear fallen fruit.
+    treat: Use traps and bait sprays on the foliage. Kill maggots in infested fruit by freezing, boiling or microwaving it, or seal it in two bags in the sun for 14 days. Never compost it.
+    products: [fruit_fly_trap, eco_naturalure]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/controlling-queensland-fruit-fly-in-home-gardens
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/queensland-fruit-fly-host-fruits
+      - https://www.yates.com.au/how-to-grow/capsicum/
+  - id: blossom_end_rot
+    name: Blossom end rot
+    kind: disorder
+    seasons: [summer]
+    signs: The end of the fruit turns black and sunken.
+    prevent: Keep moisture consistent and add calcium with lime and dolomite before planting.
+    treat: Even out watering and add a calcium rich soil improver such as lime and dolomite.
+    products: [garden_lime]
+    sources:
+      - https://www.yates.com.au/how-to-grow/capsicum/
+      - https://www.sgaonline.org.au/capsicum-and-chilies/
+  - id: sunscald
+    name: Sunscald
+    kind: disorder
+    seasons: [summer]
+    signs: Sunburnt patches on fruit exposed to hot sun.
+    prevent: In hot summers put up a 30 to 50 percent shade cloth over the plants.
+    sources:
+      - https://www.yates.com.au/how-to-grow/capsicum/
+      - https://www.sgaonline.org.au/capsicum-and-chilies/
+      - https://www.sgaonline.org.au/december-gardening-tips/
+  - id: aphids
+    name: Aphids
+    kind: pest
+    signs: Small sap suckers clustered on new growth and under leaves.
+    prevent: Check the undersides of leaves.
+    treat: Spray eco-oil or a pyrethrum spray at first sight, covering the undersides of leaves.
+    products: [eco_oil, pyrethrum_spray]
+    sources:
+      - https://www.yates.com.au/how-to-grow/capsicum/
+      - https://www.yates.com.au/ocp-500-ml-eco-oil-organicstar-miticide-insecticide-concentrate/
+  - id: whitefly
+    name: Whitefly
+    kind: pest
+    signs: Tiny white insects fly up from under the leaves when disturbed.
+    prevent: Check the undersides of leaves.
+    treat: Spray eco-oil or a pyrethrum spray at first sight, covering both sides of the leaves.
+    products: [eco_oil, pyrethrum_spray]
+    sources:
+      - https://www.yates.com.au/how-to-grow/capsicum/
+      - https://www.yates.com.au/ocp-500-ml-eco-oil-organicstar-miticide-insecticide-concentrate/
+  - id: heliothis
+    name: Caterpillars (heliothis)
+    kind: pest
+    signs: Caterpillars, chewed leaves and their droppings.
+    treat: Spray Bt (Dipel) when caterpillars or their damage first appear, covering both sides of the leaves, in the late afternoon. Repeat every 5 to 7 days as more hatch.
+    products: [dipel]
+    sources:
+      - https://www.yates.com.au/how-to-grow/capsicum/
+      - https://www.yates.com.au/yates-40g-natures-way-caterpillar-killer-dipel/
+  - id: early_blight
+    name: Early blight (target spot)
+    kind: disease
+    seasons: [summer, early_autumn]
+    signs: Dark brown to black leaf spots with rings inside, worst in hot, humid weather on weak plants.
+    prevent: Rotate crops, keep plants growing strongly and clear up old plant remains.
+    treat: Remove and bin badly affected leaves; do not compost them.
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/plant-diseases/vegetable-diseases/target-spot-early-blight-of-potatoes
+      - https://www.sgaonline.org.au/early-blight-of-tomatoes/
+  - id: powdery_mildew
+    name: Powdery mildew
+    kind: disease
+    signs: White powdery coating on the leaves that can stunt growth and fruit.
+    prevent: Space plants for airflow and water the soil, not the leaves.
+    treat: Begin spraying eco-fungicide at the first sign and repeat every 7 to 10 days.
+    products: [eco_fungicide]
+    sources:
+      - https://www.yates.com.au/how-to-grow/capsicum/
+advice:
+  - text: In Melbourne, plant capsicum seedlings in November. Buying seedlings, or raising your own early, saves up to 6 weeks on this long season crop.
+    seasons: [mid_spring, late_spring]
+    stages: [seed, germinating, seedling]
+    sources:
+      - https://www.sgaonline.org.au/wp-content/uploads/2022/09/Notes-Preparing-for-Summer-Harvest.pdf
+      - https://www.sgaonline.org.au/wp-content/uploads/2022/08/Getting-Started-Organic-Veg-Gardening-into-Summer.pdf
+  - text: For a head start, sow seed indoors in a warm, brightly lit spot and keep the mix moist. Plant seedlings out at 5 to 7 cm tall once the weather warms.
+    seasons: [early_spring, mid_spring]
+    stages: [seed, germinating, seedling]
+    sources:
+      - https://www.yates.com.au/how-to-grow/capsicum/
+  - text: Capsicums need long, warm summers to mature well. Give them full sun, warm soil and shelter from wind.
+    sources:
+      - https://www.abc.net.au/gardening/plant-finder/capsicum/9442178
+      - https://www.sgaonline.org.au/capsicum-and-chilies/
+  - text: Space plants 50 to 60 cm apart so air moves and the sun warms the soil.
+    stages: [seedling]
+    settings: [ground, raised_bed]
+    sources:
+      - https://www.sgaonline.org.au/capsicum-and-chilies/
+  - text: On scorching days shade capsicums with shade cloth to protect them from harsh afternoon sun.
+    seasons: [summer]
+    sources:
+      - https://www.sgaonline.org.au/december-gardening-tips/
+      - https://www.sgaonline.org.au/february-in-your-patch/
+  - text: Green and red capsicums are the same fruit; red is simply riper and sweeter.
+    stages: [fruiting]
+    sources:
+      - https://www.yates.com.au/how-to-grow/capsicum/
+  - text: In Melbourne, potted capsicums can survive winter under the eaves and crop earlier in their second summer.
+    seasons: [autumn, winter]
+    settings: [pot]
+    sources:
+      - https://www.sgaonline.org.au/overwintering-capsicum/
+  - text: Use a pot at least 40 cm wide, one plant per pot, in a sunny spot out of strong wind.
+    settings: [pot]
+    sources:
+      - https://www.yates.com.au/how-to-grow/capsicum/
+  - text: Rotate crops. Leave about 3 years before planting capsicum, chillies, tomatoes, eggplant or potatoes in the same patch.
+    stages: [seed, germinating, seedling]
+    sources:
+      - https://www.sgaonline.org.au/capsicum-and-chilies/

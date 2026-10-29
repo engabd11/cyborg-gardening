@@ -1,0 +1,18 @@
+plant: basil
+sow_indoors: [9]
+plant_out: [10, 11]
+harvest: [12, 1, 2, 3]
+notes:
+  - text: Plant out only once the risk of frost has passed.
+    months: [10, 11]
+    sources:
+      - https://www.sgaonline.org.au/basil/
+  - text: Leaves are ready 2 to 3 months after sowing. In Melbourne basil only lasts through spring and summer.
+    months: [12, 1, 2, 3]
+    sources:
+      - https://localfoodconnect.org.au/wp-content/uploads/galleries/guide/veggie%20planting%20guide.xlsx
+      - https://www.abc.net.au/news/2023-02-14/how-to-grow-basil-in-colder-climate/101967230
+sources:
+  - https://localfoodconnect.org.au/community-gardening/planting-guide/
+  - https://www.sgaonline.org.au/basil/
+  - https://www.abc.net.au/news/2023-02-14/how-to-grow-basil-in-colder-climate/101967230

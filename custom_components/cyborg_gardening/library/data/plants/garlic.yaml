@@ -1,0 +1,222 @@
+id: garlic
+name: Garlic
+botanical: Allium sativum
+group: vegetable
+icon: mdi:sprout
+frost: hardy
+heat: tolerant
+water: moderate
+perennial: false
+stages: [seed, germinating, vegetative, bulbing]
+default_stage: vegetative
+settings: [ground, pot, raised_bed]
+summary: Plant Australian grown cloves in autumn into loose, free draining soil and keep the bed weeded. Lift the bulbs in late spring or early summer when the lower leaves brown, then cure them under cover.
+needs:
+  sun: full
+  soil: Loose, free draining soil rich in organic matter. Raised beds help, as garlic rots easily in wet winters.
+  ph: [6.0, 7.0]
+  sources:
+    - https://www.abc.net.au/gardening/factsheets/glory-of-garlic/9752944
+    - https://www.abc.net.au/gardening/how-to/guide-to-garlic/13286000
+    - https://www.sgaonline.org.au/glorious-garlic/
+    - https://www.yates.com.au/how-to-grow/garlic/
+    - https://localfoodconnect.org.au/wp-content/uploads/galleries/guide/veggie%20planting%20guide.xlsx
+tasks:
+  - id: soak_cloves
+    kind: tonic
+    title: Soak cloves and plant
+    detail: Pick the biggest firm cloves and soak them overnight in a weak seaweed solution. Plant pointy end up about 2 cm deep, 10 to 15 cm apart, and water in.
+    products: [seasol]
+    once: true
+    seasons: [early_autumn, mid_autumn, late_autumn]
+    stages: [seed]
+    sources:
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/05/What-to-plant-now-notes.pdf
+      - https://www.abc.net.au/gardening/factsheets/glory-of-garlic/9752944
+      - https://www.abc.net.au/gardening/how-to/guide-to-garlic/13286000
+      - https://www.sgaonline.org.au/glorious-garlic/
+  - id: water
+    kind: water
+    title: Water garlic
+    detail: Keep the soil moist but never soggy, about 2 to 3 cm of water a week counting rain. Once shoots are up, garlic only needs help in a dry spell. Water the soil, not the leaves.
+    every_days: 7
+    seasons: [autumn, winter, early_spring, mid_spring, late_spring]
+    stages: [seed, germinating, vegetative, bulbing]
+    sources:
+      - https://localfoodconnect.org.au/wp-content/uploads/galleries/guide/veggie%20planting%20guide.xlsx
+      - https://www.sgaonline.org.au/glorious-garlic/
+      - https://www.abc.net.au/gardening/how-to/guide-to-garlic/13286000
+      - https://www.yates.com.au/how-to-grow/garlic/
+  - id: mulch
+    kind: mulch
+    title: Mulch garlic
+    detail: Once shoots appear, spread 2 to 3 cm of a fluffy mulch such as sugar cane or straw to hold moisture and keep weeds down.
+    products: [sugar_cane_mulch, pea_straw]
+    once: true
+    seasons: [mid_autumn, late_autumn, early_winter]
+    stages: [germinating, vegetative]
+    sources:
+      - https://www.abc.net.au/gardening/factsheets/glory-of-garlic/9752944
+      - https://www.sgaonline.org.au/glorious-garlic/
+      - https://www.yates.com.au/how-to-grow/garlic/
+  - id: weed
+    kind: check
+    title: Weed the garlic bed
+    detail: Garlic competes poorly with weeds, so keep the bed clear. Hand weed or hoe shallowly to avoid cutting roots.
+    once: true
+    seasons: [late_autumn, mid_winter, early_spring]
+    stages: [germinating, vegetative, bulbing]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/guide-to-garlic/13286000
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0005/97709/growing-garlic-in-NSW.pdf
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/05/What-to-plant-now-notes.pdf
+  - id: liquid_feed
+    kind: tonic
+    title: Seaweed feed
+    detail: A well prepared bed needs nothing extra at first. Once plants grow strongly, water in a weak seaweed or worm tea about once a month. Do not overfeed.
+    products: [seasol]
+    rate: 40 mL in a 9 L watering can (Seasol label rate for vegies and herbs).
+    every_days: 30
+    seasons: [winter, spring]
+    stages: [vegetative, bulbing]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/guide-to-garlic/13286000
+      - https://www.sgaonline.org.au/glorious-garlic/
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/05/What-to-plant-now-notes.pdf
+      - https://www.seasol.com.au/products/seasol/
+  - id: stop_water
+    kind: check
+    title: Stop watering before harvest
+    detail: Stop watering once the tops start yellowing or the necks soften. Water or rain after that stains bulbs and rots the outer layers. Aim to harvest after a few fine days.
+    once: true
+    seasons: [mid_spring, late_spring, early_summer]
+    stages: [bulbing]
+    sources:
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0005/97709/growing-garlic-in-NSW.pdf
+      - https://www.abc.net.au/news/2021-12-01/growing-your-own-garlic-when-to-harvest-and-how-to-make-it-last/100658064
+  - id: harvest
+    kind: harvest
+    title: Harvest garlic
+    detail: Garlic is ready 7 to 8 months after planting, when the lower leaves brown and about 4 to 6 green leaves remain. Check one bulb first; cloves should be well formed. Too early gives small bulbs, too late and they split. Lift with a fork on a dry day and eat any split bulbs first.
+    once: true
+    seasons: [late_spring, early_summer, mid_summer]
+    stages: [bulbing]
+    sources:
+      - https://www.sgaonline.org.au/harvesting-and-storing-garlic/
+      - https://www.abc.net.au/news/2021-12-01/growing-your-own-garlic-when-to-harvest-and-how-to-make-it-last/100658064
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/05/What-to-plant-now-notes.pdf
+      - https://www.abc.net.au/gardening/how-to/guide-to-garlic/13286000
+  - id: cure
+    kind: other
+    title: Cure garlic under cover
+    detail: Brush off the soil and hang whole plants in bunches, or lay them on racks, in a dry, airy spot out of the sun. Leave them at least 2 to 3 weeks; up to 2 months helps them keep longer. Avoid a closed shed, and cut the roots short in humid weather.
+    once: true
+    seasons: [late_spring, early_summer, mid_summer]
+    stages: [bulbing]
+    sources:
+      - https://www.sgaonline.org.au/harvesting-and-storing-garlic/
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/05/What-to-plant-now-notes.pdf
+      - https://www.abc.net.au/news/2021-12-01/growing-your-own-garlic-when-to-harvest-and-how-to-make-it-last/100658064
+pests:
+  - id: garlic_rust
+    name: Garlic rust
+    kind: disease
+    seasons: [spring, early_summer]
+    signs: A yellow patch under the leaves, then orange or orange brown powdery bumps spreading over the leaves. Most common on mature leaves late in the season and after heavy rain.
+    prevent: Water gently at the base and keep the leaves dry. Plant fresh, clean garlic each season.
+    treat: Remove affected leaves quickly and bin them; never compost them. Keep nursing the plants to harvest and you should still get a decent crop. Yates suggests lime sulfur early in the season; read and follow the label.
+    sources:
+      - https://www.abc.net.au/gardening/how-to/faqs-watering-plant-leaves-citrus-leaf-miner-garlic-rust/105900174
+      - https://www.yates.com.au/how-to-grow/garlic/
+      - https://www.abc.net.au/news/2021-12-01/growing-your-own-garlic-when-to-harvest-and-how-to-make-it-last/100658064
+  - id: downy_mildew
+    name: Downy mildew
+    kind: disease
+    seasons: [winter, spring]
+    signs: Pale oval spots on the leaves, which yellow and die. A grey coating then shows on the leaves.
+    prevent: Cool, moist weather and crowded plants encourage it, so space plants well. Do not plant garlic or onions in that spot for 3 years after an outbreak.
+    treat: At the first sign, spray mancozeb every 7 to 10 days. Read and follow the label.
+    products: [mancozeb]
+    sources:
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0005/97709/growing-garlic-in-NSW.pdf
+      - https://www.yates.com.au/how-to-grow/garlic/
+  - id: white_rot
+    name: White rot
+    kind: disease
+    seasons: [winter, spring]
+    signs: Yellowing and dying outer leaves, a white fluffy growth at the base of the plant, and rotting roots, stems and bulbs.
+    prevent: Plant only clean cloves from a disease free crop, in well drained soil. Cool, wet conditions encourage it, and it survives in soil for years.
+    treat: There is no spray. If it is confirmed, do not grow garlic, onions or any other allium in that soil for at least 10 years.
+    sources:
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0005/97709/growing-garlic-in-NSW.pdf
+      - https://www.yates.com.au/how-to-grow/garlic/
+      - https://www.sgaonline.org.au/onions/
+  - id: thrips
+    name: Onion thrips
+    kind: pest
+    seasons: [late_winter, spring]
+    signs: Silvery streaks or mottled patches on the leaves, sometimes with small dark droppings. Feeding while bulbs form cuts the yield.
+    prevent: Check plants regularly from mid August. Rain and overhead watering keep numbers down.
+    treat: Spray a pyrethrin vegie and herb spray every 5 to 7 days, covering all sides of the leaves. Read and follow the label.
+    products: [pyrethrum_spray]
+    sources:
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0005/97709/growing-garlic-in-NSW.pdf
+      - https://www.yates.com.au/how-to-grow/garlic/
+  - id: aphids
+    name: Aphids
+    kind: pest
+    seasons: [winter, spring]
+    signs: Small dark grey or black insects crowding the leaf bases; leaves may yellow.
+    prevent: Go easy on nitrogen. Soft, sappy growth from rich feeding attracts aphids.
+    treat: Spray a pyrethrin vegie and herb spray every 5 to 7 days, getting down into the leaf bases. Read and follow the label.
+    products: [pyrethrum_spray]
+    sources:
+      - https://www.yates.com.au/how-to-grow/garlic/
+      - https://www.abc.net.au/gardening/how-to/guide-to-garlic/13286000
+      - https://www.sgaonline.org.au/glorious-garlic/
+advice:
+  - text: Plant cloves in autumn. In Melbourne, March to May suits, and April is the prime month.
+    seasons: [early_autumn, mid_autumn, late_autumn]
+    sources:
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/05/What-to-plant-now-notes.pdf
+      - https://www.abc.net.au/gardening/how-to/april-alliums/9437452
+      - https://www.abc.net.au/gardening/how-to/guide-to-garlic/13286000
+  - text: Buy planting garlic from a nursery or an Australian grower. Imported garlic is fumigated with methyl bromide, may carry a sprouting inhibitor and can bring in exotic diseases, so never plant it.
+    seasons: [summer, autumn]
+    sources:
+      - https://www.sgaonline.org.au/glorious-garlic/
+      - https://www.sgaonline.org.au/harvesting-and-storing-garlic/
+      - https://www.yates.com.au/how-to-grow/garlic/
+      - https://www.abc.net.au/news/rural/2022-12-10/australian-garlic-farming-sunshine-coast-rural-christmas-gift/101682854
+  - text: Hardneck types send up a flower stem and suit cool to cold areas. Softneck types rarely flower, plait well and suit temperate and warmer areas.
+    sources:
+      - https://www.sgaonline.org.au/glorious-garlic/
+      - https://www.yates.com.au/how-to-grow/garlic/
+  - text: Prepare the bed with compost, not fresh manure. Rich nitrogen feeding gives soft growth that draws aphids and can rot bulbs. Give no nitrogen once bulbs start forming, as it shortens their storage life.
+    sources:
+      - https://www.abc.net.au/gardening/how-to/guide-to-garlic/13286000
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0005/97709/growing-garlic-in-NSW.pdf
+  - text: Rot is the biggest risk while cloves are shooting. Keep the soil moist but not soggy through the wet months.
+    seasons: [autumn, winter]
+    stages: [seed, germinating]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/guide-to-garlic/13286000
+      - https://www.sgaonline.org.au/glorious-garlic/
+  - text: On hardneck garlic, snapping off the flower stems gives bigger bulbs, though leaving them on until after curing may help bulbs keep longer. The stems are good to eat.
+    seasons: [spring]
+    stages: [bulbing]
+    sources:
+      - https://www.sgaonline.org.au/harvesting-and-storing-garlic/
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/05/What-to-plant-now-notes.pdf
+  - text: Never dry garlic in the sun. Australian summers sunburn the bulbs, so cure them under cover.
+    seasons: [summer]
+    sources:
+      - https://www.sgaonline.org.au/harvesting-and-storing-garlic/
+  - text: Store cured bulbs in a dry, airy spot near 10 degrees, away from heat and cold. Check every few weeks and remove any that rot. Keep 10 to 15 percent of the best bulbs to replant.
+    seasons: [summer, autumn]
+    sources:
+      - https://www.sgaonline.org.au/harvesting-and-storing-garlic/
+  - text: In a pot, use one at least 30 to 40 cm wide and 20 cm deep, in a spot with at least 6 hours of sun.
+    settings: [pot]
+    sources:
+      - https://www.yates.com.au/how-to-grow/garlic/

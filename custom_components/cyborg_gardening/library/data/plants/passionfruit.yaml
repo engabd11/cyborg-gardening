@@ -1,0 +1,199 @@
+id: passionfruit
+name: Passionfruit
+botanical: Passiflora edulis
+group: vine
+icon: mdi:fruit-grapes-outline
+frost: tender
+heat: sensitive
+water: high
+perennial: true
+stages: [young, established]
+default_stage: established
+settings: [ground, pot]
+summary: A fast, hungry and thirsty climber for a warm, sheltered, frost free spot in full sun. Keep the graft above ground and cut off rootstock suckers as soon as they appear.
+needs:
+  sun: full
+  soil: Free draining soil enriched with compost; passionfruit are hungry and thirsty but hate wet feet. Shelter from wind and frost.
+  sources:
+    - https://www.abc.net.au/gardening/how-to/planting-passionfruit/9431804
+    - https://www.abc.net.au/gardening/how-to/growing-passionfruit/9428070
+    - https://www.abc.net.au/gardening/how-to/passionfruit-professional/10312208
+    - https://www.yates.com.au/how-to-grow/passionfruit/
+    - https://www.abc.net.au/gardening/passionfruit-101/102656492
+    - https://www.dpird.nsw.gov.au/agriculture/horticulture/tropical/growing-other-tropical-fruit/passionfruit
+varieties:
+  - id: nellie_kelly
+    name: Nellie Kelly (grafted black)
+    notes: The usual choice for southern and cooler gardens. Grafted onto a vigorous rootstock that can sucker.
+    sources:
+      - https://www.abc.net.au/gardening/how-to/growing-passionfruit/9428070
+      - https://www.abc.net.au/gardening/how-to/productive-climbers/9435728
+      - https://www.sgaonline.org.au/getting-grafty-grafted-plants-explained/
+  - id: black_seedling
+    name: Black passionfruit (seed grown)
+    notes: Self pollinating and fast growing, with no rootstock to sucker. Protect from frost while young.
+    sources:
+      - https://www.diggers.com.au/products/passionfruit-black
+      - https://www.abc.net.au/gardening/how-to/productive-climbers/9435728
+  - id: panama
+    name: Panama Red and Panama Gold
+    notes: Grafted hybrids for tropical and warm areas. They are cold sensitive and frost susceptible, so not a pick for cooler gardens.
+    sources:
+      - https://www.abc.net.au/gardening/how-to/growing-passionfruit/9428070
+      - https://www.dpird.nsw.gov.au/agriculture/horticulture/tropical/growing-other-tropical-fruit/passionfruit
+tasks:
+  - id: water
+    kind: water
+    title: Water
+    detail: Passionfruit are shallow rooted and in summer may need water every day. Give the roots a deep soak in dry spells. In winter and rainy weather wait until the soil starts to dry before watering.
+    every_days: {summer: 1}
+    sources:
+      - https://www.yates.com.au/how-to-grow/passionfruit/
+      - https://www.abc.net.au/gardening/passionfruit-101/102656492
+  - id: feed_ground
+    kind: fertilise
+    title: Fruit and citrus pellets
+    detail: Feed through the warmer months from the second year, scattered around the root zone and watered in. Avoid high nitrogen feeds, which give a huge leafy vine with no flowers.
+    products: [yates_dynamic_lifter_fruit_citrus]
+    rate: 100 g per square metre every 6 weeks (label rate for fruiting plants in garden beds).
+    every_days: {spring: 42, summer: 42}
+    stages: [established]
+    settings: [ground]
+    sources:
+      - https://www.yates.com.au/how-to-grow/passionfruit/
+      - https://www.yates.com.au/yates-7kg-dynamic-lifter-plant-food-pellets-fruit-citrus/
+      - https://www.abc.net.au/gardening/passionfruit-101/102656492
+  - id: feed_pot
+    kind: fertilise
+    title: Fruit and citrus pellets
+    detail: Feed through the warmer months and water in well.
+    products: [yates_dynamic_lifter_fruit_citrus]
+    rate: 10 g for a 15 cm pot or 25 g for a 30 cm pot, every 8 weeks.
+    every_days: {spring: 56, summer: 56}
+    settings: [pot]
+    sources:
+      - https://www.yates.com.au/how-to-grow/passionfruit/
+      - https://www.yates.com.au/yates-7kg-dynamic-lifter-plant-food-pellets-fruit-citrus/
+  - id: seaweed
+    kind: tonic
+    title: Seaweed tonic
+    detail: Regular seaweed solution keeps vines healthy and productive. Water it in at planting and mist the leaves with a half strength mix.
+    products: [seasol]
+    rate: 40 mL in 9 L of water every 2 to 4 weeks.
+    every_days: {spring: 21, summer: 21, autumn: 21}
+    sources:
+      - https://www.abc.net.au/gardening/passionfruit-101/102656492
+      - https://www.seasol.com.au/products/seasol/
+  - id: compost
+    kind: mulch
+    title: Compost top dressing
+    detail: A top dressing of compost a couple of times a year, kept clear of the main stem, feeds the vine and protects the shallow roots from hot sun.
+    products: [compost]
+    once: true
+    seasons: [early_spring, early_autumn]
+    sources:
+      - https://www.abc.net.au/gardening/passionfruit-101/102656492
+      - https://www.diggers.com.au/products/passionfruit-black
+      - https://www.yates.com.au/how-to-grow/passionfruit/
+  - id: suckers
+    kind: check
+    title: Cut off rootstock suckers
+    detail: Sucker leaves are fine and five fingered (or small, pointy and dark green) rather than large, glossy and three lobed. Cut them off cleanly at the base as soon as you see them; ripping them out causes more suckering.
+    every_days: {spring: 14, summer: 14, autumn: 14}
+    sources:
+      - https://www.abc.net.au/gardening/passionfruit-101/102656492
+      - https://www.abc.net.au/gardening/how-to/productive-climbers/9435728
+  - id: prune
+    kind: prune
+    title: Spring prune
+    detail: Once established, remove up to a third of last year's growth and anything dead, diseased or damaged, keeping the main framework on its support. An older, heavy vine can be cut back hard to within a 1 m circle of the crown, leaving good growing tips. Water and feed after pruning.
+    once: true
+    seasons: [late_winter, early_spring]
+    stages: [established]
+    sources:
+      - https://www.yates.com.au/how-to-grow/passionfruit/
+      - https://www.abc.net.au/gardening/passionfruit-101/102656492
+      - https://www.abc.net.au/gardening/how-to/growing-passionfruit/9428070
+  - id: harvest
+    kind: harvest
+    title: Pick up ripe fruit
+    detail: Ripe fruit falls from the vine. Eat it while plump and deep coloured, before it wrinkles and dries out.
+    once: true
+    seasons: [summer, autumn]
+    stages: [established]
+    sources:
+      - https://www.abc.net.au/gardening/passionfruit-101/102656492
+      - https://www.yates.com.au/how-to-grow/passionfruit/
+pests:
+  - id: woodiness_virus
+    name: Passionfruit woodiness virus
+    kind: disease
+    signs: Leaves pucker and distort with yellow spots over the whole leaf.
+    prevent: Aphids spread the virus, so control aphids and the weeds they live on. Disinfect pruning tools after use and bin fallen leaves and fruit.
+    treat: No chemical controls the virus; control aphids as soon as you see them.
+    products: [pyrethrum_spray]
+    sources: [https://www.yates.com.au/how-to-grow/passionfruit/]
+  - id: sap_suckers
+    name: Aphids, scale and other sap suckers
+    kind: pest
+    seasons: [spring, summer, autumn]
+    signs: New leaves wilt and the vine looks sick, often with black sooty mould on the leaves.
+    prevent: Keep the vine healthy and check new growth often.
+    treat: Spray a pyrethrum insect spray as soon as you notice them. Horticultural oil also suppresses mites.
+    products: [pyrethrum_spray, eco_oil]
+    sources:
+      - https://www.yates.com.au/how-to-grow/passionfruit/
+      - https://www.abc.net.au/gardening/how-to/passionfruit-professional/10312208
+  - id: brown_spot
+    name: Brown spot and other leaf spots
+    kind: disease
+    seasons: [autumn, winter, spring]
+    signs: Dark brown, sometimes sunken spots on fruit and brown spots with yellow halos on leaves; fruit and leaves may drop.
+    prevent: These fungi strike in cool or wet weather and wet soil. Avoid overhead watering and overwatering in winter, and bin fallen leaves and fruit.
+    treat: Spray a copper fungicide.
+    products: [copper_fungicide]
+    sources: [https://www.yates.com.au/how-to-grow/passionfruit/]
+advice:
+  - text: Passionfruit dislike frost and wind. Plant in a warm, sheltered, frost free spot and protect young vines from frost.
+    seasons: [late_autumn, winter, early_spring]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/passionfruit-professional/10312208
+      - https://www.diggers.com.au/products/passionfruit-black
+      - https://www.yates.com.au/how-to-grow/passionfruit/
+  - text: Plant in spring as the soil warms, at the same depth as in the pot, without teasing the roots. Never bury the graft or the rootstock will sucker.
+    seasons: [spring]
+    stages: [young]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/planting-passionfruit/9431804
+      - https://www.abc.net.au/gardening/passionfruit-101/102656492
+  - text: Train one main stem to the top of the support and remove its side shoots until it gets there, then tie side shoots out horizontally.
+    stages: [young]
+    sources: [https://www.abc.net.au/gardening/how-to/planting-passionfruit/9431804]
+  - text: In cooler climates a vine takes at least 18 months in the ground to fruit well.
+    stages: [young]
+    sources: [https://www.abc.net.au/gardening/passionfruit-101/102656492]
+  - text: Flowers but no fruit usually means poor pollination. Plant bee attracting flowers such as alyssum, borage and lavender, or move pollen between flowers with a soft brush early in the morning every couple of days.
+    seasons: [spring, summer]
+    sources: [https://www.abc.net.au/gardening/passionfruit-101/102656492]
+  - text: Vines are short lived, about 6 to 7 years, so plant a replacement before the old one declines.
+    stages: [established]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/planting-passionfruit/9431804
+      - https://www.abc.net.au/gardening/how-to/passionfruit-professional/10312208
+  - text: Mulch the root zone, keeping mulch off the main stem, to keep the shallow roots cool and moist.
+    sources:
+      - https://www.yates.com.au/how-to-grow/passionfruit/
+      - https://www.abc.net.au/gardening/how-to/growing-passionfruit/9428070
+  - text: In a pot, use one at least 500 mm wide with premium potting mix, in a frost free spot with 5 hours of sun and a strong support. Check it daily and water when the mix starts to dry.
+    settings: [pot]
+    sources: [https://www.yates.com.au/how-to-grow/passionfruit/]
+  - text: Passionfruit is a Queensland fruit fly host. Fruit that drops early with pin prick holes and maggots inside points to fruit fly; pick up fallen fruit and use traps and baits.
+    seasons: [summer, autumn]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/queensland-fruit-fly-host-fruits
+      - https://www.yates.com.au/how-to-grow/passionfruit/
+  - text: If you net the vine against birds or possums, Victorian law requires household fruit netting with a mesh of 5 mm by 5 mm or less at full stretch, fixed tightly.
+    seasons: [summer, autumn]
+    sources:
+      - https://agriculture.vic.gov.au/livestock-and-animals/animal-welfare-victoria/pocta-act-1986/protecting-fruit-trees-and-wildlife
+      - https://www.abc.net.au/gardening/how-to/passionfruit/9431932

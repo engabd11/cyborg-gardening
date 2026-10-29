@@ -1,0 +1,122 @@
+id: rosemary
+name: Rosemary
+botanical: Rosmarinus officinalis
+group: herb
+icon: mdi:leaf
+frost: hardy
+heat: tolerant
+water: low
+perennial: true
+stages: [young, established, flowering]
+default_stage: established
+settings: [ground, pot, raised_bed]
+summary: Rosemary wants full sun and free draining soil. It is drought tolerant once established and dies quickly in wet soil, so water only when the top few centimetres are dry. Prune lightly after flowering to keep it bushy.
+needs:
+  sun: full
+  soil: Free draining soil. In heavy soil, plant on a raised mound of free draining mix or grow in a pot.
+  sources:
+    - https://www.abc.net.au/gardening/plant-finder/rosmarinus/9442222
+    - https://www.yates.com.au/how-to-grow/rosemary/
+tasks:
+  - id: water_young
+    kind: water
+    title: Water young rosemary
+    detail: Keep the soil slightly moist while a new plant settles in, watering at the base. Check first with a finger and skip watering if the top 2 to 3 cm is still moist.
+    once: true
+    seasons: [spring, summer]
+    stages: [young]
+    sources:
+      - https://www.yates.com.au/how-to-grow/rosemary/
+  - id: dry_check
+    kind: water
+    title: Check rosemary in dry weather
+    detail: In hot or dry weather, push a finger into the soil and water only if the top 2 to 3 cm is dry. Wilted stems with grey leaves mean it is too dry. Wilting tips in wet soil can mean root rot.
+    once: true
+    seasons: [early_summer, late_summer]
+    stages: [established, flowering]
+    sources:
+      - https://www.yates.com.au/how-to-grow/rosemary/
+  - id: prune
+    kind: prune
+    title: Light prune after flowering
+    detail: Once the main flowering finishes, trim lightly to keep the plant bushy and compact. Keep it a little narrower at the top, and never cut back into bare woody stems.
+    once: true
+    seasons: [late_spring, early_summer, mid_summer]
+    stages: [established, flowering]
+    sources:
+      - https://www.abc.net.au/gardening/plant-finder/rosmarinus/9442222
+      - https://www.yates.com.au/how-to-grow/rosemary/
+  - id: feed
+    kind: fertilise
+    title: Liquid feed rosemary
+    detail: Feeding from spring to mid autumn speeds growth, as long as the plant has sun, good drainage and enough moisture.
+    products: [powerfeed_all_purpose]
+    rate: 90 mL in a 9 L watering can every 1 to 2 weeks (label rate for established plants).
+    every_days: 10
+    seasons: [spring, summer, early_autumn, mid_autumn]
+    sources:
+      - https://www.yates.com.au/how-to-grow/rosemary/
+      - https://www.seasol.com.au/products/powerfeed/
+  - id: mulch
+    kind: mulch
+    title: Mulch rosemary
+    detail: Mulch around the base with bark chips, sugar cane or pea straw, keeping it clear of the stem.
+    products: [sugar_cane_mulch, pea_straw]
+    once: true
+    seasons: [spring, early_autumn]
+    stages: [young]
+    sources:
+      - https://www.yates.com.au/how-to-grow/rosemary/
+pests:
+  - id: root_rot
+    name: Root rot from overwatering
+    kind: disorder
+    seasons: [autumn, winter, spring]
+    signs: Stem tips wilt and leaves turn grey while the soil is wet. Plants in poorly drained soil can die quickly in long wet spells.
+    prevent: Plant in free draining soil, a raised mound or a pot with plenty of drainage holes. Water only when the top 2 to 3 cm is dry, and let it stay fairly dry in winter.
+    treat: Hold off watering until the top 2 to 3 cm dries. In heavy soil, replant on a raised mound of free draining mix or into a pot.
+    sources:
+      - https://www.yates.com.au/how-to-grow/rosemary/
+      - https://www.abc.net.au/gardening/plant-finder/rosmarinus/9442222
+  - id: sap_suckers
+    name: Aphids, scale and whitefly
+    kind: pest
+    seasons: [spring, summer]
+    signs: Small sap sucking insects clustered on stems and under leaves.
+    prevent: Check stems and leaf undersides when picking.
+    treat: At the first sign, spray a contact spray such as a pyrethrin and oil citrus and ornamental spray, hitting the pests on all sides of the stems and under the leaves. Read and follow the label.
+    products: [pyrethrum_spray]
+    sources:
+      - https://www.yates.com.au/how-to-grow/rosemary/
+  - id: powdery_mildew
+    name: Powdery mildew
+    kind: disease
+    seasons: [autumn, winter, spring]
+    signs: White powdery patches on the leaves, mostly in humid or long wet weather.
+    prevent: Grow in full sun and trim stems regularly so light and air get through.
+    treat: Remove affected leaves and bin them.
+    sources:
+      - https://www.yates.com.au/how-to-grow/rosemary/
+advice:
+  - text: Rosemary is drought tolerant once established and prefers to stay fairly dry in winter.
+    seasons: [winter]
+    stages: [established, flowering]
+    sources:
+      - https://www.abc.net.au/gardening/plant-finder/rosmarinus/9442222
+      - https://www.yates.com.au/how-to-grow/rosemary/
+  - text: Rosemary handles hot, dry weather well, but check the soil in long dry spells, as plants can still decline without any moisture.
+    seasons: [summer]
+    sources:
+      - https://www.yates.com.au/how-to-grow/rosemary/
+      - https://www.abc.net.au/gardening/plant-finder/rosmarinus/9442222
+  - text: Give rosemary at least 6 hours of sun and some shelter from harsh frosts. In shade it grows sparse and leggy.
+    sources:
+      - https://www.yates.com.au/how-to-grow/rosemary/
+  - text: Use a pot at least 30 cm wide with good drainage holes, and turn it a quarter to half turn every few weeks so all sides get sun.
+    settings: [pot]
+    sources:
+      - https://www.yates.com.au/how-to-grow/rosemary/
+  - text: Picking stems for the kitchen doubles as pruning. Tip prune young plants to make them bushy.
+    stages: [young, established]
+    sources:
+      - https://www.yates.com.au/how-to-grow/rosemary/

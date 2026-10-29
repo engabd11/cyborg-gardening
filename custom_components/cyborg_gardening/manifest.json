@@ -1,0 +1,14 @@
+{
+  "domain": "cyborg_gardening",
+  "name": "Cyborg Gardening",
+  "codeowners": ["@engabd11"],
+  "config_flow": true,
+  "dependencies": ["websocket_api"],
+  "documentation": "https://github.com/engabd11/cyborg-gardening",
+  "integration_type": "hub",
+  "iot_class": "calculated",
+  "issue_tracker": "https://github.com/engabd11/cyborg-gardening/issues",
+  "loggers": ["custom_components.cyborg_gardening"],
+  "requirements": [],
+  "version": "0.1.0"
+}

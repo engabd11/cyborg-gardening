@@ -1,0 +1,135 @@
+id: lettuce
+name: Lettuce
+group: vegetable
+icon: mdi:leaf
+frost: half_hardy
+heat: sensitive
+water: high
+perennial: false
+stages: [seed, germinating, seedling, vegetative]
+default_stage: vegetative
+settings: [ground, raised_bed, pot]
+summary: A quick leafy crop that can be sown all year in Melbourne. Keep it evenly moist and give it some shade in summer so it does not turn bitter or run to seed.
+needs:
+  sun: part
+  soil: Well drained and rich in organic matter. Heavy feeder that likes a rich, moist soil.
+  ph: [6.0, 7.0]
+  sources:
+    - https://www.sgaonline.org.au/lettuce/
+    - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+varieties:
+  - id: crisphead
+    name: Crisphead (Iceberg)
+    notes: Ready in about 10 to 12 weeks. Harvest the whole plant, roots and all.
+    sources: [https://www.sgaonline.org.au/lettuce/]
+  - id: butterhead
+    name: Butterhead
+    notes: Ready in about 9 to 10 weeks. Harvest as needed.
+    sources: [https://www.sgaonline.org.au/lettuce/]
+  - id: cos
+    name: Cos
+    notes: Ready in about 10 to 11 weeks. Pick outer leaves while the plant keeps growing.
+    sources: [https://www.sgaonline.org.au/lettuce/]
+  - id: loose_leaf
+    name: Loose leaf
+    notes: Edible from about 6 weeks. Pick leaves as needed.
+    sources: [https://www.sgaonline.org.au/lettuce/]
+tasks:
+  - id: transplant_tonic
+    kind: tonic
+    title: Seaweed tonic at planting
+    detail: Water new seedlings in well with seaweed solution to help roots settle. SGA suggests a weak, half strength mix for seedlings.
+    products: [seasol]
+    rate: 40 mL in 9 L of water at planting and again 1 week later (label rate for transplanting).
+    once: true
+    stages: [seedling]
+    sources:
+      - https://www.seasol.com.au/products/seasol/
+      - https://www.sgaonline.org.au/lettuce/
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/201105-Getting-Started-With-Veggie-Gardening-Notes.pdf
+  - id: liquid_feed
+    kind: fertilise
+    title: Liquid feed
+    detail: Lettuce is a heavy feeder and needs regular liquid feeding while it grows. SGA feeds lettuce fortnightly at half strength, because heavy feeding with commercial liquid fertiliser draws snails.
+    products: [powerfeed_all_purpose]
+    rate: Label rate for vegies is 50 mL in 9 L of water. Use half strength for lettuce, as SGA advises.
+    every_days: 14
+    stages: [seedling, vegetative]
+    sources:
+      - https://www.sgaonline.org.au/lettuce/
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+      - https://www.seasol.com.au/products/powerfeed/
+  - id: mulch
+    kind: mulch
+    title: Mulch the bed
+    detail: Spread straw mulch 5 to 7 cm deep to hold moisture in the shallow root zone. Leave a gap of at least 4 cm around the stems.
+    products: [pea_straw, sugar_cane_mulch]
+    once: true
+    stages: [seedling]
+    sources:
+      - https://www.sgaonline.org.au/lettuce/
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+  - id: snail_watch
+    kind: check
+    title: Protect seedlings from snails
+    detail: Snails and slugs are the biggest lettuce pest and can eat seedlings to the ground overnight. Hunt them on damp nights, set beer or board traps, or scatter iron-based bait in the evening.
+    products: [snail_bait_iron]
+    once: true
+    stages: [seedling]
+    seasons: [autumn, winter, spring]
+    caution: Read and follow the label.
+    sources:
+      - https://www.sgaonline.org.au/lettuce/
+      - https://www.sgaonline.org.au/ggp-pest-of-the-season-snails-slugs/
+  - id: harvest
+    kind: harvest
+    title: Start picking
+    detail: Pick outer leaves as needed for a continual harvest, or sow again for a steady supply. Leaf types are ready from about 6 to 8 weeks.
+    once: true
+    stages: [vegetative]
+    sources:
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+      - https://www.sgaonline.org.au/lettuce/
+pests:
+  - id: snails_slugs
+    name: Snails and slugs
+    kind: pest
+    seasons: [autumn, winter, spring]
+    signs: Holes in the middle of leaves, seedlings eaten to the ground overnight and shiny silver trails.
+    prevent: Remove daytime hiding spots, use drip irrigation rather than sprinklers, and ring pots with copper tape.
+    treat: Hand pick on wet nights, set beer or board traps, and as a last resort scatter iron-based pellets (not piles) in the late afternoon after wetting the area. Avoid metaldehyde baits where children and pets roam.
+    products: [snail_bait_iron]
+    sources:
+      - https://www.sgaonline.org.au/lettuce/
+      - https://www.sgaonline.org.au/ggp-pest-of-the-season-snails-slugs/
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/09/Pests-and-controls-Notes.pdf
+  - id: bolting
+    name: Running to seed and bitterness
+    kind: disorder
+    seasons: [summer]
+    signs: Plants shoot up to flower and the leaves turn bitter.
+    prevent: Keep the soil evenly moist, mulch, and give lettuce part shade or living shade from taller crops in summer.
+    treat: Pick what you can and sow again. Bolted plants will not recover.
+    sources:
+      - https://www.sgaonline.org.au/lettuce/
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+advice:
+  - text: Lettuce has shallow roots and needs frequent watering, especially on hot or windy days. If it dries out it may run to seed or turn bitter.
+    sources:
+      - https://www.sgaonline.org.au/lettuce/
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+  - text: Seed will not germinate above 30 degrees. In summer sow in part shade, or shade the bed with beans, sweet corn or a shade tent.
+    seasons: [summer]
+    sources:
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+      - https://www.sgaonline.org.au/lettuce/
+  - text: For winter crops choose cold hardy varieties and expect slower growth in the cold.
+    seasons: [late_autumn, winter]
+    sources: [https://www.sgaonline.org.au/pdfs/hh_moreland.pdf]
+  - text: Lettuce grows well in pots, but never let the mix dry out. Pots dry quickly in summer, so water them more often than garden beds.
+    settings: [pot]
+    sources:
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+      - https://www.sgaonline.org.au/wp-content/uploads/2022/08/Getting-Started-Organic-Veg-Gardening-into-Summer.pdf
+  - text: Lettuce is a heavy feeder in crop rotation. Do not follow it with another heavy feeder in the same bed.
+    sources: [https://www.sgaonline.org.au/crop-rotation/]

@@ -1,0 +1,188 @@
+id: rose
+name: Rose
+botanical: Rosa
+group: ornamental
+icon: mdi:flower
+frost: hardy
+heat: tolerant
+water: moderate
+perennial: true
+stages: [young, established, flowering, dormant]
+default_stage: established
+settings: [ground, pot]
+summary: A sunny, airy spot, deep watering at the base, regular feeding through the growing season and a winter prune.
+needs:
+  sun: full
+  soil: Well drained, fertile and slightly acidic. Improve sandy or clay soil with compost.
+  sources:
+    - https://www.abc.net.au/gardening/roses/13473734
+tasks:
+  - id: water
+    kind: water
+    title: Deep water at the base
+    detail: Soak the soil, not the leaves, every 7 to 10 days; about 15 litres per bush. Garden roses rarely need watering in winter. Pots dry out much faster and may need water daily in summer.
+    every_days:
+      ground: {spring: 8, summer: 8, autumn: 8}
+      pot: {spring: 7, summer: 1, autumn: 7}
+    sources:
+      - https://www.abc.net.au/gardening/how-to/planting-roses/9435672
+      - https://www.abc.net.au/gardening/roses/13473734
+      - https://nsw.rose.org.au/growing-roses/resources/summer-cultural-notes
+  - id: feed
+    kind: fertilise
+    title: Rose fertiliser
+    detail: Start at the end of August once new growth shows, then repeat every 8 to 10 weeks through the growing season. Spread on moist soil, keep it 20 cm from the stem and off leaves and flowers, then water in.
+    products: [neutrog_sudden_impact_roses]
+    rate:
+      ground: 100 g per bush.
+      pot: 15 g for a 150 mm pot, plus 5 g for each extra 25 mm of pot size.
+    every_days: 63
+    seasons: [late_winter, spring, summer]
+    stages: [established, flowering]
+    sources:
+      - https://neutrog.com.au/products/sudden-impact-for-roses/
+      - https://www.rosesocietyvic.org.au/index.php/monthly-care-of-roses/
+  - id: winter_prune
+    kind: prune
+    title: Winter prune
+    detail: Prune repeat flowering roses in July. Remove dead, diseased, crossing and pencil thin stems, then cut the bush back by a third to a half, to outward facing buds. Use clean, sharp secateurs. In frosty spots wait until early August.
+    once: true
+    seasons: [mid_winter]
+    sources:
+      - https://www.rosesocietyvic.org.au/index.php/the-pruning-bible/
+      - https://www.rosesocietyvic.org.au/index.php/monthly-care-of-roses/
+      - https://www.abc.net.au/gardening/how-to/rose-pruning/9430014
+      - https://www.abc.net.au/gardening/roses/13473734
+  - id: winter_spray
+    kind: spray
+    title: Winter clean up spray
+    detail: After pruning, rake up old leaves, then spray the bare canes and the soil under them against black spot. The Rose Society of Victoria uses copper with white oil, or lime sulphur, and repeats two weeks later.
+    products: [copper_fungicide]
+    once: true
+    seasons: [mid_winter]
+    caution: Read and follow the label.
+    sources:
+      - https://www.rosesocietyvic.org.au/index.php/monthly-care-of-roses/
+      - https://www.abc.net.au/gardening/roses/13473734
+  - id: mulch
+    kind: mulch
+    title: Mulch
+    detail: Spread pea straw or lucerne in October, then top it up through summer. Water the mulch after spreading it.
+    products: [pea_straw]
+    once: true
+    seasons: [mid_spring, summer]
+    sources:
+      - https://www.rosesocietyvic.org.au/index.php/monthly-care-of-roses/
+      - https://www.abc.net.au/gardening/how-to/feeding-roses/9437268
+  - id: deadhead
+    kind: prune
+    title: Deadhead
+    detail: Cut off spent flowers after the spring and autumn flushes to keep new blooms coming.
+    every_days: 30
+    seasons: [late_spring, early_summer, mid_summer, mid_autumn]
+    stages: [established, flowering]
+    sources:
+      - https://www.rosesocietyvic.org.au/index.php/monthly-care-of-roses/
+      - https://www.abc.net.au/gardening/roses/13473734
+  - id: pest_check
+    kind: check
+    title: Check for aphids, mites and black spot
+    detail: Look at new shoots for aphids, the undersides of the lowest leaves for mites and webbing from October, and the leaves for black spots. Act early.
+    every_days: 30
+    seasons: [spring, summer, autumn]
+    sources:
+      - https://www.rosesocietyvic.org.au/index.php/monthly-care-of-roses/
+      - https://nsw.rose.org.au/growing-roses/resources/spider-mites
+  - id: repot
+    kind: repot
+    title: Repot
+    detail: Repot roses kept in pots every 2 to 3 years in July. Prune the top hard and trim about a quarter off the root ball.
+    every_days: 912
+    seasons: [mid_winter]
+    settings: [pot]
+    products: [premium_potting_mix]
+    sources:
+      - https://www.rosesocietyvic.org.au/index.php/monthly-care-of-roses/
+pests:
+  - id: black_spot
+    name: Black spot
+    kind: disease
+    seasons: [spring, summer, autumn]
+    signs: Black spots on the leaves, which turn yellow and drop. Bad cases can strip and weaken the bush.
+    prevent: Thin the centre of the bush for airflow, water the soil and never the leaves, feed regularly, and bin infected leaves rather than composting them. Gardening Australia also suggests 100 to 150 g of sulphate of potash per bush about four times a year.
+    treat: Pick off infected leaves. Spray potassium bicarbonate (eco-fungicide, 30 to 40 g in 10 L of water plus 20 mL of eco-oil) at the first sign, repeating every 7 to 10 days, or use a copper fungicide. Remove bushes that stay badly infected.
+    products: [eco_fungicide, eco_oil, copper_fungicide, sulphate_of_potash]
+    sources:
+      - https://www.abc.net.au/gardening/factsheets/black-spot-control/9427620
+      - https://www.abc.net.au/gardening/roses/13473734
+      - https://www.rosesocietyvic.org.au/index.php/monthly-care-of-roses/
+      - https://ozbreed.com.au/wp-content/uploads/2018/05/eco-fungicide-500g-label4.4.18.pdf
+  - id: powdery_mildew
+    name: Powdery mildew
+    kind: disease
+    signs: Fine white patches on both sides of the leaves that spread into a powdery film, usually on older, lower leaves first.
+    prevent: Water in the morning at the base so leaves stay dry, keep the bush open for airflow, and remove badly infected leaves.
+    treat: Spray milk diluted with about ten parts water, or potassium bicarbonate (eco-fungicide, 30 to 40 g in 10 L of water plus 20 mL of eco-oil) every 7 to 10 days from the first sign. Do not compost infected prunings.
+    products: [eco_fungicide, eco_oil]
+    sources:
+      - https://www.abc.net.au/gardening/powdery-mildew/13544994
+      - https://www.abc.net.au/gardening/how-to/rose-pruning/9430014
+      - https://ozbreed.com.au/wp-content/uploads/2018/05/eco-fungicide-500g-label4.4.18.pdf
+  - id: aphids
+    name: Aphids
+    kind: pest
+    seasons: [spring, early_autumn]
+    signs: Clusters of small soft insects on new shoots and flower buds in spring.
+    prevent: Leave ladybirds and wasps to do their work; broad sprays kill them too.
+    treat: Hose them off or squash them. If numbers stay high, spray eco-oil (5 mL per litre), neem oil or pyrethrum.
+    products: [eco_oil, eco_neem, pyrethrum_spray]
+    sources:
+      - https://www.abc.net.au/gardening/roses/13473734
+      - https://www.rosesocietyvic.org.au/index.php/monthly-care-of-roses/
+      - https://hortag.com.au/eco-oil
+  - id: two_spotted_mite
+    name: Two-spotted mite
+    kind: pest
+    seasons: [mid_spring, late_spring, summer]
+    signs: Older, lower leaves turn bronzed and mottled with pale patches, then wither and drop. Fine webbing and tiny mites sit under the leaves.
+    prevent: Check the lowest leaves from October. Keep plants well watered, avoid broad spectrum insecticides that kill predatory mites, and hose the undersides of leaves early in the morning.
+    treat: Spray eco-oil (5 mL per litre) or a soap spray onto the undersides of the leaves and repeat after 5 days, as sprays miss the eggs. Do not spray stressed plants or above 32 degrees. Predatory mites are another option.
+    products: [eco_oil]
+    sources:
+      - https://nsw.rose.org.au/growing-roses/resources/spider-mites
+      - https://www.sgaonline.org.au/red-spider-mite/
+      - https://www.rosesocietyvic.org.au/index.php/monthly-care-of-roses/
+      - https://hortag.com.au/eco-oil
+advice:
+  - text: Plant bare-root roses in winter and potted roses in spring or autumn.
+    sources:
+      - https://www.abc.net.au/gardening/roses/13473734
+  - text: Do not give rose food to newly planted bare-root roses. Wait until late November or early December, then feed at half rate.
+    stages: [young]
+    sources:
+      - https://www.rosesocietyvic.org.au/index.php/monthly-care-of-roses/
+      - https://neutrog.com.au/products/sudden-impact-for-roses/
+  - text: Once flowering roses, such as ramblers and heritage shrubs, are pruned straight after they flower in early summer, not in winter.
+    sources:
+      - https://www.abc.net.au/gardening/roses/13473734
+      - https://www.rosesocietyvic.org.au/index.php/monthly-care-of-roses/
+  - text: Do not prune before July. In frosty spots wait until early August so frost does not knock back the new shoots.
+    seasons: [winter]
+    sources:
+      - https://www.rosesocietyvic.org.au/index.php/the-pruning-bible/
+  - text: After winter pruning, spread 2 to 5 cm of well rotted manure and compost, then a fresh layer of mulch.
+    seasons: [winter]
+    sources:
+      - https://www.abc.net.au/gardening/roses/13473734
+  - text: Bin prunings and leaves with black spot or mildew rather than composting them, and wipe secateurs with diluted bleach between bushes.
+    sources:
+      - https://www.abc.net.au/gardening/how-to/rose-pruning/9430014
+  - text: Pots in full sun can reach 50 degrees in summer. Give potted roses afternoon shade, use light coloured pots and keep them off hot concrete.
+    seasons: [summer]
+    settings: [pot]
+    sources:
+      - https://nsw.rose.org.au/growing-roses/resources/summer-cultural-notes
+  - text: In hot weather check stems for sunburn and cut out badly burnt ones. Sunburn is worse where pests or disease have stripped the leaves.
+    seasons: [summer]
+    sources:
+      - https://www.rosesocietyvic.org.au/index.php/the-pruning-bible/

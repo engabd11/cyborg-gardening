@@ -1,0 +1,21 @@
+plant: lime
+plant_out: [9, 10, 11, 12, 1, 2, 3]
+harvest: [8, 9]
+notes:
+  - text: Plant in September once the risk of severe frost has passed. Trees grown in containers can also go in through spring, summer and early autumn if they are watered often.
+    months: [9, 10, 11, 12, 1, 2, 3]
+    sources:
+      - https://www.dpi.nsw.gov.au/agriculture/horticulture/citrus/content/crop-management/orchard-management-factsheets/garden
+  - text: Tahitian limes fruit in late winter and early spring. Pick while the rind is still green.
+    months: [8, 9]
+    sources:
+      - https://www.citrusmen.com.au/shop/p/pipsqueak-tahitian-lime-jy772
+      - https://www.dpi.nsw.gov.au/agriculture/horticulture/citrus/content/crop-management/orchard-management-factsheets/garden
+  - text: Expect the first fruit in the second autumn after planting.
+    months: [3, 4, 5]
+    sources:
+      - https://www.citrusmen.com.au/faq
+sources:
+  - https://www.dpi.nsw.gov.au/agriculture/horticulture/citrus/content/crop-management/orchard-management-factsheets/garden
+  - https://www.citrusmen.com.au/shop/p/pipsqueak-tahitian-lime-jy772
+  - https://www.citrusmen.com.au/faq

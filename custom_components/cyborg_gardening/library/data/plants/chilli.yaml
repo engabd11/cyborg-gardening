@@ -1,0 +1,244 @@
+id: chilli
+name: Chilli
+botanical: Capsicum annuum and related species
+group: vegetable
+icon: mdi:chili-hot
+frost: tender
+heat: sensitive
+water: moderate
+perennial: false
+stages: [seed, germinating, seedling, vegetative, flowering, fruiting]
+default_stage: seedling
+settings: [ground, pot, raised_bed]
+summary: A warm season crop for a sunny, sheltered spot. Raise seed with bottom heat, plant out after frost, water regularly, go easy on nitrogen and pick often.
+needs:
+  sun: full
+  soil: Deep, free draining soil with compost. Dolomite dug in supplies calcium and magnesium.
+  sources:
+    - https://www.sgaonline.org.au/capsicum-and-chilies/
+    - https://www.abc.net.au/gardening/factsheets/chillies/9426898
+    - https://www.diggers.com.au/products/chilli-early-jalapeno
+varieties:
+  - id: jalapeno
+    name: Jalapeño
+    notes: The classic chilli for pickling and green chilli sauce, with a grassy flavour and some heat. Compact, very productive and suits pots. Pick green or let it ripen red.
+    sources:
+      - https://www.diggers.com.au/products/chilli-early-jalapeno
+  - id: cayenne
+    name: Cayenne
+    notes: Long red chilli of medium heat. Remove the seeds for a milder taste, or dry and grind into flakes. Diggers' Joe's Long Cayenne crops about 15 weeks after transplanting.
+    sources:
+      - https://www.diggers.com.au/products/chilli-joes-long-cayenne-organic
+  - id: habanero
+    name: Habanero
+    notes: Very hot, rated about 100,000 to 325,000 Scoville heat units for Habanero Mustard. Hot chillies need the warmest germination, so use a heat mat.
+    sources:
+      - https://www.diggers.com.au/products/chilli-habanero-mustard
+      - https://www.abc.net.au/gardening/plant-finder/capsicum/9442178
+tasks:
+  - id: water
+    kind: water
+    title: Deep water
+    detail: Give regular deep soakings and check with a finger first; sandy soil needs more water than clay. Chillies are watered like their cousins the tomatoes, about weekly in mild weather and up to daily in very hot weather. Pots dry out faster.
+    every_days:
+      ground: {spring: 7, summer: 4, autumn: 7}
+      raised_bed: {spring: 7, summer: 4, autumn: 7}
+      pot: {spring: 4, summer: 1, autumn: 4}
+    sources:
+      - https://www.sgaonline.org.au/capsicum-and-chilies/
+      - https://www.abc.net.au/gardening/factsheets/chillies/9426898
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-tomatoes
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/Preparing-for-the-Summer-Harvest-Handout.pdf
+  - id: prepare_bed
+    kind: fertilise
+    title: Prepare the bed
+    detail: About a month before planting, dig in compost and an organic fertiliser, then mulch and wait. Dolomite adds calcium and magnesium.
+    products: [yates_dynamic_lifter_tomatoes_vegies_herbs, compost, garden_lime]
+    rate: Dynamic Lifter Tomatoes, Vegies and Herbs at 140 g per square metre mixed into the soil.
+    once: true
+    seasons: [mid_spring]
+    stages: [seed, germinating, seedling]
+    settings: [ground, raised_bed]
+    sources:
+      - https://www.sgaonline.org.au/capsicum-and-chilies/
+      - https://www.yates.com.au/yates-3kg-dynamic-lifter-plant-food-pellets-tomatoes-vegies-herbs/
+      - https://www.diggers.com.au/products/chilli-early-jalapeno
+  - id: feed_young
+    kind: fertilise
+    title: Gentle liquid feed
+    detail: Feed young plants well but gently with a weekly liquid feed at the tomato food's seedling rate, which is half its fruiting rate.
+    products: [yates_thrive_tomato_liquid]
+    rate: 1 cap in 9 L of water.
+    every_days: 7
+    seasons: [spring, summer]
+    stages: [seedling, vegetative]
+    caution: Do not spray it on the leaves when the day will pass 30 degrees.
+    sources:
+      - https://www.yates.com.au/how-to-grow/chillies/
+      - https://www.yates.com.au/product/garden-fertilisers/speciality-fertilisers/yates-thrive-tomato-liquid-plant-food/
+      - https://www.abc.net.au/gardening/plant-finder/capsicum/9442178
+  - id: feed_pot
+    kind: fertilise
+    title: Liquid feed for potted chillies
+    detail: Potted chillies need more frequent feeding. Feed weekly once flowering starts. If the plant is all leaf and little fruit, cut back.
+    products: [yates_thrive_tomato_liquid]
+    rate: 2 caps in 9 L of water.
+    every_days: 7
+    seasons: [late_spring, summer, early_autumn, mid_autumn]
+    stages: [flowering, fruiting]
+    settings: [pot]
+    caution: Do not spray it on the leaves when the day will pass 30 degrees.
+    sources:
+      - https://www.yates.com.au/how-to-grow/chillies/
+      - https://www.yates.com.au/product/garden-fertilisers/speciality-fertilisers/yates-thrive-tomato-liquid-plant-food/
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/Preparing-for-the-Summer-Harvest-Handout.pdf
+      - https://www.abc.net.au/gardening/factsheets/chillies/9426898
+  - id: feed_ground
+    kind: fertilise
+    title: Organic pellets once fruit forms
+    detail: Garden chillies rarely need much feeding. Once the first fruit forms, side dress with organic pellets and water in well. Avoid high nitrogen fertilisers, which give leaves and no fruit.
+    products: [yates_dynamic_lifter_tomatoes_vegies_herbs]
+    rate: 140 g per square metre.
+    every_days: 42
+    seasons: [late_spring, summer, early_autumn]
+    stages: [fruiting]
+    settings: [ground, raised_bed]
+    sources:
+      - https://www.sgaonline.org.au/capsicum-and-chilies/
+      - https://www.yates.com.au/yates-3kg-dynamic-lifter-plant-food-pellets-tomatoes-vegies-herbs/
+  - id: tip_prune
+    kind: prune
+    title: Tip prune young plants
+    detail: Pinch out the growing tips of young plants to make them bushier.
+    once: true
+    seasons: [late_spring, early_summer]
+    stages: [seedling, vegetative]
+    sources:
+      - https://www.sgaonline.org.au/wp-content/uploads/2022/09/Notes-Preparing-for-Summer-Harvest.pdf
+  - id: mulch
+    kind: mulch
+    title: Mulch
+    detail: Spread organic mulch such as sugar cane or pea straw about 7 cm deep to hold moisture through summer.
+    products: [sugar_cane_mulch, pea_straw]
+    rate: 7 cm deep.
+    once: true
+    seasons: [late_spring, early_summer]
+    stages: [seedling, vegetative, flowering]
+    sources:
+      - https://www.yates.com.au/how-to-grow/chillies/
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/Preparing-for-the-Summer-Harvest-Handout.pdf
+  - id: fruit_fly
+    kind: check
+    title: Fruit fly round
+    detail: Check traps, refresh bait as its label directs and clear fallen fruit. Net plants with fine insect mesh once fruit has set.
+    products: [fruit_fly_trap, eco_naturalure]
+    every_days: 7
+    seasons: [late_spring, summer, autumn]
+    stages: [fruiting]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/controlling-queensland-fruit-fly-in-home-gardens
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/queensland-fruit-fly-host-fruits
+  - id: harvest
+    kind: harvest
+    title: Pick chillies
+    detail: Pick at any stage; heat builds as they ripen to red. Cut them off with secateurs rather than pulling, and wear gloves. The more you pick, the more the plant produces.
+    every_days: 7
+    seasons: [summer, autumn]
+    stages: [fruiting]
+    sources:
+      - https://www.sgaonline.org.au/capsicum-and-chilies/
+      - https://www.yates.com.au/how-to-grow/chillies/
+      - https://www.diggers.com.au/products/chilli-early-jalapeno
+  - id: winter_cutback
+    kind: prune
+    title: Cut back to overwinter
+    detail: To keep a plant for next year, prune it right back before frost but leave a few green leaves on each branch, then mulch well. Potted plants overwinter best in a warm, sheltered spot such as under the eaves.
+    once: true
+    seasons: [late_autumn]
+    stages: [fruiting]
+    sources:
+      - https://www.yates.com.au/how-to-grow/chillies/
+      - https://www.sgaonline.org.au/overwintering-capsicum/
+      - https://www.sgaonline.org.au/wp-content/uploads/2022/09/Notes-Preparing-for-Summer-Harvest.pdf
+pests:
+  - id: queensland_fruit_fly
+    name: Queensland fruit fly
+    kind: pest
+    seasons: [late_spring, summer, autumn]
+    signs: Pin sized sting marks, soft or rotting patches, and maggots inside the fruit.
+    prevent: Net plants with fine insect mesh after pollination, keeping the net off the fruit. Pick fruit as it ripens and clear fallen fruit.
+    treat: Use traps and bait sprays on the foliage. Kill maggots in infested fruit by freezing, boiling or microwaving it, or seal it in two bags in the sun for 14 days. Never compost it.
+    products: [fruit_fly_trap, eco_naturalure]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/controlling-queensland-fruit-fly-in-home-gardens
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/queensland-fruit-fly-host-fruits
+      - https://www.abc.net.au/gardening/plant-finder/chilli/9636242
+  - id: blossom_end_rot
+    name: Blossom end rot
+    kind: disorder
+    seasons: [summer]
+    signs: A dark, sunken patch at the tip of the fruit.
+    prevent: Water regularly and apply a light dressing of dolomite lime. It comes from a calcium shortage made worse by irregular watering.
+    treat: Water regularly and give the bed a dressing of dolomite lime.
+    products: [garden_lime]
+    sources:
+      - https://www.abc.net.au/gardening/factsheets/chillies/9426898
+  - id: two_spotted_mite
+    name: Two spotted mite
+    kind: pest
+    seasons: [summer]
+    signs: Fine speckling on the leaves in warm, dry weather.
+    prevent: Check the undersides of leaves during hot, dry spells.
+    treat: Spray wettable sulphur or horticultural oil. Yates Lime Sulphur is labelled for two spotted mite on vegetables at 10 mL per litre.
+    products: [eco_oil, yates_lime_sulfur]
+    sources:
+      - https://www.abc.net.au/gardening/factsheets/chillies/9426898
+      - https://www.yates.com.au/yates-500ml-lime-sulfur/
+      - https://www.yates.com.au/how-to-grow/tomatoes/
+  - id: root_knot_nematode
+    name: Root knot nematode
+    kind: pest
+    signs: Plants wilt because microscopic roundworms attack the roots.
+    prevent: Build up organic matter in the soil and rotate crops. In pots, replace the potting mix each time you replant.
+    sources:
+      - https://www.abc.net.au/gardening/factsheets/chillies/9426898
+advice:
+  - text: In Melbourne, plant chilli seedlings out in November, once frost has passed and the soil is warm.
+    seasons: [mid_spring, late_spring]
+    stages: [seedling]
+    sources:
+      - https://www.sgaonline.org.au/wp-content/uploads/2022/09/Notes-Preparing-for-Summer-Harvest.pdf
+      - https://www.diggers.com.au/products/chilli-early-jalapeno
+  - text: Germinate seed indoors on a heat mat. The hotter the chilli, the warmer the seed needs to be. Water often, as the heat dries the mix, and plant out 4 to 6 weeks after sowing.
+    seasons: [early_spring, mid_spring]
+    stages: [seed, germinating, seedling]
+    sources:
+      - https://www.diggers.com.au/products/chilli-early-jalapeno
+      - https://www.abc.net.au/gardening/plant-finder/chilli/9636242
+  - text: Chillies hate frost. In pots you can move them under cover when frost is forecast.
+    seasons: [late_autumn, winter, early_spring]
+    settings: [pot]
+    sources:
+      - https://www.abc.net.au/gardening/factsheets/chillies/9426898
+      - https://www.sgaonline.org.au/capsicum-and-chilies/
+  - text: On very hot days a 30 to 50 percent shade cloth tent prevents sunscald and poor fruit set.
+    seasons: [summer]
+    stages: [flowering, fruiting]
+    sources:
+      - https://www.sgaonline.org.au/capsicum-and-chilies/
+  - text: Overfeeding, especially with high nitrogen fertiliser, gives lots of leaves and few fruit.
+    stages: [vegetative, flowering, fruiting]
+    sources:
+      - https://www.abc.net.au/gardening/factsheets/chillies/9426898
+      - https://www.sgaonline.org.au/capsicum-and-chilies/
+  - text: Rotate crops. Leave about 3 years before planting chillies, capsicum, tomatoes, eggplant or potatoes in the same patch.
+    stages: [seed, germinating, seedling]
+    sources:
+      - https://www.sgaonline.org.au/capsicum-and-chilies/
+  - text: Wear gloves when sowing and picking hot chillies and wash your hands afterwards. The oils irritate eyes and skin.
+    sources:
+      - https://www.yates.com.au/how-to-grow/chillies/
+  - text: Use a pot at least 30 cm deep in full sun with quality potting mix.
+    settings: [pot]
+    sources:
+      - https://www.yates.com.au/how-to-grow/chillies/

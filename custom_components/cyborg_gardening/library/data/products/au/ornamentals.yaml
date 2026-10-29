@@ -1,0 +1,42 @@
+- id: neutrog_sudden_impact_roses
+  name: Neutrog Sudden Impact for Roses
+  brand: Neutrog
+  type: organic_fertiliser
+  use: Organic based, boosted pellet fertiliser for roses. Not for natives, bare-rooted or newly planted roses.
+  rate: Established roses 100 g per bush after signs of new season growth, then every 8 to 10 weeks through the growing season. Pots 15 g per 150 mm pot, then 5 g per 25 mm pot size increase. Keep at least 20 cm from the base of the plant.
+  npk: "9:4:12"
+  low_phosphorus: false
+  where: [Bunnings, Victorian garden centres]
+  url: https://www.bunnings.com.au/neutrog-1-5kg-sudden-impact-for-roses-fertiliser_p3023049
+  label: https://neutrog.com.au/products/sudden-impact-for-roses/
+  sources:
+    - https://neutrog.com.au/products/sudden-impact-for-roses/
+    - https://www.bunnings.com.au/neutrog-1-5kg-sudden-impact-for-roses-fertiliser_p3023049
+- id: neutrog_bush_tucker
+  name: Neutrog Bush Tucker
+  brand: Neutrog
+  type: organic_fertiliser
+  use: Organic based, boosted pellet fertiliser for Australian natives, safe for phosphorus sensitive plants.
+  rate: New plantings 50 g per plant in the base of the hole, covered with 1 to 5 cm of soil. Established plants 100 g per plant. Garden beds 100 g per square metre. Pots 30 g per 20 cm pot around the outer rim. Apply after new growth appears, then every 12 weeks or as needed during the growing season, on pre-soaked soil at least 20 cm from the base, and water well.
+  npk: "10:0.7:8"
+  low_phosphorus: true
+  where: [Bunnings, Victorian garden centres]
+  url: https://www.bunnings.com.au/neutrog-10kg-bush-tucker-native-fertiliser_p0671779
+  label: https://neutrog.com.au/products/bush-tucker/
+  sources:
+    - https://neutrog.com.au/products/bush-tucker/
+    - https://www.bunnings.com.au/neutrog-10kg-bush-tucker-native-fertiliser_p0671779
+- id: osmocote_native
+  name: Scotts Osmocote Native Controlled Release Fertiliser
+  brand: Scotts Osmocote
+  type: controlled_release
+  use: Controlled release plant food for Australian natives and other phosphorus sensitive plants. Feeds for up to 6 months.
+  rate: Maintenance 1 tablespoon (15 g) for every 30 cm of plant height, in a band around the dripline, twice a year. Planting 2 tablespoons for a 20 cm pot, 3 for a 25 cm pot, 4 for a 30 cm pot. Beds 50 to 80 g per square metre.
+  npk: "21.8:0.7:7.2"
+  low_phosphorus: true
+  where: [Bunnings, Victorian garden centres]
+  url: https://www.bunnings.com.au/scotts-osmocote-1kg-native-controlled-release-fertiliser_p2961303
+  label: https://www.lovethegarden.com/au-en/product/scotts-osmocote-controlled-release-fertiliser-native-1kg
+  sources:
+    - https://www.lovethegarden.com/au-en/product/scotts-osmocote-controlled-release-fertiliser-native-1kg
+    - https://www.bunnings.com.au/scotts-osmocote-1kg-native-controlled-release-fertiliser_p2961303

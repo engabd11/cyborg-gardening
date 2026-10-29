@@ -1,0 +1,300 @@
+id: tomato
+name: Tomato
+botanical: Solanum lycopersicum
+group: vegetable
+icon: mdi:fruit-cherries
+frost: tender
+heat: sensitive
+water: high
+perennial: false
+stages: [seed, germinating, seedling, vegetative, flowering, fruiting]
+default_stage: seedling
+settings: [ground, pot, raised_bed]
+summary: A frost tender summer crop. Plant out into warm soil after the last frost, water evenly, feed with a potassium rich tomato food and protect the fruit from Queensland fruit fly.
+needs:
+  sun: full
+  soil: Free draining soil enriched with compost about a month before planting. Avoid fresh high nitrogen manure.
+  sources:
+    - https://www.sgaonline.org.au/tomatoes/
+    - https://www.yates.com.au/how-to-grow/tomatoes/
+    - https://www.yates.com.au/garden-hub/tomato-head-start/
+    - https://www.diggers.com.au/blogs/learn/how-to-grow-tomatoes
+tasks:
+  - id: water
+    kind: water
+    title: Deep water
+    detail: Water the soil, not the leaves, early in the morning. Give a long, slow soak about once a week in mild weather and up to daily in very hot weather. Pots dry out faster than beds. Keep watering even; erratic watering causes blossom end rot and split fruit.
+    every_days:
+      ground: {spring: 7, summer: 4, autumn: 7}
+      raised_bed: {spring: 7, summer: 4, autumn: 7}
+      pot: {spring: 4, summer: 1, autumn: 4}
+    sources:
+      - https://abc.net.au/gardening/factsheets/tomato-tips-and-tricks/9441144
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-tomatoes
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/Preparing-for-the-Summer-Harvest-Handout.pdf
+      - https://www.abc.net.au/gardening/how-to/top-tomato-tips/13618668
+  - id: prepare_bed
+    kind: fertilise
+    title: Prepare the tomato bed
+    detail: About a month before planting out, dig in compost and an organic tomato fertiliser. Fruiting vegetables take 140 g per square metre of Yates Dynamic Lifter Tomatoes, Vegies and Herbs mixed into the soil.
+    products: [yates_dynamic_lifter_tomatoes_vegies_herbs, compost]
+    rate: 140 g per square metre mixed into the soil before planting.
+    once: true
+    seasons: [late_winter, early_spring]
+    stages: [seed, germinating, seedling]
+    settings: [ground, raised_bed]
+    sources:
+      - https://www.sgaonline.org.au/tomatoes/
+      - https://www.sgaonline.org.au/august-in-your-patch/
+      - https://www.yates.com.au/yates-3kg-dynamic-lifter-plant-food-pellets-tomatoes-vegies-herbs/
+  - id: feed_young
+    kind: fertilise
+    title: Gentle liquid feed
+    detail: Young plants get a weak liquid feed. Yates Thrive Tomato's seedling rate is half its fruiting rate. Use it weekly from planting out until the first flower truss, watered onto moist soil.
+    products: [yates_thrive_tomato_liquid]
+    rate: 1 cap in 9 L of water.
+    every_days: 7
+    seasons: [spring, summer]
+    stages: [seedling, vegetative]
+    caution: Do not spray it on the leaves when the day will pass 30 degrees.
+    sources:
+      - https://www.yates.com.au/product/garden-fertilisers/speciality-fertilisers/yates-thrive-tomato-liquid-plant-food/
+      - https://www.diggers.com.au/blogs/learn/growing-tomatoes-from-seed
+  - id: feed_fruiting
+    kind: fertilise
+    title: Tomato liquid feed
+    detail: From the first flower truss to the end of fruiting, double the rate. This potassium rich feed supports flowers and fruit.
+    products: [yates_thrive_tomato_liquid]
+    rate: 2 caps in 9 L of water.
+    every_days: 7
+    seasons: [late_spring, summer, early_autumn, mid_autumn]
+    stages: [flowering, fruiting]
+    caution: Do not spray it on the leaves when the day will pass 30 degrees.
+    sources:
+      - https://www.yates.com.au/product/garden-fertilisers/speciality-fertilisers/yates-thrive-tomato-liquid-plant-food/
+  - id: potash
+    kind: fertilise
+    title: Sulphate of potash at first flowers
+    detail: Scatter sulphate of potash around each plant when the first flowers or fruit appear, then water it in. High potash feeding supports flowering and fruit set.
+    products: [sulphate_of_potash]
+    rate: About 2 tablespoons per plant.
+    once: true
+    seasons: [late_spring, early_summer]
+    stages: [flowering]
+    sources:
+      - https://abc.net.au/gardening/factsheets/tomato-tips-and-tricks/9441144
+      - https://www.abc.net.au/gardening/how-to/the-vegie-patch-growing-tomatoes/9433302
+  - id: stake
+    kind: other
+    title: Stake at planting
+    detail: Drive in a stake at least 1.8 to 2 m tall when you plant, so you do not pierce the roots later. Tie the main stem loosely with something soft that gives, such as old stockings.
+    once: true
+    seasons: [mid_spring, late_spring]
+    stages: [seedling]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/top-tomato-tips/13618668
+      - https://www.yates.com.au/how-to-grow/tomatoes/
+      - https://www.sgaonline.org.au/tomatoes/
+  - id: mulch
+    kind: mulch
+    title: Mulch once the soil is warm
+    detail: Hold off until late spring or early summer so the soil warms first, then spread straw mulch about 7 cm deep. Tomatoes tolerate mulch right up to the stem.
+    products: [sugar_cane_mulch, pea_straw]
+    rate: 7 cm deep.
+    once: true
+    seasons: [late_spring, early_summer]
+    stages: [vegetative, flowering, fruiting]
+    sources:
+      - https://www.sgaonline.org.au/tomatoes/
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/Preparing-for-the-Summer-Harvest-Handout.pdf
+  - id: thin
+    kind: prune
+    title: Remove low leaves and crowded laterals
+    detail: Take off leaves touching the ground and thin crowded laterals on vine types for airflow. Prune lightly; Diggers trials found heavy pruning cut yields without making fruit bigger.
+    once: true
+    seasons: [early_summer]
+    stages: [vegetative, flowering, fruiting]
+    sources:
+      - https://abc.net.au/gardening/factsheets/tomato-tips-and-tricks/9441144
+      - https://www.abc.net.au/gardening/how-to/top-tomato-tips/13618668
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-tomatoes
+  - id: fruit_fly
+    kind: check
+    title: Fruit fly round
+    detail: Check traps, refresh bait as its label directs, cut open any stung fruit and clear fallen fruit. Net plants with fine insect mesh once the flowers have set fruit.
+    products: [fruit_fly_trap, eco_naturalure]
+    every_days: 7
+    seasons: [mid_spring, late_spring, summer, autumn]
+    stages: [fruiting]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/controlling-queensland-fruit-fly-in-home-gardens
+      - https://www.yates.com.au/how-to-grow/tomatoes/
+  - id: russet_mite_check
+    kind: check
+    title: Russet mite check after the first heatwave
+    detail: Look at the lower leaves. Silvering then browning that climbs from the bottom up points to tomato russet mite.
+    once: true
+    seasons: [early_summer, mid_summer]
+    stages: [vegetative, flowering, fruiting]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/tomato-russet-mite/11988032
+  - id: harvest
+    kind: harvest
+    title: Pick ripening tomatoes
+    detail: Pick when the fruit has changed colour and is still firm. Picking as fruit colours, then ripening indoors, also reduces fruit fly damage.
+    every_days: 7
+    seasons: [summer, autumn]
+    stages: [fruiting]
+    sources:
+      - https://www.sgaonline.org.au/tomatoes/
+      - https://www.yates.com.au/how-to-grow/tomatoes/
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/controlling-queensland-fruit-fly-in-home-gardens
+pests:
+  - id: queensland_fruit_fly
+    name: Queensland fruit fly
+    kind: pest
+    seasons: [mid_spring, late_spring, summer, autumn]
+    signs: Pin sized sting marks on the skin, soft or rotting patches, and creamy maggots inside when the fruit is cut open. Stung fruit can look fine outside.
+    prevent: Drape fine insect netting over plants after pollination and keep it off the fruit. Pick fruit as it ripens and clear fallen fruit.
+    treat: Hang traps that catch both sexes about 1.5 m high in a shady spot, and spot spray bait onto foliage, not fruit. Kill maggots in infested fruit by microwaving, boiling or freezing it solid, or seal it in two bags in the sun for 14 days. Never compost it.
+    products: [fruit_fly_trap, eco_naturalure]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/controlling-queensland-fruit-fly-in-home-gardens
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/identifying-queensland-fruit-fly
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/queensland-fruit-fly-host-fruits
+  - id: tomato_russet_mite
+    name: Tomato russet mite
+    kind: pest
+    seasons: [summer]
+    signs: Leaves turn silver, then brown, starting at the bottom of the plant and moving up. The mites are too small to see. Outbreaks usually follow the first hot, dry spell.
+    prevent: Check the lower leaves after each heatwave so you catch it early.
+    treat: Remove affected foliage and give a seaweed tonic. If more is needed, spray horticultural oil, soap spray or sulphur. Yates Lime Sulphur is labelled for tomato mites at 10 mL per litre, spring to autumn.
+    products: [yates_lime_sulfur, eco_oil, seasol]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/tomato-russet-mite/11988032
+      - https://www.yates.com.au/yates-500ml-lime-sulfur/
+      - https://www.yates.com.au/how-to-grow/tomatoes/
+  - id: blossom_end_rot
+    name: Blossom end rot
+    kind: disorder
+    seasons: [summer]
+    signs: A dark, sunken patch on the bottom of the fruit.
+    prevent: Water evenly and mulch. It is a calcium problem caused mostly by irregular watering, too much nitrogen or root damage rather than a lack of calcium in the soil. A dressing of lime and dolomite at planting adds calcium.
+    treat: Keep watering consistent and feed with a fertiliser that contains calcium.
+    products: [garden_lime]
+    sources:
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/Preparing-for-the-Summer-Harvest-Handout.pdf
+      - https://www.sgaonline.org.au/january-in-your-patch/
+      - https://www.abc.net.au/gardening/how-to/top-tomato-tips/13618668
+      - https://www.yates.com.au/how-to-grow/tomatoes/
+  - id: early_blight
+    name: Early blight (target spot)
+    kind: disease
+    seasons: [summer, early_autumn]
+    signs: Small dark brown to black spots with a yellow halo and rings inside, starting on the older lower leaves and climbing the plant. Fruit can rot near the stalk.
+    prevent: Rotate crops, keep plants vigorous, space and thin for airflow, mulch, water the soil rather than the leaves, and clean up fallen leaves.
+    treat: Remove affected leaves and bin them; do not compost. Copper or mancozeb fungicide is labelled for early blight on tomatoes; copper starts soon after transplanting, before symptoms.
+    products: [copper_fungicide, mancozeb]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/plant-diseases/vegetable-diseases/target-spot-early-blight-of-potatoes
+      - https://www.sgaonline.org.au/early-blight-of-tomatoes/
+      - https://www.abc.net.au/gardening/tomato-care/106100740
+      - https://www.yates.com.au/yates-200ml-liquid-copper/
+      - https://www.yates.com.au/yates-150g-mancozeb-plus-garden-fungicide-miticide/
+  - id: late_blight
+    name: Late blight
+    kind: disease
+    signs: Large pale green patches on leaves that turn dark and water soaked, with white fluffy growth underneath in wet weather. Firm dark brown patches spread fast through the fruit.
+    prevent: Wet, humid weather around 21 degrees favours it. It survives on plant remains and arrives on seed potatoes, so clear old plants and use certified seed potatoes nearby.
+    treat: Copper fungicide is labelled for late blight on tomatoes; spray at the first sign and repeat every 10 to 14 days. Mancozeb is also labelled for it.
+    products: [copper_fungicide, mancozeb]
+    sources:
+      - https://www.dpird.wa.gov.au/businesses/pests-weeds-and-diseases/plant/plant-diseases/late-blight-of-potato-and-tomato/
+      - https://www.yates.com.au/yates-200ml-liquid-copper/
+      - https://www.yates.com.au/yates-150g-mancozeb-plus-garden-fungicide-miticide/
+  - id: aphids
+    name: Aphids
+    kind: pest
+    signs: Clusters of small sap suckers on new growth, which curls and twists.
+    prevent: Check the tips and the undersides of leaves.
+    treat: Spray eco-oil or a pyrethrum spray at first sight, covering the undersides of leaves.
+    products: [eco_oil, pyrethrum_spray]
+    sources:
+      - https://www.yates.com.au/how-to-grow/tomatoes/
+      - https://www.yates.com.au/ocp-500-ml-eco-oil-organicstar-miticide-insecticide-concentrate/
+  - id: whitefly
+    name: Whitefly
+    kind: pest
+    signs: Tiny white insects fly up when the plant is disturbed; they suck sap from the undersides of leaves.
+    prevent: Check the undersides of leaves.
+    treat: Spray eco-oil or a pyrethrum spray at first sight, covering both sides of the leaves.
+    products: [eco_oil, pyrethrum_spray]
+    sources:
+      - https://www.yates.com.au/how-to-grow/tomatoes/
+      - https://www.yates.com.au/how-to-grow/potatoes/
+      - https://www.yates.com.au/ocp-500-ml-eco-oil-organicstar-miticide-insecticide-concentrate/
+  - id: heliothis
+    name: Caterpillars (heliothis)
+    kind: pest
+    signs: Caterpillars, chewed leaves and their droppings.
+    prevent: Check plants regularly once they start flowering.
+    treat: Spray Bt (Dipel) when caterpillars or their damage first appear, covering both sides of the leaves, in the late afternoon. Repeat every 5 to 7 days as more hatch.
+    products: [dipel]
+    sources:
+      - https://www.yates.com.au/how-to-grow/tomatoes/
+      - https://www.yates.com.au/yates-40g-natures-way-caterpillar-killer-dipel/
+      - https://www.yates.com.au/how-to-grow/potatoes/
+advice:
+  - text: Melbourne Cup Day is the folklore planting date, but soil temperature is what counts. Plant out once the soil holds at least 16 degrees and frost has passed; 18 to 20 degrees is better.
+    seasons: [mid_spring, late_spring]
+    stages: [seed, germinating, seedling]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/top-tomato-tips/13618668
+  - text: In Melbourne, plant tomatoes from mid October. Earlier plantings need cover on cold nights, such as an upturned pot or bucket. Cold tolerant varieties such as Siberian and Stupice can go out earlier.
+    seasons: [early_spring, mid_spring]
+    stages: [seed, germinating, seedling]
+    sources:
+      - https://www.sgaonline.org.au/wp-content/uploads/2022/09/Notes-Preparing-for-Summer-Harvest.pdf
+  - text: For a head start, sow seed indoors in late winter, 6 to 8 weeks before planting out. Use a warm, bright spot or a heat mat; seedlings appear in 7 to 14 days. Pot them up once the true leaves show.
+    seasons: [late_winter, early_spring]
+    stages: [seed, germinating, seedling]
+    sources:
+      - https://www.yates.com.au/how-to-grow/tomatoes/
+      - https://www.yates.com.au/garden-hub/tomato-head-start/
+      - https://www.diggers.com.au/blogs/learn/growing-tomatoes-from-seed
+      - https://www.abc.net.au/gardening/how-to/cold-climate-tomatoes-from-seed/105601282
+  - text: Plant deep. Strip the lower leaves and bury up to the lower half of the stem; it roots along the buried stem.
+    stages: [seedling]
+    sources:
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/Preparing-for-the-Summer-Harvest-Handout.pdf
+      - https://www.yates.com.au/garden-hub/tomato-head-start/
+  - text: Flowers drop at 35 to 40 degrees and fruit can sunburn. Before a heatwave, water deeply in the morning, check the mulch and rig 50 percent shade cloth over the plants.
+    seasons: [summer]
+    stages: [flowering, fruiting]
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-tomatoes
+      - https://www.yates.com.au/how-to-grow/tomatoes/
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/Preparing-for-the-Summer-Harvest-Handout.pdf
+  - text: Flowers fail to set fruit when nights drop below 15 degrees, so early and late season crops can be patchy.
+    seasons: [spring, autumn]
+    stages: [flowering]
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-tomatoes
+  - text: Go easy on nitrogen. Too much gives lush leaves and little fruit.
+    stages: [vegetative, flowering]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/the-vegie-patch-growing-tomatoes/9433302
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/Preparing-for-the-Summer-Harvest-Handout.pdf
+  - text: Rotate crops. Do not plant where tomatoes, potatoes, chillies, capsicum or eggplant grew in the last 2 years; Yates suggests 4 years where you can.
+    stages: [seed, germinating, seedling]
+    sources:
+      - https://www.sgaonline.org.au/tomatoes/
+      - https://www.yates.com.au/how-to-grow/tomatoes/
+  - text: In pots, use one at least 40 cm wide and deep with quality potting mix. Pots need watering more often than beds.
+    settings: [pot]
+    sources:
+      - https://www.yates.com.au/how-to-grow/tomatoes/
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/Preparing-for-the-Summer-Harvest-Handout.pdf
+  - text: Cherry tomatoes suffer much less fruit fly damage than large tomatoes.
+    sources:
+      - https://www.yates.com.au/how-to-grow/tomatoes/

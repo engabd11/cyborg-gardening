@@ -1,0 +1,113 @@
+id: spinach
+name: Spinach
+botanical: Spinacia oleracea
+group: vegetable
+icon: mdi:leaf
+frost: hardy
+heat: sensitive
+water: high
+perennial: false
+stages: [seed, germinating, seedling, vegetative]
+default_stage: vegetative
+settings: [ground, raised_bed]
+summary: English spinach is a cool season leaf crop for Melbourne's autumn, winter and spring. Grow it fast with steady water and feeding, because warm weather sends it to seed.
+needs:
+  sun: part
+  soil: Fertile and well drained. Dislikes root disturbance at every stage.
+  ph: [6.0, 7.0]
+  sources:
+    - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+    - https://www.sgaonline.org.au/wp-content/uploads/2020/05/What-to-plant-now-notes.pdf
+    - https://www.sgaonline.org.au/wp-content/uploads/2022/08/Getting-Started-Organic-Veg-Gardening-into-Summer.pdf
+tasks:
+  - id: transplant_tonic
+    kind: tonic
+    title: Seaweed tonic at planting
+    detail: Water new seedlings in well with seaweed solution. Handle them gently, as spinach dislikes root disturbance. SGA suggests a weak, half strength mix for seedlings.
+    products: [seasol]
+    rate: 40 mL in 9 L of water at planting and again 1 week later (label rate for transplanting).
+    once: true
+    stages: [seedling]
+    sources:
+      - https://www.seasol.com.au/products/seasol/
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/201105-Getting-Started-With-Veggie-Gardening-Notes.pdf
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+  - id: liquid_feed
+    kind: fertilise
+    title: Liquid feed
+    detail: Apply liquid fertiliser through the growing season so plants grow quickly and stay sweet.
+    products: [powerfeed_all_purpose]
+    rate: 50 mL in 9 L of water every week (label rate for vegies).
+    every_days: 7
+    stages: [seedling, vegetative]
+    sources:
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+      - https://www.seasol.com.au/products/powerfeed/
+      - https://www.abc.net.au/gardening/plant-finder/spinach/9672096
+  - id: mulch
+    kind: mulch
+    title: Mulch the bed
+    detail: Spread straw mulch about 7 to 10 cm deep to keep the soil moist. Leave a gap of at least 4 cm around the stems.
+    products: [pea_straw, sugar_cane_mulch]
+    once: true
+    stages: [seedling]
+    sources: [https://www.sgaonline.org.au/pdfs/hh_moreland.pdf]
+  - id: snail_watch
+    kind: check
+    title: Protect seedlings from snails
+    detail: Snails and slugs feed in cool, moist weather and can eat seedlings to the ground. Hunt them on damp nights, set traps, or scatter iron-based bait in the evening.
+    products: [snail_bait_iron]
+    once: true
+    stages: [seedling]
+    seasons: [autumn, winter, spring]
+    caution: Read and follow the label.
+    sources:
+      - https://www.sgaonline.org.au/ggp-pest-of-the-season-snails-slugs/
+      - https://www.sgaonline.org.au/wp-content/uploads/2024/04/pests.pdf
+  - id: harvest
+    kind: harvest
+    title: Start picking
+    detail: Pick outer leaves as soon as they are large enough, from about 5 to 8 weeks. If you cut a whole head, leave the stem to sprout again.
+    once: true
+    stages: [vegetative]
+    sources:
+      - https://www.abc.net.au/gardening/plant-finder/spinach/9672096
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+pests:
+  - id: snails_slugs
+    name: Snails and slugs
+    kind: pest
+    seasons: [autumn, winter, spring]
+    signs: Holes in the middle of leaves, seedlings eaten to the ground and shiny silver trails.
+    prevent: Remove daytime hiding spots, use drip irrigation rather than sprinklers, and use copper barriers.
+    treat: Hand pick on wet nights, set beer or board traps, and as a last resort scatter iron-based pellets thinly in the evening.
+    products: [snail_bait_iron]
+    sources:
+      - https://www.sgaonline.org.au/ggp-pest-of-the-season-snails-slugs/
+      - https://www.sgaonline.org.au/wp-content/uploads/2024/04/pests.pdf
+  - id: bolting
+    name: Running to seed
+    kind: disorder
+    seasons: [late_spring, summer]
+    signs: A flower stalk shoots up and the leaf flavour suffers.
+    prevent: Sow in the cool months, keep plants well watered and fed so they grow fast, and look for heat resistant varieties.
+    treat: Harvest the remaining leaves and sow again in autumn.
+    sources:
+      - https://www.abc.net.au/gardening/plant-finder/spinach/9672096
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+advice:
+  - text: This profile is English spinach (Spinacia oleracea), not silverbeet. It prefers temperatures below 20 degrees for germination and growth and runs to seed in warm weather.
+    sources:
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+      - https://www.abc.net.au/gardening/plant-finder/spinach/9672096
+  - text: For greens through the warmer months, grow silverbeet instead. SGA notes it grows from 4 to 35 degrees, a far wider range than spinach.
+    seasons: [spring, summer]
+    sources: [https://www.sgaonline.org.au/wp-content/uploads/2020/05/What-to-plant-now-notes.pdf]
+  - text: Water well and give ample water all season. Fast growth prevents a bitter flavour.
+    sources:
+      - https://www.abc.net.au/gardening/plant-finder/spinach/9672096
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+  - text: Buy fresh seed each season. Seed saved from your own spinach can be very unreliable.
+    sources: [https://www.abc.net.au/gardening/plant-finder/spinach/9672096]
+  - text: Spinach is a heavy feeder in crop rotation. Do not follow it with another heavy feeder in the same bed.
+    sources: [https://www.sgaonline.org.au/crop-rotation/]

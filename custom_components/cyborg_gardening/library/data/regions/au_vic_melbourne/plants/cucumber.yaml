@@ -1,0 +1,17 @@
+plant: cucumber
+sow: [10, 11]
+plant_out: [10, 11, 12, 1]
+# Harvest follows planting out plus 6 to 8 weeks.
+harvest: [11, 12, 1, 2, 3]
+notes:
+  - text: Cucumbers are frost tender. Wait until the soil is above 16 degrees before planting out.
+    months: [9, 10]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/plow-into-summer/103216158
+      - https://www.sgaonline.org.au/september-in-your-patch/
+sources:
+  - https://www.diggers.com.au/pages/seeds-to-sow-cool-region
+  - https://www.diggers.com.au/pages/climate-map-for-seeds
+  - https://www.sgaonline.org.au/wp-content/uploads/2022/08/Getting-Started-Organic-Veg-Gardening-into-Summer.pdf
+  - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+  - https://www.abc.net.au/gardening/cool-climate-zone/9546624

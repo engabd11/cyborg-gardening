@@ -1,0 +1,19 @@
+plant: potato
+plant_out: [8, 9, 10]
+harvest: [11, 12, 1, 2]
+notes:
+  - text: Plant certified seed potatoes from August to October, timed so shoots emerge after the last frost.
+    months: [8, 9, 10]
+    sources:
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/Preparing-for-the-Summer-Harvest-Handout.pdf
+      - https://www.yates.com.au/how-to-grow/potatoes/
+  - text: Potatoes take about 12 to 20 weeks depending on variety. Dig new potatoes after flowering and the main crop once the tops die back.
+    months: [11, 12, 1, 2]
+    sources:
+      - https://www.abc.net.au/gardening/plant-finder/potatoes/9671834
+      - https://www.sgaonline.org.au/potatoes/
+      - https://www.abc.net.au/news/2022-07-12/how-to-grow-your-own-potatoes-in-garden-bag-or-pot/101213324
+sources:
+  - https://www.sgaonline.org.au/wp-content/uploads/2020/11/Preparing-for-the-Summer-Harvest-Handout.pdf
+  - https://www.yates.com.au/how-to-grow/potatoes/
+  - https://www.abc.net.au/gardening/plant-finder/potatoes/9671834

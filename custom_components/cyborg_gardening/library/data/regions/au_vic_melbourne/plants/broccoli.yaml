@@ -1,0 +1,19 @@
+plant: broccoli
+sow: [1, 4, 5, 6, 7, 8]
+plant_out: [4, 5, 6, 7, 8]
+# Harvest follows planting out plus 10 to 14 weeks.
+harvest: [6, 7, 8, 9, 10, 11, 12]
+notes:
+  - text: Cabbage white butterflies peak at autumn planting. Net seedlings as soon as they go in.
+    months: [3, 4]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/cabbage-white-butterfly/10972150
+  - text: Heads fail to form if the weather is too warm at harvest, so plant by the end of winter.
+    months: [8]
+    sources: [https://www.sgaonline.org.au/pdfs/hh_moreland.pdf]
+sources:
+  - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+  - https://www.sgaonline.org.au/broccoli-and-cauliflower/
+  - https://www.abc.net.au/gardening/cool-climate-zone/9546624
+  - https://www.diggers.com.au/pages/seeds-to-sow-cool-region
+  - https://www.diggers.com.au/pages/climate-map-for-seeds

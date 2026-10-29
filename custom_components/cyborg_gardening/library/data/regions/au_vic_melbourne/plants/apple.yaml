@@ -1,0 +1,16 @@
+plant: apple
+plant_out: [6, 7, 8]
+notes:
+  - text: Plant bare rooted trees in winter while they are dormant. Do not add fertiliser until late winter.
+    months: [6, 7, 8]
+    sources:
+      - https://www.sgaonline.org.au/growing-fruit-trees/
+      - https://www.diggers.com.au/blogs/learn/garden-guide-july-cool-region
+  - text: Black spot spores are released from late September to mid November, the high risk time for infection.
+    months: [9, 10, 11]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/plant-diseases/fruit-and-nut-diseases/pome-fruits/apple-scab
+sources:
+  - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0009/321201/ipm-for-australian-apples-and-pears-complete.pdf
+  - https://www.sgaonline.org.au/bare-root-fruit-trees/
+  - https://www.diggers.com.au/blogs/learn/garden-guide-july-cool-region

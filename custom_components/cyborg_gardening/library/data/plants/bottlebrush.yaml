@@ -1,0 +1,116 @@
+id: bottlebrush
+name: Bottlebrush
+botanical: Callistemon (many now classed as Melaleuca)
+group: native
+icon: mdi:flower-poppy
+frost: hardy
+heat: tolerant
+water: moderate
+perennial: true
+stages: [young, established, flowering]
+default_stage: established
+settings: [ground]
+summary: A tough native for full sun. Water weekly in the warm months, feed with a low phosphorus native fertiliser and tip prune just after flowering.
+needs:
+  sun: full
+  soil: Grows in most soils except highly alkaline ones; best in moist, well drained, slightly acid soil.
+  sources:
+    - https://www.anbg.gov.au/callistemon/
+    - https://www.abc.net.au/gardening/plant-finder/callistemon/9441952
+    - https://anpsa.org.au/plant_profiles/callistemon-violaceus-syn-melaleuca-violaceus/
+tasks:
+  - id: water
+    kind: water
+    title: Deep water
+    detail: Soak the soil deeply once a week through spring and summer. Skip a week if the soil is still wet, and water more often in hot, dry spells. Established plants cope with dry periods, so ease off in autumn and winter.
+    every_days: {spring: 7, summer: 7}
+    sources:
+      - https://ozbreed.com.au/how-to-maintain-callistemons
+      - https://www.anbg.gov.au/callistemon/
+  - id: feed
+    kind: fertilise
+    title: Native fertiliser
+    detail: Feed in spring and again in autumn with a low phosphorus native fertiliser, spread around the drip line on moist soil and watered in.
+    products: [neutrog_bush_tucker, osmocote_native]
+    rate: Neutrog Bush Tucker 100 g per established plant, or Osmocote Native 1 tablespoon (15 g) for every 30 cm of plant height.
+    once: true
+    seasons: [spring, autumn]
+    sources:
+      - https://www.anbg.gov.au/callistemon/
+      - https://neutrog.com.au/products/bush-tucker/
+      - https://www.lovethegarden.com/au-en/product/scotts-osmocote-controlled-release-fertiliser-native-1kg
+  - id: prune
+    kind: prune
+    title: Prune after flowering
+    detail: Once the main flowering has finished, cut just behind the spent flowers, taking about two thirds of the old flower spike. This gives three or more new branches and more flowers next season. Do not cut deep into old woody stems, which may not reshoot. Water well afterwards.
+    once: true
+    seasons: [summer]
+    sources:
+      - https://resources.austplants.com.au/stories/a-pruning-tip/
+      - https://www.anbg.gov.au/callistemon/
+      - https://anpsa.org.au/APOL2008/dec08-s2.html
+  - id: sawfly_check
+    kind: check
+    title: Check for sawfly larvae
+    detail: Look for clusters of sawfly larvae feeding on the leaves. Cut off the small branchlets that hold the colonies and put them in the bin.
+    once: true
+    seasons: [mid_autumn]
+    sources:
+      - https://abc.net.au/gardening/factsheets/jobs-for-the-weekend....23rd-april/13315338
+pests:
+  - id: sawfly
+    name: Sawfly larvae
+    kind: pest
+    signs: Clusters of larvae that skeletonise or strip the leaves, sometimes very quickly.
+    prevent: Parasitic wasps help keep them down, so avoid broad sprays.
+    treat: Cut off the small branchlets that hold the colonies and bin them. Wear gloves, as the larvae give off an irritating fluid when disturbed.
+    sources:
+      - https://abc.net.au/gardening/factsheets/jobs-for-the-weekend....23rd-april/13315338
+      - https://www.searlesgardening.com.au/articles/growing-callistemons-in-australia
+      - https://baag.com.au/callistemons/
+  - id: web_moth
+    name: Webbing caterpillar
+    kind: pest
+    signs: Webbing that binds leaves and stems together, with caterpillars sheltering inside.
+    prevent: Less common on bottlebrush, but it can flare up, so act as soon as webbing appears.
+    treat: Cut out the affected branches and put them in the rubbish, not the compost.
+    sources:
+      - https://baag.com.au/callistemons/
+  - id: scale
+    name: Scale and sooty mould
+    kind: pest
+    signs: Black sooty mould on the leaves, growing on honeydew from scale, aphids or mealybugs. Ants running up the stems often point to them.
+    prevent: Watch for ants, which tend these insects.
+    treat: Treat the insects rather than the mould, with a horticultural soap or oil spray.
+    products: [eco_oil]
+    sources:
+      - https://www.searlesgardening.com.au/articles/growing-callistemons-in-australia
+      - https://ozbreed.com.au/how-to-maintain-callistemons
+      - https://baag.com.au/callistemons/
+advice:
+  - text: Most bottlebrushes have been moved into the genus Melaleuca by some botanists. The Australian Plant Census and the Australian Native Plants Society still use Callistemon, so labels may show either name.
+    sources:
+      - https://anpsa.org.au/plant_profiles/callistemon-violaceus-syn-melaleuca-violaceus/
+      - https://anpsa.org.au/APOL2008/dec08-s2.html
+  - text: Most bottlebrushes handle frost, but late frosts can burn soft new growth. Do not prune just before winter, and cover young plants on very cold nights.
+    seasons: [late_autumn, winter, early_spring]
+    sources:
+      - https://www.anbg.gov.au/callistemon/
+      - https://www.abc.net.au/gardening/plant-finder/callistemon/9441952
+      - https://ozbreed.com.au/how-to-maintain-callistemons
+  - text: Bottlebrushes are less sensitive to phosphorus than many natives and can take ordinary fertiliser, but a low phosphorus native fertiliser is the safe choice.
+    sources:
+      - https://anpsa.org.au/plant_profiles/callistemon-violaceus-syn-melaleuca-violaceus/
+      - https://ozbreed.com.au/how-to-maintain-callistemons
+      - https://www.anbg.gov.au/callistemon/
+  - text: Water well at planting and keep watering regularly for about six weeks while the roots settle.
+    stages: [young]
+    sources:
+      - https://baag.com.au/callistemons/
+  - text: Mulch helps hold moisture, but keep it away from the stem to avoid collar rot.
+    sources:
+      - https://baag.com.au/callistemons/
+  - text: Flowers are best in full sun. Nectar feeding birds visit the flower spikes.
+    sources:
+      - https://www.anbg.gov.au/callistemon/
+      - https://www.abc.net.au/gardening/plant-finder/callistemon/9441952

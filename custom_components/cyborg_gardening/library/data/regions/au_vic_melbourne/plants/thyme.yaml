@@ -1,0 +1,11 @@
+plant: thyme
+sow: [9, 10, 11]
+plant_out: [3, 4, 5]
+notes:
+  - text: Autumn is a good time to plant perennial herbs such as thyme.
+    months: [3, 4, 5]
+    sources:
+      - https://localfoodconnect.org.au/community-gardening/planting-guide/
+sources:
+  - https://www.yates.com.au/how-to-grow/thyme/
+  - https://localfoodconnect.org.au/community-gardening/planting-guide/

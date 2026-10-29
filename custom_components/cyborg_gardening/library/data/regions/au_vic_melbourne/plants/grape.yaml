@@ -1,0 +1,10 @@
+plant: grape
+plant_out: [6, 7, 8]
+harvest: [2, 3, 4, 5]
+notes:
+  - text: Plant bare-rooted vines while they are dormant.
+    months: [6, 7, 8]
+    sources: [https://www.sgaonline.org.au/grapes-2/]
+sources:
+  - https://www.sgaonline.org.au/grapes-2/
+  - https://www.yates.com.au/how-to-grow/grapes/

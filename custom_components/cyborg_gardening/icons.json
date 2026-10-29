@@ -1,0 +1,49 @@
+{
+  "entity": {
+    "binary_sensor": {
+      "needs_water": {
+        "default": "mdi:water-check",
+        "state": {
+          "on": "mdi:water-alert"
+        }
+      }
+    },
+    "select": {
+      "stage": {
+        "default": "mdi:sprout"
+      }
+    },
+    "sensor": {
+      "next_care": {
+        "default": "mdi:calendar-check"
+      }
+    },
+    "switch": {
+      "frost_watering": {
+        "default": "mdi:snowflake-melt"
+      },
+      "heat_misting": {
+        "default": "mdi:sprinkler-fire"
+      }
+    },
+    "todo": {
+      "care": {
+        "default": "mdi:flower"
+      }
+    }
+  },
+  "services": {
+    "mark_done": {
+      "service": "mdi:check-circle"
+    },
+    "snooze": {
+      "service": "mdi:alarm-snooze"
+    },
+    "run_valve": {
+      "service": "mdi:sprinkler-variant"
+    },
+    "stop_valve": {
+      "service": "mdi:water-off"
+    }
+  }
+}

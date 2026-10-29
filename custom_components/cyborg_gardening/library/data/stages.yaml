@@ -1,0 +1,31 @@
+# Shared stage names. Each plant lists the ones that apply, in growing order.
+- id: seed
+  name: Seed
+  description: Sown, not yet showing.
+- id: germinating
+  name: Germinating
+  description: First shoots breaking the surface.
+- id: seedling
+  name: Seedling
+  description: First true leaves, still small and tender.
+- id: vegetative
+  name: Growing
+  description: Leafy growth before flowering.
+- id: flowering
+  name: Flowering
+  description: In flower.
+- id: fruiting
+  name: Fruiting
+  description: Fruit setting or ripening.
+- id: bulbing
+  name: Bulbing
+  description: Bulbs or tubers forming below ground.
+- id: young
+  name: Young plant
+  description: Planted out within its first few years, still establishing.
+- id: established
+  name: Established
+  description: Mature and settled in its spot.
+- id: dormant
+  name: Dormant
+  description: Resting through the cold months, often leafless.

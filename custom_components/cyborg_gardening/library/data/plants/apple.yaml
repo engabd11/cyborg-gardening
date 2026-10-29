@@ -1,0 +1,259 @@
+id: apple
+name: Apple
+botanical: Malus domestica
+group: fruit_tree
+icon: mdi:food-apple
+frost: hardy
+heat: sensitive
+water: moderate
+perennial: true
+stages: [young, established, flowering, fruiting, dormant]
+default_stage: established
+settings: [ground]
+summary: A deciduous tree for full sun and cold winters. Plant a second variety that flowers at the same time so it can cross-pollinate.
+needs:
+  sun: full
+  soil: Full sun and good drainage. Most apples need cool winters with 500 to 1000 chill hours.
+  sources:
+    - https://www.abc.net.au/gardening/fruit-guide/102652284
+    - https://cms.diggers.com.au/courses/growing-food/m05/lesson-3-temperate-fruits
+    - https://www.sgaonline.org.au/growing-fruit-trees/
+    - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0009/321201/ipm-for-australian-apples-and-pears-complete.pdf
+tasks:
+  - id: winter_prune
+    kind: prune
+    title: Winter prune
+    detail: >-
+      Remove dead, diseased and damaged wood first. Cut new stems back by about a third to an outward facing bud and keep an
+      open vase shape you can reach. Do not cut off the fruiting spurs. Remove mildewed, shrivelled tip buds as you go.
+    seasons: [winter]
+    once: true
+    sources:
+      - https://www.abc.net.au/gardening/how-to/pruning-pomes/105436842
+      - https://www.sgaonline.org.au/bare-root-fruit-trees/
+      - https://agriculture.vic.gov.au/biosecurity/plant-diseases/fruit-and-nut-diseases/pome-fruits/powdery-mildew-of-apples
+  - id: summer_prune
+    kind: prune
+    title: Summer prune
+    detail: >-
+      After picking, head back vertical shoots and water shoots and thin crowded growth to let light and air in. Leave enough
+      leaf to shade branches and fruit from sunburn. Tip bearers such as Granny Smith, Fuji and Pink Lady fruit on short
+      laterals, so leave shoots under 20 cm.
+    seasons: [late_summer, early_autumn]
+    stages: [established, fruiting]
+    once: true
+    sources:
+      - https://www.sgaonline.org.au/summer-pruning-of-apple-trees/
+      - https://cms.diggers.com.au/courses/growing-food/m05/lesson-3-temperate-fruits
+  - id: dormant_spray
+    kind: spray
+    title: Dormant spray for black spot and mildew
+    detail: >-
+      Spray lime sulfur while the tree is dormant up to late bud swell, or copper at green tip. Black spot spores are released
+      from September to mid November, so protection must be on before then. Not for Delicious or Cox's Orange Pippin.
+    products: [yates_lime_sulfur, yates_liquid_copper]
+    rate: Yates Lime Sulfur 50 mL per 1 L of water from dormancy to late bud swell, or Yates Liquid Copper 5 mL per 1 L of water at green tip.
+    seasons: [late_winter, early_spring]
+    stages: [established, dormant]
+    once: true
+    caution: Read and follow the label.
+    sources:
+      - https://www.yates.com.au/yates-500ml-lime-sulfur/
+      - https://www.yates.com.au/yates-200ml-liquid-copper/
+      - https://agriculture.vic.gov.au/biosecurity/plant-diseases/fruit-and-nut-diseases/pome-fruits/apple-scab
+      - https://www.sgaonline.org.au/winter-washing-of-fruit-trees-2/
+  - id: feed
+    kind: fertilise
+    title: Fruit tree fertiliser
+    detail: >-
+      Feed once a year as growth starts in late winter or early spring, not while fully dormant. Sprinkle in a band around the
+      drip line, cover with mulch and water in. Avoid heavy nitrogen, which encourages aphids.
+    products: [osmocote_citrus_fruit]
+    rate: Osmocote Citrus and Fruit, 6 tablespoons (90 g) per tree in years 1 and 2, then 10 tablespoons (150 g) per tree from year 3.
+    seasons: [late_winter, early_spring]
+    stages: [young, established, flowering]
+    once: true
+    sources:
+      - https://www.sgaonline.org.au/growing-fruit-trees/
+      - https://www.lovethegarden.com/au-en/product/scotts-osmocote-controlled-release-fertiliser-citrus-fruit
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0009/321201/ipm-for-australian-apples-and-pears-complete.pdf
+  - id: codling_trap
+    kind: check
+    title: Hang codling moth pheromone trap
+    detail: Adult codling moths emerge in spring as the tree flowers. A pheromone trap in the canopy shows when they are flying.
+    seasons: [early_spring]
+    once: true
+    sources:
+      - https://www.abc.net.au/gardening/how-to/moth-management/103447452
+      - https://www.sgaonline.org.au/codling-moth/
+  - id: codling_bands
+    kind: check
+    title: Check codling moth bands and fallen fruit
+    detail: >-
+      Keep a band of corrugated cardboard or hessian around the trunk so larvae stop there to pupate. Check it every week or two
+      from blossom through winter and bin it with any larvae. Pick up fruit with small holes and bin it, never compost it.
+    every_days: 10
+    sources:
+      - https://www.abc.net.au/gardening/how-to/moth-management/103447452
+      - https://www.sgaonline.org.au/codling-moth/
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/codling-moth
+  - id: thin_fruit
+    kind: other
+    title: Thin the fruit
+    detail: >-
+      Between flowering and marble sized fruit, keep the 2 or 3 largest apples in each cluster and twist off the rest.
+      Thinning gives bigger fruit, a crop every year and fewer broken branches.
+    seasons: [mid_spring, late_spring]
+    stages: [established, fruiting]
+    once: true
+    sources:
+      - https://www.abc.net.au/gardening/how-to/thinning-fruit-trees/101692498
+  - id: woolly_aphid_check
+    kind: check
+    title: Check for woolly aphid
+    detail: >-
+      Look for white, cottony colonies on pruning wounds, rough bark, the graft and leaf axils. Mark infested trees so they can
+      be treated early next season.
+    seasons: [late_summer, early_autumn]
+    once: true
+    sources:
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0009/321201/ipm-for-australian-apples-and-pears-complete.pdf
+  - id: net_fruit
+    kind: other
+    title: Net or bag the fruit
+    detail: >-
+      Once flowers are pollinated and fruit is still small, cover the tree with insect netting or bag the fruit against
+      fruit fly and birds. Victorian household fruit netting must have a mesh of 5 mm by 5 mm or less at full stretch.
+      Fix it tightly to the trunk and keep it off the fruit.
+    seasons: [late_spring]
+    stages: [established, fruiting]
+    once: true
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/controlling-queensland-fruit-fly-in-home-gardens
+      - https://agriculture.vic.gov.au/livestock-and-animals/animal-welfare-victoria/pocta-act-1986/protecting-fruit-trees-and-wildlife
+  - id: fruit_fly_trap
+    kind: check
+    title: Check fruit fly trap
+    detail: >-
+      Hang the trap about 1.5 m high in a shady part of the canopy. Change homemade bait weekly and refresh bought lures as the
+      label says. Traps alone will not control fruit fly.
+    products: [fruit_fly_trap]
+    every_days: 7
+    seasons: [spring, summer, autumn]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/controlling-queensland-fruit-fly-in-home-gardens
+pests:
+  - id: codling_moth
+    name: Codling moth
+    kind: pest
+    seasons: [spring, summer, autumn]
+    signs: Holes in the fruit plugged with brown droppings, a grub in the core, and fruit that drops early.
+    prevent: >-
+      Remove loose bark and leaf debris, band the trunk with corrugated cardboard, hang pheromone traps in spring, bag fruit,
+      let chooks forage under the tree, and destroy fruit with holes.
+    treat: >-
+      Spray Bt (Dipel) after eggs are laid but before larvae enter the fruit, repeating every 7 to 14 days while eggs hatch.
+      Yates Success Ultra is registered for codling moth on pome fruit at 7.5 mL per litre.
+    products: [dipel, yates_success_ultra]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/codling-moth
+      - https://www.sgaonline.org.au/codling-moth/
+      - https://www.yates.com.au/garden-hub/codling-moth/
+      - https://www.yates.com.au/yates-200ml-success-ultra/
+  - id: woolly_aphid
+    name: Woolly aphid
+    kind: pest
+    seasons: [summer, autumn, winter]
+    signs: White, cotton wool like colonies on pruning wounds, the trunk, graft and water shoots, sticky honeydew, and woody galls on twigs and roots.
+    prevent: >-
+      Remove suckers and water shoots, which act as a bridge from the roots to the canopy. Rootstocks in the MM series resist it.
+      Avoid spraying colonies where you can, as sprays kill the parasitic wasp Aphelinus mali that controls it.
+    treat: Paint colonies with methylated spirits on an old paintbrush, and prune off large colonies in summer.
+    sources:
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0009/321201/ipm-for-australian-apples-and-pears-complete.pdf
+      - https://abc.net.au/gardening/factsheets/2007---ep-21/9427954
+  - id: powdery_mildew
+    name: Powdery mildew
+    kind: disease
+    seasons: [spring, early_summer]
+    signs: >-
+      White powdery growth on new leaves, narrow curled brittle leaves, shrivelled tip buds in winter, and web-like russet on the
+      fruit. Favoured by dry weather above 20 degrees.
+    prevent: >-
+      Prune out infected tip buds in winter and keep the canopy open for air flow. Jonathan, Pink Lady and Gala are highly
+      susceptible.
+    treat: Lime sulfur while dormant to late bud swell, then protective sprays at least every 2 weeks from pink bud while shoots are growing if mildew is a regular problem.
+    products: [yates_lime_sulfur]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/plant-diseases/fruit-and-nut-diseases/pome-fruits/powdery-mildew-of-apples
+      - https://www.yates.com.au/yates-500ml-lime-sulfur/
+  - id: apple_scab
+    name: Apple scab (black spot)
+    kind: disease
+    seasons: [early_spring, mid_spring, late_spring]
+    signs: Olive green to sooty black spots on leaves and fruit, distorted or cracked fruit, and early leaf and fruit drop.
+    prevent: >-
+      Rake and mulch fallen leaves in autumn, where the fungus overwinters. Avoid overhead watering. Crimson Crisp and Pixie Crunch
+      are resistant for home gardens; Pink Lady is highly susceptible.
+    treat: Protective sprays at green tip and pink bud, then regularly through wet springs, as the label directs.
+    products: [yates_lime_sulfur, yates_liquid_copper]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/plant-diseases/fruit-and-nut-diseases/pome-fruits/apple-scab
+      - https://www.yates.com.au/yates-200ml-liquid-copper/
+      - https://www.yates.com.au/yates-500ml-lime-sulfur/
+  - id: fire_blight
+    name: Fire blight (not in Australia)
+    kind: disease
+    signs: Blossoms, shoots and leaves wilt brown and look scorched, shoots bend into a shepherd's crook, and cankers form on branches.
+    prevent: Fire blight is exotic and not present in Australia.
+    treat: There is no single effective treatment. Report suspected cases to the Exotic Plant Pest Hotline on 1800 084 881.
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/plant-diseases/fruit-and-nut-diseases/pome-fruits/fire-blight
+  - id: birds
+    name: Birds and other wildlife
+    kind: pest
+    seasons: [summer, early_autumn]
+    signs: Pecked or eaten fruit. Parrots, cockatoos and bats damage apple crops.
+    prevent: Net with household netting of 5 mm by 5 mm mesh or less, ideally white, fixed tightly to the trunk, or bag selected branches.
+    treat: Check netted trees daily and call a wildlife rescue group if an animal is caught.
+    sources:
+      - https://cms.diggers.com.au/courses/growing-food/m05/lesson-3-temperate-fruits
+      - https://agriculture.vic.gov.au/livestock-and-animals/animal-welfare-victoria/pocta-act-1986/protecting-fruit-trees-and-wildlife
+  - id: queensland_fruit_fly
+    name: Queensland fruit fly
+    kind: pest
+    seasons: [spring, summer, autumn]
+    signs: Tiny sting marks on the skin and creamy maggots inside fruit that may look fine from outside.
+    prevent: Net after pollination or bag fruit, pick fruit as it ripens, keep fallen fruit cleared, and hang traps to monitor.
+    treat: >-
+      Spot spray bait onto the trunk and foliage, not the fruit. Freeze unwanted fruit sealed in a bag for two days, or bag it in
+      the sun for 14 days, then put it in the rubbish bin.
+    products: [eco_naturalure, fruit_fly_trap]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/controlling-queensland-fruit-fly-in-home-gardens
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/queensland-fruit-fly-host-fruits
+advice:
+  - text: >-
+      Apples need pollen from a different variety that flowers at the same time. Jonathan pollinates other mid season apples,
+      and crab apples are good pollen donors for most varieties.
+    sources:
+      - https://cms.diggers.com.au/courses/growing-food/m05/lesson-3-temperate-fruits
+      - https://www.diggers.com.au/products/apple-pollinating-duo-fuji-and-jonathan
+  - text: Remove any fruit that forms in the first and second seasons so the young tree puts its energy into getting established.
+    stages: [young]
+    sources:
+      - https://www.sgaonline.org.au/bare-root-fruit-trees/
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0009/321201/ipm-for-australian-apples-and-pears-complete.pdf
+  - text: Young trees have small roots. Water lightly and often so they never get moisture stressed.
+    stages: [young]
+    sources:
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0009/321201/ipm-for-australian-apples-and-pears-complete.pdf
+  - text: Hot sun can burn exposed branches and fruit. Leave enough leaf in the canopy to shade them, especially after pruning.
+    seasons: [summer]
+    sources:
+      - https://www.sgaonline.org.au/summer-pruning-of-apple-trees/
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0009/321201/ipm-for-australian-apples-and-pears-complete.pdf
+  - text: Late frosts can destroy flower and leaf buds on deciduous fruit trees.
+    seasons: [early_spring, mid_spring]
+    sources:
+      - https://www.sgaonline.org.au/growing-fruit-trees/

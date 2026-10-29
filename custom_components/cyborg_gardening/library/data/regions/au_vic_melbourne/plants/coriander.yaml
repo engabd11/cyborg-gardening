@@ -1,0 +1,13 @@
+plant: coriander
+sow: [3, 4, 9]
+notes:
+  - text: Sow in early March and again in early September. Avoid summer sowings, which bolt.
+    months: [3, 9]
+    sources:
+      - https://www.sgaonline.org.au/coriander-2/
+      - https://www.abc.net.au/gardening/herbs-in-pots/102593754
+sources:
+  - https://www.sgaonline.org.au/coriander-2/
+  - https://www.sgaonline.org.au/wp-content/uploads/2020/05/What-to-plant-now-notes.pdf
+  - https://localfoodconnect.org.au/community-gardening/planting-guide/
+  - https://www.yates.com.au/how-to-grow/coriander/

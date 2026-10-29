@@ -1,0 +1,178 @@
+id: potato
+name: Potato
+botanical: Solanum tuberosum
+group: vegetable
+icon: mdi:sprout
+frost: tender
+heat: tolerant
+water: low
+perennial: false
+stages: [seed, germinating, vegetative, flowering, bulbing]
+default_stage: seed
+settings: [ground, pot, raised_bed]
+summary: Grown from certified seed potatoes in free draining, slightly acid soil. Keep the tubers covered by hilling up as the shoots grow, water sparingly and lift once the tops yellow.
+needs:
+  sun: full
+  soil: Rich, very free draining soil full of organic matter. Slightly acid soil avoids scab.
+  ph: [5.5, 6.0]
+  sources:
+    - https://www.sgaonline.org.au/potatoes/
+    - https://www.yates.com.au/how-to-grow/potatoes/
+    - https://www.abc.net.au/gardening/plant-finder/potatoes/9671834
+tasks:
+  - id: chit
+    kind: other
+    title: Chit seed potatoes
+    detail: Stand seed potatoes eyes up in an egg carton in a bright spot out of direct sun. Plant when the shoots are 2 to 3 cm long, usually after 2 to 4 weeks. Cut large seed potatoes into chunks with at least one eye.
+    once: true
+    seasons: [mid_winter, late_winter]
+    stages: [seed]
+    sources:
+      - https://www.yates.com.au/how-to-grow/potatoes/
+      - https://www.abc.net.au/news/2022-07-12/how-to-grow-your-own-potatoes-in-garden-bag-or-pot/101213324
+  - id: plant_feed
+    kind: fertilise
+    title: Blood and bone at planting
+    detail: Dig manure and compost into the bed, plant seed potatoes in a 20 cm deep trench about 40 cm apart, then cover with soil, a handful of blood and bone and straw mulch.
+    products: [blood_and_bone, compost]
+    rate: A handful of blood and bone over each planting.
+    once: true
+    seasons: [late_winter, early_spring, mid_spring]
+    stages: [seed]
+    sources:
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/Preparing-for-the-Summer-Harvest-Handout.pdf
+  - id: tonic_planting
+    kind: tonic
+    title: Seaweed tonic at planting
+    detail: Water in with a seaweed tonic at planting. Good soil preparation means little other feeding is needed.
+    products: [seasol]
+    once: true
+    seasons: [late_winter, early_spring, mid_spring]
+    stages: [seed]
+    sources:
+      - https://www.sgaonline.org.au/potatoes/
+  - id: tonic_flowering
+    kind: tonic
+    title: Seaweed tonic at flowering
+    detail: Give a diluted seaweed tonic when the plants flower.
+    products: [seasol]
+    once: true
+    seasons: [spring, summer]
+    stages: [flowering]
+    sources:
+      - https://www.sgaonline.org.au/potatoes/
+  - id: hill_up
+    kind: other
+    title: Hill up and water
+    detail: Cover new shoots with soil, compost or straw as they emerge so no light reaches the tubers, and water well each time you add a layer. Keep going until the mound is about 60 cm high, or the pot is full. Potatoes need little other watering; overwatering causes problems.
+    products: [sugar_cane_mulch, pea_straw]
+    every_days: 14
+    seasons: [spring, summer]
+    stages: [germinating, vegetative, flowering]
+    sources:
+      - https://www.yates.com.au/how-to-grow/potatoes/
+      - https://www.sgaonline.org.au/potatoes/
+      - https://www.abc.net.au/news/2022-07-12/how-to-grow-your-own-potatoes-in-garden-bag-or-pot/101213324
+  - id: harvest_new
+    kind: harvest
+    title: Bandicoot new potatoes
+    detail: Once the plants have flowered, feel gently under the soil and take a few small new potatoes. Eat them the same day; they do not store.
+    once: true
+    seasons: [late_spring, summer]
+    stages: [flowering, bulbing]
+    sources:
+      - https://www.abc.net.au/news/2022-07-12/how-to-grow-your-own-potatoes-in-garden-bag-or-pot/101213324
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/Preparing-for-the-Summer-Harvest-Handout.pdf
+  - id: harvest_main
+    kind: harvest
+    title: Lift the main crop
+    detail: When the tops yellow and die back, stop watering and wait a week or two, then fork them up gently. The skin should be firm and not rub off. Eat damaged tubers that day and store the rest dark and cool with the dirt on.
+    once: true
+    seasons: [summer, early_autumn]
+    stages: [bulbing]
+    sources:
+      - https://www.abc.net.au/news/2022-07-12/how-to-grow-your-own-potatoes-in-garden-bag-or-pot/101213324
+      - https://www.sgaonline.org.au/potatoes/
+pests:
+  - id: potato_moth
+    name: Potato moth
+    kind: pest
+    seasons: [spring, summer]
+    signs: Brown blisters where larvae mine the leaves, tunnels in stems, and tunnels packed with droppings in the tubers. Worst in warm, dry weather when cracking soil exposes tubers.
+    prevent: Plant at least 15 cm deep and hill up well before tubers are exposed. Water so the soil does not crack. Do not follow potatoes with potatoes, and remove volunteer potatoes and nightshade weeds. Lift promptly, never cover dug tubers with the tops, and store below 9 degrees.
+    treat: Spray Bt every 5 to 7 days once caterpillars or their damage show.
+    products: [dipel]
+    sources:
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0008/126629/Potato-moth.pdf
+      - https://www.yates.com.au/how-to-grow/potatoes/
+  - id: early_blight
+    name: Early blight (target spot)
+    kind: disease
+    seasons: [late_summer, autumn]
+    signs: Small dark brown to black leaf spots with rings inside, up to about 6 mm, that can join and kill leaves. Tubers get dark, slightly sunken patches with a corky dry rot beneath.
+    prevent: Rotate crops, keep plants well fed and watered, and burn or bin dead tops after harvest.
+    treat: Copper or mancozeb fungicide is labelled for potato early blight; copper is sprayed every 7 to 10 days from emergence, covering both sides of the leaves.
+    products: [copper_fungicide, mancozeb]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/plant-diseases/vegetable-diseases/target-spot-early-blight-of-potatoes
+      - https://www.yates.com.au/yates-200ml-liquid-copper/
+      - https://www.yates.com.au/yates-150g-mancozeb-plus-garden-fungicide-miticide/
+  - id: late_blight
+    name: Late blight
+    kind: disease
+    signs: Pale green leaf patches that turn dark and water soaked, with white down underneath in wet weather. Tubers get a tan brown to purplish rot about 1.5 cm deep and may rot later in storage.
+    prevent: Plant certified seed potatoes, since the disease arrives on seed that can look healthy. Clear plant remains, as it survives on them. Wet, humid weather around 21 degrees favours it.
+    treat: Mancozeb is labelled for late blight on potatoes.
+    products: [mancozeb]
+    sources:
+      - https://www.dpird.wa.gov.au/businesses/pests-weeds-and-diseases/plant/plant-diseases/late-blight-of-potato-and-tomato/
+      - https://www.yates.com.au/yates-150g-mancozeb-plus-garden-fungicide-miticide/
+      - https://www.yates.com.au/how-to-grow/potatoes/
+  - id: greening
+    name: Green tubers
+    kind: disorder
+    signs: Tubers exposed to light turn green and bitter. Green potatoes can contain the toxin solanine and should not be eaten.
+    prevent: Keep hilling soil or mulch over the tubers as the plants grow, and store harvested potatoes in the dark.
+    sources:
+      - https://www.yates.com.au/how-to-grow/potatoes/
+      - https://www.sgaonline.org.au/potatoes/
+      - https://www.abc.net.au/gardening/how-to/celebrating-spuds/106630052
+  - id: aphids_whitefly
+    name: Aphids and whitefly
+    kind: pest
+    signs: Yellowing or distorted leaves from small sap suckers under the leaves. They can spread plant viruses.
+    treat: Spray both sides of the leaves every 5 to 7 days with an organic insecticide such as eco-oil.
+    products: [eco_oil]
+    sources:
+      - https://www.yates.com.au/how-to-grow/potatoes/
+      - https://www.yates.com.au/ocp-500-ml-eco-oil-organicstar-miticide-insecticide-concentrate/
+advice:
+  - text: Always plant certified seed potatoes. Supermarket potatoes can carry diseases such as blight into your soil for years.
+    stages: [seed]
+    sources:
+      - https://www.yates.com.au/how-to-grow/potatoes/
+      - https://www.abc.net.au/gardening/plant-finder/potatoes/9671834
+      - https://www.abc.net.au/news/2022-07-12/how-to-grow-your-own-potatoes-in-garden-bag-or-pot/101213324
+  - text: In Melbourne plant from August to October. Potatoes dislike frost, so time planting so the shoots come up after the last frost.
+    seasons: [late_winter, early_spring, mid_spring]
+    stages: [seed, germinating]
+    sources:
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/Preparing-for-the-Summer-Harvest-Handout.pdf
+      - https://www.yates.com.au/how-to-grow/potatoes/
+  - text: Do not plant potatoes where tomatoes, capsicum, chillies or eggplant grew; Yates suggests a break of 3 to 4 years.
+    stages: [seed]
+    sources:
+      - https://www.yates.com.au/how-to-grow/potatoes/
+      - https://www.sgaonline.org.au/potatoes/
+  - text: In pots or bags use a container at least 50 cm wide and deep with good drainage, and keep adding mix or straw as the plants grow.
+    settings: [pot]
+    sources:
+      - https://www.yates.com.au/how-to-grow/potatoes/
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/Preparing-for-the-Summer-Harvest-Handout.pdf
+  - text: Avoid growing potatoes in old tyres; they can leach heavy metals and chemicals that potatoes absorb.
+    sources:
+      - https://www.sgaonline.org.au/potatoes/
+      - https://www.yates.com.au/how-to-grow/potatoes/
+  - text: Hold back on water. Overwatering and poor drainage cause many potato problems.
+    sources:
+      - https://www.sgaonline.org.au/potatoes/

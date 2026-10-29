@@ -1,0 +1,40 @@
+# Products for tomato, chilli, capsicum and potato. Shared ids live in common.yaml.
+- id: yates_thrive_tomato_liquid
+  name: Yates Thrive Tomato Liquid Plant Food
+  brand: Yates
+  type: fertiliser
+  use: Potassium rich liquid feed for tomatoes, with a gentler rate for young plants and a stronger rate once flowering starts.
+  rate: Seedling to establishment, 1 cap in 9 L of water weekly from planting out to the first flower truss. Flowering and fruiting, 2 caps in 9 L of water weekly from the first flower truss to the end of fruiting.
+  npk: "8:2.4:10.2"
+  where: [Yates online shop]
+  url: https://www.yates.com.au/product/garden-fertilisers/speciality-fertilisers/yates-thrive-tomato-liquid-plant-food/
+  label: https://www.yates.com.au/product/garden-fertilisers/speciality-fertilisers/yates-thrive-tomato-liquid-plant-food/
+  caution: Do not apply to the leaves when the temperature is expected to pass 30 degrees.
+  sources:
+    - https://www.yates.com.au/product/garden-fertilisers/speciality-fertilisers/yates-thrive-tomato-liquid-plant-food/
+- id: yates_dynamic_lifter_tomatoes_vegies_herbs
+  name: Yates Dynamic Lifter Plant Food Pellets Tomatoes, Vegies and Herbs
+  brand: Yates
+  type: organic_fertiliser
+  use: Organic based pellets with added potassium and calcium, fed for up to 2 months per dose.
+  rate: Fruiting vegetables such as tomatoes, capsicum and chilli, mix 140 g per square metre into the soil before planting, then reapply 140 g per square metre every 6 weeks through the growing and fruiting seasons. Pots, 10 g for a 15 cm pot or 25 g for a 30 cm pot every 6 weeks. Water well after applying.
+  npk: "7.6:1.4:7.2"
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/yates-3kg-dynamic-lifter-plant-food-pellets-tomatoes-vegies-herbs_p0624186
+  label: https://www.yates.com.au/yates-3kg-dynamic-lifter-plant-food-pellets-tomatoes-vegies-herbs/
+  sources:
+    - https://www.yates.com.au/yates-3kg-dynamic-lifter-plant-food-pellets-tomatoes-vegies-herbs/
+    - https://www.bunnings.com.au/yates-3kg-dynamic-lifter-plant-food-pellets-tomatoes-vegies-herbs_p0624186
+- id: yates_thrive_flower_fruit
+  name: Yates Thrive Flower and Fruit Soluble Plant Food
+  brand: Yates
+  type: fertiliser
+  use: Fast acting soluble feed rich in potassium for flowering and fruiting plants.
+  rate: One measuring spoon (8 g) dissolved in 4.5 litres of water.
+  npk: "14:2.6:21"
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/yates-500g-thrive-flower-and-fruit-soluble-plant-food_p3021089
+  label: https://www.yates.com.au/yates-500g-thrive-flower-fruit-soluble-plant-food/
+  sources:
+    - https://www.yates.com.au/yates-500g-thrive-flower-fruit-soluble-plant-food/
+    - https://www.bunnings.com.au/yates-500g-thrive-flower-and-fruit-soluble-plant-food_p3021089

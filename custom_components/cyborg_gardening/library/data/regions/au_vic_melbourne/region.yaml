@@ -1,0 +1,82 @@
+id: au_vic_melbourne
+name: Melbourne, Victoria
+country: au
+hemisphere: south
+climate: Cool temperate
+# Australian meteorological seasons (Bureau of Meteorology).
+seasons:
+  summer: [12, 1, 2]
+  autumn: [3, 4, 5]
+  winter: [6, 7, 8]
+  spring: [9, 10, 11]
+  early_summer: [12]
+  mid_summer: [1]
+  late_summer: [2]
+  early_autumn: [3]
+  mid_autumn: [4]
+  late_autumn: [5]
+  early_winter: [6]
+  mid_winter: [7]
+  late_winter: [8]
+  early_spring: [9]
+  mid_spring: [10]
+  late_spring: [11]
+frost:
+  # Months with nights at 2 degrees or less at Melbourne Airport, Viewbank and Moorabbin (BOM averages);
+  # most fall in June to August, May, September and October get the odd one.
+  months: [5, 6, 7, 8, 9, 10]
+  # BOM: a screen reading of 2.2 degrees means the ground is approaching 0 degrees.
+  threshold_c: 2.2
+  # Morning of the day before the frost night, so the wet soil drains and soaks up a full day of sun.
+  water_time: "09:00"
+  notes: >-
+    Frost forms on clear, still nights and settles in low spots and frost hollows, and the ground can
+    reach 0 degrees while the forecast screen temperature is still about 2 degrees. Water the soil well
+    on the morning of the day before a frost night: moist soil absorbs and stores more of the day's heat
+    and releases it overnight, and watering a day ahead lets the surface drain so it is moist, not
+    soggy. Water the soil, not the leaves. Do not run sprinklers over plants at night: ice gives no
+    insulation, too little water or stopping partway through the night leaves plants colder than if
+    they were left dry, and home sprinklers cannot deliver enough water and can load plants with heavy
+    ice. Cover tender plants at dusk with frost cloth, hessian or an old sheet held off the leaves, or an
+    upturned pot over seedlings, and remove covers in the morning. If plants are frosted, a gentle spray
+    of water before the sun reaches them slows the thaw. Organic mulch slows heat rising from the soil
+    at night, so around tender plants in cold spots bare moist soil or gravel holds more warmth. Leave
+    frost damaged growth on the plant until frosts are over for the season, as it shields the growth
+    beneath.
+  sources:
+    - https://reg.bom.gov.au/climate/map/frost/what-is-frost.shtml
+    - https://reg.bom.gov.au/climate/averages/tables/cw_086282_All.shtml
+    - https://reg.bom.gov.au/climate/averages/tables/cw_086068_All.shtml
+    - https://reg.bom.gov.au/climate/averages/tables/cw_086077_All.shtml
+    - https://www.yates.com.au/garden-hub/problem-solver/other/frost-protection/
+    - https://www.awri.com.au/files/attachment/frost-fact-sheet
+    - https://agrilifeextension.tamu.edu/wp-content/uploads/2025/03/Protecting-Plants-from-Frosts-Freezes-EHT-048.pdf
+    - https://www.fao.org/4/y7223e/y7223e0c.htm
+    - https://www.fao.org/4/y7223e/y7223e0d.htm
+    - https://gardeningsolutions.ifas.ufl.edu/care/weather/preparing-the-landscape-for-cold-weather/
+    - https://www.abc.net.au/gardening/how-to/frosty-reception/102427276
+    - https://www.abc.net.au/gardening/how-to/frost-protection/11146932
+    - https://www.abc.net.au/gardening/how-to/fighting-frost/9436420
+    - https://apsvic.org.au/protect-your-plants-from-frost-damage
+heat:
+  # BOM climate tables count days at 35 degrees or more; Melbourne averages about 9 to 14 a year.
+  threshold_c: 35
+  notes: >-
+    Melbourne averages about 9 to 14 days a year at 35 degrees or more, mostly December to February.
+    Water deeply early in the morning before a forecast hot spell so moisture reaches deep into the
+    soil; avoid watering at night, which keeps foliage damp and invites fungal disease. Keep beds
+    mulched about 7 cm deep to keep roots cool and cut evaporation, with mulch clear of trunks and
+    stems. When temperatures head towards 40 degrees, put temporary shade cloth or old white sheets
+    over vegetables and tender plants for the day and take sheets off at night. Move pots into shade
+    or group them together, and dunk a heat stressed pot in a bucket of water. If a plant is wilting
+    badly, wetting its foliage with fresh, clean water cools it quickly. Do not cut off scorched leaves
+    until the hot weather has passed, as they shade the growth beneath.
+  sources:
+    - https://reg.bom.gov.au/climate/averages/tables/cw_086282_All.shtml
+    - https://reg.bom.gov.au/climate/averages/tables/cw_086068_All.shtml
+    - https://reg.bom.gov.au/climate/averages/tables/cw_086077_All.shtml
+    - https://www.abc.net.au/news/2019-01-17/water-smart-gardening-to-cope-with-hot-dry-summers/10716998
+    - https://www.abc.net.au/gardening/how-to/beating-the-heat/9434292
+    - https://www.abc.net.au/gardening/how-to/heatwave-affected-plants/9430746
+    - https://www.sgaonline.org.au/january-in-your-patch/
+    - https://www.sgaonline.org.au/february-in-your-patch/

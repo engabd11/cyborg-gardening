@@ -1,0 +1,273 @@
+# Shared Australian products. Rates are quoted from the maker's page or label.
+# Entries without a rate: the label page could not be opened yet; read the pack.
+- id: seasol
+  name: Seasol Seaweed Concentrate
+  brand: Seasol
+  type: tonic
+  use: Seaweed tonic for root growth and recovery from heat, frost and transplanting.
+  rate: 40 mL in 9 L of water every 2 to 4 weeks for established gardens; 40 mL in 9 L every 2 weeks for vegies, herbs and annuals; 20 mL in 9 L for foliar and indoor use.
+  organic: true
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/seasol-1-2l-seaweed-health-tonic-concentrate_p2962108
+  label: https://www.seasol.com.au/products/seasol/
+  sources:
+    - https://www.seasol.com.au/products/seasol/
+    - https://www.bunnings.com.au/seasol-1-2l-seaweed-health-tonic-concentrate_p2962108
+- id: powerfeed_all_purpose
+  name: PowerFeed All Purpose including Natives liquid concentrate
+  brand: PowerFeed
+  type: fertiliser
+  use: Fast acting liquid fertiliser and soil conditioner for the whole garden.
+  rate: 90 mL in 9 L of water every 1 to 2 weeks for established plants; 50 mL in 9 L every week for vegies, herbs and annuals; 30 mL in 9 L at planting and again 2 weeks later. Not on days that may exceed 25 degrees.
+  npk: "12:1.4:7"
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/powerfeed-600ml-concentrate_p0086797
+  label: https://www.seasol.com.au/products/powerfeed/
+  sources:
+    - https://www.seasol.com.au/products/powerfeed/
+    - https://www.bunnings.com.au/powerfeed-600ml-concentrate_p0086797
+- id: charlie_carp_all_purpose
+  name: Charlie Carp Premium Organic Fertiliser Concentrate
+  brand: Charlie Carp
+  type: organic_fertiliser
+  use: Liquid fish and seaweed fertiliser for vegies, fruit, lawns and gardens.
+  rate: 5 mL per litre of water every 2 weeks in the growing season for vegetables, fruit, herbs and annuals; 10 mL per litre monthly for established gardens and trees.
+  organic: true
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/charlie-carp-1l-premium-organic-fertiliser-concentrate_p3020034
+  label: https://charliecarp.com.au/how-to-use/
+  sources:
+    - https://charliecarp.com.au/how-to-use/
+    - https://www.bunnings.com.au/charlie-carp-1l-premium-organic-fertiliser-concentrate_p3020034
+- id: dynamic_lifter
+  name: Yates Dynamic Lifter Soil Improver and Plant Fertiliser
+  brand: Yates
+  type: organic_fertiliser
+  use: Pelletised chicken manure that feeds plants and improves soil.
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/yates-7kg-dynamic-lifter-organic-plant-food-soil-improver-pellets_p2961508
+  label: https://www.yates.com.au/yates-dynamic-lifter/
+  sources:
+    - https://www.yates.com.au/yates-dynamic-lifter/
+    - https://www.bunnings.com.au/yates-7kg-dynamic-lifter-organic-plant-food-soil-improver-pellets_p2961508
+- id: blood_and_bone
+  name: Yates Blood and Bone Organic Plant Food
+  brand: Yates
+  type: organic_fertiliser
+  use: Slow acting organic fertiliser for garden beds and fruit trees.
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/yates-10kg-blood-bone-organic-plant-food-fertiliser-granules_p0624182
+  sources:
+    - https://www.bunnings.com.au/yates-10kg-blood-bone-organic-plant-food-fertiliser-granules_p0624182
+- id: sulphate_of_potash
+  name: Richgro Granular Sulphate of Potash
+  brand: Richgro
+  type: fertiliser
+  use: Potassium for flowering and fruiting.
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/richgro-2-5kg-granular-sulphate-of-potash_p2985054
+  sources:
+    - https://www.bunnings.com.au/richgro-2-5kg-granular-sulphate-of-potash_p2985054
+- id: eco_oil
+  name: OCP eco-oil Concentrate
+  brand: OCP
+  type: insecticide
+  use: Botanical oil that kills aphids, mites, scale, whitefly and citrus leafminer.
+  rate: 5 mL per litre of water for mites and aphids, two sprays 3 to 5 days apart; 10 mL per litre for whitefly, black scale and citrus leafminer, every 5 to 14 days while new flush is present.
+  organic: true
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/ocp-500ml-eco-oil-concentrate_p2960092
+  label: https://hortag.com.au/product/eco-oil/
+  caution: Read and follow the label.
+  sources:
+    - https://hortag.com.au/product/eco-oil/
+    - https://www.bunnings.com.au/ocp-500ml-eco-oil-concentrate_p2960092
+- id: eco_neem
+  name: OCP eco-neem Concentrate
+  brand: OCP
+  type: insecticide
+  use: Neem spray for chewing and sucking insects such as caterpillars, aphids, mites, mealybugs, whitefly and citrus leafminer on ornamentals. The retailer page says it is not suitable for edibles.
+  rate: 100 mL makes up to 50 L of spray (up to 2 mL per litre); follow the label for each pest.
+  organic: true
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/ocp-100ml-eco-neem-concentrate_p2960315
+  caution: Read and follow the label.
+  sources:
+    - https://www.bunnings.com.au/ocp-100ml-eco-neem-concentrate_p2960315
+- id: yates_pestoil
+  name: Yates PestOil
+  brand: Yates
+  type: insecticide
+  use: Petroleum oil spray for citrus leafminer, scales, mites, mealybug, aphids and whitefly.
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/yates-500ml-pest-oil-concentrate_p2960511
+  label: https://www.yates.com.au/yates-pestoil-big-gun/
+  caution: Read and follow the label.
+  sources:
+    - https://www.yates.com.au/yates-pestoil-big-gun/
+    - https://www.bunnings.com.au/yates-500ml-pest-oil-concentrate_p2960511
+- id: eco_fungicide
+  name: OCP eco-fungicide
+  brand: OCP
+  type: fungicide
+  use: Potassium bicarbonate contact spray for powdery mildew, black spot and rust.
+  rate: 30 to 40 g per 10 L of water plus 20 mL emulsified vegetable oil for powdery mildew on tomatoes, capsicums, cucumbers, strawberries and zucchini, every 7 to 10 days; 40 g per 10 L plus 20 mL oil for roses every 10 to 14 days.
+  organic: true
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/ocp-500g-eco-fungicide_p2961113
+  label: https://www.yates.com.au/ocp-500g-eco-fungicide/
+  caution: Read and follow the label.
+  sources:
+    - https://www.yates.com.au/ocp-500g-eco-fungicide/
+    - https://www.yates.com.au/media/fwdd1bc0/eco-fungicide-500g-mar-2020-lr.pdf
+    - https://www.bunnings.com.au/ocp-500g-eco-fungicide_p2961113
+- id: copper_fungicide
+  name: Yates Leaf Curl Copper Fungicide Spray
+  brand: Yates
+  type: fungicide
+  use: Copper oxychloride spray for leaf curl, citrus black spot and melanose, rose black spot and tomato blights.
+  rate: 30 g per litre at budswell for peach and nectarine leaf curl; 7 g plus 5 mL white oil per litre at 50 to 80 per cent petal fall for citrus; 20 g per litre every 7 to 14 days for tomato and potato blight.
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/yates-250g-leaf-curl-spray_p2961834
+  label: https://www.yates.com.au/yates-250g-leaf-curl-copper-fungicide-spray/
+  caution: Read and follow the label.
+  sources:
+    - https://www.yates.com.au/yates-250g-leaf-curl-copper-fungicide-spray/
+    - https://www.bunnings.com.au/yates-250g-leaf-curl-spray_p2961834
+- id: mancozeb
+  name: Yates Mancozeb Plus Garden Fungicide and Miticide
+  brand: Yates
+  type: fungicide
+  use: Mancozeb and sulfur spray for leaf diseases and mites on vegetables and fruit.
+  rate: 15 g in 3 L of water (45 g in 9 L), repeat every 10 days. Not above 27 degrees. Withholding 7 to 14 days depending on crop.
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/yates-150g-mancozeb-plus-garden-fungicide-and-miticide_p3010237
+  label: https://www.yates.com.au/yates-150g-mancozeb-plus-garden-fungicide-miticide/
+  caution: Read and follow the label.
+  sources:
+    - https://www.yates.com.au/yates-150g-mancozeb-plus-garden-fungicide-miticide/
+    - https://www.bunnings.com.au/yates-150g-mancozeb-plus-garden-fungicide-and-miticide_p3010237
+- id: dipel
+  name: OCP eco-caterpillar killer DiPel
+  brand: OCP
+  type: insecticide
+  use: Bacillus thuringiensis spray for leaf eating caterpillars.
+  rate: 5 g in 5 L of water when caterpillars or damage first appear; respray every 5 to 7 days as more hatch or after rain. Best applied late afternoon.
+  organic: true
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/ocp-40g-eco-caterpillar-killer_p0712284
+  label: https://www.yates.com.au/ocp-40g-eco-caterpillar-killer/
+  caution: Read and follow the label.
+  sources:
+    - https://www.yates.com.au/ocp-40g-eco-caterpillar-killer/
+    - https://www.yates.com.au/media/n2fnbync/ocp-eco-caterpillar-killer-40g-2024-lr.pdf
+    - https://www.bunnings.com.au/ocp-40g-eco-caterpillar-killer_p0712284
+- id: pyrethrum_spray
+  name: Yates Pyrethrum Insect Pest Killer Concentrate
+  brand: Yates
+  type: insecticide
+  use: Pyrethrins from the pyrethrum daisy with piperonyl butoxide, for a wide range of insect pests on vegetables, flowers, ornamentals and indoor plants. The maker's page does not list herbs.
+  rate: 20 mL per litre of water when pests first appear; repeat weekly if required. Withholding period 1 day before harvest.
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/yates-200ml-pyrethrum-insect-pest-killer-concentrate_p2961583
+  label: https://www.yates.com.au/yates-200ml-pyrethrum-insect-pest-killer-concentrate/
+  caution: Read and follow the label.
+  sources:
+    - https://www.yates.com.au/yates-200ml-pyrethrum-insect-pest-killer-concentrate/
+    - https://www.bunnings.com.au/yates-200ml-pyrethrum-insect-pest-killer-concentrate_p2961583
+- id: snail_bait_iron
+  name: Multicrop Multiguard Snail and Slug Killer
+  brand: Multicrop
+  type: bait
+  use: Iron based snail and slug pellets.
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/multicrop-600g-multiguard-snail-and-slug-killer_p3018151
+  caution: Read and follow the label.
+  sources:
+    - https://www.bunnings.com.au/multicrop-600g-multiguard-snail-and-slug-killer_p3018151
+- id: wetting_agent
+  name: Seasol Super Soil Wetter and Conditioner
+  brand: Seasol
+  type: wetting_agent
+  use: Helps water soak into dry, water repellent soil and potting mix.
+  rate: 50 mL in 9 L of water every 3 to 6 months; for very poor soils 100 mL in 9 L every 2 weeks until the soil improves. Wash off foliage.
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/seasol-1-2l-super-soil-wetter-conditioner_p0029269
+  label: https://www.seasol.com.au/products/seasol-super-soil-wetter-conditioner/
+  sources:
+    - https://www.seasol.com.au/products/seasol-super-soil-wetter-conditioner/
+    - https://www.bunnings.com.au/seasol-1-2l-super-soil-wetter-conditioner_p0029269
+- id: gypsum
+  name: Yates Gypsum Clay Breaker
+  brand: Yates
+  type: soil_improver
+  use: Improves the structure of heavy clay soil.
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/yates-5kg-gypsum-clay-breaker-soil-improver-granules_p0630873
+  sources:
+    - https://www.bunnings.com.au/yates-5kg-gypsum-clay-breaker-soil-improver-granules_p0630873
+- id: garden_lime
+  name: Richgro Natural Garden Lime
+  brand: Richgro
+  type: soil_improver
+  use: Raises the pH of acid soil.
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/richgro-5kg-natural-garden-lime_p2983311
+  sources:
+    - https://www.bunnings.com.au/richgro-5kg-natural-garden-lime_p2983311
+- id: sugar_cane_mulch
+  name: Oreco Sweet Garden Sugar Cane Mulch
+  brand: Oreco
+  type: mulch
+  use: Light organic mulch for vegie beds and around fruit trees.
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/oreco-26m2-sweet-garden-sugar-cane-mulch_p2961137
+  sources:
+    - https://www.bunnings.com.au/oreco-26m2-sweet-garden-sugar-cane-mulch_p2961137
+- id: pea_straw
+  name: Brunnings Organic Lucerne Mulch
+  brand: Brunnings
+  type: mulch
+  use: Soft legume straw mulch that breaks down and feeds the soil. Bunnings stocks lucerne rather than pea straw; pea straw bales are sold by Victorian garden suppliers.
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/brunnings-organic-lucerne-mulch_p0583793
+  sources:
+    - https://www.bunnings.com.au/brunnings-organic-lucerne-mulch_p0583793
+- id: compost
+  name: Seasol Super Compost
+  brand: Seasol
+  type: soil_improver
+  use: Compost to dig into beds before planting or spread as a top dressing.
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/seasol-25l-super-compost_p0274164
+  label: https://www.seasol.com.au/products/seasol-super-compost/
+  sources:
+    - https://www.bunnings.com.au/seasol-25l-super-compost_p0274164
+- id: premium_potting_mix
+  name: Scotts Osmocote Premium Potting Mix
+  brand: Scotts Osmocote
+  type: potting_mix
+  use: Premium potting mix for pots and containers.
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/scotts-osmocote-25l-premium-potting-mix_p2962139
+  sources:
+    - https://www.bunnings.com.au/scotts-osmocote-25l-premium-potting-mix_p2962139
+- id: eco_naturalure
+  name: OCP eco-naturalure Fruit Fly Bait
+  brand: OCP
+  type: bait
+  use: Protein bait spot sprayed onto foliage to kill fruit flies before they lay eggs.
+  where: [Victorian garden centres]
+  url: https://hortag.com.au/brands/ocp
+  caution: Read and follow the label.
+  sources:
+    - https://hortag.com.au/brands/ocp
+- id: fruit_fly_trap
+  name: Amgrow Cera Trap Organic Fruit Fly Trap
+  brand: Amgrow
+  type: trap
+  use: Food lure trap that catches male and female fruit flies, for monitoring and reducing numbers.
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/amgrow-cera-trap-600ml-organic-fruit-fly-trap_p3010224
+  sources:
+    - https://www.bunnings.com.au/amgrow-cera-trap-600ml-organic-fruit-fly-trap_p3010224

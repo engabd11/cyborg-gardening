@@ -1,0 +1,147 @@
+id: parsley
+name: Parsley
+botanical: Petroselinum crispum
+group: herb
+icon: mdi:leaf
+frost: hardy
+heat: sensitive
+water: high
+perennial: false
+stages: [seed, germinating, seedling, vegetative, flowering]
+default_stage: vegetative
+settings: [ground, pot, raised_bed]
+summary: Parsley wants rich, moist soil and regular feeding, and runs to seed if it dries out. It is a biennial that turns bitter once it flowers in its second year, so sow fresh plants every year or two.
+needs:
+  sun: part
+  soil: Rich soil full of compost that stays moist, with a neutral pH of about 7. Flat leaf parsley takes full sun; curly parsley prefers about 4 hours of sun.
+  sources:
+    - https://www.sgaonline.org.au/parsley/
+    - https://www.abc.net.au/gardening/plant-finder/petroselinum/9442214
+    - https://www.yates.com.au/how-to-grow/parsley/
+    - https://localfoodconnect.org.au/wp-content/uploads/galleries/guide/veggie%20planting%20guide.xlsx
+tasks:
+  - id: soak_sow
+    kind: other
+    title: Soak and sow parsley seed
+    detail: Soak seed overnight in warm water, then sow direct or into trays. Keep the mix moist; seedlings can take 3 to 4 weeks to appear.
+    once: true
+    seasons: [spring, summer, autumn]
+    stages: [seed]
+    sources:
+      - https://localfoodconnect.org.au/wp-content/uploads/galleries/guide/veggie%20planting%20guide.xlsx
+      - https://www.abc.net.au/gardening/plant-finder/petroselinum/9442214
+      - https://www.yates.com.au/how-to-grow/parsley/
+  - id: water
+    kind: water
+    title: Water parsley
+    detail: Check every second morning and water only if the soil is not damp. Parsley runs to seed quickly and turns stringy and bitter if it dries out. In winter about 2 to 3 cm a week, counting rain, is enough.
+    every_days: {spring: 2, summer: 2, autumn: 2, winter: 7}
+    sources:
+      - https://www.sgaonline.org.au/parsley/
+      - https://www.abc.net.au/gardening/plant-finder/petroselinum/9442214
+      - https://localfoodconnect.org.au/wp-content/uploads/galleries/guide/veggie%20planting%20guide.xlsx
+  - id: seedling_seaweed
+    kind: tonic
+    title: Seaweed for young parsley
+    detail: Water in seaweed at planting and again a week later, then keep feeding seaweed until plants are 20 to 25 cm tall.
+    products: [seasol]
+    rate: 40 mL in a 9 L watering can (label rate for vegies and herbs).
+    every_days: 14
+    stages: [seedling]
+    sources:
+      - https://www.sgaonline.org.au/parsley/
+      - https://www.seasol.com.au/products/seasol/
+  - id: feed
+    kind: fertilise
+    title: Liquid feed parsley
+    detail: Leafy parsley responds well to regular liquid feeding.
+    products: [powerfeed_all_purpose]
+    rate: 50 mL in a 9 L watering can (label rate for vegies and herbs).
+    every_days: 7
+    seasons: [spring, summer, autumn]
+    stages: [vegetative]
+    sources:
+      - https://www.yates.com.au/how-to-grow/parsley/
+      - https://www.sgaonline.org.au/parsley/
+      - https://www.seasol.com.au/products/powerfeed/
+  - id: mulch
+    kind: mulch
+    title: Mulch parsley
+    detail: Mulch around the plants with sugar cane or pea straw to hold moisture.
+    products: [sugar_cane_mulch, pea_straw]
+    once: true
+    seasons: [spring]
+    stages: [seedling, vegetative]
+    settings: [ground, raised_bed]
+    sources:
+      - https://www.yates.com.au/how-to-grow/parsley/
+  - id: remove_flowers
+    kind: prune
+    title: Cut off parsley flower stems
+    detail: Cut off flowering stems to stretch out the harvest. Once a plant is fully in flower its leaves turn bitter, so pull it out, improve the soil and sow again.
+    once: true
+    seasons: [spring, summer, autumn]
+    stages: [flowering]
+    sources:
+      - https://www.yates.com.au/how-to-grow/parsley/
+      - https://www.abc.net.au/gardening/plant-finder/petroselinum/9442214
+pests:
+  - id: snails_slugs
+    name: Snails and slugs
+    kind: pest
+    seasons: [autumn, winter, spring]
+    signs: Chewed leaves and a telltale slime trail.
+    prevent: Check plants regularly, especially young ones.
+    treat: Pick them off by hand, or use a snail bait labelled pet and wildlife friendly. Read and follow the label.
+    sources:
+      - https://www.sgaonline.org.au/parsley/
+      - https://www.yates.com.au/how-to-grow/coriander/
+      - https://www.abc.net.au/news/2023-02-14/how-to-grow-basil-in-colder-climate/101967230
+  - id: parsley_downy_mildew
+    name: Downy mildew of parsley (exotic)
+    kind: disease
+    seasons: [summer]
+    signs: White spots on top of the leaves that turn angular and yellow, with a white to greyish fluffy mat underneath. Leaves and stalks then rot.
+    prevent: Not yet reported in Australia. Avoid long periods of wet leaves, give plants airflow and clear old parsley debris.
+    treat: Report suspected cases to the Exotic Plant Pest Hotline on 1800 084 881, with photos.
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/plant-diseases/herb-diseases/downy-mildew-of-parsley
+advice:
+  - text: Parsley is a biennial. It flowers and runs to seed in its second year, when the leaves turn bitter, so plan to replace plants about every 2 years.
+    stages: [flowering]
+    sources:
+      - https://www.abc.net.au/gardening/plant-finder/petroselinum/9442214
+      - https://www.sgaonline.org.au/parsley/
+      - https://localfoodconnect.org.au/wp-content/uploads/galleries/guide/veggie%20planting%20guide.xlsx
+  - text: Plants left to seed will self sow and can become weedy.
+    stages: [flowering]
+    sources:
+      - https://www.abc.net.au/gardening/plant-finder/parsley/9671246
+      - https://www.sgaonline.org.au/parsley/
+  - text: Pick the large outer stalks once two rows of strong stalks have formed. Regular cutting brings fresh growth.
+    stages: [vegetative]
+    sources:
+      - https://www.sgaonline.org.au/parsley/
+      - https://www.abc.net.au/gardening/plant-finder/petroselinum/9442214
+      - https://localfoodconnect.org.au/wp-content/uploads/galleries/guide/veggie%20planting%20guide.xlsx
+  - text: Flat leaf (Italian) parsley handles heat and full sun and copes better through wet weather. Curly parsley prefers part sun.
+    sources:
+      - https://www.sgaonline.org.au/parsley/
+      - https://www.yates.com.au/how-to-grow/parsley/
+      - https://www.abc.net.au/gardening/plant-finder/parsley/9671246
+  - text: Parsley is heat sensitive and prefers cool, moist soil. Keep it well watered through summer, and grow curly parsley where it gets only about 4 hours of sun.
+    seasons: [summer]
+    sources:
+      - https://localfoodconnect.org.au/wp-content/uploads/galleries/guide/veggie%20planting%20guide.xlsx
+      - https://www.abc.net.au/gardening/plant-finder/petroselinum/9442214
+      - https://www.sgaonline.org.au/parsley/
+  - text: For quick germination in a pot, sow seed in a groove, cover it and pour over water just off the boil. Seedlings often appear within 3 weeks.
+    stages: [seed]
+    settings: [pot]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/planting-parsley/9427274
+  - text: Parsley grows well in pots at least 30 cm wide and deep, filled with a quality organic potting mix.
+    settings: [pot]
+    sources:
+      - https://www.sgaonline.org.au/parsley/
+      - https://www.yates.com.au/how-to-grow/parsley/

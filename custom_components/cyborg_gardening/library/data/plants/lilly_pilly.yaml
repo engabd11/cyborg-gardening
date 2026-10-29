@@ -1,0 +1,153 @@
+id: lilly_pilly
+name: Lilly pilly
+botanical: Syzygium (including the former Acmena)
+group: native
+icon: mdi:tree
+frost: hardy
+heat: tolerant
+water: moderate
+perennial: true
+stages: [young, established]
+default_stage: established
+settings: [ground, pot]
+summary: A hardy hedge or screen plant. Choose a psyllid resistant variety, keep it moist and mulched, feed in spring and trim after each flush of growth.
+needs:
+  sun: full
+  soil: Moist but well drained soil. Grows in full sun to part shade.
+  sources:
+    - https://anpsa.org.au/plant_profiles/syzygium-smithii/
+    - https://anpsa.org.au/plant_profiles/syzygium-australe/
+    - https://www.flowerpower.com.au/gardening/lilly-pilly/
+varieties:
+  - id: syzygium_smithii
+    name: Syzygium smithii (formerly Acmena smithii)
+    notes: Rarely affected by lilly pilly psyllid. Takes at least moderate frost, full sun or heavy shade, and makes a tall hedge.
+    sources:
+      - https://anpsa.org.au/plant_profiles/syzygium-smithii/
+  - id: sublime
+    name: Sublime (Acmena smithii 'DOW30')
+    notes: Extremely resistant to psyllids, and also resistant to myrtle rust.
+    sources:
+      - https://www.ozbreed.com.au/what-pest-is-eating-my-lilly-pilly-leaves/
+      - https://www.flowerpower.com.au/garden-advice/gardening/how-to-identify-and-control-lilly-pilly-pests/
+  - id: resilience
+    name: Resilience (Syzygium australe)
+    notes: Sold as psyllid resistant. Trim straight after each flush for dense growth.
+    sources:
+      - https://www.flowerpower.com.au/garden-advice/gardening/how-to-identify-and-control-lilly-pilly-pests/
+      - https://www.evergreentrees.com.au/blogs/plant-care-tips/the-best-lilly-pilly-variety-for-your-garden
+  - id: straight_and_narrow
+    name: Straight and Narrow (Syzygium australe 'SAN01')
+    notes: Natural psyllid resistance; a narrow hedge that needs only a light trim once or twice a year.
+    sources:
+      - https://www.ozbreed.com.au/what-pest-is-eating-my-lilly-pilly-leaves/
+      - https://www.evergreentrees.com.au/blogs/plant-care-tips/the-best-lilly-pilly-variety-for-your-garden
+  - id: luehmannii
+    name: Syzygium luehmannii
+    notes: Less susceptible to psyllid.
+    sources:
+      - https://www.flowerpower.com.au/garden-advice/gardening/how-to-identify-and-control-lilly-pilly-pests/
+  - id: backyard_bliss
+    name: Backyard Bliss
+    notes: Strong psyllid resistance; takes light frost once established.
+    sources:
+      - https://www.evergreentrees.com.au/blogs/plant-care-tips/the-best-lilly-pilly-variety-for-your-garden
+  - id: winter_lights
+    name: Winter Lights
+    notes: Psyllid resistant; takes light frost once established. Best colour in full sun.
+    sources:
+      - https://www.evergreentrees.com.au/blogs/plant-care-tips/the-best-lilly-pilly-variety-for-your-garden
+tasks:
+  - id: feed
+    kind: fertilise
+    title: Native fertiliser
+    detail: Feed once in spring with a native blend, spread around the drip line on moist soil and watered in.
+    products: [neutrog_bush_tucker, osmocote_native]
+    rate:
+      ground: Neutrog Bush Tucker 100 g per established plant, or 100 g per square metre of bed. Osmocote Native 1 tablespoon (15 g) for every 30 cm of plant height.
+      pot: Neutrog Bush Tucker 30 g for a 20 cm pot around the rim, or Osmocote Native 2 tablespoons for a 20 cm pot, 3 for 25 cm, 4 for 30 cm.
+    once: true
+    seasons: [spring]
+    sources:
+      - https://www.evergreentrees.com.au/blogs/plant-care-tips/the-best-lilly-pilly-variety-for-your-garden
+      - https://neutrog.com.au/products/bush-tucker/
+      - https://www.lovethegarden.com/au-en/product/scotts-osmocote-controlled-release-fertiliser-native-1kg
+  - id: trim
+    kind: prune
+    title: Hedge trim
+    detail: Give hedges a light trim 2 to 3 times a year in spring and summer, straight after a flush of new growth. Trimming also removes new leaves pimpled by psyllid; bag and bin them.
+    every_days: 152
+    seasons: [spring, summer]
+    stages: [established]
+    sources:
+      - https://www.evergreentrees.com.au/blogs/plant-care-tips/the-best-lilly-pilly-variety-for-your-garden
+      - https://www.flowerpower.com.au/gardening/lilly-pilly/
+      - https://www.flowerpower.com.au/garden-advice/gardening/how-to-identify-and-control-lilly-pilly-pests/
+  - id: psyllid_check
+    kind: check
+    title: Check new growth for psyllid
+    detail: Look at fresh leaves for raised pimples on top and small craters underneath. Cut off and bin affected shoots early.
+    once: true
+    seasons: [mid_spring, mid_summer]
+    sources:
+      - https://www.flowerpower.com.au/garden-advice/gardening/how-to-identify-and-control-lilly-pilly-pests/
+  - id: mulch
+    kind: mulch
+    title: Mulch before summer
+    detail: Mulch the root zone before summer and water deeply through dry spells.
+    once: true
+    seasons: [late_spring]
+    sources:
+      - https://www.evergreentrees.com.au/blogs/plant-care-tips/the-best-lilly-pilly-variety-for-your-garden
+pests:
+  - id: lilly_pilly_psyllid
+    name: Lilly pilly psyllid
+    kind: pest
+    signs: Raised pimples on the upper side of new leaves with matching craters underneath. Leaves look distorted and blistered.
+    prevent: Plant resistant lilly pillies such as Syzygium smithii, Sublime, Resilience, Straight and Narrow or Syzygium luehmannii. Encourage predators such as micro wasps, predatory beetles and predatory mites.
+    treat: Prune off affected new growth and bin it in a sealed bag. A horticultural white oil spray knocks numbers back, but only if it reaches the undersides of the leaves.
+    sources:
+      - https://anpsa.org.au/plant_profiles/syzygium-smithii/
+      - https://www.flowerpower.com.au/garden-advice/gardening/how-to-identify-and-control-lilly-pilly-pests/
+      - https://www.ozbreed.com.au/what-pest-is-eating-my-lilly-pilly-leaves/
+  - id: scale
+    name: Scale and sooty mould
+    kind: pest
+    signs: Small scale insects on stems and leaves, often with black sooty mould growing on their honeydew.
+    prevent: Keep plants well watered so scale is less likely to return.
+    treat: Prune badly affected growth and spray eco-oil. Wipe off sooty mould with eco-oil or a soap spray and deal with the insects causing it.
+    products: [eco_oil]
+    sources:
+      - https://www.flowerpower.com.au/garden-advice/gardening/how-to-identify-and-control-lilly-pilly-pests/
+  - id: lilly_pilly_beetle
+    name: Lilly pilly beetle
+    kind: pest
+    signs: Hard shelled beetles chewing the leaves.
+    prevent: Ladybirds cannot eat them because of their hard shell, so control falls to you.
+    treat: Pick beetles off by hand, or spray horticultural white oil on top of and beneath every leaf.
+    sources:
+      - https://www.ozbreed.com.au/what-pest-is-eating-my-lilly-pilly-leaves/
+      - https://www.flowerpower.com.au/garden-advice/gardening/how-to-identify-and-control-lilly-pilly-pests/
+advice:
+  - text: Acmena smithii is now called Syzygium smithii, and other former Acmena species have moved into Syzygium, so labels may show either name.
+    sources:
+      - https://anpsa.org.au/plant_profiles/syzygium-smithii/
+      - https://anpsa.org.au/plant_profiles/syzygium-australe/
+  - text: Water deeply through the first two summers while the roots establish.
+    stages: [young]
+    seasons: [summer]
+    sources:
+      - https://www.evergreentrees.com.au/blogs/plant-care-tips/the-best-lilly-pilly-variety-for-your-garden
+  - text: Many lilly pillies take only light frost until they are established. Cover young plants on frosty nights.
+    stages: [young]
+    seasons: [late_autumn, winter, early_spring]
+    sources:
+      - https://www.evergreentrees.com.au/blogs/plant-care-tips/the-best-lilly-pilly-variety-for-your-garden
+  - text: Compact forms such as Blaze and Tiny Trev stay under about 2 metres and suit large containers.
+    settings: [pot]
+    sources:
+      - https://anpsa.org.au/plant_profiles/syzygium-australe/
+  - text: Established plants survive dry spells but look better with regular water.
+    stages: [established]
+    sources:
+      - https://anpsa.org.au/plant_profiles/syzygium-smithii/

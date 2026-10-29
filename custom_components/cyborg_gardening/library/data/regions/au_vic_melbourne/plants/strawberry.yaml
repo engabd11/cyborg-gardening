@@ -1,0 +1,12 @@
+plant: strawberry
+plant_out: [6, 7, 8]
+harvest: [11, 12, 1, 2, 3]
+notes:
+  - text: Bare root runners are sold and planted in winter; potted plants can go in year round. Protect young plants from frost.
+    months: [6, 7, 8]
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-plant-and-grow-strawberries
+      - https://www.abc.net.au/gardening/factsheets/sumptuous-strawberries/9435658
+sources:
+  - https://www.diggers.com.au/blogs/learn/how-to-plant-and-grow-strawberries
+  - https://www.abc.net.au/gardening/factsheets/sumptuous-strawberries/9435658

@@ -1,0 +1,91 @@
+id: curry_leaf
+name: Curry leaf
+botanical: Murraya koenigii
+group: herb
+icon: mdi:leaf
+frost: tender
+heat: tolerant
+water: moderate
+perennial: true
+stages: [young, established, flowering, fruiting]
+default_stage: established
+settings: [pot, ground]
+summary: A frost-tender curry tree for a sunny, warm spot, best in a pot that can move under cover in winter. Feed it like citrus, pick the leaves for cooking and cut off the seed before birds spread it.
+needs:
+  sun: full
+  soil: In a pot, a heavy potting mix that does not dry out too fast. In the ground, a sunny, warm spot safe from frost.
+  sources:
+    - https://www.citrusmen.com.au/shop/p/curry-tree-murraya-koenigii-lsy3e
+    - https://abc.net.au/gardening/factsheets/tropical-herbs/9427796
+tasks:
+  - id: water
+    kind: water
+    title: Water pot
+    detail: Push a finger into the mix to the second knuckle and water if the tip feels dry, until water runs from the drainage holes. In summer a pot may need water every day. Yellow, dropping leaves can mean too much water.
+    every_days: {summer: 1}
+    settings: [pot]
+    sources:
+      - https://www.sgaonline.org.au/container-planting/
+      - https://abc.net.au/gardening/factsheets/tropical-herbs/9427796
+  - id: fertilise
+    kind: fertilise
+    title: Citrus Booster feed
+    detail: Citrusmen says to keep the curry tree well fed with Citrus Booster. Water in the liquid fortnightly and sprinkle the slow-release pellets around the top of the pot between liquid feeds. Rest it in winter as Citrusmen advises for citrus.
+    products: [citrusmen_citrus_booster_liquid, citrusmen_citrus_booster_pellets]
+    rate: Liquid at one capful per litre of water on the soil, fortnightly between pellet feeds.
+    every_days: 14
+    seasons: [spring, summer, early_autumn]
+    sources:
+      - https://www.citrusmen.com.au/shop/p/curry-tree-murraya-koenigii-lsy3e
+      - https://www.citrusmen.com.au/shop/p/citrusboosterfertiliser-hm4fw-cn3gn
+      - https://www.citrusmen.com.au/shop/p/citrusboosterfertiliser-hm4fw
+      - https://www.citrusmen.com.au/information/2019/5/19/preparing-your-citrus-trees-for-winter-gjt64
+  - id: winter_cover
+    kind: other
+    title: Move pot under cover
+    detail: Keep the curry tree safe from frost. Move the pot under cover before winter and bring it back to a sunny, warm spot once frosts have passed.
+    once: true
+    seasons: [late_autumn]
+    settings: [pot]
+    sources:
+      - https://abc.net.au/gardening/factsheets/spice-it-up/9437296
+      - https://www.citrusmen.com.au/shop/p/curry-tree-murraya-koenigii-lsy3e
+  - id: top_up
+    kind: repot
+    title: Top up potting mix
+    detail: Top up the potting mix, usually in spring, and mulch the surface to cut evaporation. Move it to a larger pot when the roots outgrow this one.
+    products: [premium_potting_mix]
+    once: true
+    seasons: [spring]
+    settings: [pot]
+    sources:
+      - https://www.sgaonline.org.au/container-planting/
+advice:
+  - text: Birds spread curry tree seed into bushland, where it becomes a weed. Pruning off the flowers only brings more flowers, so prune once the seeds have just started to change colour, and put the seed in the bin.
+    stages: [flowering, fruiting]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/curry-tree-control/12075748
+      - https://abc.net.au/gardening/factsheets/warding-off-the-cold/9433852
+  - text: In the ground it sends up suckers that grow into new trees. Cut them off as they appear.
+    settings: [ground]
+    sources:
+      - https://abc.net.au/gardening/factsheets/warding-off-the-cold/9433852
+  - text: Keep the tree safe from frost. In the cold Adelaide Hills it would not grow in the ground, so a pot that moves under cover each winter is the safer choice.
+    seasons: [late_autumn, winter]
+    sources:
+      - https://abc.net.au/gardening/factsheets/spice-it-up/9437296
+      - https://www.citrusmen.com.au/shop/p/curry-tree-murraya-koenigii-lsy3e
+  - text: It can reach 4 m in the ground in warm areas, about 2 m in Adelaide, and stays smaller in a pot.
+    sources:
+      - https://www.citrusmen.com.au/shop/p/curry-tree-murraya-koenigii-lsy3e
+      - https://abc.net.au/gardening/factsheets/spice-it-up/9437296
+  - text: Pick fresh leaves as you need them for curries and other dishes.
+    stages: [established, flowering, fruiting]
+    sources:
+      - https://www.citrusmen.com.au/shop/p/curry-tree-murraya-koenigii-lsy3e
+      - https://abc.net.au/gardening/factsheets/tropical-herbs/9427796
+  - text: Before a heatwave water the pot deeply and move it into shade or morning sun. Leave scorched leaves on and do not fertilise a stressed plant.
+    seasons: [summer]
+    settings: [pot]
+    sources:
+      - https://abc.net.au/gardening/factsheets/heatwave-affected-plants/9430746

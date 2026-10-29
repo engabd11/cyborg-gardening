@@ -1,0 +1,198 @@
+id: beans
+name: Beans
+botanical: Phaseolus vulgaris
+group: vegetable
+icon: mdi:seed
+frost: tender
+heat: sensitive
+water: moderate
+perennial: false
+stages: [seed, germinating, seedling, vegetative, flowering, fruiting]
+default_stage: vegetative
+settings: [ground, raised_bed, pot]
+summary: Climbing and dwarf green beans are a warm season crop. Sow them direct once frost has passed, give climbers a trellis, and pick often to keep them cropping.
+needs:
+  sun: full
+  soil: Rich, deep and well drained with plenty of organic matter. Beans dislike sandy soil, so add aged compost.
+  ph: [6.5, 7.5]
+  sources:
+    - https://www.sgaonline.org.au/growing-beans/
+    - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+varieties:
+  - id: climbing
+    name: Climbing beans
+    notes: More productive than dwarf beans but need a trellis about 1.5 to 2 m tall. Pods in about 12 to 14 weeks.
+    sources:
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+      - https://www.sgaonline.org.au/growing-beans/
+      - https://www.abc.net.au/gardening/factsheets/bang-for-your-buck/9435020
+  - id: dwarf
+    name: Dwarf (bush) beans
+    notes: Compact plants that need no trellis and crop in about 10 weeks. Bush beans suit pots.
+    sources:
+      - https://www.sgaonline.org.au/growing-beans/
+      - https://www.sgaonline.org.au/wp-content/uploads/2022/08/Getting-Started-Organic-Veg-Gardening-into-Summer.pdf
+  - id: blue_lake
+    name: Blue Lake
+    notes: Comes in climbing and dwarf forms.
+    sources: [https://www.sgaonline.org.au/wp-content/uploads/2022/08/Getting-Started-Organic-Veg-Gardening-into-Summer.pdf]
+  - id: purple_king
+    name: Purple King
+    notes: A climbing bean.
+    sources: [https://www.sgaonline.org.au/wp-content/uploads/2022/08/Getting-Started-Organic-Veg-Gardening-into-Summer.pdf]
+  - id: cherokee_wax
+    name: Cherokee Wax
+    notes: A yellow dwarf bean.
+    sources: [https://www.sgaonline.org.au/wp-content/uploads/2022/08/Getting-Started-Organic-Veg-Gardening-into-Summer.pdf]
+  - id: borlotti
+    name: Borlotti
+    notes: A good dwarf variety.
+    sources: [https://www.abc.net.au/gardening/plant-finder/beans/9628198]
+tasks:
+  - id: base_feed
+    kind: fertilise
+    title: Light blood and bone at sowing
+    detail: Beans make their own nitrogen and need little feeding. Scatter a light sprinkle of blood and bone before sowing and keep it away from seedlings. Avoid manure and high nitrogen fertilisers, which cause soft growth that invites mildew and aphids.
+    products: [blood_and_bone]
+    rate: A light sprinkle, no more than the label rate.
+    once: true
+    stages: [seed]
+    sources:
+      - https://www.sgaonline.org.au/growing-beans/
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+      - https://www.abc.net.au/gardening/how-to/peas-beans-and-leafy-greens/9432800
+  - id: water_in
+    kind: water
+    title: Water in after sowing
+    detail: Sow seed direct about 4 to 5 cm deep and 15 cm apart into damp soil. Water well straight after sowing, then leave it until the seedlings come up. Overwatering is the bigger risk with beans.
+    once: true
+    stages: [seed]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/peas-beans-and-leafy-greens/9432800
+      - https://www.abc.net.au/gardening/factsheets/bang-for-your-buck/9435020
+      - https://www.sgaonline.org.au/wp-content/uploads/2022/08/Getting-Started-Organic-Veg-Gardening-into-Summer.pdf
+      - https://www.sgaonline.org.au/growing-beans/
+  - id: trellis
+    kind: other
+    title: Put up a trellis
+    detail: Climbing beans need a trellis, fence or teepee about 1.5 to 2 m tall. Dwarf beans need no support.
+    once: true
+    stages: [seedling]
+    sources:
+      - https://www.abc.net.au/gardening/factsheets/bang-for-your-buck/9435020
+      - https://www.sgaonline.org.au/growing-beans/
+  - id: mulch
+    kind: mulch
+    title: Mulch the bed
+    detail: Mulch the bed to hold moisture, but keep the mulch away from the bean stems.
+    products: [pea_straw, sugar_cane_mulch]
+    once: true
+    stages: [seedling]
+    sources: [https://www.sgaonline.org.au/growing-beans/]
+  - id: snail_watch
+    kind: check
+    title: Protect seedlings from snails
+    detail: Snails and slugs can eat young seedlings to the ground overnight. Hunt them on damp nights or scatter iron-based bait thinly in the evening.
+    products: [snail_bait_iron]
+    once: true
+    stages: [seedling]
+    caution: Read and follow the label.
+    sources:
+      - https://www.sgaonline.org.au/ggp-pest-of-the-season-snails-slugs/
+      - https://www.sgaonline.org.au/wp-content/uploads/2024/04/pests.pdf
+  - id: flower_tonic
+    kind: tonic
+    title: Seaweed tonic at flowering
+    detail: Give a seaweed drink when the plants start to flower.
+    products: [seasol]
+    rate: 40 mL in 9 L of water (label rate for vegies).
+    once: true
+    stages: [flowering]
+    sources:
+      - https://www.sgaonline.org.au/growing-beans/
+      - https://www.seasol.com.au/products/seasol/
+  - id: resow
+    kind: other
+    title: Sow another row
+    detail: Sow a few more seeds every 4 to 6 weeks for a longer season. Gardening Australia suggests every 3 weeks.
+    every_days: 35
+    seasons: [mid_spring, late_spring, early_summer, mid_summer]
+    sources:
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+      - https://www.abc.net.au/gardening/plant-finder/beans/9628198
+  - id: pick
+    kind: harvest
+    title: Pick beans
+    detail: Pick pods young and tender, before the seeds swell and the pods turn lumpy. Beans are ready when they snap rather than bend. Regular picking keeps plants flowering.
+    every_days: 3
+    stages: [fruiting]
+    sources:
+      - https://www.sgaonline.org.au/growing-beans/
+      - https://www.abc.net.au/gardening/plant-finder/beans/9628198
+      - https://www.sgaonline.org.au/wp-content/uploads/2022/08/Getting-Started-Organic-Veg-Gardening-into-Summer.pdf
+pests:
+  - id: powdery_mildew
+    name: Powdery mildew
+    kind: disease
+    seasons: [summer, early_autumn]
+    signs: White powdery patches on the leaves that spread and merge, starting on older leaves.
+    prevent: Give plants room for air flow, water the soil in the morning and keep the leaves dry.
+    treat: Remove badly infected leaves. Spray milk diluted 1 part to 10 parts water, or a low impact fungicide such as eco-fungicide.
+    products: [eco_fungicide]
+    sources:
+      - https://www.sgaonline.org.au/growing-beans/
+      - https://www.abc.net.au/gardening/powdery-mildew/13544994
+      - https://www.sgaonline.org.au/wp-content/uploads/2022/08/Getting-Started-Organic-Veg-Gardening-into-Summer.pdf
+  - id: halo_blight
+    name: Halo blight
+    kind: disease
+    signs: Leaf spots that become holes, then pale green leaves with dark green veins. It can kill plants.
+    prevent: Grow beans in a different spot next time.
+    treat: Remove and destroy infected plants. Do not compost them.
+    sources: [https://www.sgaonline.org.au/growing-beans/]
+  - id: aphids
+    name: Aphids
+    kind: pest
+    seasons: [spring, summer]
+    signs: Clusters of small sap sucking insects on new growth, sticky leaves and distorted tips.
+    prevent: Avoid high nitrogen feeding and encourage ladybirds and other predators.
+    treat: Squash or hose them off. Spray with a botanical oil such as Eco Oil if numbers build up.
+    products: [eco_oil]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/peas-and-beans/105848770
+      - https://www.abc.net.au/gardening/how-to/peas-beans-and-leafy-greens/9432800
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/201105-Getting-Started-With-Veggie-Gardening-Notes.pdf
+  - id: snails_slugs
+    name: Snails and slugs
+    kind: pest
+    seasons: [spring]
+    signs: Seedlings eaten to the ground overnight and shiny silver trails.
+    prevent: Remove daytime hiding spots and use copper barriers around pots.
+    treat: Hand pick on wet nights, set beer or board traps, or scatter iron-based pellets thinly in the evening.
+    products: [snail_bait_iron]
+    sources:
+      - https://www.sgaonline.org.au/ggp-pest-of-the-season-snails-slugs/
+      - https://www.sgaonline.org.au/wp-content/uploads/2024/04/pests.pdf
+advice:
+  - text: Beans are frost tender. In cold areas such as Victoria, sow or plant out only after the last frost, or raise seed in trays about 3 weeks before planting out.
+    seasons: [winter, early_spring]
+    sources:
+      - https://www.abc.net.au/gardening/factsheets/bellis/9429036
+      - https://www.sgaonline.org.au/september-in-your-patch/
+  - text: Climbing beans give more beans for the space but need a trellis. Dwarf beans crop sooner, in about 10 weeks, and suit pots.
+    sources:
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+      - https://www.sgaonline.org.au/growing-beans/
+      - https://www.sgaonline.org.au/wp-content/uploads/2022/08/Getting-Started-Organic-Veg-Gardening-into-Summer.pdf
+  - text: Give beans temporary shade in extreme heat, dry spells or strong wind.
+    seasons: [summer]
+    sources: [https://www.sgaonline.org.au/growing-beans/]
+  - text: Grow bush beans in pots. Pots dry out quickly in summer, so water them more often than garden beds.
+    settings: [pot]
+    sources:
+      - https://www.sgaonline.org.au/wp-content/uploads/2022/08/Getting-Started-Organic-Veg-Gardening-into-Summer.pdf
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+  - text: Beans are legumes that put nitrogen back into the soil. In crop rotation, follow them with a heavy feeder such as broccoli, and do not grow legumes in the same spot two seasons running.
+    sources:
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+      - https://www.sgaonline.org.au/crop-rotation/

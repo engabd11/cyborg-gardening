@@ -1,0 +1,105 @@
+id: mint
+name: Mint
+botanical: Mentha spicata
+group: herb
+icon: mdi:leaf
+frost: half_hardy
+heat: sensitive
+water: high
+perennial: true
+stages: [young, established, flowering, dormant]
+default_stage: established
+settings: [pot, ground]
+summary: Mint spreads fast by underground runners, so grow it in a large pot or behind a buried barrier. Keep it moist and in light shade, feed it through the warm months and cut it back when it dies down in the cold.
+needs:
+  sun: part
+  soil: Moist, rich soil full of organic matter.
+  sources:
+    - https://www.abc.net.au/gardening/plant-finder/mentha/9442202
+    - https://www.abc.net.au/gardening/how-to/mint-refresher/13813310
+    - https://www.yates.com.au/how-to-grow/mint/
+tasks:
+  - id: summer_water
+    kind: water
+    title: Keep mint moist for summer
+    detail: Mint thrives in moisture and can die back in extreme summer heat. Put a saucer under potted mint and keep the soil moist through hot, dry weather.
+    once: true
+    seasons: [late_spring, early_summer]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/mint-refresher/13813310
+      - https://www.abc.net.au/gardening/herbs-in-pots/102593754
+      - https://www.yates.com.au/how-to-grow/mint/
+  - id: feed
+    kind: fertilise
+    title: Liquid feed mint
+    detail: Liquid feed for strong roots and leafy growth while mint is actively growing.
+    products: [powerfeed_all_purpose]
+    rate: 50 mL in a 9 L watering can (label rate for vegies and herbs).
+    every_days: 7
+    seasons: [spring, summer, early_autumn]
+    stages: [young, established, flowering]
+    sources:
+      - https://www.yates.com.au/how-to-grow/mint/
+      - https://www.seasol.com.au/products/powerfeed/
+  - id: remove_flowers
+    kind: prune
+    title: Snip off mint flowers
+    detail: Snip off flower heads to stretch out the harvest. Leaves and flower tops can be cut for use as the plants start to bloom.
+    once: true
+    seasons: [summer]
+    stages: [flowering]
+    sources:
+      - https://www.yates.com.au/how-to-grow/mint/
+      - https://www.abc.net.au/gardening/plant-finder/mentha/9442202
+  - id: cut_back
+    kind: prune
+    title: Cut back mint
+    detail: Mint can die right down in cool weather. This is a good time to cut it back, and to bin any rusty stems.
+    once: true
+    seasons: [late_autumn, early_winter]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/mint-refresher/13813310
+      - https://www.yates.com.au/garden-hub/rust/
+  - id: divide
+    kind: repot
+    title: Divide and repot mint
+    detail: Mint fills its pot quickly. Every couple of years, lift it, cut the rootball in half or quarters and replant one piece in fresh mix, or move it to a bigger pot. Pot up the spares to give away.
+    every_days: 730
+    sources:
+      - https://www.abc.net.au/gardening/how-to/mint-refresher/13813310
+      - https://www.abc.net.au/gardening/how-to/controlling-mint/13353612
+pests:
+  - id: mint_rust
+    name: Mint rust
+    kind: disease
+    seasons: [spring, summer, autumn]
+    signs: Orange or yellow spots on top of the leaves, then orange or brown pustules underneath and along stems that release dusty spores. Badly hit plants drop their leaves.
+    prevent: Water the soil in the morning, not over the leaves, and give plants good airflow. Clean up fallen leaves. Rust resistant mints are available.
+    treat: Cut off and bin infected stems and leaves; do not compost them.
+    sources:
+      - https://www.abc.net.au/gardening/plant-finder/mentha/9442202
+      - https://www.yates.com.au/garden-hub/rust/
+advice:
+  - text: Mint spreads by shallow underground runners and can take over a bed, so grow it in a large pot at least 30 cm wide.
+    sources:
+      - https://www.abc.net.au/gardening/plant-finder/mentha/9442202
+      - https://www.abc.net.au/gardening/how-to/mint-refresher/13813310
+      - https://www.yates.com.au/how-to-grow/mint/
+  - text: To grow mint in the ground, bury an old plastic pot with its rim level with the soil and plant inside it. Watch for stems that root over the rim; regular picking keeps it in check.
+    settings: [ground]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/controlling-mint/13353612
+  - text: Mint can die back a little in extreme summer heat. Light shade and moist soil help it through.
+    seasons: [summer]
+    sources:
+      - https://www.abc.net.au/gardening/herbs-in-pots/102593754
+      - https://www.abc.net.au/gardening/plant-finder/mentha/9442202
+  - text: Mint dies down in cool weather and regrows in spring.
+    seasons: [winter]
+    stages: [dormant]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/mint-refresher/13813310
+  - text: Adding a couple of handfuls of coir peat to the potting mix helps it hold moisture for mint.
+    settings: [pot]
+    sources:
+      - https://www.abc.net.au/gardening/herbs-in-pots/102593754

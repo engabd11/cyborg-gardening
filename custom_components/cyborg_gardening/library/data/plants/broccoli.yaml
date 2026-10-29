@@ -1,0 +1,183 @@
+id: broccoli
+name: Broccoli
+group: vegetable
+icon: mdi:sprout
+frost: hardy
+heat: sensitive
+water: high
+perennial: false
+stages: [seed, germinating, seedling, vegetative]
+default_stage: vegetative
+settings: [ground, raised_bed]
+summary: A hungry cool season brassica planted in autumn and winter. Feed it weekly, water deeply, and net it at planting to keep cabbage white caterpillars off.
+needs:
+  sun: full
+  soil: Rich and well drained, full of well rotted compost. Sheltered from strong wind.
+  ph: [6.5, 7.0]
+  sources:
+    - https://www.sgaonline.org.au/broccoli-and-cauliflower/
+    - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+tasks:
+  - id: bed_prep
+    kind: fertilise
+    title: Prepare the bed
+    detail: About a month before planting, dig in aged compost and a little dolomite lime for calcium, and lightly apply chook poo based pellets. Space plants about 40 cm apart.
+    products: [compost, dynamic_lifter]
+    rate: Pellets lightly, no more than the label rate.
+    once: true
+    stages: [seed, seedling]
+    sources:
+      - https://www.sgaonline.org.au/broccoli-and-cauliflower/
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+  - id: transplant_tonic
+    kind: tonic
+    title: Seaweed tonic at planting
+    detail: Water new seedlings in well with seaweed solution. SGA suggests a weak, half strength mix for seedlings.
+    products: [seasol]
+    rate: 40 mL in 9 L of water at planting and again 1 week later (label rate for transplanting).
+    once: true
+    stages: [seedling]
+    sources:
+      - https://www.seasol.com.au/products/seasol/
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/201105-Getting-Started-With-Veggie-Gardening-Notes.pdf
+  - id: net
+    kind: other
+    title: Net the bed
+    detail: Cover the bed with fine insect mesh at planting. It is the only sure way to stop cabbage white butterflies laying eggs. Check under the net for eggs that got in.
+    once: true
+    stages: [seedling]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/cabbage-white-butterfly/10972150
+      - https://www.abc.net.au/gardening/factsheets/caterpillar-control/9435838
+      - https://www.sgaonline.org.au/wp-content/uploads/2024/04/pests.pdf
+  - id: liquid_feed
+    kind: fertilise
+    title: Liquid feed
+    detail: Broccoli is a heavy feeder. Feed weekly with a liquid fertiliser, especially in the month before harvest.
+    products: [powerfeed_all_purpose]
+    rate: 50 mL in 9 L of water every week (label rate for vegies).
+    every_days: 7
+    stages: [seedling, vegetative]
+    sources:
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+      - https://www.sgaonline.org.au/broccoli-and-cauliflower/
+      - https://www.seasol.com.au/products/powerfeed/
+  - id: caterpillar_check
+    kind: check
+    title: Check for caterpillars
+    detail: Look under the leaves for eggs and small caterpillars, which are the easiest to control. Squash them or feed them to the chooks. If damage builds up, spray Dipel (Bacillus thuringiensis).
+    products: [dipel]
+    every_days: 7
+    seasons: [autumn, spring]
+    stages: [seedling, vegetative]
+    caution: Read and follow the label.
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/diamondback-moth
+      - https://www.abc.net.au/gardening/factsheets/caterpillar-control/9435838
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/201105-Getting-Started-With-Veggie-Gardening-Notes.pdf
+  - id: snail_watch
+    kind: check
+    title: Protect seedlings from snails
+    detail: Snails and slugs feed in cool, moist weather and can eat seedlings to the ground. Hunt them on damp nights or scatter iron-based bait thinly in the evening.
+    products: [snail_bait_iron]
+    once: true
+    stages: [seedling]
+    caution: Read and follow the label.
+    sources:
+      - https://www.sgaonline.org.au/ggp-pest-of-the-season-snails-slugs/
+      - https://www.sgaonline.org.au/wp-content/uploads/2024/04/pests.pdf
+  - id: hill_up
+    kind: other
+    title: Hill up the stems
+    detail: Mound soil around the stems to support leggy growth.
+    once: true
+    stages: [vegetative]
+    sources:
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/05/What-to-plant-now-notes.pdf
+  - id: harvest
+    kind: harvest
+    title: Cut the heads
+    detail: Heads are ready about 10 to 14 weeks after planting. Cut firm, tight heads with a sharp knife before the flowers begin to open.
+    once: true
+    stages: [vegetative]
+    sources:
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+      - https://www.sgaonline.org.au/broccoli-and-cauliflower/
+pests:
+  - id: cabbage_white_butterfly
+    name: Cabbage white butterfly
+    kind: pest
+    seasons: [autumn, winter, spring]
+    signs: White butterflies around the bed, green caterpillars up to 30 mm long on the leaf veins, holes in the leaves and dark green droppings. Seedlings can be stripped bare.
+    prevent: Net the bed at planting, plant brassicas in the cooler months, and keep plants well fed and watered, as stressed plants suffer worse damage.
+    treat: Remove eggs and caterpillars by hand. Spray Dipel (Bacillus thuringiensis), a stomach poison for caterpillars.
+    products: [dipel]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/cabbage-white-butterfly/10972150
+      - https://www.abc.net.au/gardening/factsheets/caterpillar-control/9435838
+      - https://www.sgaonline.org.au/wp-content/uploads/2024/04/pests.pdf
+      - https://www.sgaonline.org.au/caterpillar-garden-pests-and-how-to-identify-them/
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/09/Pests-and-controls-Notes.pdf
+  - id: diamondback_moth
+    name: Diamondback moth
+    kind: pest
+    seasons: [spring, summer, autumn]
+    signs: Small grey green caterpillars about 12 mm long and many small holes or clear windows in the leaves.
+    prevent: Check plants at least weekly in warm months. Numbers build up as spring and summer warm; winter damage is light.
+    treat: Control caterpillars while they are small. Pick them off or spray Dipel.
+    products: [dipel]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/diamondback-moth
+      - https://www.sgaonline.org.au/caterpillar-garden-pests-and-how-to-identify-them/
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/201105-Getting-Started-With-Veggie-Gardening-Notes.pdf
+  - id: aphids
+    name: Aphids
+    kind: pest
+    seasons: [spring, summer, autumn]
+    signs: Colonies of small sap sucking insects, distorted growing tips, sticky honeydew and sooty mould.
+    prevent: Encourage ladybirds, lacewings and wasps with companion plants.
+    treat: Squash them with a gloved hand or hose them off. Spray a botanical soap or oil such as Eco Oil if numbers build up.
+    products: [eco_oil]
+    sources:
+      - https://www.sgaonline.org.au/wp-content/uploads/2024/04/pests.pdf
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/201105-Getting-Started-With-Veggie-Gardening-Notes.pdf
+      - https://www.sgaonline.org.au/broccoli-and-cauliflower/
+  - id: snails_slugs
+    name: Snails and slugs
+    kind: pest
+    seasons: [autumn, winter, spring]
+    signs: Seedlings eaten to the ground overnight, holes in leaves and shiny silver trails.
+    prevent: Remove daytime hiding spots and use copper barriers.
+    treat: Hand pick on wet nights, set beer or board traps, or scatter iron-based pellets thinly in the evening.
+    products: [snail_bait_iron]
+    sources:
+      - https://www.sgaonline.org.au/ggp-pest-of-the-season-snails-slugs/
+      - https://www.sgaonline.org.au/wp-content/uploads/2024/04/pests.pdf
+  - id: running_to_seed
+    name: Running to seed
+    kind: disorder
+    seasons: [late_spring, summer]
+    signs: Heads fail to form or quickly open into yellow flowers.
+    prevent: Plant in autumn and winter so heads form before warm weather.
+    treat: Cut heads as soon as they are firm.
+    sources:
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+      - https://www.sgaonline.org.au/broccoli-and-cauliflower/
+advice:
+  - text: Plant broccoli from autumn to late winter. Brassicas run to seed and heads fail to form if the weather is too warm at harvest time.
+    seasons: [autumn, winter]
+    sources:
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+      - https://www.sgaonline.org.au/broccoli-and-cauliflower/
+  - text: Water deeply and consistently so it reaches the roots. If the bed is mulched, pull the mulch back when watering or use drip line under it.
+    sources: [https://www.sgaonline.org.au/broccoli-and-cauliflower/]
+  - text: Cabbage white caterpillars are most active at autumn planting and again in spring, so keep the net on through both.
+    seasons: [early_autumn, mid_autumn, spring]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/cabbage-white-butterfly/10972150
+      - https://www.abc.net.au/gardening/factsheets/caterpillar-control/9435838
+  - text: Broccoli is a heavy feeder. In crop rotation, plant it after legumes such as peas or beans, and do not grow brassicas in the same spot two seasons running.
+    sources:
+      - https://www.sgaonline.org.au/crop-rotation/
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/201105-Getting-Started-With-Veggie-Gardening-Notes.pdf

@@ -1,0 +1,19 @@
+plant: lemon
+plant_out: [9, 10, 11, 12, 1, 2, 3]
+harvest: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+notes:
+  - text: Plant in September once the risk of severe frost has passed. Trees grown in containers can also go in through spring, summer and early autumn if they are watered often.
+    months: [9, 10, 11, 12, 1, 2, 3]
+    sources:
+      - https://www.dpi.nsw.gov.au/agriculture/horticulture/citrus/content/crop-management/orchard-management-factsheets/garden
+  - text: Lisbon carries its main crop in autumn and winter, Eureka crops in winter, spring and summer, and Meyer fruits through the year.
+    months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    sources:
+      - https://www.dpi.nsw.gov.au/agriculture/horticulture/citrus/content/crop-management/orchard-management-factsheets/garden
+  - text: Expect the first fruit in the second autumn after planting.
+    months: [3, 4, 5]
+    sources:
+      - https://www.citrusmen.com.au/faq
+sources:
+  - https://www.dpi.nsw.gov.au/agriculture/horticulture/citrus/content/crop-management/orchard-management-factsheets/garden
+  - https://www.citrusmen.com.au/faq

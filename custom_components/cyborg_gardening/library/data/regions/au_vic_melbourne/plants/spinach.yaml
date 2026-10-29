@@ -1,0 +1,17 @@
+plant: spinach
+sow: [4, 5, 6, 9, 10]
+plant_out: [4, 5, 6, 7, 8, 9]
+# Harvest follows planting out plus about 8 weeks to first picking.
+harvest: [5, 6, 7, 8, 9, 10, 11]
+notes:
+  - text: Spinach runs to seed as the weather warms. Sow in autumn or early spring for the best crop.
+    months: [9, 10, 11]
+    sources:
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+      - https://www.abc.net.au/gardening/plant-finder/spinach/9672096
+      - https://www.diggers.com.au/pages/seeds-to-sow-cool-region
+sources:
+  - https://www.diggers.com.au/pages/seeds-to-sow-cool-region
+  - https://www.diggers.com.au/pages/climate-map-for-seeds
+  - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+  - https://www.abc.net.au/gardening/cool-climate-zone/9546624

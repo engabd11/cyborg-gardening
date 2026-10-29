@@ -1,0 +1,31 @@
+# Orchard group products (pear, apple, fig, pomegranate, olive).
+# Shared ids (copper_fungicide, dipel, eco_oil and so on) live in common.yaml.
+- id: yates_success_ultra
+  name: Yates Success Ultra Insect Control
+  brand: Yates
+  type: insecticide
+  use: Spinetoram spray for caterpillars such as codling moth, and for pear and cherry slug on pome fruit.
+  rate: "Pome fruit: 7.5 mL per 1 L of water for codling moth, 5 mL per 1 L of water for pear and cherry slug. Spray when pests are first seen and repeat at 7 to 14 day intervals while they are active. Withholding period on pome fruit is 7 days."
+  where: [Yates online shop, Yates stockists such as Bunnings and Mitre 10]
+  url: https://www.yates.com.au/yates-200ml-success-ultra/
+  label: https://www.yates.com.au/yates-200ml-success-ultra/
+  caution: Read and follow the label.
+  sources:
+    - https://www.yates.com.au/yates-200ml-success-ultra/
+    - https://www.yates.com.au/find-a-store/
+    - https://www.yates.com.au/delivery/
+
+- id: yates_lime_sulfur
+  name: Yates Lime Sulfur Concentrate
+  brand: Yates
+  type: fungicide
+  use: Dormant spray for apples against black spot, powdery mildew, mites and San Jose scale.
+  rate: "Apples: 50 mL per 1 L of water from dormancy to late bud swell. Spraying after late green tip restricts growth and reduces yield. Do not use on Delicious or Cox's Orange Pippin apples. Do not spray above 32 degrees, when frost is expected, or within 14 days of an oil spray."
+  where: [Yates online shop, Yates stockists such as Bunnings and Mitre 10]
+  url: https://www.yates.com.au/yates-500ml-lime-sulfur/
+  label: https://www.yates.com.au/yates-500ml-lime-sulfur/
+  caution: Read and follow the label.
+  sources:
+    - https://www.yates.com.au/yates-500ml-lime-sulfur/
+    - https://www.yates.com.au/find-a-store/
+    - https://www.yates.com.au/delivery/

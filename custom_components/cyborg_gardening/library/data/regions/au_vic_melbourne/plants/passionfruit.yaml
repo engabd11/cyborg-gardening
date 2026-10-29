@@ -1,0 +1,12 @@
+plant: passionfruit
+plant_out: [9, 10, 11]
+harvest: [12, 1, 2, 3, 4, 5]
+notes:
+  - text: Plant in spring as the soil warms, and protect young vines from late frosts.
+    months: [9, 10]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/planting-passionfruit/9431804
+      - https://www.diggers.com.au/products/passionfruit-black
+sources:
+  - https://www.abc.net.au/gardening/how-to/planting-passionfruit/9431804
+  - https://www.yates.com.au/how-to-grow/passionfruit/

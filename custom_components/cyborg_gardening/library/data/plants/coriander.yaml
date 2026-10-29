@@ -1,0 +1,113 @@
+id: coriander
+name: Coriander
+botanical: Coriandrum sativum
+group: herb
+icon: mdi:leaf
+frost: half_hardy
+heat: sensitive
+water: moderate
+perennial: false
+stages: [seed, germinating, seedling, vegetative, flowering]
+default_stage: vegetative
+settings: [ground, pot, raised_bed]
+summary: In Melbourne coriander is a cool season herb for autumn and spring. Heat and dry soil make it bolt to seed, so sow direct, keep it evenly moist and sow small batches often.
+needs:
+  sun: full
+  soil: Rich, moist soil with plenty of compost. Full sun in winter, part shade in warmer months.
+  sources:
+    - https://www.sgaonline.org.au/coriander-2/
+    - https://www.yates.com.au/how-to-grow/coriander/
+tasks:
+  - id: sow
+    kind: other
+    title: Sow coriander
+    detail: Sow seed direct, about 6 mm deep and 20 cm apart, and water in. Transplanted seedlings tend to bolt. Choose a slow bolting variety.
+    once: true
+    seasons: [early_autumn, early_spring]
+    stages: [seed]
+    sources:
+      - https://www.sgaonline.org.au/coriander-2/
+      - https://www.yates.com.au/how-to-grow/coriander/
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/05/What-to-plant-now-notes.pdf
+      - https://localfoodconnect.org.au/wp-content/uploads/galleries/guide/veggie%20planting%20guide.xlsx
+  - id: resow
+    kind: other
+    title: Sow another coriander batch
+    detail: Sow a fresh batch every couple of weeks, so new plants are coming on when older ones bolt.
+    every_days: 14
+    seasons: [early_autumn, mid_autumn, early_spring, mid_spring]
+    sources:
+      - https://localfoodconnect.org.au/wp-content/uploads/galleries/guide/veggie%20planting%20guide.xlsx
+      - https://www.yates.com.au/how-to-grow/coriander/
+  - id: water
+    kind: water
+    title: Water coriander
+    detail: Keep the soil evenly moist, about 2 to 3 cm of water a week. Check with a finger first; pots, especially terracotta, dry out faster. Dry or erratic watering makes it bolt.
+    every_days: 7
+    sources:
+      - https://localfoodconnect.org.au/wp-content/uploads/galleries/guide/veggie%20planting%20guide.xlsx
+      - https://www.sgaonline.org.au/coriander-2/
+      - https://www.yates.com.au/how-to-grow/coriander/
+  - id: seaweed
+    kind: tonic
+    title: Seaweed for coriander
+    detail: Rich soil needs little feeding. If plants need a boost, water in liquid seaweed or compost tea.
+    products: [seasol]
+    rate: 40 mL in a 9 L watering can (label rate for vegies and herbs).
+    every_days: 14
+    stages: [seedling, vegetative]
+    sources:
+      - https://www.sgaonline.org.au/coriander-2/
+      - https://www.seasol.com.au/products/seasol/
+  - id: mulch
+    kind: mulch
+    title: Mulch coriander
+    detail: Mulch with sugar cane or pea straw to keep the soil moist longer.
+    products: [sugar_cane_mulch, pea_straw]
+    once: true
+    seasons: [autumn, spring]
+    stages: [seedling, vegetative]
+    settings: [ground, raised_bed]
+    sources:
+      - https://www.yates.com.au/how-to-grow/coriander/
+      - https://www.sgaonline.org.au/coriander-2/
+pests:
+  - id: caterpillars
+    name: Caterpillars
+    kind: pest
+    seasons: [spring, summer, autumn]
+    signs: Chewed leaves and small black droppings on the leaves or the ground nearby.
+    prevent: Check plants regularly.
+    treat: Yates suggests a spinetoram caterpillar spray such as Success Ultra. Read and follow the label.
+    sources:
+      - https://www.yates.com.au/how-to-grow/coriander/
+  - id: snails_slugs
+    name: Snails and slugs
+    kind: pest
+    seasons: [autumn, winter, spring]
+    signs: Chewed leaves with a telltale slime trail.
+    prevent: Check young plants after rain and at night.
+    treat: Scatter a snail and slug bait around the base of plants. Read and follow the label.
+    sources:
+      - https://www.yates.com.au/how-to-grow/coriander/
+advice:
+  - text: Coriander bolts to seed in summer heat and with sudden changes in conditions. Grow it through autumn, winter and spring, and give it part shade if it is still going as the weather warms.
+    seasons: [late_spring, summer]
+    sources:
+      - https://www.abc.net.au/gardening/herbs-in-pots/102593754
+      - https://www.yates.com.au/how-to-grow/coriander/
+      - https://www.sgaonline.org.au/coriander-2/
+  - text: Once leaves bolt they turn tough and lose flavour. Let a few plants flower for beneficial insects, and collect the seed when it turns light brown, 2 to 3 weeks after flowering.
+    stages: [flowering]
+    sources:
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/05/What-to-plant-now-notes.pdf
+      - https://localfoodconnect.org.au/wp-content/uploads/galleries/guide/veggie%20planting%20guide.xlsx
+      - https://www.yates.com.au/how-to-grow/coriander/
+  - text: Pick leaves once plants are about 20 cm tall. Roots, stems and leaves are all edible.
+    stages: [vegetative]
+    sources:
+      - https://www.sgaonline.org.au/coriander-2/
+  - text: Use a pot at least 20 cm wide and deep.
+    settings: [pot]
+    sources:
+      - https://www.yates.com.au/how-to-grow/coriander/

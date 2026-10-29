@@ -1,0 +1,16 @@
+plant: carrot
+sow: [1, 2, 3, 4, 9, 10, 11, 12]
+# Harvest follows sowing plus 8 weeks (first pulling) to 18 weeks (lift all).
+harvest: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+notes:
+  - text: Sow direct only. Keep the seedbed damp until seedlings appear in 2 to 3 weeks, and check it often in hot weather.
+    months: [12, 1, 2]
+    sources:
+      - https://www.sgaonline.org.au/carrots/
+      - https://www.abc.net.au/gardening/how-to/tinos-carrot-tips/9439652
+sources:
+  - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+  - https://www.abc.net.au/gardening/cool-climate-zone/9546624
+  - https://www.diggers.com.au/pages/seeds-to-sow-cool-region
+  - https://www.diggers.com.au/pages/climate-map-for-seeds
+  - https://www.sgaonline.org.au/carrots/

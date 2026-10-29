@@ -1,0 +1,15 @@
+plant: parsley
+sow: [1, 2, 3, 4, 5, 9, 10, 11, 12]
+notes:
+  - text: In frosty spots, wait until the risk of frost has passed before sowing in spring.
+    months: [9, 10]
+    sources:
+      - https://www.abc.net.au/gardening/plant-finder/petroselinum/9442214
+  - text: For seedlings, plant out about 2 months after these sowing months. Leaves are ready to pick 2 to 3 months after sowing.
+    months: [1, 2, 3, 4, 5, 9, 10, 11, 12]
+    sources:
+      - https://localfoodconnect.org.au/community-gardening/planting-guide/
+      - https://localfoodconnect.org.au/wp-content/uploads/galleries/guide/veggie%20planting%20guide.xlsx
+sources:
+  - https://localfoodconnect.org.au/community-gardening/planting-guide/
+  - https://localfoodconnect.org.au/wp-content/uploads/galleries/guide/veggie%20planting%20guide.xlsx

@@ -1,0 +1,86 @@
+id: thyme
+name: Thyme
+botanical: Thymus vulgaris
+group: herb
+icon: mdi:leaf
+frost: hardy
+heat: tolerant
+water: low
+perennial: true
+stages: [young, established, flowering]
+default_stage: established
+settings: [ground, pot, raised_bed]
+summary: Thyme thrives in a sunny, hot, dry spot with free draining soil. It suffers more from overwatering than from drought, so water sparingly, and cut it back after flowering.
+needs:
+  sun: full
+  soil: Free draining, slightly gritty soil with a little compost. A raised bed is ideal.
+  sources:
+    - https://www.sgaonline.org.au/thyme/
+    - https://www.abc.net.au/gardening/plant-finder/thymus/9442230
+    - https://www.yates.com.au/how-to-grow/thyme/
+tasks:
+  - id: water
+    kind: water
+    title: Water thyme in warm weather
+    detail: In warm weather one drink a week is plenty. Thyme has more trouble with too much water than too little, so let the soil dry between waterings.
+    every_days: {summer: 7}
+    sources:
+      - https://www.sgaonline.org.au/thyme/
+  - id: tonic
+    kind: tonic
+    title: Worm or compost tea for thyme
+    detail: Give a drink of worm tea or compost tea in spring and again after flowering. Thyme needs nothing more.
+    once: true
+    seasons: [mid_spring, late_summer]
+    stages: [young, established, flowering]
+    sources:
+      - https://www.sgaonline.org.au/thyme/
+  - id: prune
+    kind: prune
+    title: Cut back thyme after flowering
+    detail: Shear off the old flower heads and cut back after flowering for fresh, bushy growth.
+    once: true
+    seasons: [late_summer]
+    stages: [established, flowering]
+    sources:
+      - https://www.sgaonline.org.au/thyme/
+      - https://www.abc.net.au/gardening/plant-finder/thymus/9442230
+  - id: mulch_on
+    kind: mulch
+    title: Mulch thyme for summer
+    detail: Thyme responds well to mulch through the warmer months.
+    once: true
+    seasons: [late_spring]
+    settings: [ground, raised_bed]
+    sources:
+      - https://www.sgaonline.org.au/thyme/
+  - id: mulch_off
+    kind: mulch
+    title: Pull back thyme mulch for winter
+    detail: In cool areas, rake the mulch away over the colder months so the soil can warm.
+    once: true
+    seasons: [late_autumn]
+    settings: [ground, raised_bed]
+    sources:
+      - https://www.sgaonline.org.au/thyme/
+advice:
+  - text: Thyme has more problems with overwatering than underwatering. Keep it away from thirsty plants and in free draining soil.
+    seasons: [autumn, winter, spring]
+    sources:
+      - https://www.sgaonline.org.au/thyme/
+  - text: Most thymes withstand moderate frosts.
+    seasons: [winter]
+    sources:
+      - https://www.abc.net.au/gardening/plant-finder/thymus/9442230
+  - text: Allow about 20 cm between plants, as thyme spreads.
+    stages: [young]
+    sources:
+      - https://www.sgaonline.org.au/thyme/
+  - text: If a plant looks tired and leggy after a couple of years, a hard prune will rejuvenate it.
+    stages: [established]
+    sources:
+      - https://www.yates.com.au/how-to-grow/thyme/
+  - text: Use a pot at least 30 cm wide and deep, in full sun.
+    settings: [pot]
+    sources:
+      - https://www.yates.com.au/how-to-grow/thyme/

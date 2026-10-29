@@ -1,0 +1,189 @@
+id: grape
+name: Grape
+botanical: Vitis vinifera
+group: vine
+icon: mdi:fruit-grapes
+frost: hardy
+heat: tolerant
+water: low
+perennial: true
+stages: [young, established]
+default_stage: established
+settings: [ground, pot]
+summary: A deep-rooted deciduous vine for a sunny trellis or pergola. Prune it hard every winter and keep it open to air and sun to limit mildew.
+needs:
+  sun: full
+  soil: Not fussy about soil type. Prefers a well drained, neutral to slightly acid soil; check the pH before planting and add compost to poor soil.
+  sources:
+    - https://www.sgaonline.org.au/grapes-2/
+    - https://www.diggers.com.au/blogs/learn/how-to-grow-grapes
+varieties:
+  - id: sultana
+    name: Sultana
+    notes: Popular table grape, mid season. Cane prune.
+    sources: [https://www.sgaonline.org.au/grapes-2/, https://www.abc.net.au/gardening/how-to/pruning-grapevines/9428852]
+  - id: cardinal
+    name: Cardinal
+    notes: Popular table grape that fruits very early. Cane prune. Fruit may split with rain.
+    sources: [https://www.sgaonline.org.au/grapes-2/]
+  - id: italia
+    name: Italia
+    notes: Table grape, mid to late season. Spur prune.
+    sources: [https://www.sgaonline.org.au/grapes-2/]
+  - id: waltham_cross
+    name: Waltham Cross
+    notes: Table grape, ripens late summer to early autumn. Spur prune.
+    sources: [https://www.sgaonline.org.au/grapes-2/]
+  - id: black_muscat
+    name: Black Muscat
+    notes: Table or wine grape. Spur or cane prune.
+    sources: [https://www.sgaonline.org.au/grapes-2/]
+  - id: isabella
+    name: Isabella
+    notes: Grafted onto a mildew prone vine by Gardening Australia because it should be less vulnerable to downy mildew.
+    sources: [https://www.abc.net.au/gardening/how-to/grafting-grapes/104320534]
+tasks:
+  - id: water_young
+    kind: water
+    title: Deep water
+    detail: Water deeply once or twice a week, depending on the weather, while the new vine settles in. Keep the soil moist for several weeks after planting.
+    every_days: {spring: 5, summer: 5}
+    stages: [young]
+    sources: [https://www.yates.com.au/how-to-grow/grapes/]
+  - id: water_established
+    kind: water
+    title: Deep water in dry spells
+    detail: Established vines are drought tolerant thanks to deep roots, but do not let them dry out while flowering or fruit set suffers. Once fruit has formed, water moderately so the flavour is not diluted.
+    every_days: {spring: 7, summer: 7}
+    stages: [established]
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-grapes
+      - https://www.yates.com.au/how-to-grow/grapes/
+  - id: feed_ground
+    kind: fertilise
+    title: Organic fertiliser
+    detail: Spread pellets around the root zone, rake into the topsoil and water well. Do not apply when the day will top 30 degrees or the soil is dry.
+    products: [dynamic_lifter]
+    rate: 500 g for each year of the vine's age, up to 5 kg, once in spring and again in autumn (label rate for fruit trees).
+    once: true
+    seasons: [early_spring, early_autumn]
+    stages: [established]
+    settings: [ground]
+    sources:
+      - https://www.yates.com.au/how-to-grow/grapes/
+      - https://www.yates.com.au/yates-dynamic-lifter-soil-improver-plant-fertiliser/
+  - id: feed_pot
+    kind: fertilise
+    title: Organic fertiliser
+    detail: Scatter pellets on the potting mix and water well.
+    products: [dynamic_lifter]
+    rate: 15 g for a 15 cm pot or 45 g for a 30 cm pot, every 8 weeks in the growing season.
+    every_days: {spring: 56, summer: 56}
+    settings: [pot]
+    sources:
+      - https://www.yates.com.au/how-to-grow/grapes/
+      - https://www.yates.com.au/yates-dynamic-lifter-soil-improver-plant-fertiliser/
+  - id: copper_spray
+    kind: spray
+    title: Copper spray for mildew
+    detail: Start when new shoots are 10 cm long and repeat every 10 to 14 days while wet or humid weather favours downy or powdery mildew. Do not pick grapes for 4 weeks after spraying. Do not spray above 35 degrees or on wet leaves.
+    products: [yates_liquid_copper]
+    rate: 5 mL per litre of water.
+    every_days: {spring: 12, summer: 12}
+    stages: [established]
+    caution: Read and follow the label.
+    sources: [https://www.yates.com.au/yates-200ml-liquid-copper/]
+  - id: summer_trim
+    kind: prune
+    title: Light summer trim
+    detail: Count three leaves past each flower cluster or developing bunch and cut there, remove shoots without fruit, and spread young shoots along the wires while they are still flexible. This lets sun and air reach the fruit.
+    once: true
+    seasons: [summer]
+    stages: [established]
+    sources: [https://www.abc.net.au/gardening/how-to/pruning-and-training-grapes/13660640]
+  - id: prune_young
+    kind: prune
+    title: Formative winter prune
+    detail: After the first year, remove all new growth except one strong shoot and cut that back to two buds to build a strong trunk. Train it up a stake or support, then let two arms branch out for a trellis or four or more for a pergola.
+    once: true
+    seasons: [winter]
+    stages: [young]
+    sources:
+      - https://www.yates.com.au/how-to-grow/grapes/
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-grapes
+      - https://www.abc.net.au/gardening/how-to/pruning-grapevines/9428852
+  - id: prune_winter
+    kind: prune
+    title: Winter prune
+    detail: Prune while the vine is dormant. Spur pruning (Italia, Waltham Cross) cuts the best cane at each spur back to two buds, not counting the tiny bud at the base, and removes the rest. Cane pruning (Sultana, Cardinal) keeps four strong canes near the trunk, ties two long along the wires and cuts the other two back to two buds as next year's spurs.
+    once: true
+    seasons: [winter]
+    stages: [established]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/pruning-grapevines/9428852
+      - https://www.sgaonline.org.au/grapes-2/
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-grapes
+  - id: harvest
+    kind: harvest
+    title: Pick ripe bunches
+    detail: Grapes are usually picked from mid to late summer through to late autumn, depending on the variety.
+    once: true
+    seasons: [mid_summer, late_summer, autumn]
+    stages: [established]
+    sources:
+      - https://www.yates.com.au/how-to-grow/grapes/
+      - https://www.sgaonline.org.au/grapes-2/
+pests:
+  - id: downy_mildew
+    name: Downy mildew
+    kind: disease
+    seasons: [spring, summer]
+    signs: Yellow oily spots on the upper side of young leaves with white down on the underside of the spots.
+    prevent: Water at the roots, not the leaves, and never late on a cool afternoon. Do not crowd plants or overfeed with nitrogen. Pick up fallen leaves and put them in the bin, not the compost. It thrives after 10 mm or more of rain when leaves stay wet.
+    treat: Spray copper at the first sign and repeat every 10 to 14 days while wet weather continues.
+    products: [yates_liquid_copper]
+    sources:
+      - https://www.sgaonline.org.au/downy-mildew/
+      - https://www.yates.com.au/garden-hub/downy-mildew/
+      - https://www.yates.com.au/yates-200ml-liquid-copper/
+  - id: powdery_mildew
+    name: Powdery mildew
+    kind: disease
+    seasons: [summer, autumn]
+    signs: Small white powdery spots that spread into a white or ash grey film over leaves; young growth may look deformed and leaves yellow and die.
+    prevent: Water early in the day at the roots, give the vine room and air, keep its centre open to sun, and feed with a balanced organic fertiliser rather than high nitrogen.
+    treat: Remove and bin the worst leaves. A milk spray of 1 part full cream milk to 10 parts water, applied early in the morning, slows it. Copper sprays from when shoots are 10 cm long help prevent it.
+    products: [yates_liquid_copper]
+    sources:
+      - https://www.sgaonline.org.au/powdery-mildew/
+      - https://www.yates.com.au/garden-hub/powdery-mildew/
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-grapes
+advice:
+  - text: The dormant vine is very frost hardy, but new shoots are hurt by heavy frost. Where late frosts strike, cover the new foliage on cold nights.
+    seasons: [early_spring, mid_spring]
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-grapes
+      - https://www.sgaonline.org.au/grapes-2/
+  - text: Keep the vine open to air and sunlight; it gives bigger crops and less fungal disease.
+    sources: [https://www.diggers.com.au/blogs/learn/how-to-grow-grapes]
+  - text: Mulch around the base with sugar cane, pea straw or bark chips, keeping it away from the trunk.
+    sources: [https://www.yates.com.au/how-to-grow/grapes/]
+  - text: Grown over a pergola on the north side of the house, a grape gives summer shade and lets winter sun through.
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-grapes
+      - https://www.abc.net.au/gardening/how-to/ripe-for-the-picking/103857840
+  - text: If you net ripening bunches against birds, Victorian law requires household fruit netting with a mesh of 5 mm by 5 mm or less at full stretch. White netting fixed tightly, or bags over single bunches, is safest for wildlife.
+    seasons: [summer, autumn]
+    sources: [https://agriculture.vic.gov.au/livestock-and-animals/animal-welfare-victoria/pocta-act-1986/protecting-fruit-trees-and-wildlife]
+  - text: Grapes are a Queensland fruit fly host. Pick up fallen fruit, and bag bunches once fruit has set if fruit fly is about.
+    seasons: [summer, autumn]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/queensland-fruit-fly-host-fruits
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/controlling-queensland-fruit-fly-in-home-gardens
+  - text: In a pot, use one at least 600 mm wide in full sun, a quality potting mix and a strong fence or trellis for the vine to climb.
+    settings: [pot]
+    sources: [https://www.yates.com.au/how-to-grow/grapes/]
+  - text: Plant new vines while they are dormant in winter, in a sunny spot with a sturdy trellis or fence.
+    seasons: [winter]
+    stages: [young]
+    sources: [https://www.sgaonline.org.au/grapes-2/]

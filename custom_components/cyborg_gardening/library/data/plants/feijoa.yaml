@@ -1,0 +1,154 @@
+id: feijoa
+name: Feijoa
+botanical: Acca sellowiana
+group: fruit_tree
+icon: mdi:fruit-pear
+frost: hardy
+heat: tolerant
+water: low
+perennial: true
+stages: [young, established]
+default_stage: established
+settings: [ground, pot]
+summary: A tough, drought tolerant evergreen shrub or small tree that fruits in autumn. Plant a grafted variety, ideally two, and watch for Queensland fruit fly as the fruit ripens.
+needs:
+  sun: full
+  soil: Well drained soil enriched with compost and aged manure. Full sun or part shade with at least six hours of sun.
+  sources:
+    - https://www.abc.net.au/gardening/how-to/sweet-treat---feijoas/12157736
+    - https://www.yates.com.au/how-to-grow/feijoa/
+    - https://www.diggers.com.au/products/feijoa-pineapple-guava
+tasks:
+  - id: water_ground
+    kind: water
+    title: Deep water in hot, dry spells
+    detail: Established feijoas are drought tolerant but crop better with regular water. Give a deep soak once or twice a week through extended hot, dry periods. Keep the soil moist while a new plant establishes.
+    every_days: {summer: 5}
+    settings: [ground]
+    sources:
+      - https://www.yates.com.au/how-to-grow/feijoa/
+      - https://www.diggers.com.au/products/feijoa-pineapple-guava
+  - id: water_pot
+    kind: water
+    title: Deep water
+    detail: Potted feijoas benefit from a good deep watering several times a week.
+    every_days: {spring: 2, summer: 2, autumn: 2}
+    settings: [pot]
+    sources: [https://www.yates.com.au/how-to-grow/feijoa/]
+  - id: feed_ground
+    kind: fertilise
+    title: Fruit and citrus pellets
+    detail: Feed from spring to the end of harvest, around the drip line, and water in. Do not feed heavily for the first 3 years after planting.
+    products: [yates_dynamic_lifter_fruit_citrus]
+    rate: 140 g per square metre around the drip line every 8 weeks (label rate for fruit trees).
+    every_days: {spring: 56, summer: 56, autumn: 56}
+    stages: [established]
+    settings: [ground]
+    sources:
+      - https://www.yates.com.au/how-to-grow/feijoa/
+      - https://www.yates.com.au/yates-7kg-dynamic-lifter-plant-food-pellets-fruit-citrus/
+      - https://www.abc.net.au/gardening/how-to/sweet-treat---feijoas/12157736
+  - id: feed_pot
+    kind: fertilise
+    title: Fruit and citrus pellets
+    detail: Feed from spring to the end of harvest and water in.
+    products: [yates_dynamic_lifter_fruit_citrus]
+    rate: 10 g for a 15 cm pot or 25 g for a 30 cm pot, every 8 weeks.
+    every_days: {spring: 56, summer: 56, autumn: 56}
+    stages: [established]
+    settings: [pot]
+    sources:
+      - https://www.yates.com.au/how-to-grow/feijoa/
+      - https://www.yates.com.au/yates-7kg-dynamic-lifter-plant-food-pellets-fruit-citrus/
+  - id: fruit_fly_check
+    kind: check
+    title: Fruit fly trap and fruit check
+    detail: Feijoa is a Queensland fruit fly host. Hang a trap about 1.5 m high in a shady spot inside the foliage, refresh the lure as the label says, and cut open a few fruit to look for maggots. Pick up fallen fruit.
+    products: [fruit_fly_trap, eco_naturalure]
+    every_days: 7
+    seasons: [late_summer, autumn, early_winter]
+    stages: [established]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/queensland-fruit-fly-host-fruits
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/controlling-queensland-fruit-fly-in-home-gardens
+      - https://www.yates.com.au/how-to-grow/feijoa/
+  - id: harvest
+    kind: harvest
+    title: Gather fallen fruit
+    detail: Fruit is ready when it starts to fall or pulls off very easily. Check under the tree regularly, as fallen fruit rots and draws pests. Hard fallen fruit will finish ripening in a bowl in a few days.
+    once: true
+    seasons: [autumn, early_winter]
+    stages: [established]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/sweet-treat---feijoas/12157736
+      - https://www.yates.com.au/how-to-grow/feijoa/
+  - id: prune
+    kind: prune
+    title: Prune after harvest
+    detail: Trim mature plants to shape straight after harvest to keep them tidy and compact. Hedges do best with a little trimming often rather than a hard cut now and then.
+    once: true
+    seasons: [winter]
+    stages: [established]
+    sources:
+      - https://www.yates.com.au/how-to-grow/feijoa/
+      - https://www.abc.net.au/gardening/how-to/ripe-for-the-picking/103857840
+pests:
+  - id: queensland_fruit_fly
+    name: Queensland fruit fly
+    kind: pest
+    seasons: [late_summer, autumn, early_winter]
+    signs: Fruit drops early or rots, with small white maggots inside.
+    prevent: Hang a trap near the plant to show when flies are about, net the plant with fine insect mesh or bag the fruit, and pick up fallen fruit.
+    treat: Use protein bait sprays on the foliage, not the fruit, as the label directs. Microwave, freeze or solarise infested fruit in sealed bags before binning; never compost it.
+    products: [fruit_fly_trap, eco_naturalure]
+    sources:
+      - https://www.yates.com.au/how-to-grow/feijoa/
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/controlling-queensland-fruit-fly-in-home-gardens
+  - id: scale
+    name: Scale
+    kind: pest
+    signs: Sap sucking insects on leaves and stems, often with black sooty mould or ants trailing up the stems.
+    prevent: Check stems and leaf undersides regularly.
+    treat: Spray an oil based pyrethrum spray such as eco-pyrethrum PLUS as soon as scale is noticed; it smothers them, and the ants and sooty mould go once the scale is controlled.
+    products: [pyrethrum_spray]
+    sources: [https://www.yates.com.au/how-to-grow/feijoa/]
+advice:
+  - text: Feijoas grow from cool to subtropical climates but are frost tender until established. Protect young plants on frosty nights.
+    seasons: [late_autumn, winter, early_spring]
+    stages: [young]
+    sources:
+      - https://www.yates.com.au/how-to-grow/feijoa/
+      - https://www.abc.net.au/gardening/how-to/sweet-treat---feijoas/12157736
+  - text: Choose a grafted variety. Seedlings can take up to 10 years to fruit and the fruit is unpredictable; grafted plants fruit in 2 to 3 years. Remove any growth below the graft.
+    stages: [young]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/sweet-treat---feijoas/12157736
+      - https://www.yates.com.au/how-to-grow/feijoa/
+  - text: Most feijoas self pollinate, but they crop far better with another feijoa flowering nearby.
+    seasons: [spring, summer]
+    sources:
+      - https://www.abc.net.au/gardening/factsheets/faqs-secateurs-feijoa-natives/9676606
+      - https://www.yates.com.au/how-to-grow/feijoa/
+  - text: Pinch out the tips of young stems to make a bushier plant.
+    stages: [young]
+    sources:
+      - https://www.yates.com.au/how-to-grow/feijoa/
+      - https://www.abc.net.au/gardening/how-to/edible-hedges/9431742
+  - text: Mulch the root zone with sugar cane or bark to keep the shallow roots moist and protected.
+    sources: [https://www.yates.com.au/how-to-grow/feijoa/]
+  - text: For a hedge, plant 50 cm to 1 m apart; the spacing you choose is roughly how wide each plant will grow.
+    sources:
+      - https://www.abc.net.au/gardening/how-to/ripe-for-the-picking/103857840
+      - https://www.abc.net.au/gardening/how-to/edible-hedges/9431742
+  - text: In a pot, use one at least 500 mm wide with premium potting mix, in a warm, frost free spot with at least six hours of sun.
+    settings: [pot]
+    sources: [https://www.yates.com.au/how-to-grow/feijoa/]
+  - text: Plant feijoas in autumn, in an open, sunny spot with well drained soil, and water in well.
+    seasons: [autumn]
+    stages: [young]
+    sources: [https://www.abc.net.au/gardening/how-to/sweet-treat---feijoas/12157736]
+  - text: Birds eat the ripening fruit. Victorian law requires household fruit netting with a mesh of 5 mm by 5 mm or less at full stretch, fixed tightly.
+    seasons: [autumn]
+    sources:
+      - https://www.yates.com.au/how-to-grow/feijoa/
+      - https://agriculture.vic.gov.au/livestock-and-animals/animal-welfare-victoria/pocta-act-1986/protecting-fruit-trees-and-wildlife

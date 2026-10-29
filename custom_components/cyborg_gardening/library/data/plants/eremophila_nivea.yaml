@@ -1,0 +1,97 @@
+id: eremophila_nivea
+name: Eremophila nivea
+botanical: Eremophila nivea
+group: native
+icon: mdi:flower-tulip
+frost: half_hardy
+heat: tolerant
+water: low
+perennial: true
+stages: [young, established, flowering]
+default_stage: established
+settings: [ground, pot]
+summary: A silver leaved emu bush from south west Western Australia with mauve flowers. It needs full sun, very free draining soil and good airflow, and little water once established.
+needs:
+  sun: full
+  soil: Very free draining. On clay, plant on a mound or in a raised bed 300 to 600 mm high.
+  sources:
+    - https://anpsa.org.au/plant_profiles/eremophila-nivea/
+    - https://anpsa.org.au/genera/eremophila-and-relatives/
+    - https://gardeningwithangus.com.au/eremophila-nivea/
+tasks:
+  - id: prune
+    kind: prune
+    title: Light prune after flowering
+    detail: Once flowering finishes, tip prune lightly, taking off no more than about a third, to keep the plant bushy. Thinning dense growth also lets air through and cuts fungal problems.
+    once: true
+    seasons: [summer]
+    sources:
+      - https://gardeningwithangus.com.au/eremophila-nivea/
+      - https://anpsa.org.au/genera/eremophila-and-relatives/
+  - id: feed
+    kind: fertilise
+    title: Light native feed
+    detail: Eremophilas are light feeders. Give a slow-release, low phosphorus native fertiliser once, after flowering.
+    products: [osmocote_native, neutrog_bush_tucker]
+    rate:
+      ground: Osmocote Native 1 tablespoon (15 g) for every 30 cm of plant height, or Neutrog Bush Tucker 100 g per established plant.
+      pot: Osmocote Native 2 tablespoons for a 20 cm pot, 3 for 25 cm, 4 for 30 cm, or Neutrog Bush Tucker 30 g for a 20 cm pot.
+    once: true
+    seasons: [summer]
+    stages: [established, flowering]
+    sources:
+      - https://anpsa.org.au/genera/eremophila-and-relatives/
+      - https://gardeningwithangus.com.au/eremophila-nivea/
+      - https://www.lovethegarden.com/au-en/product/scotts-osmocote-controlled-release-fertiliser-native-1kg
+      - https://neutrog.com.au/products/bush-tucker/
+  - id: mould_check
+    kind: check
+    title: Check for mouldy foliage
+    detail: The hairy silver leaves can go mouldy in damp, humid weather. Remove mouldy foliage and thin crowded growth so air can move through.
+    once: true
+    seasons: [winter]
+    sources:
+      - https://anpsa.org.au/genera/eremophila-and-relatives/
+pests:
+  - id: fungal_leaf_disease
+    name: Fungal leaf disease
+    kind: disease
+    signs: Mould on the hairy grey leaves, worst in humid or wet weather.
+    prevent: Grow in an open, sunny spot with good air circulation, thin dense growth, and choose a plant grafted onto Myoporum rootstock. Move pots under cover during heavy rain.
+    treat: Remove mouldy foliage and thin the plant to let air through.
+    sources:
+      - https://anpsa.org.au/genera/eremophila-and-relatives/
+      - https://anpsa.org.au/plant_profiles/eremophila-nivea/
+  - id: wet_feet
+    name: Wet feet
+    kind: disorder
+    signs: Plants struggle or die out in wet, poorly drained or shallow clay soil.
+    prevent: Plant into very free draining soil, on a mound or a raised bed 300 to 600 mm high over clay. Grafted plants are more reliable.
+    treat: Move the plant to a raised, free draining spot, or grow it in a pot.
+    sources:
+      - https://anpsa.org.au/genera/eremophila-and-relatives/
+      - https://gardeningwithangus.com.au/eremophila-nivea/
+advice:
+  - text: Plants grafted onto Myoporum rootstock last longer and cope better with humidity than plants on their own roots.
+    sources:
+      - https://anpsa.org.au/plant_profiles/eremophila-nivea/
+      - https://anpsa.org.au/genera/eremophila-and-relatives/
+      - https://gardeningwithangus.com.au/eremophila-nivea/
+  - text: It suits dry climates and is often short lived in humid areas, so give it full sun and plenty of airflow.
+    sources:
+      - https://anpsa.org.au/plant_profiles/eremophila-nivea/
+      - https://gardeningwithangus.com.au/eremophila-nivea/
+  - text: Once established it is very drought tolerant and rarely needs watering.
+    stages: [established, flowering]
+    sources:
+      - https://anpsa.org.au/genera/eremophila-and-relatives/
+      - https://gardeningwithangus.com.au/eremophila-nivea/
+  - text: Sources differ on frost. Gardening with Angus says it takes light frost, while the Australian Native Plants Society reports it as frost sensitive. Watch young plants on frosty nights.
+    seasons: [late_autumn, winter, early_spring]
+    sources:
+      - https://gardeningwithangus.com.au/eremophila-nivea/
+      - https://anpsa.org.au/plant_profiles/eremophila-nivea/
+  - text: Move potted plants under cover during long spells of heavy rain to keep the foliage dry.
+    settings: [pot]
+    sources:
+      - https://anpsa.org.au/genera/eremophila-and-relatives/

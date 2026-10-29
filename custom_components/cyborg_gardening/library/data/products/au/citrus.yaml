@@ -1,0 +1,68 @@
+# Citrus group products. Shared ids (eco_oil, eco_neem, yates_pestoil, charlie_carp_all_purpose,
+# seasol, fruit_fly_trap, eco_naturalure, sugar_cane_mulch, compost, premium_potting_mix) live in common.yaml.
+- id: charlie_carp_pellets
+  name: Charlie Carp All Purpose Fertiliser Pellets
+  brand: Charlie Carp
+  type: fertiliser
+  use: Slow-release fish fertiliser pellets. Citrusmen recommends the Charlie Carp pellet for citrus in the ground.
+  rate: 75 g per square metre for established trees, spread evenly around the drip line. 37 g per square metre at planting and transplanting. Keep pellets 10 cm from the base of the plant and water well after applying.
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/charlie-carp-5kg-all-purpose-fertiliser-pellets_p2962286
+  label: https://charliecarp.com.au/how-to-use/
+  sources:
+    - https://charliecarp.com.au/how-to-use/
+    - https://charliecarp.com.au/faqs/
+    - https://www.citrusmen.com.au/information/2020/5/21/please-feed-me-ntxzc
+
+- id: osmocote_citrus_fruit
+  name: Scotts Osmocote Controlled Release Fertiliser Citrus and Fruit
+  brand: Osmocote
+  type: controlled_release
+  use: Controlled release granules for citrus in pots and in the ground. Citrusmen recommends Osmocote for potted citrus.
+  rate: In pots at transplanting, 3 tablespoons for a 15 or 20 cm pot and 5 tablespoons for a 30 cm pot (1 tablespoon is 15 g). In the ground, 6 tablespoons per fruit tree in years 1 and 2, then 10 tablespoons per tree from year 3 and for a mature citrus, in a band around the drip line. Feeds for up to 6 months. Apply in early spring and repeat in early autumn.
+  npk: "19:2:7"
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/scotts-osmocote-500g-citrus-and-fruit-controlled-release-fertiliser-500g_p2961295
+  label: https://www.lovethegarden.com/au-en/product/scotts-osmocote-controlled-release-fertiliser-citrus-fruit
+  sources:
+    - https://www.lovethegarden.com/au-en/product/scotts-osmocote-controlled-release-fertiliser-citrus-fruit
+    - https://www.citrusmen.com.au/information/2020/5/21/please-feed-me-ntxzc
+
+- id: citrusmen_citrus_booster_pellets
+  name: Citrusmen Citrus Booster Pellets
+  brand: Citrusmen
+  type: fertiliser
+  use: Complete slow-release pellets made from European carp, for citrus in pots or in the ground. Citrusmen also recommends it for the curry tree.
+  rate: The product page gives no amount. Sprinkle pellets evenly around the top of the pot or just inside the drip line of trees in the ground, and alternate with Citrus Booster Liquid between feeds.
+  where: [Citrusmen online, delivered to Melbourne]
+  url: https://www.citrusmen.com.au/shop/p/citrusboosterfertiliser-hm4fw
+  label: https://www.citrusmen.com.au/shop/p/citrusboosterfertiliser-hm4fw
+  sources:
+    - https://www.citrusmen.com.au/shop/p/citrusboosterfertiliser-hm4fw
+    - https://www.citrusmen.com.au/dispatch-delivery
+
+- id: citrusmen_citrus_booster_liquid
+  name: Citrusmen Citrus Booster Liquid
+  brand: Citrusmen
+  type: fertiliser
+  use: Complete liquid fertiliser used between Citrus Booster pellet feeds.
+  rate: One capful per litre of water, applied to the soil around the tree, fortnightly between pellet feeds.
+  where: [Citrusmen online, delivered to Melbourne]
+  url: https://www.citrusmen.com.au/shop/p/citrusboosterfertiliser-hm4fw-cn3gn
+  label: https://www.citrusmen.com.au/shop/p/citrusboosterfertiliser-hm4fw-cn3gn
+  sources:
+    - https://www.citrusmen.com.au/shop/p/citrusboosterfertiliser-hm4fw-cn3gn
+    - https://www.citrusmen.com.au/dispatch-delivery
+
+- id: citrusmen_gall_wasp_trap
+  name: Citrusmen Sticky Insect Trap for Gall Wasp
+  brand: Citrusmen
+  type: trap
+  use: Non-toxic yellow sticky trap that catches citrus gall wasp adults as they emerge.
+  rate: Two traps on an average tree and 3 to 4 on larger trees. Traps stay active for 3 to 4 months from opening. Sold only with a tree order.
+  where: [Citrusmen online, delivered to Melbourne]
+  url: https://www.citrusmen.com.au/shop/p/sticky-insect-trap-for-fruit-fly-gall-wasp-protection-z6fst
+  label: https://www.citrusmen.com.au/shop/p/sticky-insect-trap-for-fruit-fly-gall-wasp-protection-z6fst
+  sources:
+    - https://www.citrusmen.com.au/shop/p/sticky-insect-trap-for-fruit-fly-gall-wasp-protection-z6fst
+    - https://www.citrusmen.com.au/dispatch-delivery

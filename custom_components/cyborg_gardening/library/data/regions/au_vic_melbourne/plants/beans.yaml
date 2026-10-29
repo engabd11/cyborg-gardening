@@ -1,0 +1,16 @@
+plant: beans
+sow: [10, 11, 12, 1]
+# Harvest follows sowing plus about 10 weeks (dwarf) to 14 weeks (climbing).
+harvest: [12, 1, 2, 3, 4]
+notes:
+  - text: Beans are frost tender. Wait until frost risk has passed before sowing.
+    months: [9, 10]
+    sources:
+      - https://www.abc.net.au/gardening/factsheets/bellis/9429036
+      - https://www.sgaonline.org.au/september-in-your-patch/
+sources:
+  - https://www.diggers.com.au/pages/seeds-to-sow-cool-region
+  - https://www.diggers.com.au/pages/climate-map-for-seeds
+  - https://www.abc.net.au/gardening/cool-climate-zone/9546624
+  - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+  - https://www.sgaonline.org.au/growing-beans/

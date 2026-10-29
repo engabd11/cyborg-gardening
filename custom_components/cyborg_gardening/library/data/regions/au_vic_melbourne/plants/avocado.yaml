@@ -1,0 +1,15 @@
+plant: avocado
+plant_out: [9, 10]
+harvest: [6, 7, 9, 10, 11, 12, 1]
+notes:
+  - text: Plant in early spring once frosts ease, and shelter young trees from frost.
+    months: [9, 10]
+    sources:
+      - https://www.abc.net.au/gardening/avocados/13460790
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-avocado
+  - text: Bacon fruit hangs from June to late July; Hass from September to January.
+    months: [6, 7, 9, 10, 11, 12, 1]
+    sources: [https://www.sgaonline.org.au/avocados/]
+sources:
+  - https://www.abc.net.au/gardening/avocados/13460790
+  - https://www.sgaonline.org.au/avocados/

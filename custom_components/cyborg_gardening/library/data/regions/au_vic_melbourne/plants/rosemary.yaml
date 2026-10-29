@@ -1,0 +1,10 @@
+plant: rosemary
+plant_out: [9, 10, 11, 12, 1, 2, 3, 4, 5]
+notes:
+  - text: Autumn is a good time to plant perennial herbs.
+    months: [3, 4, 5]
+    sources:
+      - https://localfoodconnect.org.au/community-gardening/planting-guide/
+sources:
+  - https://www.yates.com.au/how-to-grow/rosemary/
+  - https://localfoodconnect.org.au/community-gardening/planting-guide/

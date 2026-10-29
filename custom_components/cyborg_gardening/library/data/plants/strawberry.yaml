@@ -1,0 +1,210 @@
+id: strawberry
+name: Strawberry
+botanical: Fragaria x ananassa
+group: berry
+icon: mdi:fruit-cherries
+frost: half_hardy
+heat: sensitive
+water: high
+perennial: true
+stages: [young, established]
+default_stage: established
+settings: [ground, pot, raised_bed]
+summary: A shallow rooted berry for a sunny, well drained, slightly acid bed or pot. Keep it evenly moist, mulched and netted, and replace plants every few years with healthy runners.
+needs:
+  sun: full
+  soil: Rich, free draining, slightly acid soil enriched with compost and aged manure; a mound or raised bed helps drainage. In hot weather give shelter from afternoon sun.
+  ph: [6.0, 6.5]
+  sources:
+    - https://www.sgaonline.org.au/strawberries/
+    - https://www.abc.net.au/gardening/factsheets/sumptuous-strawberries/9435658
+    - https://www.diggers.com.au/blogs/learn/how-to-plant-and-grow-strawberries
+varieties:
+  - id: cambridge_rival
+    name: Cambridge Rival
+    notes: Medium sized fruit, best eaten fresh.
+    sources: [https://www.abc.net.au/gardening/factsheets/sumptuous-strawberries/9435658]
+  - id: chandler
+    name: Chandler
+    notes: Very large, well flavoured fruit, good for cooking.
+    sources: [https://www.abc.net.au/gardening/factsheets/sumptuous-strawberries/9435658]
+  - id: alpine
+    name: Alpine strawberry
+    notes: Small, intensely flavoured fruit; can spread like a weed, so suits a pot, and tolerates more shade.
+    sources:
+      - https://www.abc.net.au/gardening/factsheets/sumptuous-strawberries/9435658
+      - https://www.diggers.com.au/blogs/learn/how-to-plant-and-grow-strawberries
+tasks:
+  - id: water
+    kind: water
+    title: Water at the roots
+    detail: Strawberries are shallow rooted and dry out fast, so water regularly, especially after planting and while fruiting. Water the soil, not the leaves or fruit. Once fruiting starts, slightly less water improves flavour. In the cooler months water only now and then.
+    every_days:
+      ground: {spring: 3, summer: 2, autumn: 4, winter: 10}
+      raised_bed: {spring: 3, summer: 2, autumn: 4, winter: 10}
+      pot: {spring: 2, summer: 1, autumn: 3, winter: 7}
+    sources:
+      - https://www.sgaonline.org.au/strawberries/
+      - https://www.abc.net.au/gardening/how-to/petes-patch-strawberries/9429886
+      - https://www.diggers.com.au/blogs/learn/how-to-plant-and-grow-strawberries
+  - id: feed
+    kind: fertilise
+    title: Fruit and citrus pellets
+    detail: Scatter around the plants and water in. Feed through the growing and fruiting season; potted plants want half strength feeds more often.
+    products: [yates_dynamic_lifter_fruit_citrus]
+    rate:
+      ground: 100 g per square metre every 6 weeks.
+      raised_bed: 100 g per square metre every 6 weeks.
+      pot: 10 g for a 15 cm pot or 25 g for a 30 cm pot, every 8 weeks.
+    every_days: {ground: {spring: 42, summer: 42}, raised_bed: {spring: 42, summer: 42}, pot: {spring: 56, summer: 56}}
+    sources:
+      - https://www.yates.com.au/yates-7kg-dynamic-lifter-plant-food-pellets-fruit-citrus/
+      - https://www.diggers.com.au/blogs/learn/how-to-plant-and-grow-strawberries
+      - https://www.sgaonline.org.au/strawberries/
+  - id: seaweed
+    kind: tonic
+    title: Seaweed tonic
+    detail: Seaweed solution every few weeks keeps plants healthy and helps prevent fungal problems. Soak new runners in half strength seaweed before planting to reduce transplant shock.
+    products: [seasol]
+    rate: 40 mL in 9 L of water every 2 to 4 weeks.
+    every_days: {spring: 21, summer: 21, autumn: 21}
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-plant-and-grow-strawberries
+      - https://www.abc.net.au/gardening/growing-strawberries/102657206
+      - https://www.seasol.com.au/products/seasol/
+  - id: mulch_potash
+    kind: mulch
+    title: Mulch and potash
+    detail: Mulch about 5 cm deep with straw or aged pine needles (not fresh green ones) to keep fruit off the soil and limit rot. Scatter a handful of sulphate of potash per plant at the same time to promote flowers and fruit.
+    products: [pea_straw, sulphate_of_potash]
+    rate: A handful of sulphate of potash per plant.
+    once: true
+    seasons: [early_spring]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/the-strawberry-patch/10837694
+      - https://www.abc.net.au/gardening/factsheets/sumptuous-strawberries/9435658
+  - id: copper_spray
+    kind: spray
+    title: Copper spray for grey mould
+    detail: In damp weather spray once plants are established and repeat every 7 to 10 days. Stop if leaf veins redden or new growth stalls. Do not pick for 1 day after spraying.
+    products: [yates_liquid_copper]
+    rate: 5 mL per litre of water.
+    every_days: {spring: 8, autumn: 8}
+    stages: [established]
+    caution: Read and follow the label.
+    sources:
+      - https://www.yates.com.au/garden-hub/grey-mould/
+      - https://www.yates.com.au/yates-200ml-liquid-copper/
+  - id: net
+    kind: other
+    title: Net the patch
+    detail: Net when fruiting begins, or birds take the crop. Victorian law requires household fruit netting with a mesh of 5 mm by 5 mm or less, fixed tightly.
+    once: true
+    seasons: [mid_spring]
+    stages: [established]
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-plant-and-grow-strawberries
+      - https://www.abc.net.au/gardening/plant-finder/fragaria/9441790
+      - https://agriculture.vic.gov.au/livestock-and-animals/animal-welfare-victoria/pocta-act-1986/protecting-fruit-trees-and-wildlife
+  - id: harvest
+    kind: harvest
+    title: Pick ripe berries
+    detail: Traditional varieties fruit from late spring into summer; day neutral and autumn varieties keep fruiting into autumn.
+    once: true
+    seasons: [late_spring, summer, early_autumn]
+    stages: [established]
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-plant-and-grow-strawberries
+      - https://www.abc.net.au/gardening/factsheets/sumptuous-strawberries/9435658
+  - id: renovate
+    kind: prune
+    title: Renew the bed
+    detail: After the summer harvest, pick strong young runners to replace old plants, thin plants to 20 cm apart with rows 20 to 30 cm apart, cut back the leaves, feed and water well.
+    once: true
+    seasons: [late_summer]
+    stages: [established]
+    sources: [https://www.diggers.com.au/blogs/learn/how-to-plant-and-grow-strawberries]
+pests:
+  - id: grey_mould
+    name: Grey mould (botrytis)
+    kind: disease
+    seasons: [spring, autumn]
+    signs: Water soaked spots that turn grey or brown, rotting fruit and flowers, often with fuzzy grey mould in cool, humid weather.
+    prevent: Space plants for air flow, avoid overhead watering, mulch with straw to keep fruit off the soil, give morning sun to dry dew, and remove dead leaves and plant material.
+    treat: Remove and bin affected parts with clean secateurs. Copper sprays every 7 to 10 days help prevent it.
+    products: [yates_liquid_copper, eco_fungicide]
+    sources:
+      - https://www.yates.com.au/garden-hub/grey-mould/
+      - https://www.diggers.com.au/blogs/learn/how-to-plant-and-grow-strawberries
+      - https://www.sgaonline.org.au/strawberries/
+  - id: snails_slugs
+    name: Snails and slugs
+    kind: pest
+    seasons: [autumn, winter, spring]
+    signs: Holes chewed in fruit and leaves and shiny slime trails, worst after rain.
+    prevent: Grow in raised pots, use beer traps or copper tape around beds and pots, and hunt them with a torch two hours after dark.
+    treat: Iron based snail and slug pellets as the label directs.
+    products: [snail_bait_iron]
+    sources:
+      - https://www.sgaonline.org.au/snails-slugs/
+      - https://www.diggers.com.au/blogs/learn/how-to-plant-and-grow-strawberries
+      - https://www.abc.net.au/gardening/factsheets/berries-in-pots/12927884
+  - id: virus
+    name: Virus
+    kind: disease
+    signs: Yellow streaks or marbling on leaves, speckling, greenish flowers and poor cropping.
+    prevent: Buy certified virus free plants, control aphids at once as they spread viruses, and move to a fresh bed every few years. Do not plant where tomatoes, eggplants, capsicums, chillies or potatoes grew in the last three years.
+    treat: Pull out infected plants and bag or burn them, then replant elsewhere.
+    products: [pyrethrum_spray]
+    sources:
+      - https://www.sgaonline.org.au/strawberries/
+      - https://www.abc.net.au/gardening/growing-strawberries/102657206
+      - https://www.abc.net.au/gardening/factsheets/sumptuous-strawberries/9435658
+  - id: powdery_mildew
+    name: Powdery mildew
+    kind: disease
+    seasons: [summer, autumn]
+    signs: On strawberries leaves often curl upward with purple blotches rather than white powder; fruit may stay small, hard and dull.
+    prevent: Water early in the day at the roots and give plants room for air flow.
+    treat: Remove and bin the worst leaves.
+    sources:
+      - https://www.yates.com.au/garden-hub/powdery-mildew/
+      - https://www.sgaonline.org.au/powdery-mildew/
+advice:
+  - text: Strawberries are sensitive to frost. Protect young plants with frost cloth or a 10 cm layer of straw over winter, and avoid frost pockets at the base of slopes.
+    seasons: [late_autumn, winter, early_spring]
+    sources: [https://www.diggers.com.au/blogs/learn/how-to-plant-and-grow-strawberries]
+  - text: Plant bare root runners in winter when they are sold. Keep the crown at soil level, spread the roots over a small mound, and plant 20 to 30 cm apart. Too deep and the crown rots; too shallow and the roots dry out.
+    seasons: [winter]
+    stages: [young]
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-plant-and-grow-strawberries
+      - https://www.sgaonline.org.au/strawberries/
+      - https://www.abc.net.au/gardening/factsheets/sumptuous-strawberries/9435658
+  - text: Replace plants every 3 to 4 years with healthy runners, in a fresh bed for soil hygiene, because viruses build up in old plants.
+    stages: [established]
+    sources:
+      - https://www.abc.net.au/gardening/factsheets/sumptuous-strawberries/9435658
+      - https://www.sgaonline.org.au/strawberries/
+      - https://www.diggers.com.au/blogs/learn/how-to-plant-and-grow-strawberries
+  - text: Runners grow after fruiting. Let a runner root, then cut it from the parent and replant it to make new plants.
+    seasons: [summer, autumn]
+    sources:
+      - https://www.abc.net.au/gardening/growing-strawberries/102657206
+      - https://www.abc.net.au/gardening/how-to/the-strawberry-patch/10837694
+  - text: Avoid mushroom compost and chicken manure when preparing the bed; they can be too alkaline.
+    stages: [young]
+    sources: [https://www.sgaonline.org.au/strawberries/]
+  - text: In pots use premium potting mix and keep pots off the ground, away from snails and slugs, in full sun with good air flow.
+    settings: [pot]
+    sources:
+      - https://www.abc.net.au/gardening/factsheets/berries-in-pots/12927884
+      - https://www.diggers.com.au/blogs/learn/how-to-plant-and-grow-strawberries
+  - text: In hot weather give strawberries morning sun and shelter from afternoon sun.
+    seasons: [summer]
+    sources: [https://www.sgaonline.org.au/strawberries/]
+  - text: Strawberry is a Queensland fruit fly host. Pick fruit as it ripens and remove spoiled fruit.
+    seasons: [summer, autumn]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/queensland-fruit-fly-host-fruits
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/controlling-queensland-fruit-fly-in-home-gardens

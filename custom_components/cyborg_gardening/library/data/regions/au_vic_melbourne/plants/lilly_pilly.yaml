@@ -1,0 +1,14 @@
+plant: lilly_pilly
+plant_out: [3, 4, 5, 6, 7, 8, 9, 10, 11]
+notes:
+  - text: In Melbourne plant natives from autumn through to the end of spring. In frosty spots plant in spring once the cold has passed.
+    months: [3, 4, 5, 6, 7, 8, 9, 10, 11]
+    sources:
+      - https://apsvic.org.au/best-time-to-plant-australian-natives
+  - text: Trim hedges in spring and summer, after each flush of new growth.
+    months: [9, 10, 11, 12, 1, 2]
+    sources:
+      - https://www.flowerpower.com.au/gardening/lilly-pilly/
+      - https://www.evergreentrees.com.au/blogs/plant-care-tips/the-best-lilly-pilly-variety-for-your-garden
+sources:
+  - https://apsvic.org.au/best-time-to-plant-australian-natives

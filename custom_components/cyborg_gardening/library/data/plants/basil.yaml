@@ -1,0 +1,167 @@
+id: basil
+name: Basil
+botanical: Ocimum basilicum
+group: herb
+icon: mdi:leaf
+frost: tender
+heat: tolerant
+water: moderate
+perennial: false
+stages: [seed, germinating, seedling, vegetative, flowering]
+default_stage: vegetative
+settings: [ground, pot, raised_bed]
+summary: Basil is a frost tender summer annual. Sow it in spring once the weather warms, then give it sun, rich moist soil and regular feeding. Pick often and pinch out flowers to keep the leaves coming.
+needs:
+  sun: full
+  soil: Rich, well drained soil full of compost, close to neutral or slightly acid.
+  sources:
+    - https://www.sgaonline.org.au/basil/
+    - https://www.diggers.com.au/blogs/learn/how-to-grow-basil
+    - https://www.abc.net.au/news/2023-02-14/how-to-grow-basil-in-colder-climate/101967230
+    - https://www.yates.com.au/how-to-grow/basil/
+    - https://localfoodconnect.org.au/wp-content/uploads/galleries/guide/veggie%20planting%20guide.xlsx
+tasks:
+  - id: sow
+    kind: other
+    title: Sow basil in trays
+    detail: Sow seed in trays in a warm, sheltered spot or indoors; it needs 18 to 35 degrees to germinate. Keep the mix moist. Seedlings are ready to plant out in 4 to 6 weeks, at about 4 true leaves.
+    once: true
+    seasons: [early_spring]
+    stages: [seed]
+    sources:
+      - https://localfoodconnect.org.au/wp-content/uploads/galleries/guide/veggie%20planting%20guide.xlsx
+      - https://www.abc.net.au/gardening/plant-finder/basil/9627868
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-basil
+      - https://www.sgaonline.org.au/basil/
+  - id: plant_out
+    kind: tonic
+    title: Plant out basil after frost
+    detail: Plant out once the risk of frost has passed, 20 to 30 cm apart. Water in with seaweed solution and again a week later.
+    products: [seasol]
+    rate: 40 mL in a 9 L watering can at planting and again 1 week later (label rate).
+    once: true
+    seasons: [mid_spring, late_spring]
+    stages: [seedling]
+    sources:
+      - https://www.sgaonline.org.au/basil/
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-basil
+      - https://www.seasol.com.au/products/seasol/
+  - id: water
+    kind: water
+    title: Water basil
+    detail: Basil likes fairly damp soil, about 2 to 3 cm of water a week. Push a finger into the soil first and water only if it is dry. Water in the morning at the base, not over the leaves. Pots dry out faster, so check them more often.
+    every_days: 7
+    seasons: [spring, summer, autumn]
+    sources:
+      - https://localfoodconnect.org.au/wp-content/uploads/galleries/guide/veggie%20planting%20guide.xlsx
+      - https://www.sgaonline.org.au/basil/
+      - https://www.yates.com.au/how-to-grow/basil/
+      - https://www.sgaonline.org.au/coriander-2/
+  - id: feed
+    kind: fertilise
+    title: Liquid feed basil
+    detail: Basil is a hungry plant. Liquid feed through the growing season; the more you pick, the more it needs.
+    products: [powerfeed_all_purpose]
+    rate: 50 mL in a 9 L watering can (label rate for vegies and herbs).
+    every_days: 7
+    seasons: [spring, summer, autumn]
+    stages: [vegetative, flowering]
+    sources:
+      - https://www.sgaonline.org.au/basil/
+      - https://www.yates.com.au/how-to-grow/basil/
+      - https://www.seasol.com.au/products/powerfeed/
+  - id: pinch_flowers
+    kind: prune
+    title: Pinch out basil flowers
+    detail: Pinch out flower buds as they appear, as flowering reduces the flavour and stops new leaves. Pinch the tips too for a bushier plant.
+    once: true
+    seasons: [spring, summer, autumn]
+    stages: [flowering]
+    sources:
+      - https://www.abc.net.au/gardening/plant-finder/basil/9627868
+      - https://www.sgaonline.org.au/basil/
+      - https://www.yates.com.au/how-to-grow/basil/
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-basil
+  - id: mulch
+    kind: mulch
+    title: Mulch basil
+    detail: Mulch with pea straw or sugar cane to keep the soil moist.
+    products: [pea_straw, sugar_cane_mulch]
+    once: true
+    seasons: [late_spring, early_summer]
+    stages: [vegetative]
+    settings: [ground, raised_bed]
+    sources:
+      - https://www.sgaonline.org.au/basil/
+      - https://www.yates.com.au/how-to-grow/basil/
+pests:
+  - id: snails_slugs
+    name: Snails and slugs
+    kind: pest
+    seasons: [spring, summer, autumn]
+    signs: Holes chewed in leaves and seedlings eaten down, often with slime trails.
+    prevent: Protect young seedlings, which are the main target.
+    treat: Pick them off by hand, or use a snail bait labelled pet and wildlife friendly. Read and follow the label.
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-basil
+      - https://www.yates.com.au/how-to-grow/basil/
+      - https://www.abc.net.au/news/2023-02-14/how-to-grow-basil-in-colder-climate/101967230
+      - https://www.sgaonline.org.au/basil/
+  - id: caterpillars
+    name: Caterpillars
+    kind: pest
+    seasons: [spring, summer, autumn]
+    signs: Holes chewed in the leaves.
+    prevent: Check leaves regularly while picking.
+    treat: Spray with Dipel, a caterpillar spray based on a natural bacterium. Read and follow the label.
+    products: [dipel]
+    sources:
+      - https://www.yates.com.au/how-to-grow/basil/
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-basil
+  - id: basil_downy_mildew
+    name: Basil downy mildew
+    kind: disease
+    seasons: [summer, autumn]
+    signs: A downy growth of spores, mostly on the undersides of the leaves. Found in Australia since 2017, including Victorian backyards.
+    prevent: Keep leaves dry. Water at the base early in the day so plants dry before night, and start with healthy seedlings, as it can travel on seed and transplants.
+    treat: Fungicides must reach the leaf undersides. Use only a product whose label covers basil, and read and follow the label.
+    sources:
+      - https://era.dpi.qld.gov.au/id/eprint/6386/7/H%26FS%20-%20Basil%20Downy%20Mildew%20%28Grice%29%20FINAL.pdf
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-basil
+  - id: overwatering
+    name: Overwatering and rot
+    kind: disorder
+    seasons: [spring, autumn]
+    signs: Brown spots on the leaves, wilting, and eventually rotting, after heavy rain, overwatering or too little sun.
+    prevent: Water only when the soil or potting mix starts to dry out.
+    treat: Move potted basil to a warm, sunny, sheltered spot and let it dry out a little.
+    sources:
+      - https://www.yates.com.au/how-to-grow/basil/
+advice:
+  - text: Basil is sensitive to cold and frost. In Melbourne it really only lasts through spring and summer, about 6 to 9 months of the year.
+    sources:
+      - https://www.abc.net.au/news/2023-02-14/how-to-grow-basil-in-colder-climate/101967230
+      - https://www.sgaonline.org.au/basil/
+  - text: Wait until frosts are over before planting out. In Melbourne that is usually October.
+    seasons: [early_spring, mid_spring]
+    stages: [seed, seedling]
+    sources:
+      - https://www.sgaonline.org.au/basil/
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-basil
+  - text: As nights cool, wrap garden basil in bubble wrap or move potted basil to a sunny windowsill indoors. Pick the last leaves and dry or freeze them before it dies down.
+    seasons: [late_autumn, winter]
+    sources:
+      - https://www.abc.net.au/news/2023-02-14/how-to-grow-basil-in-colder-climate/101967230
+      - https://www.yates.com.au/how-to-grow/basil/
+  - text: Start picking once plants are 10 to 20 cm tall, always leaving some leaves. Regular picking keeps plants bushy and slows flowering.
+    stages: [vegetative]
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-basil
+      - https://www.abc.net.au/news/2023-02-14/how-to-grow-basil-in-colder-climate/101967230
+  - text: Never water basil with greywater.
+    sources:
+      - https://www.sgaonline.org.au/basil/
+  - text: Use a pot at least 25 cm across, as basil has a fast growing root system.
+    settings: [pot]
+    sources:
+      - https://www.abc.net.au/news/2023-02-14/how-to-grow-basil-in-colder-climate/101967230

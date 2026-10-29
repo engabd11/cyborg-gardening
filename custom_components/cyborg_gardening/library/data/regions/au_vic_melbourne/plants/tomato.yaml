@@ -1,0 +1,28 @@
+plant: tomato
+sow_indoors: [8, 9]
+plant_out: [10, 11]
+harvest: [1, 2, 3, 4]
+notes:
+  - text: Melbourne Cup weekend is the folklore date. Sustainable Gardening Australia plants from mid October with frost cover on hand, and Diggers suggests late October to early November for southern Victoria. Either way, wait for soil of at least 16 degrees and no frost.
+    months: [10, 11]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/top-tomato-tips/13618668
+      - https://www.sgaonline.org.au/wp-content/uploads/2022/09/Notes-Preparing-for-Summer-Harvest.pdf
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-tomatoes
+  - text: Sow seed indoors 6 to 8 weeks before you plan to plant out, in a warm, bright spot.
+    months: [8, 9]
+    sources:
+      - https://www.diggers.com.au/blogs/learn/growing-tomatoes-from-seed
+      - https://www.yates.com.au/how-to-grow/tomatoes/
+  - text: Most tomatoes are ready 10 to 14 weeks after planting out. Vine types keep cropping until autumn cold or frost ends them.
+    months: [1, 2, 3, 4]
+    sources:
+      - https://www.sgaonline.org.au/tomatoes/
+      - https://www.yates.com.au/how-to-grow/tomatoes/
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-tomatoes
+sources:
+  - https://www.sgaonline.org.au/wp-content/uploads/2022/09/Notes-Preparing-for-Summer-Harvest.pdf
+  - https://www.diggers.com.au/blogs/learn/how-to-grow-tomatoes
+  - https://www.diggers.com.au/blogs/learn/growing-tomatoes-from-seed
+  - https://www.yates.com.au/how-to-grow/tomatoes/
+  - https://www.sgaonline.org.au/november-in-your-patch/

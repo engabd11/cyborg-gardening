@@ -1,0 +1,19 @@
+plant: eremophila_nivea
+plant_out: [3, 4, 5, 6, 7, 8, 9, 10, 11]
+notes:
+  - text: In Melbourne plant natives from autumn through to the end of spring. In frosty spots plant in spring once the cold has passed.
+    months: [3, 4, 5, 6, 7, 8, 9, 10, 11]
+    sources:
+      - https://apsvic.org.au/best-time-to-plant-australian-natives
+  - text: Mauve flowers appear from late winter to early summer.
+    months: [8, 9, 10, 11, 12]
+    sources:
+      - https://anpsa.org.au/plant_profiles/eremophila-nivea/
+  - text: Prune lightly once flowering has finished.
+    months: [12, 1, 2]
+    sources:
+      - https://gardeningwithangus.com.au/eremophila-nivea/
+      - https://anpsa.org.au/genera/eremophila-and-relatives/
+sources:
+  - https://apsvic.org.au/best-time-to-plant-australian-natives
+  - https://anpsa.org.au/plant_profiles/eremophila-nivea/

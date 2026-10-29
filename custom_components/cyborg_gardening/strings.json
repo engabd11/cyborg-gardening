@@ -1,0 +1,263 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up your garden",
+        "description": "Pick your region and soil so jobs and advice follow your climate. Add plants afterwards from the integration page.",
+        "data": {
+          "name": "Garden name",
+          "region": "Region",
+          "soil": "Soil type",
+          "weather": "Weather",
+          "temperature_sensor": "Outdoor temperature sensor",
+          "humidity_sensor": "Outdoor humidity sensor",
+          "rain_sensor": "Rain today sensor"
+        },
+        "data_description": {
+          "soil": "Most of your garden beds. Plants in pots use potting mix, and each plant can override this.",
+          "weather": "Its forecast drives frost and heat alerts and the automations.",
+          "temperature_sensor": "Optional. Used instead of the weather entity for heat misting.",
+          "rain_sensor": "Optional. Rain in mm since 9 am. Enough rain counts as watering for garden beds."
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Garden options",
+        "menu_options": {
+          "garden": "Region, soil, weather and sensors",
+          "automations": "Frost watering, heat misting and valves"
+        }
+      },
+      "garden": {
+        "title": "Region, soil, weather and sensors",
+        "data": {
+          "region": "Region",
+          "soil": "Soil type",
+          "weather": "Weather",
+          "temperature_sensor": "Outdoor temperature sensor",
+          "humidity_sensor": "Outdoor humidity sensor",
+          "rain_sensor": "Rain today sensor"
+        }
+      },
+      "automations": {
+        "title": "Frost watering, heat misting and valves",
+        "description": "Turn each automation on with its switch. These settings decide how it runs.",
+        "data": {
+          "frost_threshold": "Frost threshold",
+          "frost_time": "Frost watering time",
+          "frost_minutes": "Frost watering minutes",
+          "heat_threshold": "Heat threshold",
+          "mist_minutes": "Mist minutes",
+          "mist_every": "Mist every",
+          "mist_start": "Misting from",
+          "mist_end": "Misting until",
+          "humidity_max": "Skip misting above humidity",
+          "rain_skip_mm": "Rain that counts as watering",
+          "max_run_minutes": "Longest valve run",
+          "one_at_a_time": "Run valves one at a time",
+          "auto_ack_minutes": "Valve run that counts as watering"
+        },
+        "data_description": {
+          "frost_threshold": "Frost watering runs when tonight's forecast low is at or below this.",
+          "frost_time": "Water the soil in the day before a frost night, so it holds warmth overnight.",
+          "frost_minutes": "How long each water valve runs before a frost.",
+          "heat_threshold": "Misting runs while the temperature is at or above this.",
+          "humidity_max": "Misting adds little when the air is already humid.",
+          "rain_skip_mm": "Rain forecast or measured above this lets watering wait.",
+          "max_run_minutes": "A safety cap for every run, manual or automatic.",
+          "one_at_a_time": "Keeps water pressure up when several valves share one tap.",
+          "auto_ack_minutes": "A water valve running at least this long marks its plants as watered."
+        }
+      }
+    }
+  },
+  "config_subentries": {
+    "plant": {
+      "entry_type": "Plant",
+      "initiate_flow": {
+        "user": "Add plant",
+        "reconfigure": "Edit plant"
+      },
+      "step": {
+        "user": {
+          "title": "Add a plant",
+          "description": "Pick what you are growing.",
+          "data": {
+            "plant_type": "Plant"
+          }
+        },
+        "details": {
+          "title": "{plant}",
+          "description": "{summary}",
+          "data": {
+            "name": "Name",
+            "variety": "Variety",
+            "stage": "Stage",
+            "setting": "Grown",
+            "soil": "Soil type",
+            "planted": "Planted",
+            "area": "Area",
+            "moisture_sensor": "Soil moisture sensor",
+            "soil_temperature_sensor": "Soil temperature sensor",
+            "humidity_sensor": "Humidity sensor",
+            "water_valve": "Water valve",
+            "mist_valve": "Mist valve",
+            "dry_threshold": "Dry below"
+          },
+          "data_description": {
+            "stage": "Jobs and advice follow the stage. Change it later from the plant's stage select.",
+            "soil": "Leave empty to use the garden's soil type.",
+            "moisture_sensor": "Optional. A sensor near this plant. Several plants can share one.",
+            "water_valve": "Optional. A valve or switch that waters this plant.",
+            "mist_valve": "Optional. A valve or switch for misters near this plant.",
+            "dry_threshold": "Soil moisture that counts as dry. Leave empty for the plant's usual level."
+          }
+        },
+        "reconfigure": {
+          "title": "{plant}",
+          "description": "{summary}",
+          "data": {
+            "name": "Name",
+            "variety": "Variety",
+            "stage": "Stage",
+            "setting": "Grown",
+            "soil": "Soil type",
+            "planted": "Planted",
+            "area": "Area",
+            "moisture_sensor": "Soil moisture sensor",
+            "soil_temperature_sensor": "Soil temperature sensor",
+            "humidity_sensor": "Humidity sensor",
+            "water_valve": "Water valve",
+            "mist_valve": "Mist valve",
+            "dry_threshold": "Dry below"
+          },
+          "data_description": {
+            "soil": "Leave empty to use the garden's soil type.",
+            "dry_threshold": "Soil moisture that counts as dry. Leave empty for the plant's usual level."
+          }
+        }
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "frost_risk": {
+        "name": "Frost tonight"
+      },
+      "heat_risk": {
+        "name": "Hot weather"
+      },
+      "needs_water": {
+        "name": "Needs water"
+      }
+    },
+    "select": {
+      "stage": {
+        "name": "Stage",
+        "state": {
+          "seed": "Seed",
+          "germinating": "Germinating",
+          "seedling": "Seedling",
+          "vegetative": "Growing",
+          "flowering": "Flowering",
+          "fruiting": "Fruiting",
+          "bulbing": "Bulbing",
+          "young": "Young plant",
+          "established": "Established",
+          "dormant": "Dormant"
+        }
+      }
+    },
+    "sensor": {
+      "next_care": {
+        "name": "Next care"
+      }
+    },
+    "switch": {
+      "frost_watering": {
+        "name": "Frost watering"
+      },
+      "heat_misting": {
+        "name": "Heat misting"
+      }
+    },
+    "todo": {
+      "care": {
+        "name": "Garden care"
+      }
+    }
+  },
+  "exceptions": {
+    "plant_not_found": {
+      "message": "No plant matches {plant}."
+    },
+    "no_garden": {
+      "message": "No Cyborg Gardening garden is loaded."
+    }
+  },
+  "services": {
+    "mark_done": {
+      "name": "Mark job done",
+      "description": "Records a plant job as done so its next due date moves on.",
+      "fields": {
+        "plant": {
+          "name": "Plant",
+          "description": "The plant's device or plant id."
+        },
+        "task": {
+          "name": "Job",
+          "description": "The job id, for example feed. Leave empty to mark every job due now as done."
+        },
+        "date": {
+          "name": "Date",
+          "description": "When it was done. Leave empty for today."
+        }
+      }
+    },
+    "snooze": {
+      "name": "Snooze job",
+      "description": "Moves a plant job back by some days.",
+      "fields": {
+        "plant": {
+          "name": "Plant",
+          "description": "The plant's device or plant id."
+        },
+        "task": {
+          "name": "Job",
+          "description": "The job id, for example feed."
+        },
+        "days": {
+          "name": "Days",
+          "description": "How many days to wait."
+        }
+      }
+    },
+    "run_valve": {
+      "name": "Run valve",
+      "description": "Opens a valve or switch, then closes it after some minutes.",
+      "fields": {
+        "entity_id": {
+          "name": "Valve",
+          "description": "The valve, switch or helper to run."
+        },
+        "minutes": {
+          "name": "Minutes",
+          "description": "How long to run, capped by the longest valve run option."
+        }
+      }
+    },
+    "stop_valve": {
+      "name": "Stop valve",
+      "description": "Closes a valve or switch now.",
+      "fields": {
+        "entity_id": {
+          "name": "Valve",
+          "description": "The valve, switch or helper to close."
+        }
+      }
+    }
+  }
+}

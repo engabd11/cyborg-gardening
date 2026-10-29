@@ -1,0 +1,28 @@
+plant: rose
+plant_out: [3, 4, 5, 6, 7, 8, 9, 10, 11]
+notes:
+  - text: Plant bare-root roses in winter, when the best range is in stock. Order them from specialist nurseries in May.
+    months: [5, 6, 7, 8]
+    sources:
+      - https://www.abc.net.au/gardening/roses/13473734
+      - https://www.rosesocietyvic.org.au/index.php/monthly-care-of-roses/
+  - text: Plant potted roses in spring or autumn.
+    months: [3, 4, 5, 9, 10, 11]
+    sources:
+      - https://www.abc.net.au/gardening/roses/13473734
+  - text: Prune repeat flowering roses in July, or early August in frosty spots.
+    months: [7, 8]
+    sources:
+      - https://www.rosesocietyvic.org.au/index.php/the-pruning-bible/
+      - https://www.rosesocietyvic.org.au/index.php/monthly-care-of-roses/
+  - text: The main spring flush flowers in November and the autumn flush in April.
+    months: [11, 4]
+    sources:
+      - https://www.rosesocietyvic.org.au/index.php/monthly-care-of-roses/
+  - text: Prune once flowering ramblers and heritage roses in December, after they flower.
+    months: [12]
+    sources:
+      - https://www.rosesocietyvic.org.au/index.php/monthly-care-of-roses/
+sources:
+  - https://www.abc.net.au/gardening/roses/13473734
+  - https://www.rosesocietyvic.org.au/index.php/monthly-care-of-roses/

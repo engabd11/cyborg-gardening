@@ -1,0 +1,144 @@
+id: cucumber
+name: Cucumber
+group: vegetable
+icon: mdi:sprout
+frost: tender
+heat: sensitive
+water: high
+perennial: false
+stages: [seed, germinating, seedling, vegetative, flowering, fruiting]
+default_stage: vegetative
+settings: [ground, raised_bed, pot]
+summary: A fast summer vine for warm soil. Water it every day at the roots, train it up a trellis for air flow, and pick fruit young and often.
+needs:
+  sun: full
+  soil: Rich and moisture retentive. Cucumber is a heavy feeder.
+  ph: [6.0, 7.0]
+  sources:
+    - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+    - https://www.sgaonline.org.au/wp-content/uploads/2022/08/Getting-Started-Organic-Veg-Gardening-into-Summer.pdf
+varieties:
+  - id: dwarf
+    name: Dwarf (Spacemaster, Bushcrop)
+    notes: Compact varieties to grow in pots.
+    sources: [https://www.sgaonline.org.au/wp-content/uploads/2022/08/Getting-Started-Organic-Veg-Gardening-into-Summer.pdf]
+  - id: lebanese
+    name: Lebanese
+    notes: Pick when the fruit is about the diameter of a 20 cent coin and 10 to 15 cm long.
+    sources:
+      - https://www.sgaonline.org.au/wp-content/uploads/2022/08/Getting-Started-Organic-Veg-Gardening-into-Summer.pdf
+      - https://www.abc.net.au/news/2021-02-17/how-to-grow-store-and-eat-cucumbers/100008130
+  - id: apple
+    name: Apple (Richmond Green Apple)
+    notes: Pick when about as big as a 50 cent coin.
+    sources:
+      - https://www.sgaonline.org.au/wp-content/uploads/2022/08/Getting-Started-Organic-Veg-Gardening-into-Summer.pdf
+      - https://www.abc.net.au/news/2021-02-17/how-to-grow-store-and-eat-cucumbers/100008130
+tasks:
+  - id: water
+    kind: water
+    title: Water at the roots
+    detail: Cucumbers do best watered daily, with the water going straight onto the soil and roots. Uneven watering gives misshapen fruit. Keep the leaves dry to avoid fungal disease.
+    every_days: 1
+    seasons: [late_spring, summer, early_autumn]
+    stages: [seedling, vegetative, flowering, fruiting]
+    sources:
+      - https://www.abc.net.au/news/2021-02-17/how-to-grow-store-and-eat-cucumbers/100008130
+      - https://www.abc.net.au/gardening/how-to/plow-into-summer/103216158
+  - id: mulch
+    kind: mulch
+    title: Mulch with straw
+    detail: Spread straw mulch about 7 to 10 cm deep to keep the soil moist. Leave a gap of at least 4 cm around the stems.
+    products: [pea_straw, sugar_cane_mulch]
+    once: true
+    stages: [seedling]
+    sources: [https://www.sgaonline.org.au/pdfs/hh_moreland.pdf]
+  - id: trellis
+    kind: other
+    title: Train up a trellis
+    detail: Climbing cucumbers prefer to climb. Thread the vine through a trellis or netting for air flow and easier picking.
+    once: true
+    stages: [seedling]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/plow-into-summer/103216158
+      - https://www.abc.net.au/news/2021-02-17/how-to-grow-store-and-eat-cucumbers/100008130
+  - id: pinch
+    kind: prune
+    title: Pinch out the tips
+    detail: Pinch out the top growth to encourage side shoots.
+    once: true
+    stages: [vegetative]
+    sources: [https://www.sgaonline.org.au/pdfs/hh_moreland.pdf]
+  - id: liquid_feed
+    kind: fertilise
+    title: Liquid feed
+    detail: Cucumber is a heavy feeder. Liquid feed while it grows and crops.
+    products: [powerfeed_all_purpose]
+    rate: 50 mL in 9 L of water every week (label rate for vegies).
+    every_days: 7
+    stages: [vegetative, flowering, fruiting]
+    sources:
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+      - https://www.seasol.com.au/products/powerfeed/
+  - id: harvest
+    kind: harvest
+    title: Start picking
+    detail: Cucumbers are ready 6 to 8 weeks after planting and grow fast. Pick before the seeds fully develop and the skin toughens, and pick often to keep fruit coming.
+    once: true
+    stages: [fruiting]
+    sources:
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+      - https://www.abc.net.au/news/2021-02-17/how-to-grow-store-and-eat-cucumbers/100008130
+pests:
+  - id: powdery_mildew
+    name: Powdery mildew
+    kind: disease
+    seasons: [summer, early_autumn]
+    signs: White powdery patches on both sides of the leaves that spread and merge, starting on older, lower leaves.
+    prevent: Water early in the day at the soil, keep the foliage dry, and grow vines up a trellis for air flow.
+    treat: Remove affected leaves as soon as you see them. Spray milk diluted 1 part to 10 parts water, or a low impact fungicide such as eco-fungicide.
+    products: [eco_fungicide]
+    sources:
+      - https://www.abc.net.au/gardening/powdery-mildew/13544994
+      - https://www.sgaonline.org.au/wp-content/uploads/2022/08/Getting-Started-Organic-Veg-Gardening-into-Summer.pdf
+  - id: poor_fruit_set
+    name: Poor fruit set
+    kind: disorder
+    seasons: [late_spring, summer]
+    signs: Plenty of flowers but little fruit.
+    prevent: Most modern cucumbers bear mostly female flowers, which still need a male flower to set fruit. Plant a range of types so some male flowers are in the mix.
+    treat: Add a different variety that bears male flowers.
+    sources: [https://www.abc.net.au/gardening/how-to/plow-into-summer/103216158]
+  - id: misshapen_fruit
+    name: Misshapen fruit
+    kind: disorder
+    seasons: [summer]
+    signs: Fruit is fat at the top and thin at the bottom.
+    prevent: Water consistently, every day in warm weather.
+    treat: Water consistently from now on, at the soil and roots.
+    sources: [https://www.abc.net.au/news/2021-02-17/how-to-grow-store-and-eat-cucumbers/100008130]
+  - id: whitefly
+    name: Whitefly
+    kind: pest
+    seasons: [summer]
+    signs: Tiny white flies that swarm when disturbed, with silvered, curling leaves.
+    prevent: Grow alyssum, marigolds, cosmos, parsley and dill to attract predatory wasps.
+    treat: Hang yellow sticky traps, or spray a botanical oil such as Eco Oil.
+    products: [eco_oil]
+    sources: [https://www.sgaonline.org.au/wp-content/uploads/2024/04/pests.pdf]
+advice:
+  - text: Cucumbers are frost tender. In cool areas wait until the soil is above 16 degrees before planting, and sow seed direct from late October to November.
+    seasons: [early_spring, mid_spring]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/plow-into-summer/103216158
+      - https://www.sgaonline.org.au/wp-content/uploads/2022/08/Getting-Started-Organic-Veg-Gardening-into-Summer.pdf
+      - https://www.sgaonline.org.au/september-in-your-patch/
+  - text: Grow dwarf varieties such as Spacemaster or Bushcrop in pots, in a quality potting mix. Pots dry out quickly in summer.
+    settings: [pot]
+    sources:
+      - https://www.sgaonline.org.au/wp-content/uploads/2022/08/Getting-Started-Organic-Veg-Gardening-into-Summer.pdf
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+  - text: Cucumber is a heavy feeder in the cucurbit family. Do not grow cucurbits in the same spot two seasons running.
+    sources:
+      - https://www.sgaonline.org.au/crop-rotation/
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/201105-Getting-Started-With-Veggie-Gardening-Notes.pdf

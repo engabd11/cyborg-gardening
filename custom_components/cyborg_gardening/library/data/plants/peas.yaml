@@ -1,0 +1,182 @@
+id: peas
+name: Peas
+group: vegetable
+icon: mdi:seed
+frost: half_hardy
+heat: sensitive
+water: moderate
+perennial: false
+stages: [seed, germinating, seedling, vegetative, flowering, fruiting]
+default_stage: vegetative
+settings: [ground, raised_bed, pot]
+summary: Snow, sugar snap and shelling peas are a cool season crop for Melbourne's autumn to spring. Give climbers a trellis, water only when the soil is dry, and pick often.
+needs:
+  sun: full
+  soil: Fertile and well drained, with a little garden lime added at planting.
+  ph: [6.5, 7.5]
+  sources:
+    - https://www.sgaonline.org.au/peas-2/
+    - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+varieties:
+  - id: snow
+    name: Snow peas
+    notes: Bear earlier than shelling peas and give about 6 weeks of picking. Pick them young.
+    sources:
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+      - https://www.sgaonline.org.au/peas-2/
+      - https://www.abc.net.au/gardening/how-to/peas-and-beans/105848770
+  - id: shelling
+    name: Shelling (garden) peas
+    notes: Give about 3 weeks of picking.
+    sources: [https://www.sgaonline.org.au/peas-2/]
+  - id: climbing
+    name: Climbing peas
+    notes: More productive than bush peas but need an upright support. Most climb to about 2 m.
+    sources:
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+      - https://www.sgaonline.org.au/peas-2/
+tasks:
+  - id: lime
+    kind: other
+    title: Lime the bed
+    detail: Add a little garden lime to the soil at planting. SGA suggests one small handful over the area to be planted.
+    products: [garden_lime]
+    once: true
+    stages: [seed]
+    sources:
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+      - https://www.sgaonline.org.au/peas-2/
+  - id: water_in
+    kind: water
+    title: Water in after sowing
+    detail: Sow seed direct about 5 cm deep, with plants no closer than 15 cm. Water straight after sowing, then leave it until the seedlings come up.
+    once: true
+    stages: [seed]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/peas-and-beans/105848770
+      - https://www.sgaonline.org.au/peas-2/
+      - https://www.abc.net.au/gardening/how-to/peas-beans-and-leafy-greens/9432800
+  - id: support
+    kind: other
+    title: Put up a trellis
+    detail: Most peas climb to about 2 m. Give them a wire trellis, teepee or twiggy prunings to climb. Nip out the growing tip to limit height.
+    once: true
+    stages: [seedling]
+    sources:
+      - https://www.sgaonline.org.au/peas-2/
+      - https://www.abc.net.au/gardening/how-to/peas-and-beans/105848770
+  - id: bird_net
+    kind: check
+    title: Net against birds
+    detail: Birds love young pea seedlings. Cover them with white knitted netting on a frame, or use bird scarers. Never use black netting, which wildlife cannot see.
+    once: true
+    stages: [seedling]
+    sources:
+      - https://www.sgaonline.org.au/peas-2/
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+  - id: snail_watch
+    kind: check
+    title: Protect seedlings from snails
+    detail: Snails and slugs feed in cool, moist weather and can eat seedlings to the ground. Hunt them on damp nights or scatter iron-based bait thinly in the evening.
+    products: [snail_bait_iron]
+    once: true
+    stages: [seedling]
+    seasons: [autumn, winter, spring]
+    caution: Read and follow the label.
+    sources:
+      - https://www.sgaonline.org.au/ggp-pest-of-the-season-snails-slugs/
+      - https://www.sgaonline.org.au/wp-content/uploads/2024/04/pests.pdf
+  - id: seaweed
+    kind: tonic
+    title: Seaweed tonic
+    detail: Give a seaweed drink every 3 weeks through the season.
+    products: [seasol]
+    rate: 40 mL in 9 L of water (label rate for vegies).
+    every_days: 21
+    stages: [seedling, vegetative, flowering, fruiting]
+    sources:
+      - https://www.sgaonline.org.au/peas-2/
+      - https://www.seasol.com.au/products/seasol/
+  - id: resow
+    kind: other
+    title: Sow another row
+    detail: Sow again every 4 to 6 weeks for a longer picking season.
+    every_days: 35
+    seasons: [autumn, winter, early_spring, mid_spring]
+    sources:
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/05/What-to-plant-now-notes.pdf
+  - id: harvest
+    kind: harvest
+    title: Start picking
+    detail: Most peas are ready 11 to 14 weeks after planting. Pick often and keep picking, because the more you pick the more they crop.
+    once: true
+    stages: [fruiting]
+    sources: [https://www.sgaonline.org.au/peas-2/]
+pests:
+  - id: powdery_mildew
+    name: Powdery mildew
+    kind: disease
+    seasons: [spring, early_summer]
+    signs: White powdery patches on both sides of the leaves that spread and merge, starting on older, lower leaves.
+    prevent: Water the soil in the morning and only when it feels dry, keep the leaves dry, and avoid manure and high nitrogen feeding, which cause soft growth that invites mildew.
+    treat: Remove badly infected leaves. Spray milk diluted 1 part to 10 parts water, or a low impact fungicide such as eco-fungicide. Mildew late in the season often means the crop is near its end.
+    products: [eco_fungicide]
+    sources:
+      - https://www.abc.net.au/gardening/powdery-mildew/13544994
+      - https://www.sgaonline.org.au/peas-2/
+      - https://www.abc.net.au/gardening/how-to/peas-beans-and-leafy-greens/9432800
+      - https://www.sgaonline.org.au/wp-content/uploads/2022/08/Getting-Started-Organic-Veg-Gardening-into-Summer.pdf
+  - id: birds
+    name: Birds
+    kind: pest
+    signs: Young seedlings pecked or pulled out.
+    prevent: Cover seedlings with white knitted netting on a frame, or use bird scarers and move them often.
+    treat: Net the crop.
+    sources:
+      - https://www.sgaonline.org.au/peas-2/
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+  - id: aphids
+    name: Aphids
+    kind: pest
+    seasons: [spring]
+    signs: Clusters of small sap sucking insects on new growth, sticky leaves and distorted tips.
+    prevent: Avoid high nitrogen feeding and encourage ladybirds and other predators.
+    treat: Squash or hose them off. Spray with a botanical oil such as Eco Oil if numbers build up.
+    products: [eco_oil]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/peas-and-beans/105848770
+      - https://www.abc.net.au/gardening/how-to/peas-beans-and-leafy-greens/9432800
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/201105-Getting-Started-With-Veggie-Gardening-Notes.pdf
+  - id: snails_slugs
+    name: Snails and slugs
+    kind: pest
+    seasons: [autumn, winter, spring]
+    signs: Seedlings eaten to the ground overnight and shiny silver trails.
+    prevent: Remove daytime hiding spots and use copper barriers around pots.
+    treat: Hand pick on wet nights, set beer or board traps, or scatter iron-based pellets thinly in the evening.
+    products: [snail_bait_iron]
+    sources:
+      - https://www.sgaonline.org.au/ggp-pest-of-the-season-snails-slugs/
+      - https://www.sgaonline.org.au/wp-content/uploads/2024/04/pests.pdf
+advice:
+  - text: Peas prefer temperatures below 20 degrees for germination and growth, so grow them from autumn to spring.
+    sources:
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/05/What-to-plant-now-notes.pdf
+  - text: Give peas a sunny spot free of frost. SGA lists cold sensitivity among their problems.
+    seasons: [winter]
+    sources: [https://www.sgaonline.org.au/peas-2/]
+  - text: Water in the morning, only when the soil feels dry, and keep water off the leaves. Overwatering young plants causes problems.
+    sources: [https://www.sgaonline.org.au/peas-2/]
+  - text: Do not use manure on peas. Extra nitrogen gives weak, sappy growth that invites mildew and aphids.
+    sources: [https://www.abc.net.au/gardening/how-to/peas-beans-and-leafy-greens/9432800]
+  - text: Bush peas grow well in pots. Pots dry out quickly, so check them more often than garden beds.
+    settings: [pot]
+    sources:
+      - https://www.sgaonline.org.au/wp-content/uploads/2022/08/Getting-Started-Organic-Veg-Gardening-into-Summer.pdf
+      - https://www.sgaonline.org.au/pdfs/hh_moreland.pdf
+  - text: Peas are legumes that put nitrogen back into the soil. In crop rotation, follow them with a heavy feeder such as broccoli, and do not grow legumes in the same spot two seasons running.
+    sources:
+      - https://www.sgaonline.org.au/crop-rotation/
+      - https://www.sgaonline.org.au/wp-content/uploads/2020/11/201105-Getting-Started-With-Veggie-Gardening-Notes.pdf

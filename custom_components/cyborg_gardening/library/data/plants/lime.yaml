@@ -1,0 +1,344 @@
+id: lime
+name: Lime
+botanical: Citrus aurantifolia
+group: citrus
+icon: mdi:fruit-citrus
+frost: tender
+heat: tolerant
+water: moderate
+perennial: true
+stages: [young, established, flowering, fruiting]
+default_stage: established
+settings: [ground, pot]
+summary: A frost-tender citrus for the warmest sheltered spot in full sun, or a pot that can move under cover. Feed it from spring to March and pick Tahitian limes in late winter and early spring.
+needs:
+  sun: full
+  soil: Deep, free draining sandy loam. In pots use a premium potting mix, never garden soil.
+  ph: [6.0, 7.0]
+  sources:
+    - https://www.dpi.nsw.gov.au/agriculture/horticulture/citrus/content/crop-management/orchard-management-factsheets/garden
+    - https://www.citrusmen.com.au/information/2019/1/16/what-pot-size-where-to-next-9lejj
+    - https://www.abc.net.au/news/2025-04-05/how-long-does-potted-citrus-take-to-fruit/105074728
+varieties:
+  - id: tahitian
+    name: Tahitian
+    notes: A medium upright tree with seedless fruit like a small lemon. Copes with mild to cooler climates and is good for pots. The Pipsqueak dwarf on Flying Dragon grows to 1.5 to 2 m.
+    sources:
+      - https://www.citrusmen.com.au/shop/p/arnold-blood-orange-36bfe-yyxkn-7jbld-cmgzn-b4s5e-7r83x-5rhc5-sn2lc-e83dl-srmak-ykyfc-78hzh-xt4sl-zr7bz-htsg3
+      - https://www.citrusmen.com.au/shop/p/pipsqueak-tahitian-lime-jy772
+      - https://www.dpi.nsw.gov.au/agriculture/horticulture/citrus/content/crop-management/orchard-management-factsheets/garden
+  - id: kaffir
+    name: Kaffir
+    notes: Grown for its fragrant double leaves used in Thai cooking; fresh young leaves are best. The bumpy fruit has little juice but a flavoursome zest. An excellent choice for growing indoors.
+    sources:
+      - https://www.citrusmen.com.au/shop/p/arnold-blood-orange-36bfe-yyxkn-7jbld-cmgzn-b4s5e-7r83x-5rhc5-sn2lc-e83dl-srmak-ykyfc-78hzh-xt4sl-p26m7-apybc
+      - https://www.citrusmen.com.au/shop/p/valencia-orange-1-k7afy-kdawz-t47jt
+      - https://www.dpi.nsw.gov.au/agriculture/horticulture/citrus/content/crop-management/orchard-management-factsheets/garden
+      - https://www.citrusmen.com.au/information/2019/6/22/growing-citrus-indoors-znn6y
+  - id: west_indian
+    name: West Indian
+    notes: The true lime, with small round fruit and an intense flavour. Bushy and a little thorny, it prefers a warm frost-free climate and is prone to tristeza virus, spread by black citrus aphids.
+    sources:
+      - https://www.citrusmen.com.au/shop/p/arnold-blood-orange-36bfe-yyxkn-7jbld-cmgzn-b4s5e-7r83x-5rhc5-sn2lc-e83dl-srmak-ykyfc-78hzh-xt4sl-zr7bz-c6wl9-5mt98
+      - https://www.dpi.nsw.gov.au/agriculture/horticulture/citrus/content/crop-management/orchard-management-factsheets/garden
+  - id: rangpur
+    name: Rangpur
+    notes: A vigorous, hardy mandarin and lime hybrid with very acidic orange fruit. Tolerates dry periods and many soils, in a pot or the garden.
+    sources:
+      - https://www.citrusmen.com.au/shop/p/arnold-blood-orange-36bfe-yyxkn-7jbld-cmgzn-b4s5e-7r83x-5rhc5-sn2lc-e83dl-srmak-ykyfc-78hzh-xt4sl-yweft
+      - https://www.dpi.nsw.gov.au/agriculture/horticulture/citrus/content/crop-management/orchard-management-factsheets/garden
+  - id: limequat
+    name: Limequat
+    notes: A lime and cumquat cross, bushy and productive from an early age. The rind is sweet enough to eat whole, and the fruit turns yellow when ripe in cooler regions.
+    sources:
+      - https://www.citrusmen.com.au/shop/p/limequat-b8rmy
+  - id: limetta
+    name: Sweet lime (Limetta)
+    notes: Juicy, mild fruit with no acid. Prefers a warm frost-free climate.
+    sources:
+      - https://www.citrusmen.com.au/shop/p/sweet-lime-limetta-l3475
+  - id: limello
+    name: Limello
+    notes: A vigorous tree to about 4 m high and wide with juicy, almost seedless fruit that has a mild, sweet lime taste.
+    sources:
+      - https://www.citrusmen.com.au/shop/p/australianlimey-syyy4
+tasks:
+  - id: water
+    kind: water
+    title: Water
+    detail: Pots, push a finger into the mix to the second knuckle and water only if it feels dry, until water runs from the drainage holes. Pots still dry out in winter because the leaves shed rain. Ground, water deeply under the canopy and skip it after soaking rain. In the first year water every 4 to 7 days, then give a good weekly soak. Water deeply once a week in winter and twice a week in summer, and keep the soil moist through dry heat.
+    every_days:
+      pot: {summer: 2, autumn: 2, winter: 4, spring: 4}
+      ground: {summer: 4, autumn: 7, winter: 7, spring: 7}
+    sources:
+      - https://www.organicgardener.com.au/potting-lemons-and-limes/
+      - https://www.sgaonline.org.au/container-planting/
+      - https://www.citrusmen.com.au/information/2019/5/19/preparing-your-citrus-trees-for-winter-gjt64
+      - https://www.dpi.nsw.gov.au/agriculture/horticulture/citrus/content/crop-management/orchard-management-factsheets/garden
+      - https://www.abc.net.au/news/2020-06-19/how-to-plant-a-citrus-tree/12359274
+      - https://www.citrusmen.com.au/information/2021/10/29/fruit-drop-mxt9m
+  - id: fertilise
+    kind: fertilise
+    title: Slow-release fertiliser
+    detail: Pots get Osmocote, the ground gets Charlie Carp pellets, both as Citrusmen advises. Spread it clear of the trunk and water in. The last feed is in March and there is no feeding in winter. Feed at the label rate, not more, because heavy spring feeding makes the soft growth gall wasp prefers.
+    products: [osmocote_citrus_fruit, charlie_carp_pellets]
+    rate:
+      pot: Osmocote Citrus and Fruit as on the label for the pot size, sprinkled over the mix and lightly mulched. It feeds for up to 6 months.
+      ground: Charlie Carp pellets at 75 g per square metre around the drip line, 10 cm clear of the trunk.
+    every_days: {pot: 180, ground: 120}
+    seasons: [spring, summer, early_autumn]
+    stages: [young, established, fruiting]
+    sources:
+      - https://www.citrusmen.com.au/information/2020/5/21/please-feed-me-ntxzc
+      - https://www.citrusmen.com.au/information/2019/5/19/preparing-your-citrus-trees-for-winter-gjt64
+      - https://www.lovethegarden.com/au-en/product/scotts-osmocote-controlled-release-fertiliser-citrus-fruit
+      - https://charliecarp.com.au/how-to-use/
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/citrus-gall-wasp
+  - id: tonic
+    kind: tonic
+    title: Charlie Carp tonic
+    detail: Citrusmen gives a monthly fish tonic as well as fertiliser, not instead of it. Water it onto the soil early in the morning or in the evening, and wait for a day under 30 degrees.
+    products: [charlie_carp_all_purpose]
+    rate: 10 mL per litre of water for established gardens and trees, monthly.
+    every_days: 30
+    seasons: [spring, summer, autumn]
+    sources:
+      - https://www.citrusmen.com.au/information/2020/5/21/please-feed-me-ntxzc
+      - https://charliecarp.com.au/how-to-use/
+      - https://charliecarp.com.au/faqs/
+      - https://www.citrusmen.com.au/information/2019/5/19/preparing-your-citrus-trees-for-winter-gjt64
+  - id: prune
+    kind: prune
+    title: Light prune
+    detail: Once frosts are over, cut out dead wood, crossed branches and any shoots from the rootstock below the graft. Prune frost damage now, keeping the shape even. Keep it light and skip years, because heavy pruning pushes soft growth that gall wasp prefers.
+    once: true
+    seasons: [mid_spring, late_spring]
+    sources:
+      - https://www.dpi.nsw.gov.au/agriculture/horticulture/citrus/content/crop-management/orchard-management-factsheets/garden
+      - https://www.sgaonline.org.au/ggp-garden-pest-citrus-leaf-miner/
+      - https://www.citrusmen.com.au/information/2019/5/19/preparing-your-citrus-trees-for-winter-gjt64
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/citrus-gall-wasp
+  - id: gall_wasp_galls
+    kind: prune
+    title: Cut out gall wasp galls
+    detail: Look for woody lumps on the stems. Prune galls out from April to June; pruning later brings a spring flush the wasp prefers. For galls left after June, peel or slice the top off one side with a peeler or sharp knife in mid to late winter, without cutting all the way round. Finish before the wasps emerge in spring. Bake offcuts in a sealed plastic bag in the sun for a month or burn them, never in the green bin or compost. Prune no more than a third of the tree.
+    once: true
+    seasons: [mid_autumn, late_autumn, early_winter, mid_winter, late_winter]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/citrus-gall-wasp
+      - https://www.sgaonline.org.au/citrus-gall-wasp/
+      - https://www.abc.net.au/gardening/how-to/citrus-gall-wasp/105628936
+  - id: gall_wasp_traps
+    kind: other
+    title: Hang gall wasp traps
+    detail: Hang yellow sticky traps from mid August to catch wasps as they emerge, and twist the top to release the lure. Take them down by the end of November so they stop catching beneficial insects and small birds.
+    products: [citrusmen_gall_wasp_trap]
+    rate: Two traps on an average tree, 3 to 4 on a larger tree.
+    once: true
+    seasons: [late_winter]
+    sources:
+      - https://www.sgaonline.org.au/citrus-gall-wasp/
+      - https://www.citrusmen.com.au/shop/p/sticky-insect-trap-for-fruit-fly-gall-wasp-protection-z6fst
+  - id: leaf_miner_spray
+    kind: spray
+    title: Neem or pest oil for leaf miner
+    detail: Spray new growth every two weeks, or weekly if badly infested, from mid summer until the weather cools at the end of autumn. Cover both sides of the new leaves. Do not spray oil near or above 35 degrees or on a stressed tree.
+    products: [eco_neem, yates_pestoil]
+    rate: As on the label for citrus leaf miner.
+    every_days: 14
+    seasons: [mid_summer, late_summer, autumn]
+    caution: Read and follow the label.
+    sources:
+      - https://www.citrusmen.com.au/information/2019/4/3/have-you-got-citrus-leaf-miner-meet-clem-a2rpk
+      - https://www.sgaonline.org.au/ggp-garden-pest-citrus-leaf-miner/
+  - id: fruit_fly_traps
+    kind: check
+    title: Hang fruit fly traps
+    detail: Queensland fruit fly numbers rise in spring. Hang traps about 1.5 m high in a shady spot inside the canopy and refresh the lures as the label says. Check ripening fruit for sting marks, pick fruit as it ripens and clear fallen fruit.
+    products: [fruit_fly_trap, eco_naturalure]
+    once: true
+    seasons: [early_spring]
+    caution: Read and follow the label.
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/controlling-queensland-fruit-fly-in-home-gardens
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/queensland-fruit-fly-host-fruits
+  - id: repot
+    kind: repot
+    title: Pot up one size
+    detail: Step up slowly once roots fill the pot, usually after 18 months to two years. A 165 mm pot goes to 250 mm; a 300 mm pot goes to 400 or 500 mm. Use premium potting mix, never garden soil, and keep the graft above the mix. Overpotting makes the tree sulk.
+    products: [premium_potting_mix]
+    every_days: 639
+    seasons: [late_winter, early_spring]
+    settings: [pot]
+    sources:
+      - https://www.citrusmen.com.au/information/2019/1/16/what-pot-size-where-to-next-9lejj
+      - https://www.abc.net.au/gardening/how-to/rejuvenating-potted-citrus/13195910
+      - https://www.dpi.nsw.gov.au/agriculture/horticulture/citrus/content/crop-management/orchard-management-factsheets/garden
+  - id: harvest
+    kind: harvest
+    title: Pick limes
+    detail: Tahitian limes fruit in late winter and early spring. Pick Tahitian while the rind is still green, because fruit left on can rot at the flower end and drop. In cooler regions the skin blushes yellow when ripe. Pick fresh young Kaffir leaves as you need them.
+    once: true
+    seasons: [late_winter, early_spring]
+    stages: [fruiting]
+    sources:
+      - https://www.citrusmen.com.au/shop/p/pipsqueak-tahitian-lime-jy772
+      - https://www.dpi.nsw.gov.au/agriculture/horticulture/citrus/content/crop-management/orchard-management-factsheets/garden
+      - https://www.citrusmen.com.au/shop/p/arnold-blood-orange-36bfe-yyxkn-7jbld-cmgzn-b4s5e-7r83x-5rhc5-sn2lc-e83dl-srmak-ykyfc-78hzh-xt4sl-p26m7-apybc
+pests:
+  - id: citrus_gall_wasp
+    name: Citrus gall wasp
+    kind: pest
+    seasons: [autumn, winter, spring]
+    signs: Woody lumps on stems, visible from April and easy to see by June. New infestations show as light green shoots growing at right angles from branches. All citrus can be attacked, lemons most.
+    prevent: Avoid heavy or high nitrogen feeding in winter and spring, and do not prune hard every year. Hang yellow sticky traps from mid August to November. Petroleum spray oils can deter egg laying. Work with neighbours.
+    treat: Prune galls out from April to June, or peel the top off one side in mid to late winter. Bake offcuts in a sealed bag in the sun for a month or burn them; never compost them or use the green bin.
+    products: [citrusmen_gall_wasp_trap, yates_pestoil]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/citrus-gall-wasp
+      - https://www.sgaonline.org.au/citrus-gall-wasp/
+      - https://www.dpi.nsw.gov.au/agriculture/horticulture/citrus/content/insects-diseases-disorders-and-biosecurity/insect-pest-factsheets/citrus-gall-wasp
+      - https://www.abc.net.au/gardening/how-to/citrus-gall-wasp/105628936
+  - id: citrus_leaf_miner
+    name: Citrus leaf miner
+    kind: pest
+    seasons: [mid_summer, late_summer, autumn]
+    signs: Silvery trails through new leaves, which twist and curl.
+    prevent: Avoid high nitrogen feeding and overwatering in summer and autumn. Spray new growth with neem or pest oil before the leaves reach 10 mm.
+    treat: Prune off damaged leaves and soak them in a bin of water for a couple of days. Spray neem or pest oil every two weeks, weekly if bad, until the end of autumn.
+    products: [eco_neem, yates_pestoil, eco_oil]
+    sources:
+      - https://www.citrusmen.com.au/information/2019/4/3/have-you-got-citrus-leaf-miner-meet-clem-a2rpk
+      - https://www.sgaonline.org.au/ggp-garden-pest-citrus-leaf-miner/
+  - id: scale
+    name: Scale and sooty mould
+    kind: pest
+    signs: Small hard or waxy bumps on leaves and stems, sticky honeydew, black sooty mould and ants climbing the tree. Ants farm scale and move it about.
+    prevent: Check older leaves, especially in warm weather. A band of petroleum jelly on the trunk keeps ants off. In pots, ants in the mix mean it is too dry, so water thoroughly.
+    treat: Scrape off light infestations. Spray pest oil or white oil at least three times, 10 days apart, to break the life cycle. Do not spray in hot weather.
+    products: [yates_pestoil, eco_oil]
+    sources:
+      - https://www.citrusmen.com.au/information/2019/10/25/ants-are-a-sign-of-another-issue-6e3l4
+      - https://www.abc.net.au/gardening/scale/13544850
+  - id: aphids
+    name: Aphids
+    kind: pest
+    seasons: [spring, autumn]
+    signs: Clusters of small sap sucking insects on soft new growth. They can spread virus diseases.
+    prevent: Check each new flush of growth.
+    treat: Tip prune badly infested shoots with the aphids still on them and put them in the bin.
+    sources:
+      - https://www.abc.net.au/gardening/how-to/aphids/9437756
+      - https://www.dpi.nsw.gov.au/agriculture/horticulture/citrus/content/crop-management/orchard-management-factsheets/garden
+  - id: bronze_orange_bug
+    name: Bronze orange bug
+    kind: pest
+    seasons: [spring, summer]
+    signs: Flat orange to bronze stink bugs up to 2.5 cm long with a strong smell. They suck sap from young shoots, flowers and fruit stalks, which wither and fall.
+    prevent: In summer check under leaves for eggs and bin those leaves. An eco-oil spray in winter and early spring may reduce numbers.
+    treat: Wear goggles and gloves, because the bugs squirt a caustic liquid. Shake or knock them into a bucket of water and detergent, then check again later.
+    products: [eco_oil]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/controlling-stink-bugs/12828240
+      - https://www.dpi.nsw.gov.au/agriculture/horticulture/citrus/content/crop-management/orchard-management-factsheets/garden
+      - https://www.sgaonline.org.au/finger-limes/
+  - id: collar_rot
+    name: Collar rot
+    kind: disease
+    signs: A patch of dead bark on the trunk near the soil, often with gum oozing and cracking bark. It occurs in poorly drained soils.
+    prevent: Plant in well drained soil with the graft at least 15 cm above the ground. Keep mulch and grass clippings off the trunk and avoid damaging roots when digging.
+    treat: Remove affected bark if the patch is not too large and paint the wound with a recommended fungicide paste.
+    sources:
+      - https://www.dpi.nsw.gov.au/agriculture/horticulture/citrus/content/crop-management/orchard-management-factsheets/garden
+  - id: queensland_fruit_fly
+    name: Queensland fruit fly
+    kind: pest
+    seasons: [spring, summer, autumn]
+    signs: Sting marks on the skin and maggots inside ripening fruit, which can look fine outside.
+    prevent: Net the tree after flowering, hang traps that catch both sexes, pick fruit as it ripens and clear fallen fruit.
+    treat: Use bait sprays on the foliage, not the fruit. Microwave, boil or freeze infested fruit, or seal it in two bags in the sun for 14 days, then put it in the rubbish bin, not compost or green waste.
+    products: [fruit_fly_trap, eco_naturalure]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/controlling-queensland-fruit-fly-in-home-gardens
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/queensland-fruit-fly-host-fruits
+  - id: fruit_drop
+    name: Summer fruit drop
+    kind: disorder
+    seasons: [late_spring, early_summer]
+    signs: A sudden drop of small fruit about 20 mm across from mid November to late December as dry heat sets in.
+    prevent: Feed well in spring and keep the tree moist through dry heat.
+    treat: Some drop is natural and little cause for concern. Keep watering steady.
+    sources:
+      - https://www.citrusmen.com.au/information/2021/10/29/fruit-drop-mxt9m
+      - https://www.dpi.nsw.gov.au/agriculture/horticulture/citrus/content/crop-management/orchard-management-factsheets/garden
+  - id: yellow_leaves
+    name: Yellow leaves from hunger
+    kind: disorder
+    signs: Small, pale or yellowing leaves, thin foliage and poor fruit set, usually from lack of nitrogen.
+    prevent: Keep to the feeding and tonic routine through the growing season.
+    treat: Feed now with a complete fertiliser and keep up the tonics. Epsom salts is not a fertiliser, so do not use it.
+    products: [charlie_carp_pellets, charlie_carp_all_purpose]
+    sources:
+      - https://www.citrusmen.com.au/information/2020/5/21/please-feed-me-ntxzc
+      - https://www.dpi.nsw.gov.au/agriculture/horticulture/citrus/content/crop-management/orchard-management-factsheets/garden
+advice:
+  - text: Limes are very sensitive to frost and do best in a frost-free spot. Plant against a sun facing wall, wrap young trees in frost cloth or shade cloth on cold nights, and move pots somewhere warmer and sheltered. Tahitian copes best with cooler climates.
+    seasons: [late_autumn, winter]
+    sources:
+      - https://www.dpi.nsw.gov.au/agriculture/horticulture/citrus/content/crop-management/orchard-management-factsheets/garden
+      - https://www.abc.net.au/gardening/how-to/citrus-tents/11165612
+      - https://www.citrusmen.com.au/information/2019/5/19/preparing-your-citrus-trees-for-winter-gjt64
+      - https://www.citrusmen.com.au/shop/p/arnold-blood-orange-36bfe-yyxkn-7jbld-cmgzn-b4s5e-7r83x-5rhc5-sn2lc-e83dl-srmak-ykyfc-78hzh-xt4sl-zr7bz-htsg3
+  - text: A covered tree gets no rain, so water it by hand. Moist roots help a tree cope with frost.
+    seasons: [winter]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/citrus-tents/11165612
+      - https://www.citrusmen.com.au/information/2019/5/19/preparing-your-citrus-trees-for-winter-gjt64
+  - text: Do not fertilise in winter; the last feed is in March. After a frost give a seaweed or fish tonic, and leave the damage until August or the end of frosts before pruning it.
+    seasons: [winter]
+    sources:
+      - https://www.citrusmen.com.au/information/2019/5/19/preparing-your-citrus-trees-for-winter-gjt64
+  - text: Feed in September or October with organic fertiliser at the label rate only. Heavy or high nitrogen feeding in spring makes soft growth that gall wasp lays its eggs in.
+    seasons: [early_spring, mid_spring]
+    sources:
+      - https://www.citrusmen.com.au/information/2019/5/19/preparing-your-citrus-trees-for-winter-gjt64
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/citrus-gall-wasp
+      - https://www.sgaonline.org.au/citrus-gall-wasp/
+  - text: Do not feed while the tree is in flower, or you get leaves instead of fruit. Wait until the fruit is fingernail size.
+    stages: [flowering]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/citrus-care/9435810
+      - https://www.abc.net.au/gardening/love-your-lemons/104204694
+  - text: Before a heatwave water deeply and move pots into shade or morning sun. Leave scorched leaves on, as they shade the growth below, and do not fertilise a stressed tree.
+    seasons: [summer]
+    sources:
+      - https://abc.net.au/gardening/factsheets/heatwave-affected-plants/9430746
+      - https://www.sgaonline.org.au/protecting-plants-in-hot-weather/
+  - text: Use a premium potting mix and never garden soil. Step up one pot size at a time, because an oversized pot stays wet and the roots can rot.
+    settings: [pot]
+    sources:
+      - https://www.citrusmen.com.au/information/2019/1/16/what-pot-size-where-to-next-9lejj
+      - https://www.citrusmen.com.au/information/2020/5/21/please-feed-me-ntxzc
+  - text: Ants nesting in the pot mean the mix is too dry. Water the pot thoroughly.
+    settings: [pot]
+    sources:
+      - https://www.citrusmen.com.au/information/2019/10/25/ants-are-a-sign-of-another-issue-6e3l4
+  - text: Keep the ground under the tree free of plants and lawn, topped with compost, manure and soft mulch such as sugar cane or lucerne. Keep mulch off the trunk to avoid collar rot.
+    settings: [ground]
+    sources:
+      - https://www.citrusmen.com.au/information/2020/5/8/underplanting-with-colourful-annuals-yj5tg
+      - https://www.abc.net.au/gardening/factsheets/citrus-care/9430132
+      - https://www.dpi.nsw.gov.au/agriculture/horticulture/citrus/content/crop-management/orchard-management-factsheets/garden
+  - text: Remove the stake once the tree has settled in for a few months. Stakes harbour insects and ties can cut into the trunk.
+    stages: [young]
+    sources:
+      - https://www.citrusmen.com.au/information/2021/4/6/when-to-remove-the-stakenbsp-z7ccr
+  - text: Pick off the first fruit, usually in the first year, so the tree grows on. Expect a crop from the second autumn after planting.
+    stages: [young]
+    sources:
+      - https://www.abc.net.au/news/2025-04-05/how-long-does-potted-citrus-take-to-fruit/105074728
+      - https://www.citrusmen.com.au/faq
+  - text: Plant with the graft at least 15 cm above the soil and put no artificial fertiliser in the planting hole.
+    stages: [young]
+    sources:
+      - https://www.dpi.nsw.gov.au/agriculture/horticulture/citrus/content/crop-management/orchard-management-factsheets/garden
