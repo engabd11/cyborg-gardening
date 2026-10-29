@@ -2,7 +2,7 @@
 
     python dev/check_sources.py
 
-Some shops block scripts (Bunnings answers 403). Those are listed as blocked,
+Some sites block scripts (Bunnings, Agriculture Victoria and NSW DPI answer 403). Those are listed as blocked,
 not broken: open them in a browser to confirm.
 """
 
@@ -15,7 +15,7 @@ import urllib.request
 import yaml
 
 DATA = Path(__file__).resolve().parents[1] / "custom_components/cyborg_gardening/library/data"
-BLOCKERS = ("bunnings.com.au",)
+BLOCKERS = ("bunnings.com.au", "agriculture.vic.gov.au", "dpi.nsw.gov.au", "dpird.nsw.gov.au")
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130 Safari/537.36"
 
 

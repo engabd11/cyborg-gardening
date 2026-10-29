@@ -1,0 +1,13 @@
+plant: blueberry
+plant_out: [6, 7, 8]
+harvest: [12, 1, 2, 3]
+notes:
+  - text: Winter is the best time to buy and plant deciduous berries, often cheaply as bare root plants.
+    months: [6, 7, 8]
+    sources: [https://www.abc.net.au/gardening/factsheets/berry-bounty/10067480]
+  - text: A mix of northern highbush varieties gives blueberries from Christmas to March.
+    months: [12, 1, 2, 3]
+    sources: [https://www.diggers.com.au/blogs/learn/blueberries]
+sources:
+  - https://www.abc.net.au/gardening/factsheets/berry-bounty/10067480
+  - https://www.diggers.com.au/blogs/learn/blueberries

@@ -47,7 +47,7 @@ tasks:
     kind: water
     title: Water young tree
     detail: Keep the water up to young trees; a good bucket every couple of days stops them drying out. Never leave the roots saturated.
-    every_days: {spring: 2, summer: 2, autumn: 2}
+    every_days: {summer: 2}
     stages: [young]
     sources:
       - https://www.abc.net.au/gardening/how-to/fruitful-beginnings-avocados/9434400
@@ -95,17 +95,6 @@ tasks:
     seasons: [spring]
     settings: [ground]
     sources: [https://www.abc.net.au/gardening/how-to/avocados/9427838]
-  - id: mulch
-    kind: mulch
-    title: Top up mulch
-    detail: Keep a loose mulch 10 to 15 cm deep reaching past the drip line, but never against the trunk, where it causes collar rot. Hot sun on bare soil damages the shallow roots. Avoid fine material such as sawdust that packs down and stays soggy.
-    products: [sugar_cane_mulch, pea_straw]
-    once: true
-    seasons: [late_spring]
-    settings: [ground]
-    sources:
-      - https://www.dpird.nsw.gov.au/__data/assets/pdf_file/0003/119739/avocado-growing.pdf
-      - https://www.yates.com.au/how-to-grow/avocado/
   - id: harvest
     kind: harvest
     title: Pick mature fruit

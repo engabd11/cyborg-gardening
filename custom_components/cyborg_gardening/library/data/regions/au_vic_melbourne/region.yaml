@@ -80,3 +80,115 @@ heat:
     - https://www.abc.net.au/gardening/how-to/heatwave-affected-plants/9430746
     - https://www.sgaonline.org.au/january-in-your-patch/
     - https://www.sgaonline.org.au/february-in-your-patch/
+pests:
+  - id: queensland_fruit_fly
+    name: Queensland fruit fly
+    kind: pest
+    # SGA monthly guides flag fruit fly from January to April; it now occurs in many parts of Victoria.
+    months: [1, 2, 3, 4]
+    hosts: [apple, pear, lemon, lime, mandarin, cumquat, tomato, capsicum, chilli, passionfruit, strawberry]
+    signs: Fruit ripens early and drops, with soft spots, stings and creamy white larvae inside that rot it from within.
+    prevent: Net fruit after fruit set with mesh no larger than 2 mm, kept off the fruit and sealed at the edges. Pick fruit before it falls, collect fallen and damaged fruit often, and remove old dried fruit from trees. Hang traps to monitor, but never rely on traps alone.
+    treat: Spot spray protein bait weekly from 6 to 8 weeks before harvest, again after rain, and for several weeks after harvest. Freeze, boil or otherwise destroy infested fruit before it goes in the bin, and never put it in the compost.
+    products: [eco_naturalure, fruit_fly_trap]
+    sources:
+      - https://www.sgaonline.org.au/queensland-fruit-fly-prevention-and-control/
+      - https://www.sgaonline.org.au/january-in-your-patch/
+      - https://www.sgaonline.org.au/february-in-your-patch/
+      - https://www.sgaonline.org.au/march-in-your-patch/
+      - https://www.sgaonline.org.au/april-in-your-patch/
+  - id: codling_moth
+    name: Codling moth
+    kind: pest
+    # Overwintering larvae hatch in spring about when the host tree flowers.
+    months: [9, 10, 11]
+    hosts: [apple, pear]
+    signs: Fruit riddled with holes and brown and squishy inside, small holes plugged with brown droppings, and fruit dropping early.
+    prevent: Clear loose bark and leaf litter. Wrap trunks in corrugated cardboard bands, remove them every 3 weeks and destroy the pupae. Hang a pheromone trap, bag fruit, check trees every few days and destroy fruit with holes.
+    treat: Spray Bacillus thuringiensis when eggs are laid but before fruit is infested.
+    products: [dipel]
+    sources:
+      - https://www.sgaonline.org.au/codling-moth/
+  - id: snails_slugs
+    name: Snails and slugs
+    kind: pest
+    # SGA flags them on autumn seedlings; they feed at night and after evening rain.
+    months: [4, 5, 6, 7, 8, 9, 10]
+    hosts: [lettuce, spinach, broccoli, beans, peas, zucchini, cucumber, carrot, strawberry, basil, parsley, coriander]
+    signs: Seedlings chewed to ground level, big holes in leaves and shiny silver trails.
+    prevent: Protect fresh seedlings. Put copper strips near the top of pots and raised beds, and ring plants with crushed eggshell or wood shavings. Leave citrus rind halves out as daytime hides and collect snails from them.
+    treat: Hand pick by torchlight about 2 hours after sunset, especially on rainy nights, and set beer traps. Snails dislike iron based pellets.
+    products: [snail_bait_iron]
+    sources:
+      - https://www.sgaonline.org.au/snails-slugs/
+      - https://www.sgaonline.org.au/may-in-your-patch/
+  - id: cabbage_aphid
+    name: Cabbage aphid
+    kind: pest
+    months: [6, 7, 8]
+    hosts: [broccoli]
+    signs: Clusters on new growth, distorted leaves, sticky honeydew, ants and black sooty mould.
+    prevent: Grow alyssum, yarrow and dill nearby to bring in predatory insects.
+    treat: Squash by hand, hose off with a strong jet of water, or spray a soap spray under the leaves.
+    sources:
+      - https://www.sgaonline.org.au/how-to-control-aphids/
+advice:
+  - text: Water deeply in the early morning a few times a week rather than lightly every day; pots and hanging baskets dry out much faster than beds.
+    months: [12, 1, 2]
+    sources: [https://www.sgaonline.org.au/january-in-your-patch/, https://www.sgaonline.org.au/february-in-your-patch/]
+  - text: Top up mulch to about 7 cm on vegie beds, herbs and ornamentals, after watering and clear of stems.
+    months: [1, 2, 3, 4, 5, 6, 7, 10, 11, 12]
+    sources:
+      - https://www.sgaonline.org.au/january-in-your-patch/
+      - https://www.sgaonline.org.au/february-in-your-patch/
+      - https://www.sgaonline.org.au/march-in-your-patch/
+      - https://www.sgaonline.org.au/may-in-your-patch/
+      - https://www.sgaonline.org.au/july-in-your-patch/
+      - https://www.sgaonline.org.au/october-in-your-patch/
+      - https://www.sgaonline.org.au/november-in-your-patch/
+      - https://www.sgaonline.org.au/december-gardening-tips/
+  - text: Mulch before summer, once spring rain has soaked in and the soil is damp; late spring is the best time.
+    months: [9, 10, 11]
+    sources: [https://www.sgaonline.org.au/september-in-your-patch/, https://www.sgaonline.org.au/pdfs/sg_brimbank.pdf]
+  - text: Use a soil wetting agent so water stays in the soil longer and closer to plants.
+    months: [10, 11]
+    sources: [https://www.sgaonline.org.au/pdfs/sg_brimbank.pdf]
+  - text: Make movable shade cloth covers ready for hot, high UV and windy days and for holidays.
+    months: [11, 12]
+    sources: [https://www.sgaonline.org.au/november-in-your-patch/, https://www.sgaonline.org.au/december-gardening-tips/]
+  - text: Going away? Set up drip irrigation on a tap timer, mulch pots and stand them in a saucer of water.
+    months: [12]
+    sources: [https://www.sgaonline.org.au/december-gardening-tips/]
+  - text: Wait until temperatures ease before major pruning.
+    months: [2]
+    sources: [https://www.sgaonline.org.au/february-in-your-patch/]
+  - text: Pick off and destroy old dried fruit left on trees so fruit fly cannot breed in it, and do not compost infested fruit.
+    months: [3]
+    sources: [https://www.sgaonline.org.au/march-in-your-patch/]
+  - text: Sow a green manure such as oats, wheat, faba beans or field peas in tired or empty beds.
+    months: [4, 5, 6]
+    sources: [https://www.sgaonline.org.au/april-in-your-patch/, https://www.sgaonline.org.au/may-in-your-patch/, https://www.sgaonline.org.au/june-in-your-patch/]
+  - text: Think about frost protection for young seedlings; offcuts of shade cloth make good frost covers.
+    months: [4, 5]
+    sources: [https://www.sgaonline.org.au/april-in-your-patch/, https://www.sgaonline.org.au/may-in-your-patch/]
+  - text: Check soil moisture before watering in the cool months and water first thing in the morning.
+    months: [4, 5, 6]
+    sources: [https://www.sgaonline.org.au/april-in-your-patch/, https://www.sgaonline.org.au/may-in-your-patch/, https://www.sgaonline.org.au/june-in-your-patch/]
+  - text: Prepare beds for bare root fruit trees with plenty of compost.
+    months: [5, 6]
+    sources: [https://www.sgaonline.org.au/may-in-your-patch/, https://www.sgaonline.org.au/june-in-your-patch/]
+  - text: Bare root season. Plant deciduous fruit trees, roses and vines; August is the last chance.
+    months: [7, 8]
+    sources: [https://www.sgaonline.org.au/july-in-your-patch/, https://www.sgaonline.org.au/august-in-your-patch/]
+  - text: Winter prune deciduous fruit trees, but leave apricots alone. Keep tools clean to stop disease spreading.
+    months: [7, 8]
+    sources: [https://www.sgaonline.org.au/july-in-your-patch/, https://www.sgaonline.org.au/august-in-your-patch/]
+  - text: Improve beds with compost and well rotted manure before spring planting, and give plants coming out of winter a gentle feed such as seaweed.
+    months: [9]
+    sources: [https://www.sgaonline.org.au/september-in-your-patch/]
+  - text: Wait until frost danger has passed before planting frost tender crops such as tomatoes.
+    months: [9]
+    sources: [https://www.sgaonline.org.au/september-in-your-patch/]
+  - text: Cut off shoots growing from below the graft on grafted fruit trees.
+    months: [11]
+    sources: [https://www.sgaonline.org.au/november-in-your-patch/]

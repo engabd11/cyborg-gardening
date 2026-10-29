@@ -108,7 +108,9 @@ def plant_view(lib: Library, plant: dict[str, Any], today: date, factor: float =
     pests += [
         {**p, "products": _products(lib, p.get("products")), "regional": True}
         for p in lib.region.get("pests") or []
-        if plant["type"] in (p.get("hosts") or []) and month in p.get("months", [])
+        if plant["type"] in (p.get("hosts") or [])
+        and month in p.get("months", [])
+        and p["id"] not in {x["id"] for x in pests}  # the plant's own entry wins
     ]
     advice = [
         {"text": a["text"], "sources": a["sources"]}

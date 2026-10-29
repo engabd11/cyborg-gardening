@@ -1,1 +1,61 @@
-[]
+# Garden soil types. water_factor scales watering intervals: below 1 dries faster, so water more often.
+# The numbers are a rule of thumb; the sources only rank the soils (sand drains, clay holds water).
+- id: sandy
+  name: Sandy
+  description: Gritty soil that falls through your hands. Drains fast and does not hold water or nutrients.
+  water_factor: 0.7
+  advice:
+    - text: Dig in compost and manure to help sandy soil hold water and nutrients.
+      sources: [https://www.seasol.com.au/soil-care/understanding-soil/]
+    - text: If the soil is hard to wet and keep moist, apply a soil wetting agent.
+      sources: [https://www.seasol.com.au/soil-care/understanding-soil/]
+  sources:
+    - https://www.seasol.com.au/soil-care/understanding-soil/
+- id: loam
+  name: Loam
+  description: Crumbly soil with good moisture and nutrient holding and good air flow.
+  water_factor: 1
+  advice:
+    - text: Keep adding compost and manure to keep loam in good shape.
+      sources: [https://www.seasol.com.au/soil-care/understanding-soil/]
+  sources:
+    - https://www.seasol.com.au/soil-care/understanding-soil/
+- id: clay
+  name: Clay
+  description: Heavy soil that rolls into a ball. Holds water but drains slowly and compacts easily.
+  water_factor: 1.3
+  advice:
+    - text: Spread gypsum to break up clay, and dig in compost and manure to open it up.
+      sources: [https://www.seasol.com.au/soil-care/understanding-soil/]
+    - text: Do not dig or work clay when it is wet.
+      sources: [https://www.seasol.com.au/soil-care/understanding-soil/]
+    - text: For heavy clay, dust gypsum over the surface before adding compost.
+      sources: [https://www.sgaonline.org.au/pdfs/hh_wyndham.pdf]
+  sources:
+    - https://www.seasol.com.au/soil-care/understanding-soil/
+- id: basalt_clay
+  name: Western suburbs basalt clay
+  description: Expansive clay found in Melbourne's west, such as around Keilor and Avondale Heights.
+  water_factor: 1.3
+  advice:
+    - text: Expansive clay benefits from gypsum and compost.
+      sources: [https://www.sgaonline.org.au/pdfs/sg_brimbank.pdf]
+    - text: Build raised beds for root crops in clay areas.
+      sources: [https://www.sgaonline.org.au/pdfs/hh_wyndham.pdf]
+  sources:
+    - https://www.sgaonline.org.au/pdfs/sg_brimbank.pdf
+    - https://www.seasol.com.au/soil-care/understanding-soil/
+- id: not_sure
+  name: Not sure
+  description: Use this until you test your soil.
+  water_factor: 1
+  advice:
+    - text: Dig a spade deep in a few spots. Gritty soil that falls through your hands is sandy; heavy soil that rolls into a ball is clay.
+      sources: [https://www.seasol.com.au/soil-care/understanding-soil/]
+    - text: "Ribbon test: wet a handful, knead it for 1 to 2 minutes, then push it out between thumb and finger. Sand makes no ribbon, loam about 25 mm, heavy clay more than 75 mm."
+      sources: [https://www.soilquality.org.au/factsheets/soil-texture]
+    - text: Many garden centres will test soil samples for you.
+      sources: [https://www.seasol.com.au/soil-care/understanding-soil/]
+  sources:
+    - https://www.soilquality.org.au/factsheets/soil-texture
+    - https://www.seasol.com.au/soil-care/understanding-soil/

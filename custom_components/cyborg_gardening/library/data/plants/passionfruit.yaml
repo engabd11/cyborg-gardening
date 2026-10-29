@@ -95,14 +95,6 @@ tasks:
       - https://www.abc.net.au/gardening/passionfruit-101/102656492
       - https://www.diggers.com.au/products/passionfruit-black
       - https://www.yates.com.au/how-to-grow/passionfruit/
-  - id: suckers
-    kind: check
-    title: Cut off rootstock suckers
-    detail: Sucker leaves are fine and five fingered (or small, pointy and dark green) rather than large, glossy and three lobed. Cut them off cleanly at the base as soon as you see them; ripping them out causes more suckering.
-    every_days: {spring: 14, summer: 14, autumn: 14}
-    sources:
-      - https://www.abc.net.au/gardening/passionfruit-101/102656492
-      - https://www.abc.net.au/gardening/how-to/productive-climbers/9435728
   - id: prune
     kind: prune
     title: Spring prune

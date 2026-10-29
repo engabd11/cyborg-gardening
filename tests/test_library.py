@@ -3,18 +3,54 @@
 from pathlib import Path
 import re
 
-import pytest
-
 from cyborg_gardening.library import loader
+import pytest
 
 PKG = Path(__file__).resolve().parents[1] / "custom_components" / "cyborg_gardening"
 HA_IMPORT = re.compile(r"^\s*(from|import)\s+homeassistant\b", re.MULTILINE)
-PLANTS = (
-    "lemon lime mandarin cumquat curry_leaf pear apple fig pomegranate olive grape passionfruit "
-    "feijoa avocado strawberry blueberry raspberry tomato chilli capsicum potato garlic onion "
-    "parsley basil mint rosemary coriander thyme lettuce spinach beans peas zucchini cucumber "
-    "carrot broccoli rose bottlebrush lilly_pilly eremophila_nivea"
-).split()
+PLANTS = [
+    "lemon",
+    "lime",
+    "mandarin",
+    "cumquat",
+    "curry_leaf",
+    "pear",
+    "apple",
+    "fig",
+    "pomegranate",
+    "olive",
+    "grape",
+    "passionfruit",
+    "feijoa",
+    "avocado",
+    "strawberry",
+    "blueberry",
+    "raspberry",
+    "tomato",
+    "chilli",
+    "capsicum",
+    "potato",
+    "garlic",
+    "onion",
+    "parsley",
+    "basil",
+    "mint",
+    "rosemary",
+    "coriander",
+    "thyme",
+    "lettuce",
+    "spinach",
+    "beans",
+    "peas",
+    "zucchini",
+    "cucumber",
+    "carrot",
+    "broccoli",
+    "rose",
+    "bottlebrush",
+    "lilly_pilly",
+    "eremophila_nivea",
+]
 
 
 @pytest.fixture(scope="module", params=list(loader.regions()))

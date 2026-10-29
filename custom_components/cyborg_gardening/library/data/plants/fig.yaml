@@ -1,0 +1,175 @@
+id: fig
+name: Fig
+botanical: Ficus carica
+group: fruit_tree
+icon: mdi:tree
+frost: hardy
+heat: tolerant
+water: moderate
+perennial: true
+stages: [young, established, fruiting, dormant]
+default_stage: established
+settings: [ground, pot]
+summary: A tough deciduous tree for sun and free draining soil. Water steadily while fruit forms and net it against birds.
+needs:
+  sun: full
+  soil: Rich, free draining soil with a neutral pH. Figs will not tolerate poor drainage or wet feet; raised beds or mounds help.
+  sources:
+    - https://www.sgaonline.org.au/figs/
+    - https://www.diggers.com.au/products/fig-brown-turkey
+    - https://www.abc.net.au/gardening/factsheets/forever-figs/9437552
+    - https://www.abc.net.au/gardening/fruit-guide/102652284
+varieties:
+  - id: brown_turkey
+    name: Brown Turkey
+    notes: One of the toughest figs, often with two crops a year, the second extending well into autumn. Self-pollinating.
+    sources:
+      - https://www.diggers.com.au/products/fig-brown-turkey
+      - https://www.sgaonline.org.au/figs/
+  - id: white_genoa
+    name: White Genoa
+    notes: An Italian heirloom suited to cool areas, self-pollinating, with figs from December to April. Tolerates part shade.
+    sources:
+      - https://www.diggers.com.au/products/fig-white-genoa
+      - https://www.sgaonline.org.au/figs/
+  - id: black_genoa
+    name: Black Genoa
+    notes: A reliable heavy cropper with two crops a year, fruiting from February for about three months. Self-pollinating.
+    sources:
+      - https://www.sgaonline.org.au/figs/
+tasks:
+  - id: winter_prune
+    kind: prune
+    title: Light winter prune
+    detail: >-
+      Give a light trim to keep the tree at picking height and stimulate the new growth that carries the main crop. Leave some
+      older wood, as the early breba crop forms on last year's wood. Remove dead and diseased wood.
+    seasons: [winter]
+    once: true
+    sources:
+      - https://www.sgaonline.org.au/figs/
+      - https://www.abc.net.au/gardening/factsheets/forever-figs/9437552
+  - id: feed
+    kind: fertilise
+    title: Feed with composted manure
+    detail: Feed once a year in late winter as growth starts. Spread around the drip line, mulch with straw and water in.
+    products: [dynamic_lifter]
+    rate: As on the label for fruit trees.
+    seasons: [late_winter, early_spring]
+    stages: [young, established]
+    once: true
+    sources:
+      - https://www.sgaonline.org.au/growing-fruit-trees/
+      - https://www.sgaonline.org.au/figs/
+  - id: remove_suckers
+    kind: prune
+    title: Remove suckers
+    detail: Cut off suckers that pop up from the roots. They make the tree messy, harbour pests and take energy from fruiting.
+    seasons: [mid_spring]
+    once: true
+    sources:
+      - https://www.abc.net.au/gardening/factsheets/fig-trees/10903770
+  - id: net_fruit
+    kind: other
+    title: Net the fruit
+    detail: >-
+      Net before the figs ripen to keep birds and possums off. Victorian household netting must have a mesh of 5 mm by 5 mm or
+      less at full stretch. Fix it tightly to the trunk and check it daily for trapped animals.
+    seasons: [early_summer]
+    stages: [established, fruiting]
+    once: true
+    sources:
+      - https://www.sgaonline.org.au/figs/
+      - https://www.abc.net.au/gardening/factsheets/figs/9423912
+      - https://agriculture.vic.gov.au/livestock-and-animals/animal-welfare-victoria/pocta-act-1986/protecting-fruit-trees-and-wildlife
+  - id: fruit_fly_trap
+    kind: check
+    title: Check fruit fly trap
+    detail: >-
+      Hang the trap about 1.5 m high in a shady part of the canopy. Change homemade bait weekly and refresh bought lures as the
+      label says. Pick up and bin fallen fruit.
+    products: [fruit_fly_trap]
+    every_days: 7
+    seasons: [summer, autumn]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/controlling-queensland-fruit-fly-in-home-gardens
+  - id: harvest
+    kind: harvest
+    title: Pick ripe figs
+    detail: >-
+      Pick figs when they are slightly soft and smell sweet. They do not ripen after picking, so leave them on the tree until
+      ready and handle gently. Twist the stalk so the fig is not damaged.
+    seasons: [summer, early_autumn, mid_autumn]
+    stages: [fruiting, established]
+    once: true
+    sources:
+      - https://www.sgaonline.org.au/figs/
+      - https://www.abc.net.au/gardening/factsheets/forever-figs/9437552
+      - https://www.abc.net.au/gardening/factsheets/figs/9423912
+pests:
+  - id: fig_rust
+    name: Fig rust
+    kind: disease
+    seasons: [summer, autumn]
+    signs: Powdery yellow spots on the leaves, which then turn yellow and fall.
+    prevent: Water at the base of the tree rather than over the leaves.
+    treat: Copper based fungicides are normally used, as the label directs.
+    sources:
+      - https://www.sgaonline.org.au/figs/
+      - https://www.abc.net.au/gardening/factsheets/forever-figs/9437552
+  - id: fig_blister_mite
+    name: Fig blister mite
+    kind: pest
+    seasons: [summer, autumn]
+    signs: Rust coloured dry patches inside the fruit, found only when you cut it open.
+    prevent: Destroy damaged fruit so later fruit is not infected as it ripens.
+    treat: Remove and destroy affected fruit.
+    sources:
+      - https://www.sgaonline.org.au/figs/
+  - id: birds
+    name: Birds and possums
+    kind: pest
+    seasons: [summer, early_autumn, mid_autumn]
+    signs: Pecked or eaten ripe figs.
+    prevent: Net with household netting of 5 mm by 5 mm mesh or less, fixed tightly to the trunk.
+    treat: Check nets daily and call a wildlife rescue group if an animal is caught.
+    sources:
+      - https://www.sgaonline.org.au/figs/
+      - https://agriculture.vic.gov.au/livestock-and-animals/animal-welfare-victoria/pocta-act-1986/protecting-fruit-trees-and-wildlife
+  - id: queensland_fruit_fly
+    name: Queensland fruit fly
+    kind: pest
+    seasons: [summer, autumn]
+    signs: Tiny sting marks on the skin and creamy maggots inside the fruit.
+    prevent: Net or bag fruit, pick as it ripens, keep fallen fruit cleared and hang traps to monitor.
+    treat: >-
+      Spot spray bait onto the trunk and foliage, not the fruit. Freeze unwanted fruit sealed in a bag for two days, or bag it in
+      the sun for 14 days, then put it in the rubbish bin.
+    products: [eco_naturalure, fruit_fly_trap]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/controlling-queensland-fruit-fly-in-home-gardens
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/queensland-fruit-fly-host-fruits
+advice:
+  - text: Water consistently while fruit develops and apply it at the base of the tree, as water can split developing fruit. Dry spells reduce the crop.
+    seasons: [summer]
+    sources:
+      - https://www.abc.net.au/gardening/factsheets/forever-figs/9437552
+      - https://www.diggers.com.au/products/fig-brown-turkey
+      - https://www.sgaonline.org.au/figs/
+  - text: Established figs are frost hardy, but protect young trees through winter where frosts are heavy.
+    seasons: [winter]
+    stages: [young]
+    sources:
+      - https://www.sgaonline.org.au/figs/
+      - https://www.abc.net.au/gardening/fruit-guide/102652284
+  - text: Stake at planting and protect from strong winds, which snap the fragile branches. Mulch well.
+    stages: [young]
+    sources:
+      - https://www.diggers.com.au/products/fig-brown-turkey
+  - text: Figs grow and fruit well in large pots.
+    settings: [pot]
+    sources:
+      - https://www.sgaonline.org.au/figs/
+  - text: Some people react to fig sap, so take care the first time you handle it.
+    sources:
+      - https://www.sgaonline.org.au/figs/

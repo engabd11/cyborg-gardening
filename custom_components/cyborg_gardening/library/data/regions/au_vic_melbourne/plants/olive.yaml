@@ -1,0 +1,10 @@
+plant: olive
+harvest: [4, 5]
+notes:
+  - text: Harvest can start from April or May. Prune after harvest, by early winter.
+    months: [4, 5, 6]
+    sources:
+      - https://www.abc.net.au/gardening/factsheets/olives/9426910
+      - https://www.abc.net.au/gardening/factsheets/pruning-an-olive-tree/9432074
+sources:
+  - https://www.abc.net.au/gardening/factsheets/olives/9426910

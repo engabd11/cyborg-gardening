@@ -1,0 +1,139 @@
+id: blueberry
+name: Blueberry
+botanical: Vaccinium corymbosum
+group: berry
+icon: mdi:fruit-grapes
+frost: hardy
+heat: sensitive
+water: high
+perennial: true
+stages: [young, established]
+default_stage: established
+settings: [ground, pot, raised_bed]
+summary: An ornamental berry bush that must have acid, free draining, constantly moist soil. Grow it in a raised bed or a large pot of azalea mix, feed it acid plant food and net it before the berries colour.
+needs:
+  sun: full
+  soil: Acid, loose, free draining soil high in organic matter, never waterlogged. Raise beds and mulch with pine needles or oak leaves. Shelter from hot winds.
+  ph: [4.5, 5.5]
+  sources:
+    - https://www.diggers.com.au/blogs/learn/blueberries
+    - https://www.abc.net.au/gardening/how-to/growing-blueberries/9434708
+    - https://www.abc.net.au/gardening/how-to/building-blueberries/103417256
+varieties:
+  - id: northern_highbush
+    name: Northern highbush (for example Brigitta)
+    notes: Semi deciduous, for cooler climates with some frost; needs 750 to 1100 chill hours and suits anywhere in Victoria. Self fertile, but crops bigger berries with a second variety. Brigitta is a late, Australian bred highbush.
+    sources:
+      - https://www.diggers.com.au/blogs/learn/blueberries
+      - https://www.diggers.com.au/products/blueberry-brigitta
+      - https://www.abc.net.au/gardening/factsheets/berry-bounty/10067480
+  - id: southern_highbush
+    name: Southern highbush
+    notes: Mostly evergreen, needs 250 to 600 chill hours and usually another blueberry for cross pollination. More susceptible to blueberry rust, which is present in Victoria.
+    sources:
+      - https://www.diggers.com.au/blogs/learn/blueberries
+      - https://agriculture.vic.gov.au/biosecurity/plant-diseases/fruit-and-nut-diseases/blueberry-rust-disease-of-plants
+  - id: rabbiteye
+    name: Rabbiteye (for example Brightwell with Powder Blue)
+    notes: Evergreen, needs 450 to 600 chill hours and copes with some shade. Planted as a pair of varieties for pollination.
+    sources:
+      - https://www.diggers.com.au/blogs/learn/blueberries
+      - https://www.diggers.com.au/products/blueberry-rabbiteye-pollinating-combo
+tasks:
+  - id: feed
+    kind: fertilise
+    title: Azalea and camellia food
+    detail: Spread evenly over the root zone, at least 10 cm from the stems, and water in well.
+    products: [richgro_azalea_camellia_food]
+    rate:
+      ground: 50 g per square metre.
+      raised_bed: 50 g per square metre.
+      pot: 0.5 g for each 2 cm of pot width, for example 5 g for a 20 cm pot.
+    once: true
+    seasons: [early_spring, early_summer, late_summer]
+    sources:
+      - https://www.richgro.com.au/product/all-purpose-azalea-gardenia-camellia-fertiliser/
+      - https://www.diggers.com.au/products/blueberry-brigitta
+  - id: ph_check
+    kind: check
+    title: Check soil pH
+    detail: Aim for pH 4.5 to 5.5. Yellowing leaves often mean the pH is too high, so fix the pH rather than adding iron. If it is high, work sulfur granules into the topsoil, water in, retest after 4 weeks and repeat until on target.
+    products: [yates_sulfur_granules]
+    rate: "Sandy soil 20 g per square metre, loam 60 g, clay 90 g."
+    once: true
+    seasons: [early_spring]
+    settings: [ground, raised_bed]
+    sources:
+      - https://www.diggers.com.au/blogs/learn/blueberries
+      - https://www.yates.com.au/yates-3kg-sulfur-soil-improver-granules/
+  - id: harvest
+    kind: harvest
+    title: Pick ripe berries
+    detail: Every few days, gently twist off the biggest, darkest berries that are blue all round with no green at the stem. They do not ripen or sweeten after picking.
+    once: true
+    seasons: [summer, early_autumn]
+    stages: [established]
+    sources:
+      - https://www.diggers.com.au/blogs/learn/blueberries
+      - https://www.abc.net.au/gardening/how-to/building-blueberries/103417256
+  - id: prune
+    kind: prune
+    title: Winter prune
+    detail: Stems fruit for about four years. Cut stems older than 3 to 4 years at ground level or to a strong young side shoot, remove weak, weeping and dead wood, and keep the centre open to air and light.
+    once: true
+    seasons: [winter]
+    stages: [established]
+    sources:
+      - https://www.diggers.com.au/blogs/learn/blueberries
+      - https://www.abc.net.au/gardening/how-to/building-blueberries/103417256
+pests:
+  - id: birds
+    name: Birds
+    kind: pest
+    seasons: [summer]
+    signs: Ripe berries pecked or missing.
+    prevent: Plant bushes in a clump for easy netting and net before the fruit colours, using fine mesh fixed tightly.
+    treat: Net the bushes.
+    sources:
+      - https://www.diggers.com.au/blogs/learn/blueberries
+      - https://agriculture.vic.gov.au/livestock-and-animals/animal-welfare-victoria/pocta-act-1986/protecting-fruit-trees-and-wildlife
+  - id: blueberry_rust
+    name: Blueberry rust
+    kind: disease
+    seasons: [spring, summer, autumn]
+    signs: Reddish spots on the upper side of young leaves that darken with a yellow halo, and yellow pustules underneath. Leaves may brown and drop early.
+    prevent: Check plants often, keep good hygiene, and choose less susceptible types; southern highbush varieties are the most susceptible. It is worst in warm, wet weather.
+    treat: Remove affected leaves and report unusual symptoms to Agriculture Victoria on 1800 084 881.
+    sources: [https://agriculture.vic.gov.au/biosecurity/plant-diseases/fruit-and-nut-diseases/blueberry-rust-disease-of-plants]
+  - id: iron_chlorosis
+    name: Yellow leaves from high pH
+    kind: disorder
+    signs: Yellowing leaves; yellowing between the veins can also mean magnesium shortage.
+    prevent: Keep the soil at pH 4.5 to 5.5 with acid mulches and azalea mix.
+    treat: Lower the pH with sulfur rather than adding iron. For magnesium shortage water in about one tablespoon of Epsom salts in a watering can.
+    products: [yates_sulfur_granules]
+    sources: [https://www.diggers.com.au/blogs/learn/blueberries]
+advice:
+  - text: In a pot, use a large one filled with azalea potting mix, in a sunny spot with some shelter from afternoon sun in warm months.
+    settings: [pot]
+    sources:
+      - https://www.abc.net.au/gardening/factsheets/berries-in-pots/12927884
+      - https://www.abc.net.au/gardening/how-to/ripe-for-the-picking/103857840
+  - text: Remove the flowers for the first year or two so the bush puts its energy into growth.
+    seasons: [spring]
+    stages: [young]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/building-blueberries/103417256
+      - https://www.diggers.com.au/blogs/learn/blueberries
+  - text: Plant in a mounded or raised bed of half compost and half garden soil; blueberries dislike heavy clay and wet feet.
+    stages: [young]
+    sources:
+      - https://www.diggers.com.au/blogs/learn/blueberries
+      - https://www.abc.net.au/gardening/how-to/growing-blueberries/9434708
+  - text: Grow two or more varieties; even self fertile types crop better with a partner, and mixing early and late varieties stretches the harvest.
+    sources:
+      - https://www.diggers.com.au/blogs/learn/blueberries
+      - https://www.abc.net.au/gardening/how-to/growing-blueberries/9434708
+  - text: Blueberry is a Queensland fruit fly host. Pick berries as they ripen.
+    seasons: [summer]
+    sources: [https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/queensland-fruit-fly-host-fruits]

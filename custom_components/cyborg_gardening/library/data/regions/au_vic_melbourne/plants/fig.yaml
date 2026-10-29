@@ -1,0 +1,13 @@
+plant: fig
+plant_out: [6, 7, 8]
+harvest: [12, 1, 2, 3, 4]
+notes:
+  - text: Many figs crop twice. A light breba crop on last year's wood comes first, then the main crop on new growth from late summer.
+    months: [12, 2, 3, 4]
+    sources:
+      - https://www.sgaonline.org.au/figs/
+      - https://www.abc.net.au/gardening/factsheets/forever-figs/9437552
+sources:
+  - https://www.sgaonline.org.au/figs/
+  - https://www.diggers.com.au/products/fig-white-genoa
+  - https://www.sgaonline.org.au/growing-fruit-trees/

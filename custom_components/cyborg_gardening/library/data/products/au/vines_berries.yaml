@@ -41,3 +41,30 @@
   sources:
     - https://www.yates.com.au/yates-500ml-anti-rot-phosacid-systemic-fungicide/
     - https://www.bunnings.com.au/yates-500ml-anti-rot-fungicide_p2961096
+
+- id: richgro_azalea_camellia_food
+  name: Richgro All Purpose Gardenia, Azalea and Camellia Fertiliser
+  brand: Richgro
+  type: fertiliser
+  use: Plant food formulated for acid loving plants such as azaleas, camellias and blueberries.
+  rate: "Garden beds: 50 g per square metre, not closer than 10 cm to the stems. Pots: 0.5 g for each 2 cm of pot diameter (5 g for a 20 cm pot). Apply in early spring, mid summer and autumn and water in well."
+  npk: "9:2:7"
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/richgro-2-5kg-all-purpose-gardenia-azalea-and-camellia-fertiliser_p2961376
+  label: https://www.richgro.com.au/product/all-purpose-azalea-gardenia-camellia-fertiliser/
+  sources:
+    - https://www.richgro.com.au/product/all-purpose-azalea-gardenia-camellia-fertiliser/
+    - https://www.bunnings.com.au/richgro-2-5kg-all-purpose-gardenia-azalea-and-camellia-fertiliser_p2961376
+
+- id: yates_sulfur_granules
+  name: Yates Sulfur Soil Improver Granules
+  brand: Yates
+  type: soil_improver
+  use: Lowers soil pH for acid loving plants such as blueberries, azaleas and camellias.
+  rate: "Sandy soil 20 g per square metre, loam 60 g, clay 90 g. Work into the topsoil and water in; retest pH after 4 weeks and reapply every 4 weeks until on target."
+  where: [Bunnings]
+  url: https://www.bunnings.com.au/yates-3kg-sulfur-soil-improver-granules_p0630871
+  label: https://www.yates.com.au/yates-3kg-sulfur-soil-improver-granules/
+  sources:
+    - https://www.yates.com.au/yates-3kg-sulfur-soil-improver-granules/
+    - https://www.bunnings.com.au/yates-3kg-sulfur-soil-improver-granules_p0630871

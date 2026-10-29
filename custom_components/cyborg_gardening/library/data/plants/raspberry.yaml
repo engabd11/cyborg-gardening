@@ -1,0 +1,117 @@
+id: raspberry
+name: Raspberry
+botanical: Rubus idaeus
+group: berry
+icon: mdi:fruit-cherries
+frost: hardy
+heat: sensitive
+water: moderate
+perennial: true
+stages: [young, established]
+default_stage: established
+settings: [ground, raised_bed]
+summary: Easy, productive cane berries for a sunny, well mulched bed with a wire trellis. Know whether yours is summer or autumn fruiting, because that decides how you prune.
+needs:
+  sun: full
+  soil: Rich, well drained, slightly acid soil with plenty of compost and well rotted manure. Raise beds or add gypsum on heavy clay. A north to north east aspect is best.
+  sources:
+    - https://www.sgaonline.org.au/raspberries/
+    - https://www.diggers.com.au/blogs/learn/how-to-grow-raspberries
+varieties:
+  - id: summer_fruiting
+    name: Summer fruiting (Chilcotin, Chilliwack, Nootka, Willamette)
+    notes: Fruit on two year old canes (floricanes) in summer, some with a small autumn crop on new canes.
+    sources:
+      - https://www.sgaonline.org.au/raspberries/
+      - https://www.abc.net.au/gardening/how-to/pruning-berries/9437524
+  - id: autumn_fruiting
+    name: Autumn fruiting (Heritage, Autumn Bliss, Bogong)
+    notes: Fruit on the current season's canes (primocanes) from late summer through autumn. Need less winter chill, so suit warmer spots.
+    sources:
+      - https://www.abc.net.au/gardening/how-to/pruning-berries/9437524
+      - https://www.abc.net.au/gardening/how-to/cane-control/9436942
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-raspberries
+tasks:
+  - id: feed
+    kind: fertilise
+    title: Blood and bone or manure
+    detail: Feed in spring and autumn with blood and bone or well rotted manure, watered in. Adding a little potash to the blood and bone boosts cropping.
+    products: [blood_and_bone, sulphate_of_potash]
+    once: true
+    seasons: [early_spring, early_autumn]
+    sources:
+      - https://www.sgaonline.org.au/raspberries/
+      - https://www.abc.net.au/gardening/how-to/maintaining-raspberries/9435136
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-raspberries
+  - id: harvest
+    kind: harvest
+    title: Pick ripe berries
+    detail: Summer fruiting types crop in early to mid summer for 4 to 5 weeks; autumn fruiting types crop from late summer through autumn.
+    once: true
+    seasons: [late_spring, summer, autumn]
+    stages: [established]
+    sources:
+      - https://www.sgaonline.org.au/raspberries/
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-raspberries
+  - id: prune
+    kind: prune
+    title: Winter prune
+    detail: "Summer fruiting: cut canes that have fruited to ground level (they are brown, brittle and snap when bent) and keep about six strong green canes per plant. Autumn fruiting: cut all canes to the ground. Cut at ground level to prevent rot on the stubs."
+    once: true
+    seasons: [winter]
+    stages: [established]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/pruning-berries/9437524
+      - https://www.abc.net.au/gardening/how-to/cane-control/9436942
+      - https://www.abc.net.au/gardening/how-to/raspberry-buffet/13543592
+      - https://www.sgaonline.org.au/raspberries/
+  - id: suckers
+    kind: check
+    title: Control suckers
+    detail: Raspberries sucker into paths and gaps. Dig out wandering suckers, keeping as much root as possible, and replant them where canes failed or give them away. A woodchip border helps keep them in.
+    once: true
+    seasons: [winter]
+    stages: [established]
+    sources:
+      - https://www.abc.net.au/gardening/how-to/maintaining-raspberries/9435136
+      - https://www.abc.net.au/gardening/how-to/raspberry-buffet/13543592
+      - https://www.abc.net.au/gardening/factsheets/berry-bounty/10067480
+pests:
+  - id: birds
+    name: Birds
+    kind: pest
+    seasons: [summer, autumn]
+    signs: Ripe berries pecked or missing.
+    prevent: Net the canes after flowering, using fine mesh fixed tightly; a permanent frame makes netting easy.
+    treat: Net the canes.
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-raspberries
+      - https://agriculture.vic.gov.au/livestock-and-animals/animal-welfare-victoria/pocta-act-1986/protecting-fruit-trees-and-wildlife
+  - id: verticillium_wilt
+    name: Verticillium wilt
+    kind: disease
+    signs: Canes wilt and die back.
+    prevent: Do not plant where tomatoes, capsicums or eggplants grew in the past three years.
+    treat: There is no cure; replant in clean soil elsewhere.
+    sources: [https://www.sgaonline.org.au/raspberries/]
+advice:
+  - text: Buy bare root canes in winter and cut them back to about 20 cm above the ground at planting. Space canes about 30 cm apart, planting a couple of centimetres deeper than before so more roots form.
+    seasons: [winter]
+    stages: [young]
+    sources:
+      - https://www.sgaonline.org.au/raspberries/
+      - https://www.abc.net.au/gardening/how-to/raspberry-buffet/13543592
+      - https://www.abc.net.au/gardening/how-to/maintaining-raspberries/9435136
+  - text: Not sure which canes fruited? Scratch the bark; green canes are alive and stay, brown ones go.
+    seasons: [winter]
+    sources: [https://www.abc.net.au/gardening/how-to/raspberry-buffet/13543592]
+  - text: For dual cropping varieties, pick either the summer or the autumn pruning method and stick with it.
+    seasons: [winter]
+    sources: [https://www.diggers.com.au/blogs/learn/how-to-grow-raspberries]
+  - text: All raspberries are self pollinating, so one variety is enough; growing both types spreads the harvest.
+    sources:
+      - https://www.sgaonline.org.au/raspberries/
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-raspberries
+  - text: Raspberry is a Queensland fruit fly host. Pick berries as they ripen.
+    seasons: [summer, autumn]
+    sources: [https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/queensland-fruit-fly-host-fruits]

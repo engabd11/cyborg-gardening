@@ -85,7 +85,7 @@ pests:
     signs: Small sap sucking insects clustered on stems and under leaves.
     prevent: Check stems and leaf undersides when picking.
     treat: At the first sign, spray a contact spray such as a pyrethrin and oil citrus and ornamental spray, hitting the pests on all sides of the stems and under the leaves. Read and follow the label.
-    products: [pyrethrum_spray]
+    products: []
     sources:
       - https://www.yates.com.au/how-to-grow/rosemary/
   - id: powdery_mildew

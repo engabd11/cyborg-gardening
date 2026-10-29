@@ -1,0 +1,135 @@
+id: pomegranate
+name: Pomegranate
+botanical: Punica granatum
+group: fruit_tree
+icon: mdi:fruit-grapes
+frost: hardy
+heat: tolerant
+water: moderate
+perennial: true
+stages: [young, established, flowering, fruiting, dormant]
+default_stage: established
+settings: [ground]
+summary: A cold hardy deciduous tree that loves hot, dry summers. Keep soil moisture steady as fruit ripens so it does not split.
+needs:
+  sun: full
+  soil: Deep, well drained loam is best, but it tolerates clay, less than ideal drainage and mildly alkaline soil.
+  sources:
+    - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0005/119543/pomegranate-growing.pdf
+    - https://www.sgaonline.org.au/pomegranates/
+    - https://www.diggers.com.au/products/pomegranate-wonderful
+    - https://www.abc.net.au/gardening/fruit-guide/102652284
+varieties:
+  - id: wonderful
+    name: Wonderful
+    notes: The world standard variety, with rich red fruit and seeds that are less woody than most. Vigorous and productive.
+    sources:
+      - https://www.diggers.com.au/products/pomegranate-wonderful
+      - https://www.sgaonline.org.au/pomegranates/
+tasks:
+  - id: winter_prune
+    kind: prune
+    title: Winter prune
+    detail: >-
+      Thin the whippy growth crowding the middle of the tree and lower its height for easy picking. Keep the main branches and
+      plenty of 2 to 3 year old wood, which carries the fruiting spurs. Remove suckers from the base. Wear gloves and glasses,
+      as the branches are spiny.
+    seasons: [winter]
+    once: true
+    sources:
+      - https://www.sgaonline.org.au/pomegranates/
+      - https://www.abc.net.au/gardening/factsheets/pruning-pomegranate/13934756
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0005/119543/pomegranate-growing.pdf
+  - id: feed
+    kind: fertilise
+    title: Feed after pruning
+    detail: >-
+      After the winter prune, as growth starts, spread pelletised chicken manure and compost around the tree and mulch.
+      Too much nitrogen late in the season delays ripening and spoils fruit colour.
+    products: [dynamic_lifter, compost]
+    rate: Dynamic Lifter as on the label for fruit trees.
+    seasons: [late_winter, early_spring]
+    stages: [young, established, flowering]
+    once: true
+    sources:
+      - https://www.abc.net.au/gardening/factsheets/pruning-pomegranate/13934756
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0005/119543/pomegranate-growing.pdf
+      - https://www.sgaonline.org.au/growing-fruit-trees/
+  - id: fruit_fly_trap
+    kind: check
+    title: Check fruit fly trap
+    detail: >-
+      Pomegranates are a favourite of Queensland fruit fly. Hang the trap about 1.5 m high in a shady part of the canopy, change
+      homemade bait weekly, refresh bought lures as the label says, and pick up fallen fruit.
+    products: [fruit_fly_trap]
+    every_days: 7
+    seasons: [summer, autumn]
+    sources:
+      - https://www.sgaonline.org.au/pomegranates/
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/controlling-queensland-fruit-fly-in-home-gardens
+  - id: harvest
+    kind: harvest
+    title: Pick pomegranates
+    detail: >-
+      Pick the biggest, brightest fruit first once it is well coloured and sweet, and clip it off as the stem is tough. Make at
+      least two pickings; leaving fruit too long raises the risk of splitting. Fruit keeps for a couple of months somewhere cool
+      and dark or in the fridge.
+    seasons: [autumn, early_winter]
+    stages: [fruiting, established]
+    once: true
+    sources:
+      - https://www.sgaonline.org.au/pomegranates/
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0005/119543/pomegranate-growing.pdf
+pests:
+  - id: fruit_splitting
+    name: Fruit splitting
+    kind: disorder
+    seasons: [late_summer, autumn]
+    signs: Ripening fruit cracks open, often after rain.
+    prevent: Keep soil moisture up as fruit approaches maturity so rain does not split it, and do not leave ripe fruit on the tree too long.
+    treat: Pick split fruit promptly and use it.
+    sources:
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0005/119543/pomegranate-growing.pdf
+  - id: sunburn
+    name: Fruit sunburn
+    kind: disorder
+    seasons: [summer]
+    signs: Scorched patches on the skin of fruit after very hot weather.
+    prevent: Avoid overcrowded growth but keep enough leaf cover; water well through hot spells.
+    treat: Use affected fruit first.
+    sources:
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0005/119543/pomegranate-growing.pdf
+  - id: queensland_fruit_fly
+    name: Queensland fruit fly
+    kind: pest
+    seasons: [summer, autumn]
+    signs: Tiny sting marks on the skin and creamy maggots inside the fruit.
+    prevent: Net or bag fruit after fruit set, pick as it ripens, keep fallen fruit cleared and hang traps to monitor.
+    treat: >-
+      Spot spray bait onto the trunk and foliage, not the fruit. Freeze unwanted fruit sealed in a bag for two days, or bag it in
+      the sun for 14 days, then put it in the rubbish bin.
+    products: [eco_naturalure, fruit_fly_trap]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/controlling-queensland-fruit-fly-in-home-gardens
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/queensland-fruit-fly-host-fruits
+      - https://www.sgaonline.org.au/pomegranates/
+advice:
+  - text: Do not let the tree dry out in spring; it improves growth and fruit set. For the rest of the year it needs fairly little water, especially in clay.
+    seasons: [spring]
+    sources:
+      - https://www.sgaonline.org.au/pomegranates/
+      - https://www.diggers.com.au/products/pomegranate-wonderful
+  - text: Pomegranates are drought tolerant but need steady moisture to crop well. Water through hot, dry spells while fruit swells.
+    seasons: [summer]
+    stages: [fruiting]
+    sources:
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0005/119543/pomegranate-growing.pdf
+      - https://www.diggers.com.au/products/pomegranate-wonderful
+  - text: The tree is extremely cold tolerant, but protect flowers and new growth from spring frosts.
+    seasons: [early_spring, mid_spring]
+    sources:
+      - https://www.sgaonline.org.au/pomegranates/
+  - text: Trees start fruiting in their third to fifth year.
+    stages: [young]
+    sources:
+      - https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0005/119543/pomegranate-growing.pdf

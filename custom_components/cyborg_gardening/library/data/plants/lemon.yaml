@@ -116,9 +116,9 @@ tasks:
       - https://www.citrusmen.com.au/shop/p/sticky-insect-trap-for-fruit-fly-gall-wasp-protection-z6fst
   - id: leaf_miner_spray
     kind: spray
-    title: Neem or pest oil for leaf miner
+    title: Pest oil for leaf miner
     detail: Spray new growth every two weeks, or weekly if badly infested, from mid summer until the weather cools at the end of autumn. Cover both sides of the new leaves. Do not spray oil near or above 35 degrees or on a stressed tree. Lemons usually need more sprays than mandarins.
-    products: [eco_neem, yates_pestoil]
+    products: [yates_pestoil]
     rate: As on the label for citrus leaf miner.
     every_days: 14
     seasons: [mid_summer, late_summer, autumn]
@@ -177,9 +177,9 @@ pests:
     kind: pest
     seasons: [mid_summer, late_summer, autumn]
     signs: Silvery trails through new leaves, which twist and curl.
-    prevent: Avoid high nitrogen feeding and overwatering in summer and autumn. Spray new growth with neem or pest oil before the leaves reach 10 mm.
-    treat: Prune off damaged leaves and soak them in a bin of water for a couple of days. Spray neem or pest oil every two weeks, weekly if bad, until the end of autumn.
-    products: [eco_neem, yates_pestoil, eco_oil]
+    prevent: Avoid high nitrogen feeding and overwatering in summer and autumn. Spray new growth with pest oil before the leaves reach 10 mm.
+    treat: Prune off damaged leaves and soak them in a bin of water for a couple of days. Spray pest oil every two weeks, weekly if bad, until the end of autumn.
+    products: [yates_pestoil, eco_oil]
     sources:
       - https://www.citrusmen.com.au/information/2019/4/3/have-you-got-citrus-leaf-miner-meet-clem-a2rpk
       - https://www.sgaonline.org.au/ggp-garden-pest-citrus-leaf-miner/

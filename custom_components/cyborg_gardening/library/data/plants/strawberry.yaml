@@ -35,18 +35,6 @@ varieties:
       - https://www.abc.net.au/gardening/factsheets/sumptuous-strawberries/9435658
       - https://www.diggers.com.au/blogs/learn/how-to-plant-and-grow-strawberries
 tasks:
-  - id: water
-    kind: water
-    title: Water at the roots
-    detail: Strawberries are shallow rooted and dry out fast, so water regularly, especially after planting and while fruiting. Water the soil, not the leaves or fruit. Once fruiting starts, slightly less water improves flavour. In the cooler months water only now and then.
-    every_days:
-      ground: {spring: 3, summer: 2, autumn: 4, winter: 10}
-      raised_bed: {spring: 3, summer: 2, autumn: 4, winter: 10}
-      pot: {spring: 2, summer: 1, autumn: 3, winter: 7}
-    sources:
-      - https://www.sgaonline.org.au/strawberries/
-      - https://www.abc.net.au/gardening/how-to/petes-patch-strawberries/9429886
-      - https://www.diggers.com.au/blogs/learn/how-to-plant-and-grow-strawberries
   - id: feed
     kind: fertilise
     title: Fruit and citrus pellets
@@ -72,17 +60,6 @@ tasks:
       - https://www.diggers.com.au/blogs/learn/how-to-plant-and-grow-strawberries
       - https://www.abc.net.au/gardening/growing-strawberries/102657206
       - https://www.seasol.com.au/products/seasol/
-  - id: mulch_potash
-    kind: mulch
-    title: Mulch and potash
-    detail: Mulch about 5 cm deep with straw or aged pine needles (not fresh green ones) to keep fruit off the soil and limit rot. Scatter a handful of sulphate of potash per plant at the same time to promote flowers and fruit.
-    products: [pea_straw, sulphate_of_potash]
-    rate: A handful of sulphate of potash per plant.
-    once: true
-    seasons: [early_spring]
-    sources:
-      - https://www.abc.net.au/gardening/how-to/the-strawberry-patch/10837694
-      - https://www.abc.net.au/gardening/factsheets/sumptuous-strawberries/9435658
   - id: copper_spray
     kind: spray
     title: Copper spray for grey mould
@@ -95,17 +72,6 @@ tasks:
     sources:
       - https://www.yates.com.au/garden-hub/grey-mould/
       - https://www.yates.com.au/yates-200ml-liquid-copper/
-  - id: net
-    kind: other
-    title: Net the patch
-    detail: Net when fruiting begins, or birds take the crop. Victorian law requires household fruit netting with a mesh of 5 mm by 5 mm or less, fixed tightly.
-    once: true
-    seasons: [mid_spring]
-    stages: [established]
-    sources:
-      - https://www.diggers.com.au/blogs/learn/how-to-plant-and-grow-strawberries
-      - https://www.abc.net.au/gardening/plant-finder/fragaria/9441790
-      - https://agriculture.vic.gov.au/livestock-and-animals/animal-welfare-victoria/pocta-act-1986/protecting-fruit-trees-and-wildlife
   - id: harvest
     kind: harvest
     title: Pick ripe berries

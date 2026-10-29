@@ -1,0 +1,158 @@
+id: olive
+name: Olive
+botanical: Olea europaea
+group: fruit_tree
+icon: mdi:tree
+frost: hardy
+heat: tolerant
+water: low
+perennial: true
+stages: [young, established, flowering, fruiting]
+default_stage: established
+settings: [ground]
+summary: A tough evergreen for hot, dry summers and well drained, limy soil. Once established it needs little water, but never wet feet.
+needs:
+  sun: full
+  soil: Well drained, lime rich soil with a pH of 7 or above. Olives do not tolerate waterlogged soil; plant on a small mound if drainage is poor.
+  sources:
+    - https://www.diggers.com.au/blogs/learn/how-to-grow-olives
+    - https://www.abc.net.au/gardening/factsheets/olives/9426910
+tasks:
+  - id: water_young
+    kind: water
+    title: Deep water young tree
+    detail: >-
+      Give young trees about 10 to 20 litres once a week. As roots go deeper, water less often but for longer, soaking down to
+      about 600 mm where the feeder roots are.
+    every_days: 7
+    seasons: [spring, summer, autumn]
+    stages: [young]
+    sources:
+      - https://www.abc.net.au/gardening/factsheets/olives/9426910
+  - id: feed
+    kind: fertilise
+    title: Composted manure
+    detail: Spread well rotted chicken or cow manure around the base, once in autumn and once in spring, and water it in.
+    products: [dynamic_lifter]
+    rate: About 1 kg of composted chicken manure per year of tree age, up to 5 kg a year from age five, split between the two feeds.
+    seasons: [mid_autumn, mid_spring]
+    once: true
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-olives
+      - https://www.abc.net.au/gardening/factsheets/olives/9426910
+  - id: prune
+    kind: prune
+    title: Prune after harvest
+    detail: >-
+      Prune lightly each year once fruiting has finished, at the end of autumn or in early winter. A hard prune in late winter or
+      spring triggers a flush of new growth. Remove suckers and dead, damaged or crossing branches, open the centre to light and
+      air, and shorten leaders by about a quarter. Olives fruit best as an open vase with 3 or 4 main branches.
+    seasons: [late_autumn, early_winter]
+    stages: [established, fruiting]
+    once: true
+    sources:
+      - https://www.abc.net.au/gardening/factsheets/pruning-an-olive-tree/9432074
+      - https://www.abc.net.au/gardening/factsheets/olives/9426910
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-olives
+  - id: lace_bug_check
+    kind: check
+    title: Check for olive lace bug
+    detail: >-
+      From early spring, look under the leaves for small flat lace bugs and on top for yellow spotting and black tar spots.
+      Overwintering eggs hatch in September and October, and numbers build fast, so treat as soon as you see them.
+    seasons: [early_spring, mid_spring]
+    once: true
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/olive-lace-bug
+  - id: oil_spray
+    kind: spray
+    title: Oil spray for scale and lace bug
+    detail: >-
+      Where lace bug or scale are present, spray horticultural oil once a month in spring and summer, three times in all,
+      covering the undersides of the leaves.
+    products: [yates_pestoil]
+    rate: As on the label.
+    every_days: 30
+    seasons: [late_spring, early_summer, mid_summer]
+    caution: Read and follow the label.
+    sources:
+      - https://www.abc.net.au/gardening/factsheets/ask-itsolve-it/9428842
+  - id: harvest
+    kind: harvest
+    title: Harvest olives
+    detail: >-
+      Pick the whole crop; fruit left on the tree spreads olives as a weed. Fresh olives are inedible until cured, for example in
+      rock salt or brine.
+    seasons: [mid_autumn, late_autumn]
+    stages: [fruiting, established]
+    once: true
+    sources:
+      - https://www.abc.net.au/gardening/factsheets/olives/9426910
+pests:
+  - id: olive_lace_bug
+    name: Olive lace bug
+    kind: pest
+    seasons: [spring, summer, autumn]
+    signs: >-
+      Flat mottled brown bugs 2 to 3 mm long under the leaves. Leaves show stippling, yellow spots and black tar spots, then turn
+      rusty and drop; twigs can die back.
+    prevent: >-
+      Keep trees unstressed with good nutrition, mulch and water. Keep the tree smaller with an open canopy; the bug avoids light
+      and sprays reach it better.
+    treat: Treat soon after activity is first seen. Spray horticultural oil monthly in spring and summer, three times.
+    products: [yates_pestoil]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/olive-lace-bug
+      - https://www.abc.net.au/gardening/factsheets/ask-itsolve-it/9428842
+  - id: scale
+    name: Olive scale and black scale
+    kind: pest
+    seasons: [spring, summer, autumn]
+    signs: Small humped shells on stems and under leaves, sticky honeydew, ants, and black sooty mould that looks like charcoal.
+    prevent: Avoid an overly dense canopy and control the ants that tend scale. Encourage predators such as lacewings, predatory mites and small birds.
+    treat: Spray oil in December and again in March or April, or wipe small infestations off.
+    products: [yates_pestoil, eco_oil]
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-olives
+      - https://www.sgaonline.org.au/scale/
+      - https://www.abc.net.au/gardening/factsheets/ask-itsolve-it/9428842
+  - id: peacock_spot
+    name: Peacock spot
+    kind: disease
+    seasons: [late_spring, autumn]
+    signs: Pale leaves with a bull's eye spot.
+    prevent: Keep the canopy open with yearly pruning.
+    treat: Spray copper in late spring and as soon as spots appear on the leaves, as the label directs.
+    products: []
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-olives
+  - id: queensland_fruit_fly
+    name: Queensland fruit fly
+    kind: pest
+    seasons: [summer, autumn]
+    signs: Tiny sting marks on the skin and creamy maggots inside the fruit.
+    prevent: Pick fruit as it ripens, clear fallen fruit and hang traps to monitor.
+    treat: Spot spray bait onto the trunk and foliage, not the fruit. Bag or freeze infested fruit before binning it.
+    products: [eco_naturalure, fruit_fly_trap]
+    sources:
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/controlling-queensland-fruit-fly-in-home-gardens
+      - https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/queensland-fruit-fly/queensland-fruit-fly-host-fruits
+advice:
+  - text: Olives handle frost as long as it stays above minus 10 degrees, and suit cool winters with hot, dry summers.
+    seasons: [winter]
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-olives
+      - https://www.abc.net.au/gardening/factsheets/olives/9426910
+  - text: Established olives survive with little water, but water at flowering and fruit set for a good crop. Without it they tend to crop every second year.
+    seasons: [spring, early_summer]
+    stages: [established, flowering, fruiting]
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-olives
+      - https://www.abc.net.au/gardening/factsheets/olives/9426910
+  - text: Keep weeds away from young trees for their first four to five years.
+    stages: [young]
+    sources:
+      - https://www.diggers.com.au/blogs/learn/how-to-grow-olives
+  - text: Olives bear heavily every second year. Light yearly pruning helps even out the crop.
+    sources:
+      - https://www.abc.net.au/gardening/factsheets/pruning-an-olive-tree/9432074

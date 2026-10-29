@@ -10,5 +10,5 @@
   "issue_tracker": "https://github.com/engabd11/cyborg-gardening/issues",
   "loggers": ["custom_components.cyborg_gardening"],
   "requirements": [],
-  "version": "0.1.0"
+  "version": "0.1.1"
 }

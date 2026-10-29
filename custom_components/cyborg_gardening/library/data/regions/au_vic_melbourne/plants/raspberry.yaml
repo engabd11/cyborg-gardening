@@ -1,0 +1,15 @@
+plant: raspberry
+plant_out: [6, 7, 8]
+harvest: [11, 12, 1, 2, 3, 4, 5]
+notes:
+  - text: Bare root canes are sold in winter, the best time to plant berries.
+    months: [6, 7, 8]
+    sources:
+      - https://www.sgaonline.org.au/raspberries/
+      - https://www.abc.net.au/gardening/factsheets/berry-bounty/10067480
+  - text: Early summer varieties such as Neika crop from November to December; Heritage crops from February for 8 to 12 weeks.
+    months: [11, 12, 2, 3, 4]
+    sources: [https://www.sgaonline.org.au/raspberries/]
+sources:
+  - https://www.sgaonline.org.au/raspberries/
+  - https://www.diggers.com.au/blogs/learn/how-to-grow-raspberries
