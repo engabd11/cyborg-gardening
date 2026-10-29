@@ -1,7 +1,7 @@
 """Home Assistant harness tests.
 
 These need pytest-homeassistant-custom-component, which only runs on Linux
-(CI, or the Docker command in docs/development.md).
+(CI, or the Docker command in dev/Dockerfile.test).
 """
 
 from __future__ import annotations

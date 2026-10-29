@@ -36,7 +36,6 @@ from .const import (
     CONF_NAME,
     CONF_ONE_AT_A_TIME,
     CONF_PLANT_TYPE,
-    CONF_PLANTED,
     CONF_RAIN_MM,
     CONF_RAIN_SENSOR,
     CONF_REGION,
@@ -263,7 +262,6 @@ class PlantSubentryFlow(ConfigSubentryFlow):
                 [(s, SETTING_NAMES[s]) for s in plant["settings"]]
             ),
             vol.Optional(CONF_SOIL): _soil_choices(lib),
-            vol.Optional(CONF_PLANTED): selector.DateSelector(),
             vol.Optional(CONF_AREA): selector.AreaSelector(),
             vol.Optional(CONF_MOISTURE): _entity("sensor", "moisture"),
             vol.Optional(CONF_SOIL_TEMP): _entity("sensor", "temperature"),

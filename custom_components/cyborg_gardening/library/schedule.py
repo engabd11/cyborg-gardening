@@ -89,6 +89,9 @@ def due_date(
         if not _active(lib, task, setting, today):
             return first_active(lib, task, setting, _next_month(today))
         due = today if soil_dry else None
+    elif task.get("once") and not task.get("seasons"):
+        # No season: once per plant, while its stages fit.
+        due = None if last_done else today
     elif task.get("once"):
         if _active(lib, task, setting, today):
             start = window_start(lib, task, setting, today)

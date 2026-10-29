@@ -158,3 +158,60 @@ async def test_ws_subscribe(hass, garden, hass_ws_client):
     assert snap["plants"][0]["entities"]["stage"] == "select.lemon_stage"
     assert snap["automations"]["frost"]["entity_id"] == "switch.garden_frost_watering"
     assert snap["todo"] == "todo.garden_garden_care"
+
+
+async def test_frost_watering_waits_for_day_window(hass, garden, freezer):
+    freezer.move_to(datetime(2026, 7, 10, 18, 0, tzinfo=dt_util.get_default_time_zone()))
+    manager = garden.runtime_data
+    manager.outlook = Outlook(tonight_min=0.5, today_max=12)
+    await hass.services.async_call(
+        "switch", "turn_on", {"entity_id": "switch.garden_frost_watering"}, blocking=True
+    )
+    await manager._async_tick(dt_util.now())
+    async_fire_time_changed(hass, dt_util.utcnow() + timedelta(seconds=1))
+    await hass.async_block_till_done()
+    assert hass.states.get("input_boolean.tap").state == "off"
+    assert any("too late" in line["text"] for line in manager.data["journal"])
+
+
+async def test_failed_close_keeps_run_and_retries(hass, hass_storage, melbourne, helpers):
+    past = (dt_util.utcnow() - timedelta(minutes=5)).isoformat()
+    hass_storage[f"{DOMAIN}.{ENTRY_ID}"] = {
+        "version": 1,
+        "key": f"{DOMAIN}.{ENTRY_ID}",
+        "data": {"valves": {"input_boolean.not_loaded": {"until": past, "reason": "manual"}}},
+    }
+    entry = plant_entry()
+    entry.add_to_hass(hass)
+    assert await hass.config_entries.async_setup(entry.entry_id)
+    await hass.async_block_till_done()
+    manager = entry.runtime_data
+    assert "input_boolean.not_loaded" in manager.data["valves"]
+    assert "input_boolean.not_loaded" in manager._timers
+
+
+async def test_rain_before_midnight_counts_once(hass, melbourne, helpers, freezer):
+    hass.states.async_set("sensor.rain_today", "0")
+    entry = plant_entry(setting="ground")
+    entry.add_to_hass(hass)
+    hass.config_entries.async_update_entry(entry, options={"rain_sensor": "sensor.rain_today"})
+    assert await hass.config_entries.async_setup(entry.entry_id)
+    await hass.async_block_till_done()
+    freezer.move_to(datetime(2026, 7, 10, 20, 0, tzinfo=dt_util.get_default_time_zone()))
+    hass.states.async_set("sensor.rain_today", "10")
+    await hass.async_block_till_done()
+    freezer.move_to(datetime(2026, 7, 11, 0, 30, tzinfo=dt_util.get_default_time_zone()))
+    hass.states.async_set("sensor.rain_today", "10", {"updated": 1})
+    await hass.async_block_till_done()
+    journal = entry.runtime_data.data["journal"]
+    assert sum("mm of rain" in line["text"] for line in journal) == 1
+
+
+async def test_mark_done_by_device_id(hass, garden):
+    view = garden.runtime_data.payload()["plants"][0]
+    task_id = view["tasks"][0]["id"]
+    await hass.services.async_call(
+        DOMAIN, "mark_done", {"plant": view["device_id"], "task": task_id}, blocking=True
+    )
+    task = next(t for t in garden.runtime_data.views[PLANT_ID]["tasks"] if t["id"] == task_id)
+    assert task["last_done"] == dt_util.now().date().isoformat()

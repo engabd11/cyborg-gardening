@@ -83,3 +83,10 @@ def test_status():
     assert schedule.status(today, today) == "due"
     assert schedule.status(date(2026, 10, 31), today) == "soon"
     assert schedule.status(date(2026, 11, 20), today) == "ok"
+
+
+def test_once_job_without_seasons_runs_once_per_plant(lib):
+    job = {"id": "stake", "kind": "other", "title": "Stake", "once": True, "sources": []}
+    kw = {"today": date(2026, 10, 30), "stage": "young", "setting": "pot"}
+    assert schedule.due_date(lib, job, **kw) == date(2026, 10, 30)
+    assert schedule.due_date(lib, job, last_done=date(2026, 10, 1), **kw) is None
