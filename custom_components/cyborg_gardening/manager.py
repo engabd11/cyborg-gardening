@@ -3,12 +3,13 @@
 from __future__ import annotations
 
 from collections.abc import Callable
+from contextlib import suppress
 from datetime import date, datetime, timedelta
 import logging
 from typing import Any
 
 from homeassistant.config_entries import ConfigEntry, ConfigSubentry
-from homeassistant.const import STATE_ON, STATE_OPEN, STATE_OPENING
+from homeassistant.const import STATE_ON, STATE_OPEN, STATE_OPENING, STATE_UNAVAILABLE
 from homeassistant.core import CALLBACK_TYPE, Event, HomeAssistant, callback
 from homeassistant.exceptions import HomeAssistantError
 from homeassistant.helpers import device_registry as dr
@@ -18,6 +19,7 @@ from homeassistant.helpers.event import (
     async_track_state_change_event,
     async_track_time_interval,
 )
+from homeassistant.helpers.start import async_at_started
 from homeassistant.helpers.storage import Store
 from homeassistant.util import dt as dt_util
 
@@ -67,6 +69,9 @@ FORECAST_EVERY = timedelta(minutes=30)
 FROST_HARDY = "hardy"
 OPEN_STATES = (STATE_ON, STATE_OPEN, STATE_OPENING)
 NEAR_FREEZING = 1.0  # degrees above the frost threshold where watering waits
+FROST_WINDOW = timedelta(hours=6)  # frost watering happens in the day, never into the evening
+RAIN_DAY_START = timedelta(hours=9)  # rain today sensors count from 9 am (the BOM rain day)
+CLOSE_RETRY = timedelta(minutes=1)
 
 
 def signal_update(entry_id: str) -> str:
@@ -200,7 +205,7 @@ class GardenManager:
             for sub in plants.values()
             for key in (CONF_MOISTURE, CONF_SOIL_TEMP, CONF_HUMIDITY_SENSOR)
         }
-        watched |= self._valves(CONF_WATER_VALVE) | self._valves(CONF_MIST_VALVE)
+        watched |= self.linked_valves()
         watched |= {self.opt(k) for k in (CONF_RAIN_SENSOR, CONF_TEMP_SENSOR, CONF_HUMIDITY_SENSOR)}
         watched.add(self.opt(CONF_WEATHER))
         watched.discard(None)
@@ -214,7 +219,8 @@ class GardenManager:
         self._unsubs.append(
             async_track_time_interval(self.hass, self._async_refresh_forecast, FORECAST_EVERY)
         )
-        await self._async_restore_valves()
+        # Wait for valve integrations to load before closing or re-arming saved runs.
+        self._unsubs.append(async_at_started(self.hass, self._async_restore_valves))
         await self._async_refresh_forecast()
 
     async def async_stop(self) -> None:
@@ -224,7 +230,14 @@ class GardenManager:
         self._unsubs.clear()
         self._queued.clear()
         for entity_id in list(self._timers):
-            await self.async_stop_valve(entity_id, reason="Stopped while the garden reloads")
+            try:
+                await self.async_stop_valve(entity_id, reason="Stopped while the garden reloads")
+            except HomeAssistantError:
+                _LOGGER.warning("Could not close %s while stopping", entity_id)
+        # A valve that did not close keeps its saved run, so the next start closes it.
+        for cancel in self._timers.values():
+            cancel()
+        self._timers.clear()
         await self.store.async_save(self.data)
 
     @callback
@@ -290,7 +303,7 @@ class GardenManager:
 
     @callback
     def _check_rain(self) -> None:
-        today = dt_util.now().date().isoformat()
+        today = (dt_util.now() - RAIN_DAY_START).date().isoformat()
         rain = _num(self.hass, self.opt(CONF_RAIN_SENSOR))
         if rain is None or rain < float(self.opt(CONF_RAIN_MM)) or self.data["rain_ack"] == today:
             return
@@ -411,6 +424,10 @@ class GardenManager:
     def _valves(self, key: str, plants: dict[str, ConfigSubentry] | None = None) -> set[str]:
         return {v for sub in (plants or self.plants).values() if (v := sub.data.get(key))}
 
+    def linked_valves(self) -> set[str]:
+        """Return every water and mist valve linked to a plant."""
+        return self._valves(CONF_WATER_VALVE) | self._valves(CONF_MIST_VALVE)
+
     def _name(self, entity_id: str) -> str:
         state = self.hass.states.get(entity_id)
         return state.name if state else entity_id
@@ -436,6 +453,7 @@ class GardenManager:
         until = dt_util.utcnow() + timedelta(minutes=minutes)
         self.data["valves"][entity_id] = {"until": until.isoformat(), "reason": reason}
         self._arm_close(entity_id, until)
+        await self.store.async_save(self.data)  # a crash must not lose an open valve
         self.journal("valve", f"{self._name(entity_id)} on for {minutes:g} min ({reason})")
         self.evaluate()
 
@@ -446,27 +464,34 @@ class GardenManager:
 
         async def _close(_now: datetime) -> None:
             self._timers.pop(entity_id, None)
-            await self.async_stop_valve(entity_id, reason="time is up")
+            with suppress(HomeAssistantError):  # journaled, and a retry is armed
+                await self.async_stop_valve(entity_id, reason="time is up")
 
         delay = max(0.0, (until - dt_util.utcnow()).total_seconds())
         self._timers[entity_id] = async_call_later(self.hass, delay, _close)
 
     async def async_stop_valve(self, entity_id: str, reason: str = "manual") -> None:
-        """Close a valve now."""
+        """Close a valve now; a run this garden owns retries until the close works."""
+        try:
+            await self._switch(entity_id, False)
+            # Home Assistant quietly skips entities that are missing or unavailable.
+            state = self.hass.states.get(entity_id)
+            if state is None or state.state == STATE_UNAVAILABLE:
+                raise HomeAssistantError(f"{entity_id} is unavailable")
+        except HomeAssistantError as err:
+            self.journal("error", f"{self._name(entity_id)} did not close: {err}")
+            if entity_id in self.data["valves"]:
+                self._arm_close(entity_id, dt_util.utcnow() + CLOSE_RETRY)
+            raise
         if cancel := self._timers.pop(entity_id, None):
             cancel()
         was_running = self.data["valves"].pop(entity_id, None) is not None
-        try:
-            await self._switch(entity_id, False)
-        except HomeAssistantError as err:
-            self.journal("error", f"{self._name(entity_id)} did not close: {err}")
-            raise
         if was_running or reason == "manual":
             self.journal("valve", f"{self._name(entity_id)} off ({reason})")
         self._save()
         self.evaluate()
 
-    async def _async_restore_valves(self) -> None:
+    async def _async_restore_valves(self, _hass: HomeAssistant | None = None) -> None:
         """After a restart, close valves whose time ran out and re-arm the rest."""
         for entity_id, info in list(self.data["valves"].items()):
             until = dt_util.parse_datetime(info.get("until", "")) or dt_util.utcnow()
@@ -482,6 +507,7 @@ class GardenManager:
     def _queue(self, valves: list[str], minutes: float, reason: str) -> None:
         """Run valves together, or one after another to keep water pressure up."""
         gap = minutes * 60 + 5 if self.opt(CONF_ONE_AT_A_TIME) else 0
+        # shortcut: fired handles stay in _queued until reload (a few a day); prune if that grows.
         for i, entity_id in enumerate(valves):
 
             async def _run(_now: datetime, entity_id: str = entity_id) -> None:
@@ -529,15 +555,20 @@ class GardenManager:
         now = dt_util.as_local(now)
         today = now.date().isoformat()
         frost_c = float(self.opt(CONF_FROST_C))
+        frost_start = datetime.combine(now.date(), self._time(CONF_FROST_TIME), now.tzinfo)
         if (
             self.frost_enabled
             and weather.frost_expected(self.outlook, frost_c)
             and today not in self.data["frost_runs"]
-            and now.time() >= self._time(CONF_FROST_TIME)
+            and now >= frost_start
         ):
             self.data["frost_runs"] = [today, *self.data["frost_runs"]][:14]
             valves = self.frost_valves()
-            if skip := self._frost_skip(valves):
+            if now >= frost_start + FROST_WINDOW:
+                skip = "the frost forecast came too late to water in the day"
+            else:
+                skip = self._frost_skip(valves)
+            if skip:
                 self.journal("frost", f"Frost watering skipped: {skip}")
             else:
                 minutes = float(self.opt(CONF_FROST_MINUTES))

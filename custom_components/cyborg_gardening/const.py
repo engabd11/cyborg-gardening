@@ -64,7 +64,6 @@ CONF_PLANT_TYPE = "plant_type"
 CONF_VARIETY = "variety"
 CONF_STAGE = "stage"
 CONF_SETTING = "setting"
-CONF_PLANTED = "planted"
 CONF_AREA = "area"
 CONF_MOISTURE = "moisture_sensor"
 CONF_SOIL_TEMP = "soil_temperature_sensor"
@@ -77,7 +76,6 @@ PLANT_SETTINGS = (
     CONF_STAGE,
     CONF_SETTING,
     CONF_SOIL,
-    CONF_PLANTED,
     CONF_AREA,
     CONF_MOISTURE,
     CONF_SOIL_TEMP,

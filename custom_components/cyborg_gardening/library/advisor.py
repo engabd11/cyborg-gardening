@@ -15,11 +15,8 @@ STATUS_ORDER = {"overdue": 0, "due": 1, "soon": 2, "ok": 3, "resting": 4}
 
 
 def _fits(item: dict, lib: Library, month: int, stage: str, setting: str) -> bool:
-    return (
-        month in lib.season_months(item.get("seasons"))
-        and (not item.get("stages") or stage in item["stages"])
-        and (not item.get("settings") or setting in item["settings"])
-    )
+    in_season = month in lib.season_months(item.get("seasons"))
+    return in_season and schedule.applies(item, stage, setting)
 
 
 def _products(lib: Library, ids: list[str] | None) -> list[dict]:
